@@ -1,0 +1,35 @@
+
+spriteTypes = {
+    spriteType = { name = "GFX_portrait_AOTA_wilhelm_placeholder" texturefile = "gfx/leaders/GER/AOTA_wilhelm_placeholder.png" }
+    spriteType = { name = "GFX_portrait_AOTA_petain_placeholder" texturefile = "gfx/leaders/FRA/AOTA_petain_placeholder.png" }
+    spriteType = { name = "GFX_portrait_AOTA_george_placeholder" texturefile = "gfx/leaders/ENG/AOTA_george_placeholder.png" }
+    spriteType = { name = "GFX_portrait_AOTA_karl_placeholder" texturefile = "gfx/leaders/AUS/AOTA_karl_placeholder.png" }
+    spriteType = { name = "GFX_portrait_AOTA_russian_regent" texturefile = "gfx/leaders/SOV/AOTA_russian_regent.png" }
+    spriteType = { name = "GFX_portrait_AOTA_italian_dux" texturefile = "gfx/leaders/ITA/AOTA_italian_dux.png" }
+    spriteType = { name = "GFX_AOTA_GER_wilhelm" texturefile = "gfx/leaders/GER/AOTA_GER_wilhelm.png" }
+    spriteType = { name = "GFX_AOTA_FRA_gamelin" texturefile = "gfx/leaders/FRA/AOTA_FRA_gamelin.png" }
+    spriteType = { name = "GFX_AOTA_USA_garner" texturefile = "gfx/leaders/USA/AOTA_USA_garner.png" }
+    spriteType = { name = "GFX_AOTA_POL_rydz" texturefile = "gfx/leaders/POL/AOTA_POL_rydz.png" }
+    spriteType = { name = "GFX_AOTA_AUS_karl" texturefile = "gfx/leaders/AUS/AOTA_AUS_karl.png" }
+    spriteType = { name = "GFX_AOTA_ITA_ciano" texturefile = "gfx/leaders/ITA/AOTA_ITA_ciano.png" }
+    spriteType = { name = "GFX_AOTA_SER_petar" texturefile = "gfx/leaders/SER/AOTA_SER_petar.png" }
+    spriteType = { name = "GFX_AOTA_BEL_leader" texturefile = "gfx/leaders/BEL/AOTA_BEL_leader.png" }
+}
+
+    spriteType = { name = "GFX_AOTA_TUR_abdulmecid" texturefile = "gfx/leaders/TUR/TUR_abdulmecid_osmanoglu.png" }
+    spriteType = { name = "GFX_AOTA_TUR_fevzi" texturefile = "gfx/leaders/TUR/TUR_fevzi_cakmak_civilian.png" }
+    spriteType = { name = "GFX_AOTA_TUR_ismet" texturefile = "gfx/leaders/TUR/TUR_ismet_inonu.png" }
+    spriteType = { name = "GFX_AOTA_TUR_shakib" texturefile = "gfx/leaders/TUR/TUR_shakib_arslan.png" }
+    spriteType = { name = "GFX_AOTA_TUR_sefik" texturefile = "gfx/leaders/TUR/TUR_sefik_husnu_deymer.png" }
+    spriteType = { name = "GFX_AOTA_TUR_menderes" texturefile = "gfx/leaders/TUR/TUR_adnan_menderes.png" }
+    spriteType = { name = "GFX_AOTA_TUR_okyar" texturefile = "gfx/leaders/TUR/TUR_ali_fethi_okyar.png" }
+    spriteType = { name = "GFX_AOTA_TUR_karabekir" texturefile = "gfx/leaders/TUR/TUR_musa_kazim_karabekir.png" }
+    spriteType = { name = "GFX_AOTA_TUR_hikmet" texturefile = "gfx/leaders/TUR/TUR_hikmet_kivilcimli.png" }
+    spriteType = { name = "GFX_AOTA_TUR_yamut" texturefile = "gfx/leaders/TUR/TUR_nuri_yamut.png" }
+# Russia v22 portraits
+spriteType = { name = "GFX_AOTA_SOV_kerensky" texturefile = "gfx/leaders/SOV/AOTA_SOV_kerensky.png" }
+spriteType = { name = "GFX_AOTA_SOV_tukhachevsky" texturefile = "gfx/leaders/SOV/AOTA_SOV_tukhachevsky.png" }
+spriteType = { name = "GFX_AOTA_SOV_wrangel" texturefile = "gfx/leaders/SOV/AOTA_SOV_wrangel.png" }
+spriteType = { name = "GFX_AOTA_SOV_maria" texturefile = "gfx/leaders/SOV/AOTA_SOV_maria.png" }
+spriteType = { name = "GFX_AOTA_SOV_kollontai" texturefile = "gfx/leaders/SOV/AOTA_SOV_kollontai.png" }
+spriteType = { name = "GFX_AOTA_SOV_makhno" texturefile = "gfx/leaders/SOV/AOTA_SOV_makhno.png" }

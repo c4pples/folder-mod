@@ -1,0 +1,33 @@
+AOTA country_tag_aliases pass
+
+What this does:
+- adds a safe common/country_tag_aliases layer
+- creates stable semantic aliases for frequently referenced AOTA states
+- helps future event/focus/decision scripting avoid brittle hardcoded tag assumptions
+
+What it does NOT do:
+- it does not replace country_tags definitions
+- it does not change ownership or history by itself
+- it does not magically fix undefined tag references elsewhere
+
+Aliases added:
+- OTT -> TUR
+- DNB -> AUS
+- IND -> RAJ
+- USC -> ACC
+- USR -> AWU
+- USN -> ANA
+- USP -> APF
+- USM -> ACG
+- USS -> ASL
+- USX -> CCW
+- CNG -> COG
+- ALGX -> ALG
+- UKX -> UKR
+- IRL -> IRE
+- FNX -> FIN
+
+Why this helps:
+- gives the mod a cleaner script vocabulary for the Ottoman state, Danubian state, Raj, and American splinters
+- reduces the temptation to reuse KR-specific convenience tags later
+- makes future expansion passes easier to read and maintain

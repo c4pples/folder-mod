@@ -1,0 +1,20 @@
+AOTA v41 Wave 1 Flavor Re-sweep Report
+
+Scope:
+- Re-swept Wave 1 trees (BRA, ARG, CHI, PRC, NOR, SWE, DEN) for in-universe flavor alignment.
+- Replaced repetitive generic localization with nation-specific prose and branch-identity descriptions.
+- Applied targeted, restrained reward differentiation per nation to reduce copy-pattern sameness while preserving balance.
+
+Nation flavor anchors:
+- BRA: federal bargaining, regional elites, Atlantic posture.
+- ARG: River Plate politics, export economy, barracks-civilian balance.
+- CHI: long frontier, Pacific orientation, narrow but resilient mobilization.
+- PRC: warlord fragmentation to central consolidation.
+- NOR: shipping security, fjord defense, Arctic/North Sea caution.
+- SWE: neutrality management, industrial leverage, Baltic anxiety.
+- DEN: straits control, constitutional continuity, maritime vulnerability.
+
+Balance note:
+- No map/state/province changes.
+- No major early snowball escalations introduced.
+- Reward differentiation kept incremental (small PP/stability/experience/industry adjustments only).

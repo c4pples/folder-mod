@@ -1,0 +1,23 @@
+AOTA v28 Major Flavor + Leaders Pass II
+
+Scope:
+- Ottomans
+- Russia
+- Britain
+- U.S. splinter states
+
+What this pass adds:
+- Deeper thematic localization for Britain, Russia, the Ottomans, and the American fracture-state ecosystem
+- Expanded leader and advisor descriptions for those regions
+- New character expansion file adding additional advisors/figures for the Ottomans, Russia, Britain, and several U.S. splinters
+- Dedicated intro-style localization keys for the main American splinters and deeper major-country intro keys
+
+Design intent:
+- Give the second tier of major powers and the American collapse states a denser narrative identity
+- Sharpen ideological distinctions in prose
+- Make each splinter and imperial survival path feel socially grounded in the draw-peace world
+
+Notes:
+- This is a flavor and presentation pass, not a mechanical rebalance
+- Intro keys are provided for future event/country-selection use
+- New advisors are conservative additions using traits already common in the mod

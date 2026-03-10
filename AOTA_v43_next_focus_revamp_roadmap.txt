@@ -1,0 +1,297 @@
+AOTA v43 Post-GER/FRA Nation Revamp Roadmap
+
+Summary
+- This roadmap defines the next focus-tree revamp wave after Germany and France, prioritizing distinct country identity over raw tree size.
+- Italy is first priority due to Mediterranean system impact and major-power leverage.
+- Korea + Manchuria are paired to intentionally separate sovereignty-survival gameplay from puppet-legitimacy gameplay.
+- Czechoslovakia + Poland are paired to differentiate fortress-industry survival from encircled mobilization politics.
+- Romania + Hungary + Bulgaria are grouped as a contrast-heavy Balkan/Danubian cluster centered on resource politics, revisionism, and compact opportunism.
+- USA is explicitly deferred: no U.S. revamp work in this wave due to fragile splinter/civil-war architecture risk.
+
+Current-state audit by country
+Method used
+- Audit current bespoke focus coverage in this repository and existing major audit report.
+- Determine where countries still rely on vanilla or non-bespoke logic.
+
+Italy (ITA)
+- Current weakness: no AOTA_ITA focus file in current bespoke list; Italy currently lacks mod-specific pacing and identity hooks.
+- Intended role: Mediterranean escalation pivot, prestige-seeking but structurally insecure major actor.
+- Missing identity: internal regime-fragmentation pressure and armed-service rivalry as core mechanics.
+- Revamp scope: Full rebuild (highest-priority major-tier revamp).
+
+Korea (KOR)
+- Current weakness: identified previously as high-priority non-bespoke candidate; lacks dedicated AOTA sovereignty narrative.
+- Intended role: pressured sovereignty and national assertion node between stronger regional powers.
+- Missing identity: survival-modernization-intelligence triangle unique to Korean play.
+- Revamp scope: Full rebuild (paired with Manchuria for deliberate differentiation).
+
+Manchuria (MAN)
+- Current weakness: identified previously as high-priority non-bespoke candidate; lacks bespoke legitimacy economy loop.
+- Intended role: contested manufactured-state/pseudo-puppet system with strategic relevance beyond conquest.
+- Missing identity: extraction-vs-autonomy state-building decisions.
+- Revamp scope: Full rebuild (paired with Korea).
+
+Czechoslovakia (CZE)
+- Current weakness: identified as high-priority non-bespoke candidate; lacks bespoke central-defense identity.
+- Intended role: fortress-industrial survivor at the center of European pressure lines.
+- Missing identity: internal national balancing linked to alliance dependence choices.
+- Revamp scope: Full rebuild (paired with Poland).
+
+Poland (POL)
+- Current weakness: no bespoke AOTA_POL focus structure in current content; strategic role underdefined for AOTA pacing.
+- Intended role: exposed but consequential balancing power with high-stakes mobilization.
+- Missing identity: encirclement politics + officer corps cohesion tradeoffs.
+- Revamp scope: Full rebuild (paired with Czechoslovakia).
+
+Romania (ROM)
+- Current weakness: no bespoke oil-diplomacy tree; regional behavior likely generic.
+- Intended role: resource-leverage state with flexible but risky alignment choices.
+- Missing identity: monarchy/elite/army triangle tied to oil bargaining and border pressure.
+- Revamp scope: Major expansion (or full rebuild if vanilla structure blocks identity pacing).
+
+Hungary (HUN)
+- Current weakness: no bespoke constrained-revisionist framework.
+- Intended role: revisionist actor balancing restoration politics with patron constraints.
+- Missing identity: dependence-vs-autonomy arc under limited industrial/military baseline.
+- Revamp scope: Major expansion.
+
+Bulgaria (BUL)
+- Current weakness: no compact bespoke spoiler identity.
+- Intended role: sharp regional opportunist with diplomatic-revanchist leverage.
+- Missing identity: vulnerability-driven opportunism rather than broad conquest rails.
+- Revamp scope: Major expansion.
+
+Wider Balkan integration review (YUG and adjacent interactions)
+- Current weakness: lacks coordinated interaction design standards across Balkan tags.
+- Intended role: escalation harmonization layer preventing incompatible branch tempo.
+- Missing identity: interoperable but distinct Balkan crisis/diplomacy cadence.
+- Revamp scope: Targeted tuning + integration pass, not mass rebuild by default.
+
+Smaller Western/Central minors review
+- Current weakness: likely uneven vanilla inheritance and inconsistent escalation hooks.
+- Intended role: support European crisis texture without diluting major/minor identity boundaries.
+- Missing identity: clear strategic “why play this tag in AOTA” value propositions.
+- Revamp scope: Targeted tuning first; rebuild only for tags with severe uniqueness deficits.
+
+Priority ranking with reasons
+Scoring dimensions
+- Revamp urgency: how weak current country identity is in AOTA terms.
+- Strategic importance: effect on continental/regional escalation flow.
+- Uniqueness deficit: risk of feeling like a generic ideology reskin.
+
+Tier 1 (highest)
+1) Italy
+- Urgency: Very high (major actor currently under-distinct).
+- Strategic importance: Very high (Mediterranean + Europe bridge).
+- Uniqueness deficit: High (must avoid Germany-lite trajectory).
+
+2) Korea
+- Urgency: High (non-bespoke high-priority candidate).
+- Strategic importance: High (regional pressure node).
+- Uniqueness deficit: High (must not be small-China clone).
+
+3) Manchuria
+- Urgency: High.
+- Strategic importance: High in East Asian escalation scaffolding.
+- Uniqueness deficit: Very high (risk of becoming pure puppet war rail).
+
+4) Czechoslovakia
+- Urgency: High.
+- Strategic importance: High in Central Europe defensive timings.
+- Uniqueness deficit: High (risk of generic democratic holdout behavior).
+
+5) Poland
+- Urgency: High.
+- Strategic importance: High (encirclement flashpoint).
+- Uniqueness deficit: Medium-high (easy to collapse into generic nationalist/defender blend).
+
+Tier 2 (regional/next wave)
+6) Romania
+7) Hungary
+8) Bulgaria
+9) Wider Balkan / Yugoslav integration review
+10) Smaller Western / Central minors review
+
+Batch roadmap
+Batch A: Italy
+Why grouped this way
+- Solo batch because Italy’s systemic footprint is large enough to require dedicated pacing and balance attention.
+
+Unique design pillar
+- “Prestige under strain”: regime stability vs fragmentation, service rivalry (army/navy/air), Mediterranean strategy, colonial overextension.
+
+Overlap to avoid
+- No Germany-lite expansion rail.
+- No instant meme empire branch that bypasses stabilization phase.
+
+Escalation risks to control
+- Over-accelerated naval/colonial snowball before mid-game divergence.
+- Excessive early war declarations from prestige branches.
+
+Batch B: Korea + Manchuria
+Why grouped this way
+- Paired East Asia redesign ensures explicit differentiation of adjacent tags with shared pressures.
+
+Korea pillar
+- “Sovereignty under compression”: national assertion via modernization, intelligence, resistance, and survival diplomacy.
+
+Manchuria pillar
+- “Legitimacy in manufacture”: puppet-derived governance legitimacy, extraction economy choices, and autonomy bids.
+
+Overlap to avoid
+- Do not mirror political structures with renamed focuses.
+- Korea != weaker Japan; Manchuria != conquest-only puppet client.
+
+Escalation risks to control
+- Prevent simultaneous runaway militarization in both tags.
+- Gate late assertiveness behind internal consolidation milestones.
+
+Batch C: Czechoslovakia + Poland
+Why grouped this way
+- Both are Central European pressure states but require opposite strategic feel.
+
+Czechoslovakia pillar
+- “Fortress industry under coalition strain”: internal national balancing, fortified defense economy, alliance dependence decisions.
+
+Poland pillar
+- “Encircled mobilizer”: officer corps/state cohesion tradeoffs, strategic balancing/federation options, stubborn survival doctrine.
+
+Overlap to avoid
+- CZE must not become generic democratic bunker.
+- POL must not become generic revanchist rush path.
+
+Escalation risks to control
+- Avoid deterministic collapse scripts that erase player agency too early.
+- Ensure defensive play can transition into consequential mid/late-game leverage.
+
+Batch D: Romania + Hungary + Bulgaria
+Why grouped this way
+- Shared Danubian/Balkan theater with intentionally contrasting motivations.
+
+Romania pillar
+- “Oil and court politics”: resource diplomacy + monarchy/elite/army balancing.
+
+Hungary pillar
+- “Bounded revisionism”: restoration politics under patron and capacity constraints.
+
+Bulgaria pillar
+- “Compact spoiler”: nimble revanchist diplomacy with high vulnerability.
+
+Overlap to avoid
+- No template “revisionist branch copied three times.”
+- Distinguish resource leverage (ROM), restoration ambition (HUN), and tactical opportunism (BUL).
+
+Escalation risks to control
+- Regional chain-reaction wars triggered too early by synchronized revision branches.
+- Patron lock-in removing meaningful autonomous choices.
+
+Batch E: Wider Balkan integration review
+Why grouped this way
+- Integration pass after batch D ensures cross-tag compatibility and crisis pacing.
+
+Regional pillar
+- “Interlocking pressures, distinct national logic.”
+
+Overlap to avoid
+- Avoid flattening Balkan tags into one diplomacy template.
+
+Escalation risks to control
+- Event/focus trigger collisions and contradictory claims timing.
+
+Batch F: Smaller Western / Central minors review
+Why grouped this way
+- Final tuning wave after core flashpoints are stabilized.
+
+Regional pillar
+- “Support-role distinctiveness”: each minor gets a concise but coherent strategic identity.
+
+Overlap to avoid
+- No filler branches solely for focus count inflation.
+
+Escalation risks to control
+- Scope creep and content bloat without replay-value gains.
+
+Country uniqueness matrix
+Italy
+1) Internal-political axis: regime stability vs fragmentation.
+2) Strategic-geography axis: Mediterranean multi-front allocation.
+3) Military identity: army/navy/air rivalry with asymmetric investment outcomes.
+4) Foreign-policy dilemma: prestige claims vs great-power insecurity.
+5) Why not ideology reskin: core tension is status management under structural overextension, not ideology swap.
+
+Korea
+1) Internal-political axis: sovereignty consolidation under external pressure.
+2) Strategic-geography axis: buffer survival between larger powers.
+3) Military identity: intelligence/resistance-centric national defense before full conventional parity.
+4) Foreign-policy dilemma: align, hedge, or resist under coercive neighborhood dynamics.
+5) Why not ideology reskin: gameplay is survival-modernization assertion, not imported bloc politics.
+
+Manchuria
+1) Internal-political axis: legitimacy crisis of manufactured statehood.
+2) Strategic-geography axis: exposed continental hinge tied to neighboring great-power interests.
+3) Military identity: security apparatus and autonomy-capable force transition.
+4) Foreign-policy dilemma: patron compliance vs gradual sovereign assertion.
+5) Why not ideology reskin: identity is about state authenticity and economic control, not generic ideology ladders.
+
+Czechoslovakia
+1) Internal-political axis: multinational balancing and cohesion.
+2) Strategic-geography axis: defensible industrial bastion in Central Europe.
+3) Military identity: fortress-industrial defensive doctrine.
+4) Foreign-policy dilemma: alliance dependency vs self-reliant deterrence.
+5) Why not ideology reskin: distinctiveness comes from engineered resilience and coalition strain, not ideology labels.
+
+Poland
+1) Internal-political axis: officer corps cohesion vs broader state integration.
+2) Strategic-geography axis: strategic encirclement management.
+3) Military identity: mobilization-heavy survival doctrine with selective counterstroke windows.
+4) Foreign-policy dilemma: federation/balancing ambitions vs immediate survival constraints.
+5) Why not ideology reskin: path identity is defined by exposure and consequence, not doctrine color.
+
+Romania
+1) Internal-political axis: monarchy/elite/army bargaining equilibrium.
+2) Strategic-geography axis: border pressure around resource-rich core.
+3) Military identity: resource-protection and flexible regional intervention posture.
+4) Foreign-policy dilemma: oil diplomacy between competing patrons.
+5) Why not ideology reskin: oil leverage and court politics drive decision logic.
+
+Hungary
+1) Internal-political axis: restoration-elite legitimacy contest.
+2) Strategic-geography axis: constrained interior position with revision targets.
+3) Military identity: constrained rebuilding with selective modernization.
+4) Foreign-policy dilemma: patron dependence vs autonomous revision pace.
+5) Why not ideology reskin: constrained ambition and legitimacy politics define play loop.
+
+Bulgaria
+1) Internal-political axis: revanchist pressure vs regime survivability.
+2) Strategic-geography axis: compact, vulnerable Balkan crossroads.
+3) Military identity: limited-force opportunism and timing-focused campaigns.
+4) Foreign-policy dilemma: short-term gains via opportunistic alignment vs strategic overcommitment.
+5) Why not ideology reskin: identity is sharp tactical opportunism under vulnerability.
+
+Major design risks
+- Over-template risk: copying branch skeletons across countries with renamed text.
+- Escalation pacing risk: too many early offensive unlocks compressing strategic arc.
+- Dependency risk: Balkan and Central Europe claim/event timing collisions.
+- Identity dilution risk: ideology symmetry overwhelming national internal logic.
+- Scope risk: turning tuning candidates into full rebuilds without justified uniqueness gains.
+- Technical risk: interaction with existing bespoke majors if diplomacy/event hooks are not staged.
+- Explicit deferred risk: U.S. revamp excluded due to fragile splinter/civil-war structure.
+
+Recommended implementation sequence (post-GER/FRA)
+1) Batch A (Italy) — full rebuild + validation pass.
+2) Batch B (Korea + Manchuria) — paired differentiation sprint.
+3) Batch C (Czechoslovakia + Poland) — Central Europe contrast pass.
+4) Batch D (Romania + Hungary + Bulgaria) — Danubian/Balkan contrast pass.
+5) Batch E (Wider Balkan integration review) — trigger/timing harmonization.
+6) Batch F (Smaller Western/Central minors review) — targeted tuning and selective redesign.
+
+Execution guardrails for all batches
+- Distinctness over size: reject branches that do not add a country-specific gameplay identity.
+- No map/province/state rewrites in this roadmap wave.
+- No filler branch inflation.
+- Keep early stabilization -> mid divergence -> late consolidation pacing.
+- Log risky dependencies before implementation starts in each batch memo.
+
+Deferred / lower-priority countries
+- USA: explicitly deferred (high-risk splinter/civil-war structure).
+- Non-priority peripheral tags not in Tier 1/2: hold for post-Batch F evaluation unless escalation tests identify a blocking gap.

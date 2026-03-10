@@ -1,0 +1,36 @@
+AOTA v19 Final Map Report
+=========================
+
+This replacement package rebuilds the final ownership/map-settlement pass on top of v18.
+
+Key Europe/Balkans settlement choices:
+- Germany holds Alsace-Lorraine and Posen.
+- Austria-Hungary (AUS) holds Liberec/Sudetenland, Moravia, Slovakia, the Danubian Plain, Transcarpathia, South Tyrol, Banat, Bosnia, Central Croatia, Lwow, Cernauti/Bukovina, Cluj, Partium, and Brasov/Transylvania.
+- Poland holds Kalisz, Krakow, Vilnius, and the central Polish core.
+- Romania holds Moldavia and Bessarabia, with claims on Cluj/Partium/Brasov and Cernauti.
+- Bulgaria holds Macedonia.
+- Yugoslavia holds Belgrade and Montenegro.
+
+Files explicitly corrected from malformed/partial overrides:
+- 78 - Bessarabia.txt
+- 82 - Banat.txt
+- 96 - Vilnius.txt
+- 106 - Macedonia.txt
+
+Additional settlement overrides added to reduce KR/vanilla leftovers:
+- 69 - Liberec.txt
+- 71 - Danubian Plain.txt
+- 73 - Transcarpathia.txt
+- 74 - Czech Silesia.txt
+- 76 - Cluj.txt
+- 80 - Cernauti.txt
+- 83 - Partium.txt
+- 84 - Brasov.txt
+- 105 - Montenegro.txt
+
+World-lore baseline preserved from v18:
+- Germany remains a partial colonial survivor rather than a full overseas victor.
+- The Ottoman Empire retains the Levant and Mesopotamian core.
+- Egypt controls Sinai and Suez.
+- India starts unified as an unstable Raj.
+- French/British/Belgian colonial holdings are normalized away from KR exile setups.

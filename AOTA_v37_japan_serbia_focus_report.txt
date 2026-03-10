@@ -1,0 +1,42 @@
+AOTA v37 Japan/Serbia Bespoke Focus Pass
+
+Remaining nations without bespoke focus trees at start of pass:
+- JAP (Japan): major scope candidate (4 research slots, large navy, strategic theater reach)
+- SER (Serbia): standard minor scope candidate (3 research slots, exposed frontier, regional balancing game)
+
+Comparative baselines reviewed:
+- Ottoman tree (AOTA_TUR): major benchmark for depth, pacing, and multi-branch payoff timing
+- British tree (AOTA_ENG): major benchmark for branch breadth and strategic divergence
+- Germany/France trees (AOTA_GER/AOTA_FRA): strong non-generic pacing reference
+
+Nation implementation memos:
+
+JAPAN (Major Scope)
+- Design intent: high-agency major with early stabilization, ideological divergence in mid-game, and late strategic doctrine/foreign-policy consolidation.
+- Branch plan:
+  1) Armistice stabilization spine
+  2) Political direction split (Imperial-authoritarian, constitutional cabinet, workers' reconstruction)
+  3) Industrial modernization (ports, arsenals, education, fuel and procurement)
+  4) Military modernization (army/navy/air + joint doctrine)
+  5) Foreign policy posture (continental, southern commercial, balancing/neutral conference)
+- Implemented focus count: 72
+- Major rewards profile: moderate PP/stability cadence, controlled factory injections, selective doctrine/tech boosts, no front-loaded snowball wargoal spam.
+- Risks: high branch count increases AI path variability; monitor late-branch convergence tuning in playtests.
+
+SERBIA (Standard Minor Scope)
+- Design intent: deep but constrained regional tree focused on regime settlement, industrial survivability, and defensive military readiness before wider Balkan diplomacy.
+- Branch plan:
+  1) Post-breakup stabilization spine
+  2) Political split (royalist emergency order, civic republicanism, workers' federal path)
+  3) Economic survivability and infrastructure repair
+  4) Military defensive modernization
+  5) Regional diplomacy and second-reckoning preparation
+- Implemented focus count: 65
+- Major rewards profile: measured manpower and industry gains, defense-first military progression, restrained diplomatic payoff.
+- Risks: shared Yugoslav strategic context means balance should be observed versus neighboring bespoke trees after AI simulations.
+
+Validation performed:
+- Focus script brace/sanity checks
+- Duplicate ID sanity check
+- Localisation coverage for all added focus IDs and descriptions
+- History file load_focus_tree routing for JAP and SER

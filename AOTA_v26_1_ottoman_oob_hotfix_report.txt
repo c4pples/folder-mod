@@ -1,0 +1,9 @@
+AOTA v26.1 Ottoman OOB Hotfix
+
+Changes:
+- history/countries/TUR - Ottoman Empire.txt
+  - oob = "AOTA_TUR_land"
+  - set_air_oob = "AOTA_TUR_air"
+
+Reason:
+- Ensures the Ottoman country history actually loads the custom land and air OOB files already present in history/units.

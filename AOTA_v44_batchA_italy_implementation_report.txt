@@ -1,0 +1,37 @@
+AOTA v44 Batch A Implementation Report - Italy (Expanded)
+
+Scope
+- Implement Batch A from the v43 roadmap: Italy bespoke focus tree.
+- Keep to focus/localization content only (no map/state/province assumptions).
+- Expand Italy to 170 focuses as requested.
+
+Implemented files
+- common/national_focus/AOTA_ITA.txt
+- localisation/english/AOTA_ITA_focus_l_english.yml
+
+Design execution notes
+- Base identity spine preserved:
+  - regime stability vs fragmentation (conciliation / primacy / crown arbitration)
+  - service rivalry (army/navy/air split)
+  - Mediterranean grand strategy and colonial overextension management
+  - prestige politics without instant early conquest rails
+- Tree expanded from initial 37 focuses to 170 total focuses.
+- Added long-form depth branches to support replayable progression instead of one-note rush timing:
+  - conciliation governance depth (12)
+  - blackshirt statecraft depth (12)
+  - crown settlement depth (12)
+  - industrial depth (20)
+  - army depth (20)
+  - navy depth (18)
+  - air depth (18)
+  - Mediterranean diplomacy depth (12)
+  - colonial governance depth (9)
+
+Pacing and escalation control
+- Early layer remains stabilization/planning heavy.
+- Deeper chains include date-gated nodes to delay major stacking into the mid game.
+- Expansion emphasizes incremental strategic consolidation rather than immediate conquest unlocks.
+
+Risk/dependency notes
+- Tree remains self-contained and avoids custom scripted effects/events/ideas to reduce hard dependencies.
+- Follow-up balance pass is recommended in live playtesting because this is now a high-focus-count major tree and cumulative modifiers can stack over long campaigns.

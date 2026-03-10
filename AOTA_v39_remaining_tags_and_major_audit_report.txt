@@ -1,0 +1,43 @@
+AOTA v39 Remaining Tag Coverage + Major Tree Audit
+
+Scope of this pass:
+- Audit remaining tags lacking AOTA bespoke focus trees.
+- Review major-tree baseline positioning for Germany and France against Ottoman/Britain scale.
+
+1) Coverage audit
+- History countries total: 41
+- AOTA bespoke focus files present: 43
+- Missing bespoke among history countries: 0 -> none
+- Distinct on-map owner/core tags in state history: 305
+- On-map tags lacking bespoke focus files: 269
+
+High-priority on-map non-bespoke candidates (regional impact first):
+- BRA, ARG, CHI, PRC, NOR, SWE, DEN, ETH, PER, SAU, IRQ, SYR, ISR, PAL, AFG, KOR, MAN, CZE, SLO
+
+2) Major tree snapshot (focus counts)
+- ENG: 154 focuses
+- TUR: 186 focuses
+- SOV: 177 focuses
+- USA: 49 focuses
+- GER: 46 focuses
+- FRA: 48 focuses
+- JAP: 72 focuses
+
+Observations:
+- Ottoman (TUR) and Britain (ENG) remain the high-water mark for branch breadth and late-game layering.
+- Germany (GER) and France (FRA) are bespoke and functional, but materially narrower than TUR/ENG in total breadth.
+- Japan (JAP) is now in the major-depth band relative to USA/GER/FRA, though still below TUR/ENG extremes.
+
+3) Germany/France review notes
+- GER/FRA both include political divergence and military/economic follow-through, but have tighter late-game branch depth than TUR/ENG.
+- FRA had an overstacked duplicated fascist popularity reward in FRA_integralist_leagues; normalized this pass to a single grant for cleaner balance.
+
+4) Recommended next implementation order for remaining bespoke work
+- Wave 1 (highest leverage): BRA, ARG, CHI/PRC, NOR/SWE/DEN, MEX-adjacent North America if activated in history setup.
+- Wave 2 (Middle East escalation relevance): IRQ, SYR, PAL/ISR, SAU, PER, AFG.
+- Wave 3 (long tail/peripheral): remaining owner/core tags that are vanilla placeholders, releasables, or low-impact entities.
+
+5) Guardrails
+- Keep no-bulk-dump rule: regional batches with per-tag design memo + benchmark + validation pass.
+- Preserve pacing discipline: early stabilization, mid divergence, late consolidation.
+- Avoid map/state/province rewrites during focus-only waves.

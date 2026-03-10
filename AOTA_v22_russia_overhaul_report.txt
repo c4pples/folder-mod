@@ -1,0 +1,20 @@
+AOTA v22 Russia Overhaul
+
+Built on the v21 Ottoman-overhaul base.
+
+Added:
+- Replaced the previous small Russian tree with a full major-power Russia focus tree (160+ focuses)
+- Six political routes:
+  * Republican Restoration
+  * Army Directorate
+  * Romanov Restoration
+  * Workers' Republic
+  * Free Territories
+  * National Union State
+- Dedicated industrial, military, reunification, and internal-crisis trunks
+- New Russian ideas, decisions, characters, events, localisation, cosmetics, portraits, and flag wiring
+- Country-history reinforcement for Russian reconstruction ideas
+
+Notes:
+- This is a best-effort content build and has not been engine-tested in HOI4 here.
+- Russian portraits are custom placeholders added for integration completeness.

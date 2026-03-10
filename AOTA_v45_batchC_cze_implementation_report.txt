@@ -1,0 +1,26 @@
+AOTA v45 Batch C Implementation Report - Czechoslovakia (Updated)
+
+Scope
+- Implement the Czechoslovakia portion of Batch C with a bespoke focus tree.
+- Limit changes to focus/localization/report files only.
+
+Implemented files
+- common/national_focus/AOTA_CZE.txt
+- localisation/english/AOTA_CZE_focus_l_english.yml
+
+Design execution notes
+- Internal-political axis: coalition management vs security-first governance vs state-arbiter settlement.
+- Strategic-geography axis: fortress layering, border intelligence, and central European deterrence timing.
+- Military identity axis: fortress doctrine + reserve mobility + air-defense integration.
+- Foreign-policy dilemma axis: alliance revival versus armed neutrality balancing.
+- Political options expansion: added dedicated deep political families for coalition, security, and arbiter tracks to strengthen replayable path differentiation.
+
+Pacing and escalation control
+- Early phase: political cohesion and industrial auditing.
+- Mid phase: fortification, mobilization, and alliance/self-reliance choices.
+- Late phase: deep specialization chains with date-gated milestones.
+
+Validation snapshot
+- Focus count updated: 124 focuses after political-path expansion.
+- Localization coverage updated for all added focus IDs and descriptions.
+- Brace balance checked in focus script.

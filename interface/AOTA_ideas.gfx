@@ -1,0 +1,34 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_AOTA_idea_christian_anarchism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_christian_anarchism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_pagan_revivalism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_pagan_revivalism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_anarcho_syndicalism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_anarcho_syndicalism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_monarchism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_monarchism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_distributism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_distributism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_futurist_nationalism"
+        texturefile = "gfx/interface/ideas/AOTA_idea_futurist_nationalism.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_unfinished_peace"
+        texturefile = "gfx/interface/ideas/AOTA_idea_unfinished_peace.tga"
+    }
+    spriteType = {
+        name = "GFX_AOTA_idea_veteran_radicalization"
+        texturefile = "gfx/interface/ideas/AOTA_idea_veteran_radicalization.tga"
+    }
+}

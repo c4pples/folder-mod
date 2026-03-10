@@ -1,0 +1,27 @@
+AOTA v29 Major Event Prose Pass
+
+Scope:
+- Major crisis and world-news events
+- Ottoman event chain
+- Russia event chain
+- Britain overhaul event chain
+- Super-event and regional reaction prose
+
+What this pass adds:
+- New event localization file with titles, descriptions, and option text for:
+  * AOTA_v10_major_events
+  * AOTA_v13_events
+  * AOTA_TUR_events
+  * AOTA_RUS_events
+  * AOTA_ENG_overhaul_events
+- Event prose written to reinforce the shared world thesis:
+  the armistice ended the war without resolving it
+
+Design intent:
+- Give events a more literary and cohesive narrative voice
+- Distinguish constitutional, revolutionary, imperial, and anti-state movements through prose
+- Make major crises feel like consequential historical moments rather than mechanical prompts
+
+Notes:
+- This is a localization/prose pass only
+- No event logic was changed

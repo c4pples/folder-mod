@@ -1,0 +1,56 @@
+Ashes of the Armistice v0.15
+KR Comparative Coverage Report
+
+Goal:
+Add missing structural scaffolding after comparing uploaded Kaiserreich archives against the current AOTA build.
+
+Present in uploaded KR common/ that were already represented in AOTA before this pass:
+- characters
+- countries
+- country_tags
+- decisions
+- dynamic_modifiers
+- factions
+- ideas
+- ideologies
+- national_focus
+- on_actions
+- opinion_modifiers
+- scripted_effects
+- scripted_localisation
+- scripted_triggers
+- ai_strategy
+- ai_strategy_plans
+- bookmarks
+- cosmetic_tags
+
+High-value KR common/ areas added as scaffolding in v0.15:
+- names
+- units
+- country_leader
+- unit_leader
+- mtth
+- modifier_definitions
+- script_constants
+- autonomous_states
+- peace_conference
+- scorers
+- ai_focuses
+- ai_templates
+- ai_equipment
+- technology_sharing
+
+Still intentionally not added in this comparative pass because they need bespoke design or carry higher parser risk:
+- special_projects
+- operations
+- raids
+- military_industrial_organization
+- scripted_guis
+- focus_inlay_windows
+- bop
+- doctrines
+- technologies
+- map_modes
+- a wide full-map replacement pass
+
+This pass is a structure/backbone pass, not a direct import of KR code or data.

@@ -1,0 +1,426 @@
+
+AOTA v20 Cosmetic Tag and Event Effect Audit
+===========================================
+
+Scope audited:
+- common/cosmetic_tags
+- set_cosmetic_tag references in common/events/history
+- release, add_core_of, add_claim_by, transfer_state, and declare_war_on target tag references in common/events/history
+
+Findings summary:
+- Defined normal country tags: 41
+- Defined cosmetic tags: 13
+- set_cosmetic_tag references found: 9
+- Event/state effect tag references audited: 361
+- Undefined cosmetic tag refs: 0
+- Undefined event/state tag refs in audited effect keys: 0
+
+Patch applied:
+- Rewrote common/cosmetic_tags/AOTA_cosmetic_tags.txt from wrapped `cosmetic_tags = { ... }` syntax to top-level HOI4 cosmetic tag definitions.
+
+Defined cosmetic tags:
+- AUS_danubian_federation
+- FIN_white_fortress
+- FRA_christian_communes
+- FRA_national_state
+- GER_constitutional_commonwealth
+- GER_free_communes
+- GER_sacred_realm
+- IRE_celtic_commonwealth
+- POR_atlantic_compact
+- UKR_free_territory
+- USA_christian_commonwealth
+- USA_corporate_commonwealth
+- USA_federal_continuity
+
+Referenced cosmetic tags:
+- AUS_danubian_federation
+- FIN_white_fortress
+- FRA_christian_communes
+- GER_constitutional_commonwealth
+- GER_sacred_realm
+- IRE_celtic_commonwealth
+- POR_atlantic_compact
+- UKR_free_territory
+- USA_corporate_commonwealth
+
+Unused but valid cosmetic tags:
+- FRA_national_state
+- GER_free_communes
+- USA_christian_commonwealth
+- USA_federal_continuity
+
+Undefined references still present:
+- none in the audited cosmetic/event-effect keys
+
+Referenced effect tags by file:
+- add_claim_by: common/national_focus/AOTA_POL.txt -> POL
+- add_claim_by: common/national_focus/AOTA_POL.txt -> POL
+- add_claim_by: common/national_focus/AOTA_POL.txt -> POL
+- add_claim_by: common/national_focus/AOTA_POL.txt -> POL
+- add_claim_by: common/national_focus/AOTA_BEL.txt -> BEL
+- add_claim_by: common/national_focus/AOTA_BEL.txt -> BEL
+- add_claim_by: common/national_focus/AOTA_BEL.txt -> BEL
+- add_claim_by: common/national_focus/AOTA_YUG.txt -> YUG
+- add_claim_by: common/national_focus/AOTA_YUG.txt -> YUG
+- add_claim_by: common/national_focus/AOTA_YUG.txt -> YUG
+- set_cosmetic_tag: common/national_focus/AOTA_IRE.txt -> IRE_celtic_commonwealth
+- set_cosmetic_tag: common/national_focus/AOTA_FIN.txt -> FIN_white_fortress
+- set_cosmetic_tag: common/national_focus/AOTA_POR.txt -> POR_atlantic_compact
+- set_cosmetic_tag: common/national_focus/AOTA_UKR.txt -> UKR_free_territory
+- set_cosmetic_tag: common/decisions/AOTA_v13_decisions.txt -> GER_constitutional_commonwealth
+- set_cosmetic_tag: common/decisions/AOTA_v13_decisions.txt -> GER_sacred_realm
+- set_cosmetic_tag: common/decisions/AOTA_v13_decisions.txt -> FRA_christian_communes
+- set_cosmetic_tag: common/decisions/AOTA_v13_decisions.txt -> USA_corporate_commonwealth
+- set_cosmetic_tag: common/decisions/AOTA_v13_decisions.txt -> AUS_danubian_federation
+- release: events/AOTA_events.txt -> AWU
+- release: events/AOTA_events.txt -> ANA
+- release: events/AOTA_events.txt -> APF
+- release: events/AOTA_events.txt -> ACG
+- release: events/AOTA_events.txt -> ASL
+- release: events/AOTA_events.txt -> CCW
+- release: events/AOTA_events.txt -> AWU
+- release: events/AOTA_events.txt -> ANA
+- release: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> ACG
+- add_core_of: events/AOTA_events.txt -> ACG
+- add_core_of: events/AOTA_events.txt -> ACG
+- add_core_of: events/AOTA_events.txt -> ACG
+- add_core_of: events/AOTA_events.txt -> ASL
+- add_core_of: events/AOTA_events.txt -> ASL
+- add_core_of: events/AOTA_events.txt -> ASL
+- add_core_of: events/AOTA_events.txt -> ASL
+- add_core_of: events/AOTA_events.txt -> CCW
+- add_core_of: events/AOTA_events.txt -> CCW
+- add_core_of: events/AOTA_events.txt -> CCW
+- add_core_of: events/AOTA_events.txt -> CCW
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> AWU
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> ANA
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_core_of: events/AOTA_events.txt -> APF
+- add_claim_by: events/AOTA_events.txt -> ITA
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> ACG
+- transfer_state: events/AOTA_events.txt -> ACG
+- transfer_state: events/AOTA_events.txt -> ACG
+- transfer_state: events/AOTA_events.txt -> ACG
+- transfer_state: events/AOTA_events.txt -> ASL
+- transfer_state: events/AOTA_events.txt -> ASL
+- transfer_state: events/AOTA_events.txt -> ASL
+- transfer_state: events/AOTA_events.txt -> ASL
+- transfer_state: events/AOTA_events.txt -> CCW
+- transfer_state: events/AOTA_events.txt -> CCW
+- transfer_state: events/AOTA_events.txt -> CCW
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> AWU
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> ANA
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- transfer_state: events/AOTA_events.txt -> APF
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- declare_war_on_target: events/AOTA_events.txt -> USA
+- add_core_of: history/states/28 - Alsace-Lorraine.txt -> GER
+- add_claim_by: history/states/28 - Alsace-Lorraine.txt -> FRA
+- add_core_of: history/states/39 - South Tyrol.txt -> AUS
+- add_claim_by: history/states/39 - South Tyrol.txt -> ITA
+- add_core_of: history/states/4 - Lower Austria.txt -> AUS
+- add_core_of: history/states/9 - Prague.txt -> AUS
+- add_core_of: history/states/43 - Central Hungary.txt -> AUS
+- add_claim_by: history/states/43 - Central Hungary.txt -> HUN
+- add_core_of: history/states/45 - Vojvodina.txt -> AUS
+- add_claim_by: history/states/45 - Vojvodina.txt -> YUG
+- add_claim_by: history/states/45 - Vojvodina.txt -> HUN
+- add_core_of: history/states/70 - Slovakia.txt -> AUS
+- add_claim_by: history/states/70 - Slovakia.txt -> HUN
+- add_core_of: history/states/75 - Moravia.txt -> AUS
+- add_core_of: history/states/102 - Carniola.txt -> AUS
+- add_claim_by: history/states/102 - Carniola.txt -> YUG
+- add_core_of: history/states/103 - Rijeka.txt -> AUS
+- add_claim_by: history/states/103 - Rijeka.txt -> ITA
+- add_claim_by: history/states/103 - Rijeka.txt -> YUG
+- add_claim_by: history/states/103 - Rijeka.txt -> HUN
+- add_core_of: history/states/104 - Bosnia.txt -> AUS
+- add_claim_by: history/states/104 - Bosnia.txt -> YUG
+- add_core_of: history/states/152 - Upper Austria.txt -> AUS
+- add_core_of: history/states/153 - North Tyrol.txt -> AUS
+- add_claim_by: history/states/153 - North Tyrol.txt -> ITA
+- add_core_of: history/states/154 - Alfold.txt -> AUS
+- add_claim_by: history/states/154 - Alfold.txt -> HUN
+- add_core_of: history/states/10 - Warsaw.txt -> POL
+- add_core_of: history/states/87 - Kalisz.txt -> POL
+- add_core_of: history/states/88 - Krakow.txt -> POL
+- add_claim_by: history/states/88 - Krakow.txt -> AUS
+- add_core_of: history/states/91 - Lwow.txt -> AUS
+- add_claim_by: history/states/91 - Lwow.txt -> POL
+- add_claim_by: history/states/91 - Lwow.txt -> SOV
+- add_core_of: history/states/86 - Posen.txt -> GER
+- add_claim_by: history/states/86 - Posen.txt -> POL
+- add_core_of: history/states/107 - Belgrade.txt -> YUG
+- add_claim_by: history/states/107 - Belgrade.txt -> AUS
+- add_core_of: history/states/109 - Central Croatia.txt -> AUS
+- add_claim_by: history/states/109 - Central Croatia.txt -> YUG
+- add_core_of: history/states/78 - Bessarabia.txt -> ROM
+- add_claim_by: history/states/78 - Bessarabia.txt -> SOV
+- add_core_of: history/states/82 - Banat.txt -> AUS
+- add_claim_by: history/states/82 - Banat.txt -> ROM
+- add_claim_by: history/states/82 - Banat.txt -> YUG
+- add_claim_by: history/states/82 - Banat.txt -> HUN
+- add_claim_by: history/states/82 - Banat.txt -> ROM
+- add_core_of: history/states/96 - Vilnius.txt -> POL
+- add_claim_by: history/states/96 - Vilnius.txt -> LIT
+- add_claim_by: history/states/96 - Vilnius.txt -> SOV
+- add_core_of: history/states/106 - Macedonia.txt -> BUL
+- add_claim_by: history/states/106 - Macedonia.txt -> YUG
+- add_claim_by: history/states/106 - Macedonia.txt -> GRE
+- add_core_of: history/states/744 - Qingdao.txt -> GER
+- add_core_of: history/states/877 - Togoland.txt -> GER
+- add_core_of: history/states/971 - New Cameroon.txt -> GER
+- add_core_of: history/states/547 - Kenya.txt -> ENG
+- add_core_of: history/states/548 - Uganda.txt -> ENG
+- add_core_of: history/states/905 - Zanzibar.txt -> GER
+- add_core_of: history/states/291 - Baghdad.txt -> TUR
+- add_core_of: history/states/812 - Basra.txt -> TUR
+- add_core_of: history/states/554 - Damascus.txt -> TUR
+- add_core_of: history/states/677 - Aleppo.txt -> TUR
+- add_core_of: history/states/454 - Jerusalem.txt -> TUR
+- add_core_of: history/states/1 - Corsica.txt -> FRA
+- add_claim_by: history/states/1 - Corsica.txt -> FRA
+- add_core_of: history/states/116 - Malta.txt -> ENG
+- add_core_of: history/states/272 - Senegal.txt -> FRA
+- add_core_of: history/states/274 - Gold Coast.txt -> ENG
+- add_core_of: history/states/295 - Leopoldville.txt -> BEL
+- add_core_of: history/states/295 - Leopoldville.txt -> COG
+- add_core_of: history/states/423 - Madura.txt -> RAJ
+- add_claim_by: history/states/423 - Madura.txt -> RAJ
+- add_core_of: history/states/436 - Raipur.txt -> RAJ
+- add_claim_by: history/states/436 - Raipur.txt -> RAJ
+- add_core_of: history/states/438 - Oudh.txt -> RAJ
+- add_claim_by: history/states/438 - Oudh.txt -> RAJ
+- add_core_of: history/states/458 - Tunis.txt -> FRA
+- add_core_of: history/states/459 - Algiers.txt -> FRA
+- add_core_of: history/states/459 - Algiers.txt -> ALG
+- add_core_of: history/states/460 - Constantine.txt -> FRA
+- add_core_of: history/states/460 - Constantine.txt -> ALG
+- add_core_of: history/states/513 - Southern Algeria.txt -> FRA
+- add_core_of: history/states/513 - Southern Algeria.txt -> ALG
+- add_core_of: history/states/514 - Sahara.txt -> FRA
+- add_core_of: history/states/514 - Sahara.txt -> ALG
+- add_core_of: history/states/515 - Chad.txt -> FRA
+- add_core_of: history/states/538 - Tshuapa.txt -> BEL
+- add_core_of: history/states/538 - Tshuapa.txt -> COG
+- add_core_of: history/states/539 - Gabon.txt -> FRA
+- add_core_of: history/states/541 - Damaraland.txt -> SAF
+- add_core_of: history/states/546 - Dodoma.txt -> GER
+- add_core_of: history/states/556 - Bamako.txt -> FRA
+- add_core_of: history/states/557 - Mauritania.txt -> FRA
+- add_core_of: history/states/558 - Southern Nigeria.txt -> ENG
+- add_core_of: history/states/633 - Marshall Islands.txt -> JAP
+- add_core_of: history/states/635 - New Caledonia.txt -> FRA
+- add_core_of: history/states/660 - Ubangi-Shari.txt -> FRA
+- add_core_of: history/states/662 - Northern Nigeria.txt -> ENG
+- add_core_of: history/states/665 - Gabes.txt -> FRA
+- add_core_of: history/states/700 - Sierra Leone.txt -> ENG
+- add_core_of: history/states/718 - Welle.txt -> BEL
+- add_core_of: history/states/718 - Welle.txt -> COG
+- add_core_of: history/states/805 - Oran.txt -> FRA
+- add_core_of: history/states/805 - Oran.txt -> ALG
+- add_core_of: history/states/806 - Conakry.txt -> FRA
+- add_core_of: history/states/807 - Ivory Coast.txt -> FRA
+- add_core_of: history/states/808 - Upper Volta.txt -> FRA
+- add_core_of: history/states/809 - Niger.txt -> FRA
+- add_core_of: history/states/813 - South Zambesia.txt -> ENG
+- add_core_of: history/states/815 - Patiala.txt -> RAJ
+- add_claim_by: history/states/815 - Patiala.txt -> RAJ
+- add_core_of: history/states/826 - Stung Treng.txt -> FRA
+- add_core_of: history/states/828 - Sabah.txt -> MAL
+- add_core_of: history/states/834 - Gambia.txt -> ENG
+- add_core_of: history/states/860 - Asawad.txt -> FRA
+- add_core_of: history/states/865 - Aures.txt -> FRA
+- add_core_of: history/states/865 - Aures.txt -> ALG
+- add_core_of: history/states/871 - Nyasaland.txt -> ENG
+- add_core_of: history/states/876 - Dahomey.txt -> FRA
+- add_core_of: history/states/878 - Hausaland.txt -> ENG
+- add_core_of: history/states/892 - Jubaland.txt -> ENG
+- add_core_of: history/states/899 - Ruvuma.txt -> GER
+- add_core_of: history/states/910 - Air.txt -> FRA
+- add_core_of: history/states/911 - Borku-Ennedi.txt -> FRA
+- add_core_of: history/states/913 - Bornu.txt -> ENG
+- add_core_of: history/states/918 - Bukoba.txt -> GER
+- add_core_of: history/states/927 - Douala.txt -> GER
+- add_core_of: history/states/952 - Adamawa.txt -> GER
+- add_core_of: history/states/955 - East Luangwa.txt -> ENG
+- add_core_of: history/states/956 - Northern Zambesia.txt -> ENG
+- add_core_of: history/states/958 - Barotseland.txt -> ENG
+- add_core_of: history/states/962 - Maroua.txt -> GER
+- add_core_of: history/states/964 - Ovambo & Omaheke.txt -> SAF
+- add_core_of: history/states/965 - Dar-es-Salaam.txt -> GER
+- add_core_of: history/states/967 - Adrar.txt -> FRA
+- add_core_of: history/states/969 - Rift Valley.txt -> ENG
+- add_core_of: history/states/970 - Mombasa.txt -> ENG
+- add_core_of: history/states/973 - Lagos.txt -> ENG
+- add_core_of: history/states/974 - Lower Sangha.txt -> GER
+- add_core_of: history/states/1025 - Congo-Ubangi.txt -> BEL
+- add_core_of: history/states/1025 - Congo-Ubangi.txt -> COG
+- add_core_of: history/states/1026 - Stanleyville.txt -> BEL
+- add_core_of: history/states/1026 - Stanleyville.txt -> COG
+- add_core_of: history/states/1032 - Greater Unyamwezi.txt -> GER
+- add_core_of: history/states/1095 - Timbuktu.txt -> FRA
+- add_core_of: history/states/1096 - Yaounde.txt -> GER
+- add_core_of: history/states/1097 - Skeleton Coast.txt -> SAF
+- add_core_of: history/states/1098 - Namaqualand.txt -> SAF
+- add_core_of: history/states/453 - Sinai.txt -> EGY
+- add_claim_by: history/states/453 - Sinai.txt -> TUR
+- add_core_of: history/states/753 - Suez Canal.txt -> EGY
+- add_claim_by: history/states/753 - Suez Canal.txt -> TUR
+- add_core_of: history/states/320 - Madras.txt -> RAJ
+- add_claim_by: history/states/320 - Madras.txt -> RAJ
+- add_core_of: history/states/424 - Andhra.txt -> RAJ
+- add_claim_by: history/states/424 - Andhra.txt -> RAJ
+- add_core_of: history/states/425 - Mysore.txt -> RAJ
+- add_claim_by: history/states/425 - Mysore.txt -> RAJ
+- add_core_of: history/states/426 - Orissa.txt -> RAJ
+- add_claim_by: history/states/426 - Orissa.txt -> RAJ
+- add_core_of: history/states/427 - Hyderabad.txt -> RAJ
+- add_claim_by: history/states/427 - Hyderabad.txt -> RAJ
+- add_core_of: history/states/428 - Gujarat.txt -> RAJ
+- add_claim_by: history/states/428 - Gujarat.txt -> RAJ
+- add_core_of: history/states/429 - Bombay.txt -> RAJ
+- add_claim_by: history/states/429 - Bombay.txt -> RAJ
+- add_core_of: history/states/430 - East Bengal.txt -> RAJ
+- add_claim_by: history/states/430 - East Bengal.txt -> RAJ
+- add_core_of: history/states/431 - West Bengal.txt -> RAJ
+- add_claim_by: history/states/431 - West Bengal.txt -> RAJ
+- add_core_of: history/states/432 - Assam.txt -> RAJ
+- add_claim_by: history/states/432 - Assam.txt -> RAJ
+- add_core_of: history/states/434 - Manipur.txt -> RAJ
+- add_claim_by: history/states/434 - Manipur.txt -> RAJ
+- add_core_of: history/states/435 - Bihar.txt -> RAJ
+- add_claim_by: history/states/435 - Bihar.txt -> RAJ
+- add_core_of: history/states/437 - Central Provinces.txt -> RAJ
+- add_claim_by: history/states/437 - Central Provinces.txt -> RAJ
+- add_core_of: history/states/439 - Delhi.txt -> RAJ
+- add_claim_by: history/states/439 - Delhi.txt -> RAJ
+- add_core_of: history/states/839 - Aravali.txt -> RAJ
+- add_claim_by: history/states/839 - Aravali.txt -> RAJ
+- add_core_of: history/states/867 - Travancore.txt -> RAJ
+- add_claim_by: history/states/867 - Travancore.txt -> RAJ
+- add_core_of: history/states/889 - Vizagapatnam.txt -> RAJ
+- add_claim_by: history/states/889 - Vizagapatnam.txt -> RAJ
+- add_core_of: history/states/893 - Berar.txt -> RAJ
+- add_claim_by: history/states/893 - Berar.txt -> RAJ
+- add_core_of: history/states/936 - Gwalior.txt -> RAJ
+- add_claim_by: history/states/936 - Gwalior.txt -> RAJ
+- add_core_of: history/states/966 - Chhattisgarh.txt -> RAJ
+- add_claim_by: history/states/966 - Chhattisgarh.txt -> RAJ
+- add_core_of: history/states/1057 - Jubbulpore.txt -> RAJ
+- add_claim_by: history/states/1057 - Jubbulpore.txt -> RAJ
+- add_core_of: history/states/286 - Cochinchina.txt -> FRA
+- add_core_of: history/states/333 - North Borneo.txt -> MAL
+- add_core_of: history/states/336 - Singapore.txt -> MAL
+- add_core_of: history/states/634 - Solomon Islands.txt -> AST
+- add_core_of: history/states/639 - Gilbert Islands.txt -> AST
+- add_core_of: history/states/641 - Tahiti.txt -> FRA
+- add_core_of: history/states/643 - Ellice Islands.txt -> AST
+- add_core_of: history/states/646 - Mariana Islands.txt -> JAP
+- add_core_of: history/states/647 - Palau.txt -> JAP
+- add_core_of: history/states/670 - Laos.txt -> FRA
+- add_core_of: history/states/671 - Tonkin.txt -> FRA
+- add_core_of: history/states/684 - Caroline Islands.txt -> JAP
+- add_core_of: history/states/725 - Nauru.txt -> AST
+- add_core_of: history/states/728 - Guangzhouwan.txt -> FRA
+- add_core_of: history/states/734 - Nendo.txt -> AST
+- add_core_of: history/states/737 - Bismarck Archipelago.txt -> AST
+- add_core_of: history/states/757 - NE. New Guinea.txt -> AST
+- add_core_of: history/states/827 - Annam.txt -> FRA
+- add_core_of: history/states/846 - Johore.txt -> MAL
+- add_core_of: history/states/856 - Mekong Delta.txt -> FRA
+- add_core_of: history/states/857 - Dong Bac.txt -> FRA
+- add_core_of: history/states/941 - Western Samoa.txt -> NZL
+- add_core_of: history/states/963 - Perak-Selangor.txt -> MAL
+- add_core_of: history/states/1002 - Pahang.txt -> MAL
+- add_core_of: history/states/284 - North Island.txt -> AST
+- add_core_of: history/states/284 - North Island.txt -> NZL
+- add_core_of: history/states/723 - South Island.txt -> AST
+- add_core_of: history/states/723 - South Island.txt -> NZL
+- add_core_of: history/states/69 - Liberec.txt -> AUS
+- add_core_of: history/states/71 - Danubian Plain.txt -> AUS
+- add_core_of: history/states/73 - Transcarpathia.txt -> AUS
+- add_core_of: history/states/73 - Transcarpathia.txt -> HUN
+- add_core_of: history/states/74 - Czech Silesia.txt -> AUS
+- add_core_of: history/states/76 - Cluj.txt -> AUS
+- add_claim_by: history/states/76 - Cluj.txt -> ROM
+- add_claim_by: history/states/76 - Cluj.txt -> ROM
+- add_core_of: history/states/80 - Cernauti.txt -> AUS
+- add_claim_by: history/states/80 - Cernauti.txt -> ROM
+- add_claim_by: history/states/80 - Cernauti.txt -> ROM
+- add_core_of: history/states/83 - Partium.txt -> AUS
+- add_claim_by: history/states/83 - Partium.txt -> ROM
+- add_claim_by: history/states/83 - Partium.txt -> ROM
+- add_core_of: history/states/84 - Brasov.txt -> AUS
+- add_claim_by: history/states/84 - Brasov.txt -> ROM
+- add_claim_by: history/states/84 - Brasov.txt -> ROM
+- add_core_of: history/states/105 - Montenegro.txt -> YUG

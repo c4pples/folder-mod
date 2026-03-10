@@ -1,0 +1,10 @@
+AOTA v33 Escalation Framework Pass
+
+Rebuilt package from the v30 base, including the later splinter intro, F/G/A prose, and escalation framework layers.
+
+Includes:
+- v31 splinter-state intro integration
+- v32 France/Germany/Austria event prose
+- v33 escalation ideas, triggers, effects, decisions, events, on_actions
+- date gates on major and minor explosive focuses
+- delayed minor escalation startup timings

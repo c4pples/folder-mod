@@ -1,0 +1,14 @@
+
+spriteTypes = {
+ spriteType = { name = "GFX_AOTA_super_american_shatter" texturefile = "gfx/event_pictures/AOTA_super_american_shatter.png" }
+ spriteType = { name = "GFX_AOTA_super_rhine_crisis" texturefile = "gfx/event_pictures/AOTA_super_rhine_crisis.png" }
+ spriteType = { name = "GFX_AOTA_super_danubian_collapse" texturefile = "gfx/event_pictures/AOTA_super_danubian_collapse.png" }
+ spriteType = { name = "GFX_AOTA_super_russian_reunification" texturefile = "gfx/event_pictures/AOTA_super_russian_reunification.png" }
+ spriteType = { name = "GFX_AOTA_super_ottoman_flames" texturefile = "gfx/event_pictures/AOTA_super_ottoman_flames.png" }
+ spriteType = { name = "GFX_AOTA_super_second_peace_dies" texturefile = "gfx/event_pictures/AOTA_super_second_peace_dies.png" }
+ spriteType = { name = "GFX_AOTA_news_ire_difficult" texturefile = "gfx/event_pictures/AOTA_news_ire_difficult.png" }
+ spriteType = { name = "GFX_AOTA_news_fin_difficult" texturefile = "gfx/event_pictures/AOTA_news_fin_difficult.png" }
+ spriteType = { name = "GFX_AOTA_news_por_difficult" texturefile = "gfx/event_pictures/AOTA_news_por_difficult.png" }
+ spriteType = { name = "GFX_AOTA_news_ukr_difficult" texturefile = "gfx/event_pictures/AOTA_news_ukr_difficult.png" }
+ spriteType = { name = "GFX_AOTA_news_foreign_reaction" texturefile = "gfx/event_pictures/AOTA_news_foreign_reaction.png" }
+}

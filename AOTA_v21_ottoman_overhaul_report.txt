@@ -1,0 +1,3 @@
+Ottoman overhaul built on v20 integrity patch.
+Focus count: 186
+Added: focus tree, ideas, events, decisions, characters, portraits, flags, cosmetic tags, country history wiring.

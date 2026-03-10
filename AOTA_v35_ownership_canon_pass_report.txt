@@ -1,0 +1,82 @@
+﻿AOTA v35 Ownership and Canon Pass
+
+Source of truth:
+- Uploaded vanilla states.zip for canonical state IDs and baseline state history
+
+What this pass did:
+1. Replaced the mod's entire overridden state layer with the uploaded vanilla state files
+2. Removed any leftover non-vanilla state files
+3. Re-applied a conservative set of lore overrides to ownership/controller/core setup
+
+Why this approach:
+- After state-ID normalization, many preserved history blocks were still carrying old mismatched ownership into now-correct vanilla geography
+- The safest canon fix was to reset to vanilla state history completely, then re-apply only deliberate alt-history ownership changes
+
+Canon override principles used:
+- Austria-Hungary survives in the Danubian core
+- Germany retains Alsace, Poznan, and a limited East African foothold
+- Ottomans retain the Levant and Mesopotamia
+- The Raj remains intact across India
+- Other regions fall back to the vanilla baseline unless previously established mod lore clearly required a change
+
+Counts:
+- Vanilla state files installed: 1046
+- Non-vanilla leftovers removed: 0
+- Ownership/canon overrides applied: 51
+
+Applied overrides:
+- 4: 4-Austria.txt -> AUS
+- 9: 9-Czechoslovakia.txt -> AUS
+- 28: 28-Alcase.txt -> GER
+- 39: 39-South Tyrol.txt -> AUS
+- 43: 43-Hungary.txt -> AUS
+- 45: 45-Yugoslavia.txt -> AUS
+- 69: 69-Sudatenland.txt -> AUS
+- 70: 70-Slovakia.txt -> AUS
+- 71: 71-East Slovakia.txt -> AUS
+- 73: 73-Carpathian Ruthenia.txt -> AUS
+- 74: 74-East Sudatenland.txt -> AUS
+- 75: 75-Moravia.txt -> AUS
+- 76: 76-Northern Transylvania.txt -> AUS
+- 80: 80-Bocovina.txt -> AUS
+- 82: 82-Banat.txt -> AUS
+- 83: 83-crisana.txt -> AUS
+- 84: 84-Transylvania.txt -> AUS
+- 86: 86-Poznan.txt -> GER
+- 91: 91-Tarnopol.txt -> AUS
+- 102: 102-North-Eastern Slovenia.txt -> AUS
+- 103: 103-Croatia.txt -> AUS
+- 104: 104-Bosnia.txt -> AUS
+- 109: 109-Eastern Croatia.txt -> AUS
+- 152: 152-Upper Austria.txt -> AUS
+- 153: 153-Tyrol.txt -> AUS
+- 154: 154-Southern plain.txt -> AUS
+- 291: 291-Iraq.txt -> TUR
+- 423: 423-Madras.txt -> RAJ
+- 424: 424-Andra Pradesh.txt -> RAJ
+- 425: 425-Mysore.txt -> RAJ
+- 426: 426-Orissa.txt -> RAJ
+- 427: 427-Hyderabad.txt -> RAJ
+- 428: 428-Western Indian States.txt -> RAJ
+- 429: 429-Bombay.txt -> RAJ
+- 430: 430-Bangladesh.txt -> RAJ
+- 431: 431-Calcutta.txt -> RAJ
+- 432: 432-Assam.txt -> RAJ
+- 434: 434-Arunachal Pradesh.txt -> RAJ
+- 435: 435-Bihar.txt -> RAJ
+- 436: 436-Central Provinces.txt -> RAJ
+- 437: 437-Central Indian Provinces.txt -> RAJ
+- 438: 438-United Provinces.txt -> RAJ
+- 439: 439-Delhi.txt -> RAJ
+- 454: 454-Israel.txt -> TUR
+- 455: 455-Jordan.txt -> TUR
+- 546: 546-Tanganyika.txt -> GER
+- 553: 553-Lebanon.txt -> TUR
+- 554: 554-Syria.txt -> TUR
+- 676: 676-Mosul.txt -> TUR
+- 677: 677-Aleppo.txt -> TUR
+- 680: 680-Deir-az-Zur.txt -> TUR
+
+Important note:
+- This is intentionally conservative. It prioritizes canon clarity and state-history sanity over preserving every earlier experimental ownership choice.
+- This should be a much safer foundation for future lore tuning and event targeting.

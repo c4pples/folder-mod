@@ -1,0 +1,21 @@
+AOTA v46 Batch C Implementation Report - Poland
+
+Scope
+- Implement Poland as the next Batch C country with ~120 focuses (delivered: 120).
+- Keep scope to focus/localization/report files only.
+
+Implemented files
+- common/national_focus/AOTA_POL.txt
+- localisation/english/AOTA_POL_focus_l_english.yml
+
+Design execution notes
+- Internal-political axis: Sanacja consolidation vs parliamentary compromise vs popular mobilization bloc.
+- Strategic-geography axis: encirclement management between Berlin and Moscow.
+- Military identity axis: officer corps reform, defense depth, and selective counterstroke doctrine.
+- Foreign-policy dilemma axis: regional federation outreach versus hard-balance realism.
+- Anti-reskin guardrail: Poland is built as exposed, stubborn, and politically consequential, not a generic ideology ladder.
+
+Validation snapshot
+- Focus count target met: 120 focuses.
+- Localization coverage added for all 120 focus IDs and descriptions.
+- Brace balance checked in focus script.

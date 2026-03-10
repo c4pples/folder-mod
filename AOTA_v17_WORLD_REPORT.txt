@@ -1,0 +1,17 @@
+AOTA v0.17 - Global Settlement Pass
+
+This pass clarifies the non-European world to better match the mod's lore:
+- Germany retains a limited colonial footprint through Qingdao, Togoland, and New Cameroon, while also keeping claims in East Africa.
+- Britain and France remain major imperial powers, but both are overstretched and increasingly brittle.
+- The Ottoman Empire still holds Baghdad, Basra, Damascus, Aleppo, and Jerusalem in 1936, making the Middle East a major unresolved crisis zone.
+- The Raj survives as a formal imperial structure, but it starts the game with instability and a dedicated focus tree.
+- Japan is framed as opportunistic rather than dominant, with setup aimed at treaty-port leverage and future expansion.
+- The United States begins more internationally withdrawn than triumphant, helping justify its weaker external posture before internal collapse.
+- Canada, Australia, New Zealand, South Africa, Egypt, Malaya, Indonesia, and Portugal now have clearer starting setups tied to the world lore.
+
+Files added/updated:
+- common/ideas/AOTA_v17_world_ideas.txt
+- localisation/english/AOTA_v17_world_l_english.yml
+- history/countries for CAN, RAJ, AST, NZL, SAF, EGY, MAL, INS, JAP, TUR, POR
+- history/states for Qingdao, Togoland, New Cameroon, Kenya, Uganda, Zanzibar, Baghdad, Basra, Damascus, Aleppo, Jerusalem
+- updated existing GER/ENG/FRA/BEL/USA histories with new world-state ideas

@@ -1,0 +1,27 @@
+﻿AOTA v34 State ID Normalization Pass
+
+Source of truth:
+- Uploaded vanilla states.zip provided by user
+
+What this pass did:
+- Normalized all overridden mod state files to the vanilla state-ID geography for matching IDs
+- Rebuilt each matched state from the vanilla state definition
+- Preserved the mod's state history block where possible, so owner/cores/claims/buildings/lore history remain in place
+- Replaced the mod's province list and top-level state metadata with the vanilla version for each matching ID
+- Renamed mod state files to the vanilla filename where applicable
+
+Counts:
+- Matched and normalized states: 158
+- Removed non-vanilla custom state IDs: 5
+
+Removed custom IDs:
+- 1095: 1095 - Timbuktu.txt
+- 1096: 1096 - Yaounde.txt
+- 1097: 1097 - Skeleton Coast.txt
+- 1098: 1098 - Namaqualand.txt
+- 1057: 1057 - Jubbulpore.txt
+
+Important note:
+- This pass is intentionally ID-first. It restores state IDs/province definitions to the uploaded vanilla baseline.
+- Because it preserves the mod's history blocks on top of vanilla geography, some colonial or lore ownership setups may now need follow-up tuning if they had previously depended on non-vanilla geography.
+- This is the correct direction for state-ID integrity, but a later ownership/canon pass may still be desirable.

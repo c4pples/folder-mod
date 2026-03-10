@@ -1,0 +1,22 @@
+AOTA v20 Integrity Patch
+
+Applied fixes:
+1. history/countries/SER - Serbia.txt
+   - load_focus_tree changed from aota_serbia_focus to aota_yugoslavia_focus
+
+2. common/scripted_triggers/AOTA_scripted_triggers.txt
+   - aota_nationalities_unbound replaced with aota_danubian_nationalities_crisis
+
+3. localisation/english/AOTA_v20_launch_loc_fix_l_english.yml
+   - added missing localisation for:
+     * aota_rhine_statute_revision
+     * aota_republican_watchfulness
+     * AOTA_revolutionary_rivalry_category
+     * aota_major_path_management
+     * aota_minor_miracle_paths
+     * AOTA_super_crises_category
+     * AOTA_branch_decisions_ger
+     * AOTA_branch_decisions_fra
+     * AOTA_branch_decisions_usa
+     * AOTA_branch_decisions_aus
+     * AOTA_foreign_reaction_category

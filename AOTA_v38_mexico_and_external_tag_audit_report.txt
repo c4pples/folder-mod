@@ -1,0 +1,20 @@
+AOTA v38 Mexico + External Tag Coverage Audit
+
+Prompt follow-up addressed: "What about Mexico and other nations like that?"
+
+Findings:
+- MEX appears on the map (state owners/cores) but had no AOTA bespoke focus file.
+- A large set of additional tags also appear in state owner/core data but are not part of the mod's bespoke-country history set.
+- Many of those tags are vanilla or peripheral entities; implementing all in one pass would exceed scope and likely violate balance pacing without dedicated country setup passes.
+
+Action taken this pass:
+- Added bespoke Mexico focus tree: common/national_focus/AOTA_MEX.txt
+  - Scope: standard minor/secondary regional power
+  - Focus count: 66
+  - Branches: political divergence, industry/economy, military modernization, foreign policy
+  - Pacing: stabilization -> divergence/reforms -> consolidation/payoff
+  - Balance: restrained early output, moderate mid-game buildup, late consolidation rewards
+- Added full Mexico localisation: localisation/english/AOTA_MEX_focus_l_english.yml
+
+Remaining broader "other nations" status:
+- Non-bespoke external tags remain and should be prioritized via a staged roadmap (regional batches with benchmark/balance passes) rather than a single bulk dump.

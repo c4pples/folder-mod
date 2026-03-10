@@ -1,0 +1,21 @@
+AOTA v42 Wave 1 Full Tree Redo Report
+
+Objective:
+- Replace prior Wave 1 near-template trees with fully reworked structures built around each nation's strategic fantasy.
+
+Nations redone:
+- BRA, ARG, CHI, PRC, NOR, SWE, DEN
+
+Per-nation structure (all tags):
+- Stabilization spine (5)
+- Political ideology split (authoritarian / parliamentary / social-republic)
+- Industrial-economic branch (12)
+- Military branch (12)
+- Foreign policy branch with diplomatic-vs-revisionist divergence and late consolidation (9)
+- Total focuses per nation: 62
+
+Design outcomes:
+- Each nation now has explicit ideological options and branch identity.
+- Conflict and limited expansion potential added via conditional regional wargoal focuses.
+- Pacing kept in mod style: early stabilization, mid divergence/reforms, late payoff.
+- Rewards remain restrained for minors while offering meaningful strategic differentiation.

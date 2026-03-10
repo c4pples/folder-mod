@@ -1,0 +1,41 @@
+AOTA v20 Localisation and Duplicate-ID Audit Report
+
+Scope
+- localisation/english/*.yml
+- events/*.txt event IDs
+- common/national_focus/*.txt focus IDs
+- common/ideas/*.txt idea definition keys
+
+Findings before patch
+- AOTA_l_english.yml had a duplicated l_english header and many duplicate keys caused by merged content blocks.
+- AOTA_v12_l_english.yml had a duplicated header/leading blank-line structure.
+- Duplicate event IDs existed in events/AOTA_events.txt:
+  - aota.310
+  - aota.320
+  - aota.330
+- Duplicate idea definition existed:
+  - aota_danubian_compromise
+
+Fixes applied
+- Rebuilt AOTA_l_english.yml with a single header and deduplicated internal keys.
+- Normalized localisation file headers and stripped leading blank lines.
+- Renamed the earlier duplicate events in events/AOTA_events.txt:
+  - aota.310 -> aota.312
+  - aota.320 -> aota.321
+  - aota.330 -> aota.331
+- Updated matching localisation keys in localisation/english/AOTA_v05_l_english.yml.
+- Updated focus references:
+  - common/national_focus/AOTA_POL.txt now calls aota.321
+  - common/national_focus/AOTA_BEL.txt now calls aota.331
+- Removed the duplicate idea definition for aota_danubian_compromise from common/ideas/AOTA_v12_ideas.txt.
+- Removed remaining duplicate localisation entries across versioned loc files.
+
+Post-patch validation
+- Localisation header issues: 0
+- Duplicate localisation keys: 0
+- Duplicate event IDs: 0
+- Duplicate focus IDs: 0
+- Duplicate idea keys: 0
+
+Notes
+- This was a static file audit. HOI4 engine validation still depends on an in-game launch and fresh logs.

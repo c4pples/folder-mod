@@ -1,0 +1,32 @@
+AOTA dedicated tag audit report
+
+Summary:
+- Audited defined tags in the mod against live script references.
+- Confirmed several undefined leftovers remained in v20.
+- Patched the live script files that still referenced KR-only or otherwise undefined tags.
+
+Defined AOTA country tags (41):
+ACC, ACG, ALG, ANA, APF, ASL, AST, AUS, AWU, BEL, BUL, CAN, CCW, COG, EGY, ENG, FIN, FRA, GER, GRE, HOL, HUN, INS, IRE, ITA, JAP, LIT, MAL, NZL, POL, POR, RAJ, ROM, SAF, SER, SOV, SPR, TUR, UKR, USA, YUG
+
+Undefined tag references found in live script before patch:
+- SLO in history/states/71 - Danubian Plain.txt
+- TRS in history/states/76 - Cluj.txt
+- TRS in history/states/82 - Banat.txt
+- TRS in history/states/83 - Partium.txt
+- TRS in history/states/84 - Brasov.txt
+- MNT in history/states/105 - Montenegro.txt
+
+Interpretation:
+- These were leftover state cores from older KR-style or temporary regional tags, not part of the canonical AOTA tag set.
+- They were not needed for the intended v20 settlement.
+
+Patches applied:
+- Removed add_core_of = SLO from Danubian Plain
+- Removed add_core_of = TRS from Cluj, Banat, Partium, Brasov
+- Removed add_core_of = MNT from Montenegro
+- Preserved AUS ownership/cores, YUG ownership/core, and ROM/HUN/YUG claims where intended
+
+Notes:
+- References to MAF, NFA, and GEA remain only inside report text, not live script.
+- POP/SIG/BAL tokens seen in state files were comments, not tags.
+- No additional undefined country-tag references were found in active script after this patch pass.

@@ -1,0 +1,27 @@
+AOTA v27 Major Flavor + Leaders Pass I
+
+Scope:
+- Germany
+- France
+- Britain
+- Austria-Hungary
+- Russia
+- Ottomans
+- United States
+- Italy
+
+What this pass adds:
+- New major flavor localisation file with thematic country intro text for the core majors
+- Expanded leader description coverage for major starting leaders
+- New character expansion file adding flavor-first advisors/figures for Germany, France, Austria-Hungary, the USA, and Italy
+- Advisor names, titles, and descriptions written to match the mod's draw-peace world thesis
+
+Design intent:
+- Reinforce a unified narrative voice across the majors
+- Make political paths feel rooted in social crisis rather than abstract ideology selection
+- Give the player stronger thematic context for who these regimes are and what kinds of people speak for them
+
+Notes:
+- This is a flavor-and-presentation pass, not a mechanical rebalance
+- New advisors are defined conservatively using traits already common in the mod
+- Country intro keys are provided for use in future intro events, tooltips, or country-selection flavor

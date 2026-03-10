@@ -1,0 +1,14 @@
+AOTA v23 Britain Overhaul
+
+Added:
+- Rebuilt Britain focus tree with 154 focuses
+- New Britain ideas, decisions, events, characters, cosmetic tags, localisation
+- History flag to surface Britain decision category
+
+Design pillars:
+- Parliamentary/Commonwealth reform
+- Imperial restoration
+- Guild socialist settlement
+- Market-radical boardroom state
+- Communal/anarchist Green and Pleasant path
+- Shared industrial, military, and foreign-policy branches

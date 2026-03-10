@@ -1,0 +1,30 @@
+AOTA v47 European Baseline 60-Focus Rollout Report
+
+Scope
+- Added baseline 60-focus bespoke trees for European tags lacking AOTA focus files in this repository at implementation time.
+- Kept scope to focus/localization/report files only.
+
+Tags implemented
+- ROM: 60 focuses + localization
+- HUN: 60 focuses + localization
+- BUL: 60 focuses + localization
+- YUG: 60 focuses + localization
+- GRE: 60 focuses + localization
+- ALB: 60 focuses + localization
+- AUS: 60 focuses + localization
+- BEL: 60 focuses + localization
+- HOL: 60 focuses + localization
+- LUX: 60 focuses + localization
+- SWI: 60 focuses + localization
+- SPA: 60 focuses + localization
+- POR: 60 focuses + localization
+- FIN: 60 focuses + localization
+- EST: 60 focuses + localization
+- LAT: 60 focuses + localization
+- LIT: 60 focuses + localization
+- IRE: 60 focuses + localization
+
+Design guardrails
+- Each tree includes: internal-political split, strategic-military track, economic mobilization track, and foreign-policy balancing track.
+- Pacing uses staged progression and limited date-gated nodes to avoid immediate snowballing.
+- No map/province/state rewrites and no custom scripted event dependencies in this rollout.

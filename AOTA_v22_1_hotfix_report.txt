@@ -1,0 +1,8 @@
+AOTA v22.1 Ottoman/Russia Hotfix
+
+Applied fixes:
+- Repaired malformed Ottoman character blocks in common/characters/AOTA_TUR_characters.txt by keeping country_leader/advisor blocks inside each character definition instead of closing the portraits block and character block prematurely.
+- Added missing localisation key SOV_reunification to localisation/english/AOTA_RUS_l_english.yml for add_named_threat usage in events/AOTA_RUS_events.txt.
+
+Notes:
+- Russia decisions structure was left unchanged pending live engine test, since static review did not confirm a hard parser issue there.

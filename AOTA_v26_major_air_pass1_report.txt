@@ -1,0 +1,34 @@
+AOTA v26 Major Air Pass I
+
+Scope:
+- Germany
+- Britain
+- Russia
+- Ottomans
+- France
+- Austria-Hungary
+- United States
+- Italy
+- Japan
+
+What this pass adds:
+- set_air_oob wiring in country history for all nine majors covered by the OOB passes
+- custom air OOB files under history/units
+- seeded fighter, tactical bomber, and limited naval bomber wings
+- includes the pass-II land OOB content for France, Austria-Hungary, USA, Italy, and Japan as the working base
+
+Design notes:
+- Germany: strong central fighter nucleus plus tactical support
+- Britain: home-defense fighter groups and a coastal naval-recon element
+- Russia: larger but uneven fighter arm with a frontier detachment
+- Ottomans: modest Anatolian air core and Levant detachment
+- France: defensive fighter concentration with Rhine cover
+- Austria-Hungary: small imperial air arm focused on surveillance and internal security
+- USA: underexpanded but credible pursuit force and training detachment
+- Italy: compact modernizing air arm with Alpine cover
+- Japan: aggressive fighter concentration plus a naval detachment
+
+Notes:
+- This is a best-effort scripted air seed pass and has not been engine-tested here.
+- Naval OOB references were left unchanged.
+- Air wings are intentionally modest and flavor-first rather than fully optimized.

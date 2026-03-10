@@ -1,0 +1,10 @@
+
+spriteTypes = {
+    spriteType = { name = "GFX_AOTA_news_rhine" texturefile = "gfx/event_pictures/AOTA_news_rhine.png" }
+    spriteType = { name = "GFX_AOTA_news_danube" texturefile = "gfx/event_pictures/AOTA_news_danube.png" }
+    spriteType = { name = "GFX_AOTA_news_usa_collapse" texturefile = "gfx/event_pictures/AOTA_news_usa_collapse.png" }
+    spriteType = { name = "GFX_AOTA_news_poland" texturefile = "gfx/event_pictures/AOTA_news_poland.png" }
+    spriteType = { name = "GFX_AOTA_news_belgium" texturefile = "gfx/event_pictures/AOTA_news_belgium.png" }
+    spriteType = { name = "GFX_AOTA_news_serbia" texturefile = "gfx/event_pictures/AOTA_news_serbia.png" }
+    spriteType = { name = "GFX_AOTA_news_spain" texturefile = "gfx/event_pictures/AOTA_news_spain.png" }
+}

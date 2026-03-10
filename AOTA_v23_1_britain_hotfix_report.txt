@@ -1,0 +1,15 @@
+AOTA v23.1 Britain Hotfix
+
+Patched from v23 Britain overhaul.
+
+Changes:
+- Added missing idea definition: aota_boardroom_realm
+- Added missing idea definition: aota_atlantic_market_league
+- Added localisation for both missing Britain ideas
+- Removed redundant re-application of aota_british_exhaustion from ENG_unfinished_peace_redux
+  and replaced it with a small war support reward to preserve opener value
+
+Rationale:
+- The two missing ideas were confirmed by the review as real focus reward holes.
+- Britain already starts with aota_british_exhaustion in history/countries/ENG - Britain.txt, so
+  re-adding it in the opener was likely redundant and risked confusing tuning.

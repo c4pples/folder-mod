@@ -1,0 +1,30 @@
+AOTA v48 European Minor Uniqueness Pass Report
+
+Scope
+- Reworked the 18 baseline European minor trees to be country-unique while remaining 60-focus minor-power arcs.
+- Kept scope to focus/localization/report content only.
+
+Country identity anchors applied
+- ROM: political=court; geography=oil corridor; military=resource-security army; foreign=brokerage.
+- HUN: political=revision; geography=danube transit; military=compact rebuilding force; foreign=patron timing.
+- BUL: political=revanchist; geography=balkan chokepoint; military=small-force opportunism; foreign=short-gain diplomacy.
+- YUG: political=federal; geography=adriatic interior; military=internal-security army; foreign=bloc balancing.
+- GRE: political=legitimacy; geography=aegean arc; military=littoral defense force; foreign=maritime alignment.
+- ALB: political=clan; geography=mountain coast; military=gendarmerie defense; foreign=survival hedging.
+- AUS: political=identity; geography=alpine corridor; military=fortified reserve doctrine; foreign=independence diplomacy.
+- BEL: political=pillar; geography=river frontline; military=delay-and-deny defense; foreign=alignment autonomy.
+- HOL: political=trade; geography=delta coast; military=waterline defense; foreign=commercial neutrality.
+- LUX: political=microstate; geography=transit node; military=civil defense core; foreign=guarantee autonomy.
+- SWI: political=cantonal; geography=alpine redoubt; military=militia fortification; foreign=armed neutrality.
+- SPA: political=stabilization; geography=iberian gate; military=recovery-first forces; foreign=continental dilemma.
+- POR: political=estate; geography=atlantic edge; military=naval-infantry balance; foreign=alliance sovereignty.
+- FIN: political=cohesion; geography=forest lake belt; military=mobile reserve doctrine; foreign=deterrence entanglement.
+- EST: political=consolidation; geography=baltic littoral; military=signal-border defense; foreign=guarantee self-reliance.
+- LAT: political=bargaining; geography=baltic transit; military=rapid reserve model; foreign=neighbor balancing.
+- LIT: political=authority; geography=corridor vulnerability; military=border-fortified doctrine; foreign=dual-neighbor diplomacy.
+- IRE: political=neutrality debate; geography=western approaches; military=limited expeditionary defense; foreign=neutral commitments.
+
+Minor-power guardrails
+- No tree is framed as a grand-scheme hegemon path.
+- Pacing stays early stabilization -> mid divergence -> late consolidation with date-gated checkpoints.
+- Political path choice remains present in every tree.

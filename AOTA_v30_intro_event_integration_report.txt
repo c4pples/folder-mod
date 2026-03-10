@@ -1,0 +1,17 @@
+AOTA v30 Intro Event Integration
+
+What this pass adds:
+- A new event file with startup intro events for the core majors:
+  Germany, France, Britain, Austria-Hungary, Russia, Ottomans, USA, and Italy
+- Additional deeper follow-up intro events for Britain, Russia, Ottomans, and the United States
+- A new on_actions file wiring those intro events into on_startup with staggered timing
+- Localization for the new intro event option text
+
+Design intent:
+- Make the flavor writing from the major flavor passes actually appear in-game
+- Give the player an authored sense of each major's political condition in the opening weeks
+- Stagger intros slightly so they do not all fire on the same day
+
+Notes:
+- This pass does not alter existing event logic
+- It adds parallel intro events rather than replacing earlier startup flavor events

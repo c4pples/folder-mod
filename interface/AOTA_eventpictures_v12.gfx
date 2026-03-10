@@ -1,0 +1,12 @@
+
+spriteTypes = {
+ spriteType = { name = "GFX_AOTA_news_rhine_forum" texturefile = "gfx/event_pictures/AOTA_news_rhine_forum.png" }
+ spriteType = { name = "GFX_AOTA_news_paris_strike" texturefile = "gfx/event_pictures/AOTA_news_paris_strike.png" }
+ spriteType = { name = "GFX_AOTA_news_danube_congress" texturefile = "gfx/event_pictures/AOTA_news_danube_congress.png" }
+ spriteType = { name = "GFX_AOTA_news_american_deadlock" texturefile = "gfx/event_pictures/AOTA_news_american_deadlock.png" }
+ spriteType = { name = "GFX_AOTA_news_imperial_conference" texturefile = "gfx/event_pictures/AOTA_news_imperial_conference.png" }
+ spriteType = { name = "GFX_AOTA_news_russian_warlords" texturefile = "gfx/event_pictures/AOTA_news_russian_warlords.png" }
+ spriteType = { name = "GFX_AOTA_news_milan_marches" texturefile = "gfx/event_pictures/AOTA_news_milan_marches.png" }
+ spriteType = { name = "GFX_AOTA_news_belgrade_coup" texturefile = "gfx/event_pictures/AOTA_news_belgrade_coup.png" }
+ spriteType = { name = "GFX_AOTA_news_general_crisis" texturefile = "gfx/event_pictures/AOTA_news_general_crisis.png" }
+}

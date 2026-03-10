@@ -1,0 +1,29 @@
+AOTA v40 Wave 1 Focus Implementation Report
+
+Implemented bespoke Wave 1 trees:
+- BRA (49 focuses)
+- ARG (49 focuses)
+- CHI (49 focuses)
+- PRC (49 focuses)
+- NOR (49 focuses)
+- SWE (49 focuses)
+- DEN (49 focuses)
+
+Per-tag branch schema:
+- Stabilization spine (5)
+- Political divergence (18 across three paths)
+- Industry/economy (10)
+- Military modernization (10)
+- Foreign policy (6)
+- Total per tag: 49
+
+Pacing model:
+- Early: stabilization and baseline administration/transport
+- Mid: political divergence + economic/military reform tracks
+- Late: consolidation focus integrating internal and external posture
+
+Balance guardrails applied:
+- restrained early factory/manpower outputs
+- gradual PP/stability cadence
+- limited doctrine/tech injections
+- no broad early war-goal/claims/core spam

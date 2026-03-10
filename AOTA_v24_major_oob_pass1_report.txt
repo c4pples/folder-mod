@@ -1,0 +1,23 @@
+AOTA v24 Major OOB Pass I
+
+Scope:
+- Germany
+- Britain
+- Russia
+- Ottomans
+
+What this pass adds:
+- Custom land OOB files under history/units
+- Distinct starting division templates for each major
+- Country history rewired to use custom AOTA land OOB names
+
+Design notes:
+- Germany: professional infantry core, border security, cavalry screen, experimental light mobile formation
+- Britain: compact home army, imperial garrisons, small mobile column
+- Russia: uneven rifle army, frontier divisions, guard detachment, cavalry screen
+- Ottomans: Anatolian core divisions, provincial security formations, Levant mobile column
+
+Notes:
+- This pass focuses on land OOB only.
+- Existing naval OOB references remain unchanged.
+- Templates are intentionally flavor-first rather than fully optimized meta builds.

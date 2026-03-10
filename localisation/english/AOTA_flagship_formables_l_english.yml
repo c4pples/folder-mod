@@ -1,0 +1,85 @@
+l_english:
+ aota_flagship_formables:0 "Strategic End-State Projects"
+ aota_flagship_formables_desc:0 "These transformations are not propaganda exercises; they are the legal and administrative machinery of a continent already bent into shape."
+
+ GER_prepare_reichsordnung:0 "Draft the Reichsordnung Decrees"
+ GER_prepare_reichsordnung_desc:0 "Military victory is insufficient. A coercive legal architecture must be written before Europe can be ruled as a single command space."
+ GER_proclaim_reichsordnung:0 "Proclaim the Continental Reichsordnung"
+ GER_proclaim_reichsordnung_desc:0 "With the central capitals occupied and resistance suppressed, Berlin can formalize a hard continental hierarchy."
+ GER_prepare_european_compact:0 "Convene the Continental Compact Congress"
+ GER_prepare_european_compact_desc:0 "A durable order requires institutional consent as well as force. Draft the charter that binds the continent under German strategic direction."
+ GER_charter_european_compact:0 "Charter the European Strategic Compact"
+ GER_charter_european_compact_desc:0 "Having secured the center, we can now codify a controlled federal security architecture under Berlin's stewardship."
+
+ FRA_prepare_continental_state:0 "Prepare the Continental Statutes"
+ FRA_prepare_continental_state_desc:0 "France can only claim restored primacy once the military map is translated into durable legal authority and internal discipline."
+ FRA_proclaim_etat_continental:0 "Proclaim the État Continental"
+ FRA_proclaim_etat_continental_desc:0 "Paris declares that Europe's balance has ended; French command now defines continental order."
+ FRA_prepare_republican_union:0 "Draft the Republican Union Charter"
+ FRA_prepare_republican_union_desc:0 "If force has reopened the strategic field, institutions must close it. A union of republics needs formal guarantees, command protocols, and a French center."
+ FRA_found_european_republican_union:0 "Found the European Republican Union"
+ FRA_found_european_republican_union_desc:0 "France will lead a managed alliance architecture that converts wartime coalitions into a permanent political system."
+
+ ITA_prepare_imperium_interioris_maris:0 "Prepare the Imperium Dossiers"
+ ITA_prepare_imperium_interioris_maris_desc:0 "The Mediterranean cannot be governed by slogans. Rome must prepare tax, naval, and military statutes for a true imperial command."
+ ITA_proclaim_imperium_interioris_maris:0 "Proclaim the Imperium Interioris Maris"
+ ITA_proclaim_imperium_interioris_maris_desc:0 "Control of the basin and its gates allows Rome to claim command over the Inner Sea as an imperial fact."
+ ITA_prepare_mediterranean_concordat:0 "Assemble the Mediterranean Concordat"
+ ITA_prepare_mediterranean_concordat_desc:0 "Italian security depends on binding rival shores into a structured pact before overextension breaks the state again."
+ ITA_found_mediterranean_concordat:0 "Found the Mediterranean Concordat"
+ ITA_found_mediterranean_concordat_desc:0 "Rome formalizes a regional order that favors Italian coordination over endless occupation."
+
+ aota_ger_reichsordnung_apparatus:0 "Reichsordnung Apparatus"
+ aota_ger_compact_leadership:0 "Strategic Compact Leadership"
+ aota_fra_continental_prestige:0 "Continental Prestige of France"
+ aota_fra_union_diplomatie:0 "Union Diplomatie d'État"
+ aota_ita_mare_nostrum_command:0 "Command of the Inner Sea"
+ aota_ita_concordat_authority:0 "Concordat Authority"
+
+ aota_formables.1.t:0 "The Continental Reichsordnung"
+ aota_formables.1.d:0 "German high command and party jurists have completed the decrees that fuse occupied capitals into a single coercive order. Europe is no longer treated as a set of treaties, but as one strategic machine under Berlin."
+ aota_formables.1.a:0 "The continent will obey."
+
+ aota_formables.2.t:0 "Charter of the Strategic Compact"
+ aota_formables.2.d:0 "Rather than annexing every frontier outright, Berlin has imposed a codified continental bloc: integrated commands, shared standards, and German veto power over strategic policy."
+ aota_formables.2.a:0 "Leadership through structure."
+
+ aota_formables.3.t:0 "France Proclaims the État Continental"
+ aota_formables.3.d:0 "The old settlement has been erased by force and administration alike. Paris now presents itself as the legitimate organizing center of a re-disciplined continent."
+ aota_formables.3.a:0 "France commands the balance."
+
+ aota_formables.4.t:0 "The European Republican Union"
+ aota_formables.4.d:0 "French diplomacy has converted wartime leverage into institutions: common security councils, coordinated procurement, and a republican constitutional frame built around Parisian prestige."
+ aota_formables.4.a:0 "Order through republican leadership."
+
+ aota_formables.5.t:0 "Imperium Interioris Maris"
+ aota_formables.5.d:0 "After securing the principal shores and approaches, Rome declares the Mediterranean an Italian-commanded strategic basin. Imperial administration, not mere expedition, now defines policy."
+ aota_formables.5.a:0 "The Inner Sea is ours to command."
+
+ aota_formables.6.t:0 "Mediterranean Concordat Signed"
+ aota_formables.6.d:0 "Italian statecraft has replaced permanent emergency with a managed regional order. The Concordat binds major littoral powers into a framework where Rome sets the security rhythm."
+ aota_formables.6.a:0 "Stability before overreach."
+
+ GER_reichsordnung:0 "Continental Reichsordnung"
+ GER_reichsordnung_DEF:0 "the Continental Reichsordnung"
+ GER_reichsordnung_ADJ:0 "Reichsordnung"
+
+ GER_european_compact:0 "European Strategic Compact"
+ GER_european_compact_DEF:0 "the European Strategic Compact"
+ GER_european_compact_ADJ:0 "Compact"
+
+ FRA_etat_continental:0 "État Continental Français"
+ FRA_etat_continental_DEF:0 "the État Continental Français"
+ FRA_etat_continental_ADJ:0 "Continental French"
+
+ FRA_republican_union:0 "European Republican Union"
+ FRA_republican_union_DEF:0 "the European Republican Union"
+ FRA_republican_union_ADJ:0 "Union"
+
+ ITA_imperium_interioris_maris:0 "Imperium Interioris Maris"
+ ITA_imperium_interioris_maris_DEF:0 "the Imperium Interioris Maris"
+ ITA_imperium_interioris_maris_ADJ:0 "Imperial Mediterranean"
+
+ ITA_mediterranean_concordat:0 "Mediterranean Concordat"
+ ITA_mediterranean_concordat_DEF:0 "the Mediterranean Concordat"
+ ITA_mediterranean_concordat_ADJ:0 "Concordat"

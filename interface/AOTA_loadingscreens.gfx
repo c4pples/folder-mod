@@ -1,0 +1,5 @@
+
+spriteTypes = {
+    spriteType = { name = "GFX_loadingscreen_2" texturefile = "gfx/loadingscreens/AOTA_USA_intro.png" noOfFrames = 1 }
+    spriteType = { name = "GFX_loadingscreen_3" texturefile = "gfx/loadingscreens/AOTA_ITA_intro.png" noOfFrames = 1 }
+}
