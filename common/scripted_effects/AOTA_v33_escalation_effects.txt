@@ -1,0 +1,2 @@
+AOTA_raise_minor_breathing_room = { if = { limit = { NOT = { has_idea = aota_minor_breathing_room } } add_ideas = aota_minor_breathing_room } }
+AOTA_lower_minor_breathing_room = { if = { limit = { has_idea = aota_minor_breathing_room } } remove_ideas = aota_minor_breathing_room }

@@ -1,0 +1,6 @@
+ideas = {
+  country = {
+    aota_rhine_statute_revision = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 justify_war_goal_time = -0.10 } }
+    aota_republican_watchfulness = { picture = idea_generic_national_unity allowed = { always = yes } modifier = { stability_factor = 0.05 political_power_gain = 0.03 } }
+  }
+}

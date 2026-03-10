@@ -1,0 +1,40 @@
+division_template = {
+    name = "Imperial Infantry Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Special Naval Landing Force"
+    divisions = {
+        marines = { x = 0 y = 0 } marines = { x = 1 y = 0 }
+        marines = { x = 0 y = 1 } marines = { x = 1 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Manchurian Security Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        infantry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+}
+division_template = {
+    name = "Independent Mixed Brigade"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        artillery_brigade = { x = 0 y = 1 } cavalry = { x = 1 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1st Imperial Division" location = 282 division_template = "Imperial Infantry Division" start_experience_factor = 0.22 }
+    division = { name = "2nd Imperial Division" location = 282 division_template = "Imperial Infantry Division" start_experience_factor = 0.20 }
+    division = { name = "SNLF Yokosuka" location = 282 division_template = "Special Naval Landing Force" start_experience_factor = 0.20 }
+    division = { name = "SNLF Kure" location = 286 division_template = "Special Naval Landing Force" start_experience_factor = 0.20 }
+    division = { name = "Manchurian Security Division" location = 285 division_template = "Manchurian Security Division" start_experience_factor = 0.10 }
+    division = { name = "1st Independent Mixed Brigade" location = 283 division_template = "Independent Mixed Brigade" start_experience_factor = 0.14 }
+}

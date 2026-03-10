@@ -1,0 +1,144 @@
+
+add_namespace = aota
+
+news_event = {
+    id = aota.1300
+    title = aota_1300_title
+    desc = aota_1300_desc
+    picture = GFX_AOTA_super_american_shatter
+    major = yes
+    trigger = { has_global_flag = AOTA_super_american_shatter }
+    option = { name = aota_1300_a }
+}
+news_event = {
+    id = aota.1301
+    title = aota_1301_title
+    desc = aota_1301_desc
+    picture = GFX_AOTA_super_rhine_crisis
+    major = yes
+    trigger = { has_global_flag = AOTA_super_rhine_crisis }
+    option = { name = aota_1301_a }
+}
+news_event = {
+    id = aota.1302
+    title = aota_1302_title
+    desc = aota_1302_desc
+    picture = GFX_AOTA_super_danubian_collapse
+    major = yes
+    trigger = { has_global_flag = AOTA_super_danubian_collapse }
+    option = { name = aota_1302_a }
+}
+news_event = {
+    id = aota.1303
+    title = aota_1303_title
+    desc = aota_1303_desc
+    picture = GFX_AOTA_super_russian_reunification
+    major = yes
+    trigger = { has_global_flag = AOTA_super_russian_reunification }
+    option = { name = aota_1303_a }
+}
+news_event = {
+    id = aota.1304
+    title = aota_1304_title
+    desc = aota_1304_desc
+    picture = GFX_AOTA_super_ottoman_flames
+    major = yes
+    trigger = { has_global_flag = AOTA_super_ottoman_flames }
+    option = { name = aota_1304_a }
+}
+news_event = {
+    id = aota.1305
+    title = aota_1305_title
+    desc = aota_1305_desc
+    picture = GFX_AOTA_super_second_peace_dies
+    major = yes
+    trigger = { has_global_flag = AOTA_super_second_peace_dies }
+    option = { name = aota_1305_a }
+}
+
+country_event = {
+    id = aota.1310
+    title = aota_1310_title
+    desc = aota_1310_desc
+    picture = GFX_AOTA_news_ire_difficult
+    trigger = { tag = IRE }
+    mean_time_to_happen = { days = 18 }
+    option = { name = aota_1310_a add_political_power = 50 add_stability = -0.02 }
+    option = { name = aota_1310_b add_war_support = 0.04 }
+}
+country_event = {
+    id = aota.1311
+    title = aota_1311_title
+    desc = aota_1311_desc
+    picture = GFX_AOTA_news_fin_difficult
+    trigger = { tag = FIN }
+    mean_time_to_happen = { days = 20 }
+    option = { name = aota_1311_a add_war_support = 0.05 }
+    option = { name = aota_1311_b add_stability = 0.03 }
+}
+country_event = {
+    id = aota.1312
+    title = aota_1312_title
+    desc = aota_1312_desc
+    picture = GFX_AOTA_news_por_difficult
+    trigger = { tag = POR }
+    mean_time_to_happen = { days = 20 }
+    option = { name = aota_1312_a add_political_power = 50 }
+    option = { name = aota_1312_b navy_experience = 10 }
+}
+country_event = {
+    id = aota.1313
+    title = aota_1313_title
+    desc = aota_1313_desc
+    picture = GFX_AOTA_news_ukr_difficult
+    trigger = { tag = UKR }
+    mean_time_to_happen = { days = 16 }
+    option = { name = aota_1313_a add_popularity = { ideology = anarchism popularity = 0.04 } }
+    option = { name = aota_1313_b add_popularity = { ideology = communism popularity = 0.04 } }
+}
+
+country_event = {
+    id = aota.1320
+    title = aota_1320_title
+    desc = aota_1320_desc
+    picture = GFX_AOTA_news_foreign_reaction
+    trigger = { tag = ENG has_global_flag = AOTA_super_american_shatter }
+    option = { name = aota_1320_a add_political_power = 40 }
+    option = { name = aota_1320_b add_war_support = 0.03 }
+}
+country_event = {
+    id = aota.1321
+    title = aota_1321_title
+    desc = aota_1321_desc
+    picture = GFX_AOTA_news_foreign_reaction
+    trigger = { tag = GER has_global_flag = AOTA_super_american_shatter }
+    option = { name = aota_1321_a add_political_power = 40 }
+    option = { name = aota_1321_b add_stability = 0.02 }
+}
+country_event = {
+    id = aota.1322
+    title = aota_1322_title
+    desc = aota_1322_desc
+    picture = GFX_AOTA_news_foreign_reaction
+    trigger = { tag = FRA has_global_flag = AOTA_super_american_shatter }
+    option = { name = aota_1322_a add_popularity = { ideology = communism popularity = 0.02 } }
+    option = { name = aota_1322_b add_popularity = { ideology = anarchism popularity = 0.02 } }
+}
+country_event = {
+    id = aota.1323
+    title = aota_1323_title
+    desc = aota_1323_desc
+    picture = GFX_AOTA_news_foreign_reaction
+    trigger = { OR = { tag = ENG tag = GER tag = FRA } has_global_flag = AOTA_super_rhine_crisis }
+    option = { name = aota_1323_a add_war_support = 0.03 }
+    option = { name = aota_1323_b add_stability = 0.02 }
+}
+country_event = {
+    id = aota.1324
+    title = aota_1324_title
+    desc = aota_1324_desc
+    picture = GFX_AOTA_news_foreign_reaction
+    trigger = { OR = { tag = AUS tag = ROM tag = YUG tag = HUN } has_global_flag = AOTA_super_danubian_collapse }
+    option = { name = aota_1324_a add_war_support = 0.04 }
+    option = { name = aota_1324_b add_stability = -0.02 }
+}

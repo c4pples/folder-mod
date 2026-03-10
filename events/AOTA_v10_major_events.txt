@@ -1,0 +1,92 @@
+
+add_namespace = aota
+
+country_event = {
+    id = aota.1000
+    title = aota_1000_title
+    desc = aota_1000_desc
+    picture = GFX_AOTA_news_rhine_forum
+    trigger = { tag = GER has_completed_focus = GER_unfinished_peace }
+    mean_time_to_happen = { days = 20 }
+    option = { name = aota_1000_a add_political_power = 50 add_stability = 0.02 }
+    option = { name = aota_1000_b add_war_support = 0.03 add_named_threat = { threat = 1 name = aota_1000_b } }
+}
+country_event = {
+    id = aota.1001
+    title = aota_1001_title
+    desc = aota_1001_desc
+    picture = GFX_AOTA_news_paris_strike
+    trigger = { tag = FRA has_government = anarchism }
+    mean_time_to_happen = { days = 25 }
+    option = { name = aota_1001_a add_stability = 0.03 add_popularity = { ideology = anarchism popularity = 0.02 } }
+    option = { name = aota_1001_b add_political_power = 40 add_popularity = { ideology = communism popularity = 0.03 } }
+}
+country_event = {
+    id = aota.1002
+    title = aota_1002_title
+    desc = aota_1002_desc
+    picture = GFX_AOTA_news_danube_congress
+    trigger = { tag = AUS }
+    mean_time_to_happen = { days = 28 }
+    option = { name = aota_1002_a add_ideas = aota_danubian_compromise }
+    option = { name = aota_1002_b add_stability = -0.03 add_war_support = 0.05 }
+}
+country_event = {
+    id = aota.1003
+    title = aota_1003_title
+    desc = aota_1003_desc
+    picture = GFX_AOTA_news_american_deadlock
+    trigger = { tag = USA }
+    mean_time_to_happen = { days = 35 }
+    option = { name = aota_1003_a add_ideas = aota_american_contingency_plans add_stability = -0.02 }
+    option = { name = aota_1003_b add_political_power = 60 add_popularity = { ideology = market_radicalism popularity = 0.03 } }
+}
+country_event = {
+    id = aota.1004
+    title = aota_1004_title
+    desc = aota_1004_desc
+    picture = GFX_AOTA_news_imperial_conference
+    trigger = { tag = ENG }
+    mean_time_to_happen = { days = 24 }
+    option = { name = aota_1004_a add_ideas = aota_imperial_preparedness }
+    option = { name = aota_1004_b add_political_power = 50 add_stability = 0.02 }
+}
+country_event = {
+    id = aota.1005
+    title = aota_1005_title
+    desc = aota_1005_desc
+    picture = GFX_AOTA_news_russian_warlords
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 26 }
+    option = { name = aota_1005_a add_ideas = aota_russian_reunification_staff }
+    option = { name = aota_1005_b add_stability = -0.03 add_war_support = 0.04 }
+}
+country_event = {
+    id = aota.1006
+    title = aota_1006_title
+    desc = aota_1006_desc
+    picture = GFX_AOTA_news_milan_marches
+    trigger = { tag = ITA }
+    mean_time_to_happen = { days = 22 }
+    option = { name = aota_1006_a add_ideas = aota_italian_industrial_trusts }
+    option = { name = aota_1006_b add_political_power = 50 add_war_support = 0.02 }
+}
+country_event = {
+    id = aota.1010
+    title = aota_1010_title
+    desc = aota_1010_desc
+    picture = GFX_AOTA_news_belgrade_coup
+    trigger = { OR = { tag = SER tag = YUG } }
+    mean_time_to_happen = { days = 40 }
+    option = { name = aota_1010_a add_stability = -0.03 add_war_support = 0.04 }
+    option = { name = aota_1010_b add_political_power = 40 }
+}
+news_event = {
+    id = aota.1090
+    title = aota_1090_title
+    desc = aota_1090_desc
+    picture = GFX_AOTA_news_general_crisis
+    major = yes
+    trigger = { has_global_flag = AOTA_global_crisis }
+    option = { name = aota_1090_a }
+}

@@ -1,0 +1,3 @@
+# AOTA v0.15 regional reactions scaffold
+# Placeholder event shell file added during KR comparative pass.
+# Use for future branch-specific foreign reactions and dynamic regional follow-ups.

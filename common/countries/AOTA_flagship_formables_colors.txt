@@ -1,0 +1,10 @@
+color = {
+	GER_reichsordnung = rgb { 35 35 35 }
+	GER_european_compact = rgb { 65 80 125 }
+
+	FRA_etat_continental = rgb { 45 80 150 }
+	FRA_republican_union = rgb { 70 115 170 }
+
+	ITA_imperium_interioris_maris = rgb { 70 115 70 }
+	ITA_mediterranean_concordat = rgb { 90 140 95 }
+}

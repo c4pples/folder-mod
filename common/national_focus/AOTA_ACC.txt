@@ -1,0 +1,37 @@
+﻿
+focus_tree = {
+    id = aota_acc_focus
+    country = { factor = 0 modifier = { add = 10 tag = ACC } }
+    default = no
+
+    focus = { id = ACC_hold_the_capitol_line icon = GFX_goal_generic_defence x = 6 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_political_power = 75 add_stability = 0.03 add_ideas = aota_acc_remnant_bureaucracy } }
+    focus = { id = ACC_emergency_judiciary icon = GFX_goal_generic_political_pressure x = 4 y = 1 cost = 5 prerequisite = { focus = ACC_hold_the_capitol_line } completion_reward = { add_stability = 0.03 } }
+    focus = { id = ACC_rally_the_governors icon = GFX_goal_support_democracy x = 6 y = 1 cost = 5 prerequisite = { focus = ACC_hold_the_capitol_line } completion_reward = { add_political_power = 50 } }
+    focus = { id = ACC_secure_the_arsenals icon = GFX_goal_generic_construct_mil_factory x = 8 y = 1 cost = 5 prerequisite = { focus = ACC_hold_the_capitol_line } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+
+    focus = { id = ACC_bill_of_national_salvation icon = GFX_goal_generic_national_unity x = 3 y = 2 cost = 7 prerequisite = { focus = ACC_emergency_judiciary } completion_reward = { add_ideas = aota_acc_bill_of_salvation } }
+    focus = { id = ACC_restore_congressional_authority icon = GFX_goal_support_democracy x = 5 y = 2 cost = 7 prerequisite = { focus = ACC_rally_the_governors } completion_reward = { add_stability = 0.05 set_politics = { ruling_party = democratic elections_allowed = yes } } }
+    focus = { id = ACC_federal_loyalist_officers icon = GFX_goal_generic_army_doctrines x = 7 y = 2 cost = 7 prerequisite = { focus = ACC_rally_the_governors } completion_reward = { army_experience = 15 add_war_support = 0.03 } }
+    focus = { id = ACC_war_production_board icon = GFX_goal_generic_construct_mil_factory x = 9 y = 2 cost = 7 prerequisite = { focus = ACC_secure_the_arsenals } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } add_ideas = aota_acc_war_production } }
+
+    focus = { id = ACC_continental_command icon = GFX_goal_generic_prepare_for_war x = 7 y = 3 cost = 7 prerequisite = { focus = ACC_federal_loyalist_officers focus = ACC_war_production_board } completion_reward = { army_experience = 20 add_war_support = 0.05 } }
+    focus = { id = ACC_reach_to_the_pacific icon = GFX_goal_generic_improve_relations x = 4 y = 4 cost = 10 prerequisite = { focus = ACC_restore_congressional_authority } completion_reward = { add_political_power = 50 country_event = { id = aota.820 days = 1 } } }
+    focus = { id = ACC_demand_the_swearing_of_oaths icon = GFX_goal_generic_political_pressure x = 7 y = 4 cost = 10 prerequisite = { focus = ACC_continental_command } completion_reward = { add_war_support = 0.06 } }
+    focus = { id = ACC_reunification_campaign icon = GFX_goal_generic_major_war x = 10 y = 4 cost = 10 prerequisite = { focus = ACC_continental_command } available = { date > 1938.1.1 } completion_reward = { add_stability = -0.02 add_war_support = 0.08 } }
+
+    focus = { id = ACC_a_second_founding icon = GFX_goal_support_democracy x = 5 y = 5 cost = 10 prerequisite = { focus = ACC_reach_to_the_pacific focus = ACC_demand_the_swearing_of_oaths } available = { date > 1938.3.1 } completion_reward = { add_stability = 0.08 add_political_power = 75 remove_ideas = aota_acc_remnant_bureaucracy } }
+    focus = { id = ACC_the_union_must_endure icon = GFX_goal_generic_demand_territory_or_war x = 9 y = 5 cost = 10 prerequisite = { focus = ACC_reunification_campaign } available = { date > 1938.3.1 } completion_reward = { add_war_support = 0.1 add_ideas = aota_acc_union_must_endure } }
+}

@@ -1,0 +1,7 @@
+ACC = "countries/ACC - American Constitutional Coalition.txt"
+AWU = "countries/AWU - American Workers Union.txt"
+ANA = "countries/ANA - American National Authority.txt"
+APF = "countries/APF - Pacific Federation.txt"
+ACG = "countries/ACG - American Corporate Commonwealth.txt"
+ASL = "countries/ASL - Southern Agrarian League.txt"
+CCW = "countries/CCW - Christian Commonwealth.txt"

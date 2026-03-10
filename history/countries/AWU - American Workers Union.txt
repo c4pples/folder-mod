@@ -1,0 +1,11 @@
+capital = 395
+set_research_slots = 3
+set_stability = 0.34
+set_war_support = 0.45
+create_country_leader = {
+    name = AWU_norman_thomas
+    picture = GFX_Portrait_Leader_Generic
+    ideology = anarcho_syndicalist_subtype
+}
+set_politics = { ruling_party = communism elections_allowed = no }
+set_popularities = { communism = 66 democratic = 8 neutrality = 10 fascism = 16 }

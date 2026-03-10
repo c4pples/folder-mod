@@ -1,0 +1,32 @@
+﻿
+focus_tree = {
+    id = aota_acg_focus
+    country = { factor = 0 modifier = { add = 10 tag = ACG } }
+    default = no
+
+    focus = { id = ACG_boardroom_cabinet icon = GFX_goal_generic_trade x = 5 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_political_power = 80 add_ideas = aota_acg_boardroom_state } }
+    focus = { id = ACG_private_security_contracts icon = GFX_goal_generic_allies_build_infantry x = 3 y = 1 cost = 5 prerequisite = { focus = ACG_boardroom_cabinet } completion_reward = { army_experience = 10 add_ideas = aota_acg_private_security } }
+    focus = { id = ACG_creditor_republic icon = GFX_goal_generic_political_pressure x = 5 y = 1 cost = 5 prerequisite = { focus = ACG_boardroom_cabinet } completion_reward = { add_stability = 0.03 } }
+    focus = { id = ACG_mercantile_reconquest icon = GFX_goal_generic_major_war x = 7 y = 1 cost = 5 prerequisite = { focus = ACG_boardroom_cabinet } completion_reward = { add_war_support = 0.05 } }
+
+    focus = { id = ACG_corporate_rail_grid icon = GFX_goal_generic_construct_infrastructure x = 3 y = 2 cost = 7 prerequisite = { focus = ACG_private_security_contracts } completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    focus = { id = ACG_munitions_trusts icon = GFX_goal_generic_construct_mil_factory x = 5 y = 2 cost = 7 prerequisite = { focus = ACG_creditor_republic } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    focus = { id = ACG_hire_foreign_specialists icon = GFX_goal_generic_air_fighter2 x = 7 y = 2 cost = 7 prerequisite = { focus = ACG_mercantile_reconquest } completion_reward = { air_experience = 10 navy_experience = 10 } }
+
+    focus = { id = ACG_dividends_before_dawn icon = GFX_goal_generic_construct_civ_factory x = 4 y = 3 cost = 7 prerequisite = { focus = ACG_corporate_rail_grid focus = ACG_munitions_trusts } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    focus = { id = ACG_shareholder_legions icon = GFX_goal_generic_army_doctrines x = 6 y = 3 cost = 7 prerequisite = { focus = ACG_munitions_trusts focus = ACG_hire_foreign_specialists } completion_reward = { add_war_support = 0.07 } }
+    focus = { id = ACG_the_market_conquers icon = GFX_goal_generic_demand_territory_or_war x = 5 y = 4 cost = 10 prerequisite = { focus = ACG_dividends_before_dawn focus = ACG_shareholder_legions } available = { date > 1938.1.1 } completion_reward = { add_political_power = 75 add_war_support = 0.08 } }
+}

@@ -1,0 +1,9 @@
+
+factions = {
+    AOTA_REPUBLICAN_SECURITY_PACT = { name = AOTA_REPUBLICAN_SECURITY_PACT icon = GFX_goal_support_democracy }
+    AOTA_CONTINENTAL_ACCORD = { name = AOTA_CONTINENTAL_ACCORD icon = GFX_goal_generic_improve_relations }
+    AOTA_DANUBIAN_COMPACT = { name = AOTA_DANUBIAN_COMPACT icon = GFX_goal_generic_political_reform }
+    AOTA_RED_INTERNATIONAL = { name = AOTA_RED_INTERNATIONAL icon = GFX_goal_support_communism }
+    AOTA_BLACK_CONCORD = { name = AOTA_BLACK_CONCORD icon = GFX_goal_support_anarchism }
+    AOTA_ATLANTIC_MARKET_LEAGUE = { name = AOTA_ATLANTIC_MARKET_LEAGUE icon = GFX_goal_generic_trade }
+}

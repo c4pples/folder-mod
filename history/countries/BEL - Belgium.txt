@@ -1,0 +1,21 @@
+﻿capital = 6
+oob = "BEL_1936"
+set_research_slots = 3
+set_stability = 0.59
+set_war_support = 0.12
+load_focus_tree = aota_belgium_focus
+add_ideas = aota_unfinished_peace
+add_ideas = aota_minor_exposed_frontier
+create_country_leader = {
+    name = BEL_paul_van_zeeland
+    picture = GFX_Portrait_Europe_Generic_new_2
+    ideology = parliamentary_democrat_subtype
+}
+set_party_name = { ideology = democratic name = BEL_democratic_party long_name = BEL_democratic_party_long }
+set_party_name = { ideology = fascism name = BEL_fascism_party long_name = BEL_fascism_party_long }
+set_party_name = { ideology = neutrality name = BEL_neutrality_party long_name = BEL_neutrality_party_long }
+set_party_name = { ideology = communism name = BEL_communism_party long_name = BEL_communism_party_long }
+set_politics = { ruling_party = democratic elections_allowed = yes election_frequency = 48 last_election = "1936.1.1" }
+set_popularities = { democratic = 55 neutrality = 18 fascism = 9 communism = 18 }
+
+add_ideas = aota_weak_congo_grip

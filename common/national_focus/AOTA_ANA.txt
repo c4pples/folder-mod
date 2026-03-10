@@ -1,0 +1,36 @@
+﻿
+focus_tree = {
+    id = aota_ana_focus
+    country = { factor = 0 modifier = { add = 10 tag = ANA } }
+    default = no
+
+    focus = { id = ANA_order_through_command icon = GFX_goal_generic_political_pressure x = 6 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_war_support = 0.06 add_ideas = aota_ana_command_state } }
+    focus = { id = ANA_integrate_the_militias icon = GFX_goal_generic_allies_build_infantry x = 4 y = 1 cost = 5 prerequisite = { focus = ANA_order_through_command } completion_reward = { army_experience = 15 } }
+    focus = { id = ANA_march_on_the_industrial_belt icon = GFX_goal_generic_tank_production x = 6 y = 1 cost = 5 prerequisite = { focus = ANA_order_through_command } completion_reward = { add_war_support = 0.04 } }
+    focus = { id = ANA_paramilitary_governors icon = GFX_goal_generic_political_pressure x = 8 y = 1 cost = 5 prerequisite = { focus = ANA_order_through_command } completion_reward = { add_political_power = 60 } }
+
+    focus = { id = ANA_national_reconstruction_corps icon = GFX_goal_generic_construct_civ_factory x = 4 y = 2 cost = 7 prerequisite = { focus = ANA_integrate_the_militias } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } add_stability = 0.02 } }
+    focus = { id = ANA_army_of_reunification icon = GFX_goal_generic_army_doctrines x = 6 y = 2 cost = 7 prerequisite = { focus = ANA_march_on_the_industrial_belt } completion_reward = { army_experience = 20 add_ideas = aota_ana_reunification_army } }
+    focus = { id = ANA_national_redoubt_iconography icon = GFX_goal_generic_propaganda x = 8 y = 2 cost = 7 prerequisite = { focus = ANA_paramilitary_governors } completion_reward = { add_stability = 0.03 } }
+
+    focus = { id = ANA_war_industry_decrees icon = GFX_goal_generic_construct_mil_factory x = 4 y = 3 cost = 7 prerequisite = { focus = ANA_national_reconstruction_corps } completion_reward = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } } }
+    focus = { id = ANA_officer_state icon = GFX_goal_generic_prepare_for_war x = 6 y = 3 cost = 7 prerequisite = { focus = ANA_army_of_reunification } completion_reward = { add_war_support = 0.08 } }
+    focus = { id = ANA_silence_the_dissidents icon = GFX_goal_generic_intelligence_exchange x = 8 y = 3 cost = 7 prerequisite = { focus = ANA_national_redoubt_iconography } completion_reward = { add_stability = 0.04 add_political_power = 40 } }
+
+    focus = { id = ANA_take_the_capitol icon = GFX_goal_generic_demand_territory_or_war x = 5 y = 4 cost = 10 prerequisite = { focus = ANA_war_industry_decrees focus = ANA_officer_state } available = { date > 1938.1.1 } completion_reward = { add_war_support = 0.1 } }
+    focus = { id = ANA_a_national_crusade icon = GFX_goal_generic_major_war x = 7 y = 4 cost = 10 prerequisite = { focus = ANA_officer_state focus = ANA_silence_the_dissidents } completion_reward = { add_ideas = aota_ana_national_crusade } }
+    focus = { id = ANA_the_flag_over_every_statehouse icon = GFX_goal_generic_major_war x = 6 y = 5 cost = 10 prerequisite = { focus = ANA_take_the_capitol focus = ANA_a_national_crusade } available = { date > 1938.3.1 } completion_reward = { add_war_support = 0.1 add_political_power = 75 } }
+}

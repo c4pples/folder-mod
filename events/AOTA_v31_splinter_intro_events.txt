@@ -1,0 +1,8 @@
+add_namespace = aota
+country_event = { id = aota.3012 title = AOTA_ACC_intro desc = AOTA_ACC_intro_desc picture = GFX_AOTA_news_american_deadlock is_triggered_only = yes fire_only_once = yes option = { name = aota.3012.a add_political_power = 20 } }
+country_event = { id = aota.3013 title = AOTA_AWU_intro desc = AOTA_AWU_intro_desc picture = GFX_report_event_generic_workers_strike is_triggered_only = yes fire_only_once = yes option = { name = aota.3013.a add_political_power = 20 } }
+country_event = { id = aota.3014 title = AOTA_ANA_intro desc = AOTA_ANA_intro_desc picture = GFX_report_event_military_parade is_triggered_only = yes fire_only_once = yes option = { name = aota.3014.a add_war_support = 0.01 } }
+country_event = { id = aota.3015 title = AOTA_APF_intro desc = AOTA_APF_intro_desc picture = GFX_report_event_generic_diplomacy is_triggered_only = yes fire_only_once = yes option = { name = aota.3015.a add_stability = 0.01 } }
+country_event = { id = aota.3016 title = AOTA_ACG_intro desc = AOTA_ACG_intro_desc picture = GFX_report_event_generic_industry is_triggered_only = yes fire_only_once = yes option = { name = aota.3016.a add_political_power = 20 } }
+country_event = { id = aota.3017 title = AOTA_ASL_intro desc = AOTA_ASL_intro_desc picture = GFX_report_event_generic_conference is_triggered_only = yes fire_only_once = yes option = { name = aota.3017.a add_stability = 0.01 } }
+country_event = { id = aota.3018 title = AOTA_CCW_intro desc = AOTA_CCW_intro_desc picture = GFX_report_event_generic_meeting is_triggered_only = yes fire_only_once = yes option = { name = aota.3018.a add_political_power = 20 } }

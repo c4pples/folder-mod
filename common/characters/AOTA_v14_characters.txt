@@ -1,0 +1,39 @@
+﻿
+characters = {
+    ACC_george_marshall = {
+        name = ACC_george_marshall
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        country_leader = { ideology = parliamentary_democrat_subtype traits = { } expire = "1965.1.1" }
+        advisor = { slot = theorist idea_token = generic_theorist }
+    }
+    AWU_james_cannon = {
+        name = AWU_james_cannon
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = silent_workhorse }
+    }
+    ANA_douglas_macarthur = {
+        name = ANA_douglas_macarthur
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = war_industrialist }
+    }
+    APF_earl_warren = {
+        name = APF_earl_warren
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = silent_workhorse }
+    }
+    ACG_henry_ford = {
+        name = ACG_henry_ford
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = captain_of_industry }
+    }
+    ASL_huey_long = {
+        name = ASL_huey_long
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = silent_workhorse }
+    }
+    CCW_ammon_hennacy = {
+        name = CCW_ammon_hennacy
+        portraits = { civilian = { large = GFX_Portrait_Leader_Generic } }
+        advisor = { slot = political_advisor idea_token = compassionate_gentleman }
+    }
+}

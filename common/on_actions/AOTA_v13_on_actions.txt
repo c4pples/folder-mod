@@ -1,0 +1,11 @@
+﻿
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = { limit = { tag = IRE } country_event = { id = aota.1310 days = 95 } }
+            every_country = { limit = { tag = FIN } country_event = { id = aota.1311 days = 110 } }
+            every_country = { limit = { tag = POR } country_event = { id = aota.1312 days = 125 } }
+            every_country = { limit = { tag = UKR } country_event = { id = aota.1313 days = 140 } }
+        }
+    }
+}

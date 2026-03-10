@@ -1,0 +1,11 @@
+capital = 150
+set_research_slots = 2
+set_stability = 0.36
+set_war_support = 0.33
+create_country_leader = {
+    name = ASL_richard_russell
+    picture = GFX_Portrait_Leader_Generic
+    ideology = distributist_subtype
+}
+set_politics = { ruling_party = neutrality elections_allowed = no }
+set_popularities = { neutrality = 64 fascism = 18 democratic = 10 communism = 8 }

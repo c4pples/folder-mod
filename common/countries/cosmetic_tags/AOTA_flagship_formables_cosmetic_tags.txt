@@ -1,0 +1,8 @@
+GER_reichsordnung = "GER"
+GER_european_compact = "GER"
+
+FRA_etat_continental = "FRA"
+FRA_republican_union = "FRA"
+
+ITA_imperium_interioris_maris = "ITA"
+ITA_mediterranean_concordat = "ITA"

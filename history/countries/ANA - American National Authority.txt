@@ -1,0 +1,11 @@
+capital = 375
+set_research_slots = 3
+set_stability = 0.42
+set_war_support = 0.6
+create_country_leader = {
+    name = ANA_george_van_horn_moseley
+    picture = GFX_Portrait_Leader_Generic
+    ideology = national_revivalist_subtype
+}
+set_politics = { ruling_party = fascism elections_allowed = no }
+set_popularities = { fascism = 68 neutrality = 18 democratic = 8 communism = 6 }

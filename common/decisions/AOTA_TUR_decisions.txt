@@ -1,0 +1,8 @@
+AOTA_ottoman_management = {
+ icon = generic_empire
+ allowed = { original_tag = TUR }
+ visible = { original_tag = TUR }
+ decision = { id = TUR_convene_the_provincial_notables icon = generic_political_reform available = { has_idea = aota_ottoman_arab_unrest } complete_effect = { add_political_power = 50 add_stability = 0.02 } days_remove = 60 }
+ decision = { id = TUR_rotate_the_gendarmerie icon = generic_army_reform available = { has_idea = aota_ottoman_internal_security_apparatus } complete_effect = { add_war_support = 0.02 } days_remove = 45 }
+ decision = { id = TUR_call_the_court_physicians icon = generic_improve_relations complete_effect = { add_stability = 0.01 } days_remove = 30 }
+}

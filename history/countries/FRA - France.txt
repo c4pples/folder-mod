@@ -1,0 +1,80 @@
+﻿capital = 16
+oob = "AOTA_FRA_land"
+set_air_oob = "AOTA_FRA_air"
+set_naval_oob = "FRA_naval"
+set_research_slots = 4
+set_stability = 0.58
+set_war_support = 0.22
+starting_train_buffer = 2
+load_focus_tree = aota_france_focus
+add_ideas = aota_unfinished_peace
+add_ideas = aota_veteran_disillusionment
+add_ideas = aota_french_revanchism
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    tech_trucks = 1
+    fuel_silos = 1
+    fuel_refining = 1
+    basic_train = 1
+}
+if = {
+    limit = { has_dlc_bba = yes }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        early_bombs = 1
+    }
+}
+create_country_leader = {
+    name = FRA_albert_lebrun
+    picture = GFX_AOTA_FRA_gamelin
+    ideology = parliamentary_democrat_subtype
+}
+set_party_name = {
+    ideology = democratic
+    name = FRA_democratic_party
+    long_name = FRA_democratic_party_long
+}
+set_party_name = {
+    ideology = fascism
+    name = FRA_fascism_party
+    long_name = FRA_fascism_party_long
+}
+set_party_name = {
+    ideology = neutrality
+    name = FRA_neutrality_party
+    long_name = FRA_neutrality_party_long
+}
+set_party_name = {
+    ideology = communism
+    name = FRA_communism_party
+    long_name = FRA_communism_party_long
+}
+set_politics = {
+    ruling_party = democratic
+    last_election = "1935.11.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+set_popularities = {
+    democratic = 44
+    neutrality = 18
+    fascism = 16
+    anarchism = 0.08
+        market_radicalism = 0.04
+        communism = 22
+}
+
+recruit_character = AOTA_FRA_blum
+recruit_character = AOTA_FRA_petain
+add_ideas = aota_french_fractured_republic
+
+add_ideas = aota_fraying_colonial_web

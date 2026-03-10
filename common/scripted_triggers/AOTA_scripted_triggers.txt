@@ -1,0 +1,57 @@
+AOTA_is_major_reckoning_power = {
+    OR = { tag = GER tag = FRA tag = ENG tag = AUS tag = SOV tag = ITA tag = USA }
+}
+
+AOTA_has_anarchist_pressure = {
+    OR = {
+        has_country_flag = AOTA_anarchist_pressure
+        has_idea = aota_anarchist_agitation
+        has_idea = aota_christian_anarchist_movement
+    }
+}
+
+AOTA_has_socialist_pressure = {
+    OR = {
+        has_country_flag = AOTA_socialist_pressure
+        has_government = communism
+        has_idea = aota_commune_momentum
+    }
+}
+
+AOTA_anarchism_outcompetes_socialism = {
+    has_government = anarchism
+    NOT = { has_government = communism }
+}
+
+AOTA_socialism_outcompetes_anarchism = {
+    has_government = communism
+    NOT = { has_government = anarchism }
+}
+
+AOTA_can_escalate_rhine = {
+    OR = {
+        AND = { tag = GER has_idea = aota_rhine_powder_keg }
+        AND = { tag = FRA has_idea = aota_rhine_powder_keg }
+    }
+}
+
+AOTA_danubian_breakpoint = {
+    AND = {
+        tag = AUS
+        OR = {
+            has_idea = aota_danubian_overstretch
+            has_idea = aota_danubian_nationalities_crisis
+        }
+    }
+}
+
+AOTA_can_shatter_america = {
+    AND = {
+        tag = USA
+        has_country_flag = AOTA_USA_powder_keg_flag
+        OR = {
+            has_country_flag = AOTA_USA_total_fracture
+            has_idea = aota_american_powder_keg
+        }
+    }
+}

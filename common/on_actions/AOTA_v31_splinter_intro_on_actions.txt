@@ -1,0 +1,13 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            every_country = { limit = { tag = ACC NOT = { has_country_flag = AOTA_intro_ACC_done } } set_country_flag = AOTA_intro_ACC_done country_event = { id = aota.3012 days = 1 } }
+            every_country = { limit = { tag = AWU NOT = { has_country_flag = AOTA_intro_AWU_done } } set_country_flag = AOTA_intro_AWU_done country_event = { id = aota.3013 days = 1 } }
+            every_country = { limit = { tag = ANA NOT = { has_country_flag = AOTA_intro_ANA_done } } set_country_flag = AOTA_intro_ANA_done country_event = { id = aota.3014 days = 1 } }
+            every_country = { limit = { tag = APF NOT = { has_country_flag = AOTA_intro_APF_done } } set_country_flag = AOTA_intro_APF_done country_event = { id = aota.3015 days = 1 } }
+            every_country = { limit = { tag = ACG NOT = { has_country_flag = AOTA_intro_ACG_done } } set_country_flag = AOTA_intro_ACG_done country_event = { id = aota.3016 days = 1 } }
+            every_country = { limit = { tag = ASL NOT = { has_country_flag = AOTA_intro_ASL_done } } set_country_flag = AOTA_intro_ASL_done country_event = { id = aota.3017 days = 1 } }
+            every_country = { limit = { tag = CCW NOT = { has_country_flag = AOTA_intro_CCW_done } } set_country_flag = AOTA_intro_CCW_done country_event = { id = aota.3018 days = 1 } }
+        }
+    }
+}

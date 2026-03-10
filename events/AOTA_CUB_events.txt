@@ -1,0 +1,26 @@
+add_namespace = aota
+
+country_event = {
+    id = aota.3600
+    title = aota.3600.t
+    desc = aota.3600.d
+    picture = GFX_report_event_generic_meeting
+    is_triggered_only = yes
+
+    option = {
+        name = aota.3600.a
+        ai_chance = { factor = 35 }
+        set_country_flag = AOTA_CUB_ANCAP_PATH_OPEN
+        add_political_power = 60
+        add_stability = -0.03
+        add_popularity = { ideology = market_radicalism popularity = 0.08 }
+        add_ideas = aota_cub_american_corporate_influx
+    }
+    option = {
+        name = aota.3600.b
+        ai_chance = { factor = 65 }
+        set_country_flag = AOTA_CUB_REJECTED_BOARDROOM_EXILES
+        add_stability = 0.03
+        add_war_support = 0.01
+    }
+}

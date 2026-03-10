@@ -1,0 +1,6 @@
+
+RUS_republic = { color = rgb { 45 86 167 } }
+RUS_restoration = { color = rgb { 16 16 16 } }
+RUS_workers_republic = { color = rgb { 155 18 18 } }
+RUS_free_territories = { color = rgb { 18 18 18 } }
+RUS_national_union = { color = rgb { 90 90 90 } }

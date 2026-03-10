@@ -1,0 +1,20 @@
+GER_constitutional_commonwealth = { color = { 120 120 120 } }
+  GER_sacred_realm = { color = { 100 70 40 } }
+  GER_free_communes = { color = { 40 40 40 } }
+  FRA_christian_communes = { color = { 120 120 180 } }
+  FRA_national_state = { color = { 50 50 90 } }
+  AUS_danubian_federation = { color = { 160 160 220 } }
+  USA_federal_continuity = { color = { 60 90 160 } }
+  USA_corporate_commonwealth = { color = { 180 140 60 } }
+  USA_christian_commonwealth = { color = { 140 140 160 } }
+  IRE_celtic_commonwealth = { color = { 40 120 60 } }
+  FIN_white_fortress = { color = { 200 210 220 } }
+  POR_atlantic_compact = { color = { 60 90 150 } }
+  UKR_free_territory = { color = { 30 30 30 } }
+
+OTT = { color = { 150 30 30 } }
+OTT_reform_sultanate = { color = { 170 60 60 } }
+OTT_military_porte = { color = { 80 80 80 } }
+OTT_constitutional_empire = { color = { 170 120 90 } }
+OTT_sacred_imperium = { color = { 120 90 40 } }
+OTT_arab_federation = { color = { 60 120 80 } }

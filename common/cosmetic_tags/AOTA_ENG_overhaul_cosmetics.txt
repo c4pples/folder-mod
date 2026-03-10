@@ -1,0 +1,4 @@
+ENG_imperial_commonwealth = { color = rgb { 28 44 96 } color_ui = rgb { 214 181 73 } }
+ENG_guild_commonwealth = { color = rgb { 128 8 18 } color_ui = rgb { 205 169 72 } }
+ENG_market_commonwealth = { color = rgb { 20 36 90 } color_ui = rgb { 210 175 70 } }
+ENG_green_and_pleasant_republic = { color = rgb { 24 108 58 } color_ui = rgb { 244 240 232 } }

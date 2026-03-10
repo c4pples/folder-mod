@@ -1,0 +1,15 @@
+capital = 7
+oob = "HOL"
+set_research_slots = 3
+set_stability = 0.63
+set_war_support = 0.16
+load_focus_tree = aota_hol_focus
+add_ideas = aota_continental_broker
+set_party_name = { ideology = democratic name = HOL_democratic_party long_name = HOL_democratic_party_long }
+set_party_name = { ideology = fascism name = HOL_fascism_party long_name = HOL_fascism_party_long }
+set_party_name = { ideology = neutrality name = HOL_neutrality_party long_name = HOL_neutrality_party_long }
+set_party_name = { ideology = communism name = HOL_communism_party long_name = HOL_communism_party_long }
+set_politics = { ruling_party = democratic elections_allowed = yes last_election = "1935.6.1" election_frequency = 48 }
+set_popularities = { democratic = 56 neutrality = 20 fascism = 14 communism = 10 }
+create_country_leader = { name = HOL_wilhelmina picture = GFX_AOTA_BEL_leader ideology = parliamentary_democrat_subtype }
+recruit_character = AOTA_HOL_colijn

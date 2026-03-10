@@ -1,0 +1,33 @@
+
+characters = {
+  AOTA_SOV_kerensky = {
+    name = AOTA_SOV_kerensky
+    portraits = { civilian = { large = GFX_AOTA_SOV_kerensky } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_kerensky_advisor traits = { democratic_reformer } }
+  }
+  AOTA_SOV_tukhachevsky = {
+    name = AOTA_SOV_tukhachevsky
+    portraits = { civilian = { large = GFX_AOTA_SOV_tukhachevsky } }
+    advisor = { slot = chief_of_army idea_token = AOTA_SOV_tukhachevsky_advisor traits = { army_offence_2 } }
+  }
+  AOTA_SOV_wrangel = {
+    name = AOTA_SOV_wrangel
+    portraits = { civilian = { large = GFX_AOTA_SOV_wrangel } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_wrangel_advisor traits = { war_industrialist } }
+  }
+  AOTA_SOV_maria = {
+    name = AOTA_SOV_maria
+    portraits = { civilian = { large = GFX_AOTA_SOV_maria } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_maria_advisor traits = { captain_of_industry } }
+  }
+  AOTA_SOV_kollontai = {
+    name = AOTA_SOV_kollontai
+    portraits = { civilian = { large = GFX_AOTA_SOV_kollontai } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_kollontai_advisor traits = { communist_revolutionary } }
+  }
+  AOTA_SOV_makhno = {
+    name = AOTA_SOV_makhno
+    portraits = { civilian = { large = GFX_AOTA_SOV_makhno } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_makhno_advisor traits = { anarchist_revolutionary } }
+  }
+}

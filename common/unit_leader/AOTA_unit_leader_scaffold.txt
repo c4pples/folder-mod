@@ -1,0 +1,2 @@
+# AOTA v0.15 unit_leader scaffold
+# Reserve for custom general/admiral traits tied to AOTA mechanics.

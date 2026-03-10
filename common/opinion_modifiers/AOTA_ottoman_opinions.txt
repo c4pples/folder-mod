@@ -1,0 +1,4 @@
+aota_imperial_solidarity = {
+ value = 25
+ decay = 0
+}

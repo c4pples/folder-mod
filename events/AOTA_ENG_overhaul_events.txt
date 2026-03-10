@@ -1,0 +1,27 @@
+add_namespace = aota_eng
+country_event = {
+  id = aota_eng.1000
+  title = aota_eng_1000_title
+  desc = aota_eng_1000_desc
+  picture = GFX_report_event_generic_workers_strike
+  is_triggered_only = yes
+  option = { name = aota_eng_1000_a add_popularity = { ideology = communism popularity = 0.03 } }
+  option = { name = aota_eng_1000_b add_popularity = { ideology = anarchism popularity = 0.03 } }
+}
+country_event = {
+  id = aota_eng.1001
+  title = aota_eng_1001_title
+  desc = aota_eng_1001_desc
+  picture = GFX_report_event_generic_meeting
+  is_triggered_only = yes
+  option = { name = aota_eng_1001_a add_stability = 0.02 }
+  option = { name = aota_eng_1001_b add_war_support = 0.02 }
+}
+country_event = {
+  id = aota_eng.1002
+  title = aota_eng_1002_title
+  desc = aota_eng_1002_desc
+  picture = GFX_report_event_generic_diplomacy
+  is_triggered_only = yes
+  option = { name = aota_eng_1002_a add_political_power = 35 }
+}

@@ -1,0 +1,182 @@
+add_namespace = aota
+
+country_event = {
+    id = aota.2200
+    title = AOTA_SOV_2200_title
+    desc = AOTA_SOV_2200_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2200_a
+        add_political_power = 50 add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = aota.2201
+    title = AOTA_SOV_2201_title
+    desc = AOTA_SOV_2201_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2201_a
+        add_stability = 0.03
+    }
+}
+
+country_event = {
+    id = aota.2202
+    title = AOTA_SOV_2202_title
+    desc = AOTA_SOV_2202_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2202_a
+        army_experience = 15 add_war_support = 0.03
+    }
+}
+
+country_event = {
+    id = aota.2203
+    title = AOTA_SOV_2203_title
+    desc = AOTA_SOV_2203_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2203_a
+        add_stability = 0.04 add_political_power = 35
+    }
+}
+
+country_event = {
+    id = aota.2204
+    title = AOTA_SOV_2204_title
+    desc = AOTA_SOV_2204_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2204_a
+        add_ideas = aota_commune_momentum
+    }
+}
+
+country_event = {
+    id = aota.2205
+    title = AOTA_SOV_2205_title
+    desc = AOTA_SOV_2205_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2205_a
+        add_ideas = aota_red_black_schism
+    }
+}
+
+country_event = {
+    id = aota.2206
+    title = AOTA_SOV_2206_title
+    desc = AOTA_SOV_2206_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2206_a
+        add_war_support = 0.05
+    }
+}
+
+country_event = {
+    id = aota.2210
+    title = AOTA_SOV_2210_title
+    desc = AOTA_SOV_2210_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2210_a
+        add_named_threat = { threat = 2 name = SOV_reunification }
+    }
+}
+
+country_event = {
+    id = aota.2211
+    title = AOTA_SOV_2211_title
+    desc = AOTA_SOV_2211_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2211_a
+        add_opinion_modifier = { target = GER modifier = aota_rhine_statute_revision }
+    }
+}
+
+country_event = {
+    id = aota.2212
+    title = AOTA_SOV_2212_title
+    desc = AOTA_SOV_2212_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2212_a
+        add_stability = 0.03 remove_ideas = aota_red_black_schism
+    }
+}
+
+country_event = {
+    id = aota.2213
+    title = AOTA_SOV_2213_title
+    desc = AOTA_SOV_2213_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2213_a
+        add_political_power = -25 add_stability = -0.01
+    }
+}
+
+country_event = {
+    id = aota.2214
+    title = AOTA_SOV_2214_title
+    desc = AOTA_SOV_2214_desc
+    picture = GFX_report_event_generic_protest
+
+    trigger = { tag = SOV }
+    mean_time_to_happen = { days = 3 }
+
+    option = {
+        name = AOTA_SOV_2214_a
+        add_ideas = aota_rus_reunification_pressure
+    }
+}
+

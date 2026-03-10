@@ -1,0 +1,49 @@
+AOTA_apply_armistice_legitimacy = {
+    add_dynamic_modifier = {
+        modifier = aota_armistice_legitimacy
+        scope = ROOT
+    }
+}
+
+AOTA_apply_anarchist_pressure = {
+    if = { limit = { NOT = { has_idea = aota_anarchist_agitation } } add_ideas = aota_anarchist_agitation }
+    set_country_flag = AOTA_anarchist_pressure
+}
+
+AOTA_apply_socialist_pressure = {
+    if = { limit = { NOT = { has_idea = aota_commune_momentum } } add_ideas = aota_commune_momentum }
+    set_country_flag = AOTA_socialist_pressure
+}
+
+AOTA_clear_revolutionary_dual_power = {
+    remove_ideas = aota_anarchist_agitation
+    remove_ideas = aota_commune_momentum
+    clr_country_flag = AOTA_anarchist_pressure
+    clr_country_flag = AOTA_socialist_pressure
+}
+
+AOTA_begin_four_way_american_breakup = {
+    set_country_flag = AOTA_USA_powder_keg_flag
+    country_event = { id = aota.200 days = 1 }
+}
+
+AOTA_begin_total_american_shatter = {
+    set_country_flag = AOTA_USA_total_fracture
+    add_ideas = aota_american_shatterstate
+    country_event = { id = aota.205 days = 1 }
+}
+
+AOTA_escalate_rhine_crisis = {
+    every_country = {
+        limit = { OR = { tag = GER tag = FRA } }
+        add_ideas = aota_rhine_powder_keg
+    }
+    news_event = { id = aota.130 hours = 3 }
+}
+
+AOTA_push_danubian_breakpoint = {
+    AUS = {
+        add_ideas = aota_danubian_overstretch
+        country_event = { id = aota.300 days = 1 }
+    }
+}

@@ -1,0 +1,2 @@
+# AOTA v0.15 ai_focuses scaffold
+# Reserve for ideology/path-specific AI focus weighting.

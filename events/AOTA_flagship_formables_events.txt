@@ -1,0 +1,100 @@
+add_namespace = aota_formables
+
+country_event = {
+	id = aota_formables.1
+	title = aota_formables.1.t
+	desc = aota_formables.1.d
+	picture = GFX_report_event_german_troops
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.1.a
+		add_ideas = aota_ger_reichsordnung_apparatus
+		set_country_flag = AOTA_GER_reichsordnung_formed
+		set_cosmetic_tag = GER_reichsordnung
+		clr_country_flag = AOTA_GER_reichsordnung_prepared
+		add_political_power = 100
+		add_war_support = 0.04
+	}
+}
+
+country_event = {
+	id = aota_formables.2
+	title = aota_formables.2.t
+	desc = aota_formables.2.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.2.a
+		add_ideas = aota_ger_compact_leadership
+		set_country_flag = AOTA_GER_compact_chartered
+		set_cosmetic_tag = GER_european_compact
+		clr_country_flag = AOTA_GER_compact_prepared
+		add_stability = 0.04
+	}
+}
+
+country_event = {
+	id = aota_formables.3
+	title = aota_formables.3.t
+	desc = aota_formables.3.d
+	picture = GFX_report_event_france
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.3.a
+		add_ideas = aota_fra_continental_prestige
+		set_country_flag = AOTA_FRA_hegemonie_formed
+		set_cosmetic_tag = FRA_etat_continental
+		clr_country_flag = AOTA_FRA_hegemonie_prepared
+		add_war_support = 0.05
+		add_political_power = 75
+	}
+}
+
+country_event = {
+	id = aota_formables.4
+	title = aota_formables.4.t
+	desc = aota_formables.4.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.4.a
+		add_ideas = aota_fra_union_diplomatie
+		set_country_flag = AOTA_FRA_union_founded
+		set_cosmetic_tag = FRA_republican_union
+		clr_country_flag = AOTA_FRA_union_prepared
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = aota_formables.5
+	title = aota_formables.5.t
+	desc = aota_formables.5.d
+	picture = GFX_report_event_italian_troops
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.5.a
+		add_ideas = aota_ita_mare_nostrum_command
+		set_country_flag = AOTA_ITA_imperium_formed
+		set_cosmetic_tag = ITA_imperium_interioris_maris
+		clr_country_flag = AOTA_ITA_imperium_prepared
+		add_war_support = 0.04
+		add_political_power = 75
+	}
+}
+
+country_event = {
+	id = aota_formables.6
+	title = aota_formables.6.t
+	desc = aota_formables.6.d
+	picture = GFX_report_event_generic_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = aota_formables.6.a
+		add_ideas = aota_ita_concordat_authority
+		set_country_flag = AOTA_ITA_concordat_founded
+		set_cosmetic_tag = ITA_mediterranean_concordat
+		clr_country_flag = AOTA_ITA_concordat_prepared
+		add_stability = 0.05
+	}
+}

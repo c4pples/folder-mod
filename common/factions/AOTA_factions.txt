@@ -1,0 +1,18 @@
+factions = {
+    AOTA_CONCERT_OF_STABILITY = {
+        name = AOTA_CONCERT_OF_STABILITY
+        icon = GFX_goal_generic_alliance
+    }
+    AOTA_CONTINENTAL_RECONCILIATION = {
+        name = AOTA_CONTINENTAL_RECONCILIATION
+        icon = GFX_goal_generic_political_pressure
+    }
+    AOTA_FREE_COMMUNES = {
+        name = AOTA_FREE_COMMUNES
+        icon = GFX_goal_generic_major_war
+    }
+    AOTA_LEAGUE_OF_FREE_MARKETS = {
+        name = AOTA_LEAGUE_OF_FREE_MARKETS
+        icon = GFX_goal_generic_trade
+    }
+}

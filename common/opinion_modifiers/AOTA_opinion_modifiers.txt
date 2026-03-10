@@ -1,0 +1,31 @@
+aota_postwar_resentment = {
+    value = -35
+    decay = 0
+}
+
+aota_armistice_mediation = {
+    value = 20
+    decay = 0
+}
+
+aota_anarchist_solidarity = {
+    value = 30
+    decay = 0
+}
+
+aota_socialist_brotherhood = {
+    value = 25
+    decay = 0
+}
+
+aota_red_black_schism = {
+    value = -40
+    decay = 0
+}
+
+aota_market_radical_affinity = {
+    value = 15
+    decay = 0
+}
+
+ aota_conditional_recognition = { value = 20 decay = 0 }

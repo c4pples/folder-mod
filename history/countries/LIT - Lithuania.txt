@@ -1,0 +1,3 @@
+set_politics = { ruling_party = neutrality elections_allowed = no }
+set_popularities = { democratic = 20 fascism = 10 neutrality = 55 communism = 5 anarchism = 5 market_radicalism = 5 }
+add_ideas = aota_unfinished_peace

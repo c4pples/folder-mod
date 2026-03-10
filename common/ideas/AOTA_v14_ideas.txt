@@ -1,0 +1,31 @@
+﻿
+ideas = {
+    country = {
+        aota_acc_remnant_bureaucracy = { picture = generic_political_reform allowed = { always = yes } modifier = { political_power_gain = -0.05 stability_factor = -0.05 } }
+        aota_acc_bill_of_salvation = { picture = generic_political_reform allowed = { always = yes } modifier = { stability_factor = 0.06 democratic_drift = 0.05 } }
+        aota_acc_war_production = { picture = generic_production allowed = { always = yes } modifier = { military_factory_construction_speed_factor = 0.1 production_speed_arms_factory_factor = 0.1 } }
+        aota_acc_union_must_endure = { picture = generic_allies_build_infantry allowed = { always = yes } modifier = { war_support_factor = 0.1 army_org_factor = 0.05 } }
+
+        aota_awu_workers_congress = { picture = generic_support_communism allowed = { always = yes } modifier = { political_power_gain = 0.08 communism_drift = 0.04 } }
+        aota_awu_planning_bureau = { picture = generic_production allowed = { always = yes } modifier = { consumer_goods_factor = -0.03 industrial_capacity_factory = 0.05 } }
+        aota_awu_federation_of_communes = { picture = generic_support_anarchism allowed = { always = yes } modifier = { stability_factor = 0.05 anarchism_drift = 0.06 } }
+        aota_awu_militias = { picture = generic_allies_build_infantry allowed = { always = yes } modifier = { division_attack_factor = 0.05 army_org_factor = -0.03 recruitable_population_factor = 0.01 } }
+
+        aota_ana_command_state = { picture = generic_political_pressure allowed = { always = yes } modifier = { war_support_factor = 0.08 political_power_gain = 0.04 democratic_drift = -0.05 } }
+        aota_ana_reunification_army = { picture = generic_army_doctrines allowed = { always = yes } modifier = { army_org_factor = 0.08 land_doctrine_cost_factor = -0.05 } }
+        aota_ana_national_crusade = { picture = generic_major_war allowed = { always = yes } modifier = { justify_war_goal_time = -0.1 war_support_factor = 0.08 } }
+
+        aota_apf_harbor_republic = { picture = generic_trade allowed = { always = yes } modifier = { trade_opinion_factor = 0.15 stability_factor = 0.04 } }
+        aota_apf_setting_sun = { picture = generic_air_fighter2 allowed = { always = yes } modifier = { air_experience_gain_factor = 0.1 naval_speed_factor = 0.05 } }
+
+        aota_acg_boardroom_state = { picture = generic_trade allowed = { always = yes } modifier = { political_power_gain = 0.08 market_radicalism_drift = 0.06 consumer_goods_factor = -0.03 } }
+        aota_acg_private_security = { picture = generic_allies_build_infantry allowed = { always = yes } modifier = { division_defence_factor = 0.05 army_org_factor = -0.02 } }
+
+        aota_asl_county_levies = { picture = generic_allies_build_infantry allowed = { always = yes } modifier = { recruitable_population_factor = 0.015 division_defence_factor = 0.04 } }
+        aota_asl_distributist_compromise = { picture = generic_national_unity allowed = { always = yes } modifier = { stability_factor = 0.05 consumer_goods_factor = -0.02 } }
+
+        aota_ccw_common_prayer = { picture = generic_national_unity allowed = { always = yes } modifier = { stability_factor = 0.08 war_support_factor = -0.02 } }
+        aota_ccw_distributist_debate = { picture = generic_national_unity allowed = { always = yes } modifier = { consumer_goods_factor = -0.02 democracy_drift = 0.02 } }
+        aota_ccw_federation = { picture = generic_support_anarchism allowed = { always = yes } modifier = { anarchism_drift = 0.08 recruitable_population_factor = 0.01 } }
+    }
+}

@@ -1,0 +1,2 @@
+# AOTA v0.15 ai_equipment scaffold
+# Reserve for AI production priorities by path.

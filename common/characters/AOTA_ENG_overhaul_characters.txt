@@ -1,0 +1,22 @@
+characters = {
+  ENG_neville_chamberlain = {
+    name = ENG_neville_chamberlain
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_8 } }
+    country_leader = { ideology = democratic desc = ENG_neville_chamberlain_desc traits = { } }
+  }
+  ENG_oswald_mosley_alt = {
+    name = ENG_oswald_mosley_alt
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_1 } }
+    advisor = { slot = political_advisor idea_token = ENG_oswald_mosley_alt_advisor allowed = { always = yes } traits = { } }
+  }
+  ENG_beatrice_webb = {
+    name = ENG_beatrice_webb
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_5 } }
+    advisor = { slot = political_advisor idea_token = ENG_beatrice_webb_advisor allowed = { always = yes } traits = { } }
+  }
+  ENG_r_h_tawney = {
+    name = ENG_r_h_tawney
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_6 } }
+    advisor = { slot = political_advisor idea_token = ENG_r_h_tawney_advisor allowed = { always = yes } traits = { } }
+  }
+}

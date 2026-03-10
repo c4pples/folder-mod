@@ -1,0 +1,1402 @@
+﻿focus_tree = {
+    id = aota_britain_focus
+    country = { factor = 0 modifier = { add = 10 tag = ENG } }
+    default = no
+    continuous_focus_position = { x = 50 y = 1200 }
+
+    focus = {
+        id = ENG_unfinished_peace_redux
+        icon = GFX_goal_generic_national_unity
+        x = 8
+        y = 0
+        cost = 5
+        completion_reward = { add_stability = 0.03 add_political_power = 100 add_war_support = 0.02 }
+    }
+    focus = {
+        id = ENG_stabilise_westminster
+        icon = GFX_goal_generic_political_reform
+        x = 2
+        y = 1
+        cost = 5
+        prerequisite = { focus = ENG_unfinished_peace_redux }
+        completion_reward = { add_stability = 0.04 }
+    }
+    focus = {
+        id = ENG_recall_the_dominions
+        icon = GFX_goal_generic_alliance
+        x = 6
+        y = 1
+        cost = 5
+        prerequisite = { focus = ENG_unfinished_peace_redux }
+        completion_reward = { add_political_power = 40 add_ideas = aota_imperial_overstretch }
+    }
+    focus = {
+        id = ENG_treasury_emergency
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 10
+        y = 1
+        cost = 5
+        prerequisite = { focus = ENG_unfinished_peace_redux }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_staff_college_review
+        icon = GFX_goal_generic_army_doctrines
+        x = 14
+        y = 1
+        cost = 5
+        prerequisite = { focus = ENG_unfinished_peace_redux }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_reform_the_commonwealth
+        icon = GFX_goal_support_democracy
+        x = 0
+        y = 2
+        cost = 7
+        prerequisite = { focus = ENG_stabilise_westminster focus = ENG_recall_the_dominions }
+        mutually_exclusive = { focus = ENG_guard_the_old_empire focus = ENG_guild_social_settlement focus = ENG_boardroom_realm focus = ENG_green_and_pleasant_communities }
+        available = { has_country_flag = AOTA_ENG_stage1_done }
+        completion_reward = { add_popularity = { ideology = democratic popularity = 0.10 } add_ideas = aota_commonwealth_reform_program }
+    }
+    focus = {
+        id = ENG_guard_the_old_empire
+        icon = GFX_goal_support_neutrality
+        x = 4
+        y = 2
+        cost = 7
+        prerequisite = { focus = ENG_recall_the_dominions focus = ENG_staff_college_review }
+        mutually_exclusive = { focus = ENG_reform_the_commonwealth focus = ENG_guild_social_settlement focus = ENG_boardroom_realm focus = ENG_green_and_pleasant_communities }
+        available = { has_country_flag = AOTA_ENG_stage1_done }
+        completion_reward = { add_popularity = { ideology = neutrality popularity = 0.10 } add_war_support = 0.05 add_ideas = aota_imperial_restoration_mandate }
+    }
+    focus = {
+        id = ENG_guild_social_settlement
+        icon = GFX_goal_support_communism
+        x = 8
+        y = 2
+        cost = 7
+        prerequisite = { focus = ENG_treasury_emergency focus = ENG_staff_college_review }
+        mutually_exclusive = { focus = ENG_reform_the_commonwealth focus = ENG_guard_the_old_empire focus = ENG_boardroom_realm focus = ENG_green_and_pleasant_communities }
+        available = { has_country_flag = AOTA_ENG_stage1_done }
+        completion_reward = { add_popularity = { ideology = communism popularity = 0.10 } add_ideas = aota_guild_settlement }
+    }
+    focus = {
+        id = ENG_boardroom_realm
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 2
+        cost = 7
+        prerequisite = { focus = ENG_treasury_emergency focus = ENG_recall_the_dominions }
+        mutually_exclusive = { focus = ENG_reform_the_commonwealth focus = ENG_guard_the_old_empire focus = ENG_guild_social_settlement focus = ENG_green_and_pleasant_communities }
+        available = { has_country_flag = AOTA_ENG_stage1_done }
+        completion_reward = { add_popularity = { ideology = market_radicalism popularity = 0.10 } add_ideas = aota_atlantic_shareholders }
+    }
+    focus = {
+        id = ENG_green_and_pleasant_communities
+        icon = GFX_goal_support_communism
+        x = 16
+        y = 2
+        cost = 7
+        prerequisite = { focus = ENG_stabilise_westminster focus = ENG_treasury_emergency }
+        mutually_exclusive = { focus = ENG_reform_the_commonwealth focus = ENG_guard_the_old_empire focus = ENG_guild_social_settlement focus = ENG_boardroom_realm }
+        available = { has_country_flag = AOTA_ENG_stage1_done }
+        completion_reward = { add_popularity = { ideology = anarchism popularity = 0.10 } add_ideas = aota_english_communalism }
+    }
+    focus = {
+        id = ENG_ref_royal_commission
+        icon = GFX_goal_generic_political_reform
+        x = 0
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_reform_the_commonwealth }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_ref_devolution_charter
+        icon = GFX_goal_generic_improve_relations
+        x = 0
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_ref_royal_commission }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_ref_commonwealth_secretariat
+        icon = GFX_goal_generic_alliance
+        x = 0
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_ref_devolution_charter }
+        completion_reward = { add_ideas = aota_commonwealth_secretariat }
+    }
+    focus = {
+        id = ENG_ref_civic_service
+        icon = GFX_goal_generic_scientific_exchange
+        x = 0
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_ref_commonwealth_secretariat }
+        completion_reward = { add_political_power = 75 }
+    }
+    focus = {
+        id = ENG_ref_colonial_compacts
+        icon = GFX_goal_generic_improve_relations
+        x = 0
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_ref_civic_service }
+        completion_reward = { add_ideas = aota_imperial_bargaining }
+    }
+    focus = {
+        id = ENG_ref_social_peace
+        icon = GFX_goal_generic_political_pressure
+        x = 0
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_ref_colonial_compacts }
+        completion_reward = { add_stability = 0.04 }
+    }
+    focus = {
+        id = ENG_ref_home_rule_renewed
+        icon = GFX_goal_generic_democracy
+        x = 0
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_ref_social_peace }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_ref_federal_debates
+        icon = GFX_goal_generic_alliance
+        x = 0
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_ref_home_rule_renewed }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_ref_house_of_lords_reform
+        icon = GFX_goal_generic_political_reform
+        x = 0
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_ref_federal_debates }
+        completion_reward = { add_stability = 0.02 }
+    }
+    focus = {
+        id = ENG_ref_commonwealth_elections
+        icon = GFX_goal_generic_democracy
+        x = 0
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_ref_house_of_lords_reform }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_ref_sterling_area
+        icon = GFX_goal_generic_trade
+        x = 0
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_ref_commonwealth_elections }
+        completion_reward = { add_ideas = aota_sterling_reconstruction }
+    }
+    focus = {
+        id = ENG_ref_welfare_compromise
+        icon = GFX_goal_generic_consumer_goods
+        x = 0
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_ref_sterling_area }
+        completion_reward = { add_stability = 0.05 }
+    }
+    focus = {
+        id = ENG_ref_air_raid_preparations
+        icon = GFX_goal_generic_air_production
+        x = 0
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_ref_welfare_compromise }
+        completion_reward = { add_ideas = aota_civil_defence_network }
+    }
+    focus = {
+        id = ENG_ref_maritime_conference
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 0
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_ref_air_raid_preparations }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_ref_parliamentary_union
+        icon = GFX_goal_generic_democracy
+        x = 0
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_ref_maritime_conference }
+        completion_reward = { add_political_power = 75 }
+    }
+    focus = {
+        id = ENG_ref_moderate_rearmament
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 0
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_ref_parliamentary_union }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_ref_security_act
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 0
+        y = 19
+        cost = 10
+        prerequisite = { focus = ENG_ref_moderate_rearmament }
+        completion_reward = { add_ideas = aota_republican_watchfulness }
+    }
+    focus = {
+        id = ENG_ref_imperial_concord
+        icon = GFX_goal_generic_alliance
+        x = 0
+        y = 20
+        cost = 10
+        prerequisite = { focus = ENG_ref_security_act }
+        completion_reward = { add_ideas = aota_concert_of_stability }
+    }
+    focus = {
+        id = ENG_ref_channel_guarantees
+        icon = GFX_goal_generic_major_war
+        x = 0
+        y = 21
+        cost = 10
+        prerequisite = { focus = ENG_ref_imperial_concord }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_ref_peacekeeper_of_europe
+        icon = GFX_goal_generic_alliance
+        x = 0
+        y = 22
+        cost = 10
+        prerequisite = { focus = ENG_ref_channel_guarantees }
+        completion_reward = { set_politics = { ruling_party = democratic elections_allowed = yes } add_political_power = 100 add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_imp_navalist_budget
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 4
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_guard_the_old_empire }
+        completion_reward = { add_navy_experience = 15 }
+    }
+    focus = {
+        id = ENG_imp_crown_colony_discipline
+        icon = GFX_goal_generic_police
+        x = 4
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_imp_navalist_budget }
+        completion_reward = { add_ideas = aota_colonial_discipline }
+    }
+    focus = {
+        id = ENG_imp_imperial_general_staff
+        icon = GFX_goal_generic_army_doctrines
+        x = 4
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_imp_crown_colony_discipline }
+        completion_reward = { army_experience = 15 }
+    }
+    focus = {
+        id = ENG_imp_dominion_obligations
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 4
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_imp_imperial_general_staff }
+        completion_reward = { add_ideas = aota_dominion_obligations }
+    }
+    focus = {
+        id = ENG_imp_home_fleet_first
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 4
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_imp_dominion_obligations }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_imp_india_must_hold
+        icon = GFX_goal_generic_major_war
+        x = 4
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_imp_home_fleet_first }
+        completion_reward = { add_ideas = aota_hold_the_raj }
+    }
+    focus = {
+        id = ENG_imp_mediterranean_chain
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 4
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_imp_india_must_hold }
+        completion_reward = { add_ideas = aota_mediterranean_chain }
+    }
+    focus = {
+        id = ENG_imp_imperial_air_route
+        icon = GFX_goal_generic_air_production
+        x = 4
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_imp_mediterranean_chain }
+        completion_reward = { air_experience = 15 }
+    }
+    focus = {
+        id = ENG_imp_blackshirts_restrained
+        icon = GFX_goal_generic_political_reform
+        x = 4
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_imp_imperial_air_route }
+        completion_reward = { add_stability = 0.02 }
+    }
+    focus = {
+        id = ENG_imp_royal_reserve_system
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 4
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_imp_blackshirts_restrained }
+        completion_reward = { add_war_support = 0.04 }
+    }
+    focus = {
+        id = ENG_imp_port_fortification_program
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 4
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_imp_royal_reserve_system }
+        completion_reward = { add_ideas = aota_channel_fortifications }
+    }
+    focus = {
+        id = ENG_imp_colonial_garrisons
+        icon = GFX_goal_generic_minor_war
+        x = 4
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_imp_port_fortification_program }
+        completion_reward = { add_ideas = aota_african_garrison_crisis }
+    }
+    focus = {
+        id = ENG_imp_arabian_watch
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 4
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_imp_colonial_garrisons }
+        completion_reward = { add_ideas = aota_suez_watch }
+    }
+    focus = {
+        id = ENG_imp_censor_the_pacifists
+        icon = GFX_goal_generic_propaganda
+        x = 4
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_imp_arabian_watch }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_imp_intercept_the_continent
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 4
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_imp_censor_the_pacifists }
+        completion_reward = { navy_experience = 15 }
+    }
+    focus = {
+        id = ENG_imp_rearm_the_isles
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 4
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_imp_intercept_the_continent }
+        completion_reward = { add_war_support = 0.04 }
+    }
+    focus = {
+        id = ENG_imp_imperial_emergency_powers
+        icon = GFX_goal_support_neutrality
+        x = 4
+        y = 19
+        cost = 10
+        prerequisite = { focus = ENG_imp_rearm_the_isles }
+        completion_reward = { add_ideas = aota_imperial_emergency }
+    }
+    focus = {
+        id = ENG_imp_rule_the_waves_again
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 4
+        y = 20
+        cost = 10
+        prerequisite = { focus = ENG_imp_imperial_emergency_powers }
+        completion_reward = { add_navy_experience = 20 }
+    }
+    focus = {
+        id = ENG_imp_bind_the_dominions
+        icon = GFX_goal_generic_alliance
+        x = 4
+        y = 21
+        cost = 10
+        prerequisite = { focus = ENG_imp_rule_the_waves_again }
+        completion_reward = { add_political_power = 75 }
+    }
+    focus = {
+        id = ENG_imp_last_guarantor
+        icon = GFX_goal_generic_major_war
+        x = 4
+        y = 22
+        cost = 10
+        prerequisite = { focus = ENG_imp_bind_the_dominions }
+        completion_reward = { set_politics = { ruling_party = neutrality elections_allowed = no } add_stability = 0.03 add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_soc_workers_charter
+        icon = GFX_goal_support_communism
+        x = 8
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_guild_social_settlement }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_soc_shop_stewards
+        icon = GFX_goal_generic_production
+        x = 8
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_soc_workers_charter }
+        completion_reward = { add_ideas = aota_shop_stewards }
+    }
+    focus = {
+        id = ENG_soc_guild_congress
+        icon = GFX_goal_generic_democracy
+        x = 8
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_soc_shop_stewards }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_soc_coal_board
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_soc_guild_congress }
+        completion_reward = { add_ideas = aota_coal_board }
+    }
+    focus = {
+        id = ENG_soc_municipal_workshops
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 8
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_soc_coal_board }
+        completion_reward = { add_ideas = aota_municipal_workshops }
+    }
+    focus = {
+        id = ENG_soc_dockers_council
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 8
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_soc_municipal_workshops }
+        completion_reward = { add_navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_soc_union_of_services
+        icon = GFX_goal_generic_army_doctrines
+        x = 8
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_soc_dockers_council }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_soc_cooperative_credit
+        icon = GFX_goal_generic_trade
+        x = 8
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_soc_union_of_services }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_soc_food_security_scheme
+        icon = GFX_goal_generic_consumer_goods
+        x = 8
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_soc_cooperative_credit }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_soc_red_vs_black
+        icon = GFX_goal_support_communism
+        x = 8
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_soc_food_security_scheme }
+        completion_reward = { country_event = { id = aota_eng.1000 days = 1 } }
+    }
+    focus = {
+        id = ENG_soc_workers_air_guard
+        icon = GFX_goal_generic_air_production
+        x = 8
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_soc_red_vs_black }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_soc_common_plan
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 8
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_soc_workers_air_guard }
+        completion_reward = { add_ideas = aota_common_plan }
+    }
+    focus = {
+        id = ENG_soc_council_guard
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 8
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_soc_common_plan }
+        completion_reward = { army_experience = 15 }
+    }
+    focus = {
+        id = ENG_soc_dockyard_syndicates
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 8
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_soc_council_guard }
+        completion_reward = { add_navy_experience = 15 }
+    }
+    focus = {
+        id = ENG_soc_continental_solidarity
+        icon = GFX_goal_generic_alliance
+        x = 8
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_soc_dockyard_syndicates }
+        completion_reward = { add_opinion_modifier = { target = FRA modifier = aota_red_international } }
+    }
+    focus = {
+        id = ENG_soc_guild_constitution
+        icon = GFX_goal_generic_democracy
+        x = 8
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_soc_continental_solidarity }
+        completion_reward = { add_stability = 0.04 }
+    }
+    focus = {
+        id = ENG_soc_discipline_the_party
+        icon = GFX_goal_generic_political_pressure
+        x = 8
+        y = 19
+        cost = 10
+        prerequisite = { focus = ENG_soc_guild_constitution }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_soc_federate_the_empire
+        icon = GFX_goal_generic_alliance
+        x = 8
+        y = 20
+        cost = 10
+        prerequisite = { focus = ENG_soc_discipline_the_party }
+        completion_reward = { add_ideas = aota_federated_labor }
+    }
+    focus = {
+        id = ENG_soc_arsenal_of_the_left
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 8
+        y = 21
+        cost = 10
+        prerequisite = { focus = ENG_soc_federate_the_empire }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_soc_british_workers_commonwealth
+        icon = GFX_goal_support_communism
+        x = 8
+        y = 22
+        cost = 10
+        prerequisite = { focus = ENG_soc_arsenal_of_the_left }
+        completion_reward = { set_politics = { ruling_party = communism elections_allowed = no } add_stability = 0.05 add_political_power = 100 }
+    }
+    focus = {
+        id = ENG_mkt_credit_restoration
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_boardroom_realm }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_mkt_board_of_directors
+        icon = GFX_goal_generic_political_pressure
+        x = 12
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_mkt_credit_restoration }
+        completion_reward = { add_ideas = aota_boardroom_realm }
+    }
+    focus = {
+        id = ENG_mkt_contract_the_empire
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_mkt_board_of_directors }
+        completion_reward = { add_ideas = aota_contract_empire }
+    }
+    focus = {
+        id = ENG_mkt_mercantile_security
+        icon = GFX_goal_generic_police
+        x = 12
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_mkt_contract_the_empire }
+        completion_reward = { add_ideas = aota_corporate_mercenaries }
+    }
+    focus = {
+        id = ENG_mkt_shipping_cartels
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 12
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_mkt_mercantile_security }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_mkt_offshore_finance
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_mkt_shipping_cartels }
+        completion_reward = { add_ideas = aota_offshore_finance }
+    }
+    focus = {
+        id = ENG_mkt_dockyard_concessions
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 12
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_mkt_offshore_finance }
+        completion_reward = { add_navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_mkt_private_aerodromes
+        icon = GFX_goal_generic_air_production
+        x = 12
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_mkt_dockyard_concessions }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_mkt_anti_union_injunctions
+        icon = GFX_goal_generic_political_pressure
+        x = 12
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_mkt_private_aerodromes }
+        completion_reward = { add_stability = -0.01 add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_mkt_atlantic_market
+        icon = GFX_goal_generic_alliance
+        x = 12
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_mkt_anti_union_injunctions }
+        completion_reward = { add_ideas = aota_atlantic_market_league }
+    }
+    focus = {
+        id = ENG_mkt_chartered_militias
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 12
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_mkt_atlantic_market }
+        completion_reward = { army_experience = 12 }
+    }
+    focus = {
+        id = ENG_mkt_sterling_speculation
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_mkt_chartered_militias }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_mkt_royal_company_revived
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_mkt_sterling_speculation }
+        completion_reward = { add_ideas = aota_royal_companies }
+    }
+    focus = {
+        id = ENG_mkt_broker_the_continent
+        icon = GFX_goal_generic_improve_relations
+        x = 12
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_mkt_royal_company_revived }
+        completion_reward = { add_opinion_modifier = { target = GER modifier = aota_atlantic_financiers } }
+    }
+    focus = {
+        id = ENG_mkt_london_exchange_state
+        icon = GFX_goal_support_neutrality
+        x = 12
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_mkt_broker_the_continent }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_mkt_security_shareholders
+        icon = GFX_goal_generic_police
+        x = 12
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_mkt_london_exchange_state }
+        completion_reward = { add_ideas = aota_shareholder_security }
+    }
+    focus = {
+        id = ENG_mkt_debt_purchase_program
+        icon = GFX_goal_generic_trade
+        x = 12
+        y = 19
+        cost = 10
+        prerequisite = { focus = ENG_mkt_security_shareholders }
+        completion_reward = { add_political_power = 75 }
+    }
+    focus = {
+        id = ENG_mkt_private_rearmament
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 12
+        y = 20
+        cost = 10
+        prerequisite = { focus = ENG_mkt_debt_purchase_program }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_mkt_boardroom_empire
+        icon = GFX_goal_support_neutrality
+        x = 12
+        y = 21
+        cost = 10
+        prerequisite = { focus = ENG_mkt_private_rearmament }
+        completion_reward = { remove_ideas = aota_atlantic_shareholders add_ideas = aota_atlantic_shareholders }
+    }
+    focus = {
+        id = ENG_mkt_atlantic_directorate
+        icon = GFX_goal_generic_alliance
+        x = 12
+        y = 22
+        cost = 10
+        prerequisite = { focus = ENG_mkt_boardroom_empire }
+        completion_reward = { set_politics = { ruling_party = market_radicalism elections_allowed = no } add_stability = 0.03 add_political_power = 100 }
+    }
+    focus = {
+        id = ENG_ana_parish_unions
+        icon = GFX_goal_support_communism
+        x = 16
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_green_and_pleasant_communities }
+        completion_reward = { add_stability = 0.02 }
+    }
+    focus = {
+        id = ENG_ana_commons_revival
+        icon = GFX_goal_generic_consumer_goods
+        x = 16
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_ana_parish_unions }
+        completion_reward = { remove_ideas = aota_english_communalism add_ideas = aota_english_communalism }
+    }
+    focus = {
+        id = ENG_ana_mutual_aid_societies
+        icon = GFX_goal_generic_democracy
+        x = 16
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_ana_commons_revival }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_ana_rail_workers_pacts
+        icon = GFX_goal_generic_production
+        x = 16
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_ana_mutual_aid_societies }
+        completion_reward = { add_ideas = aota_rail_communes }
+    }
+    focus = {
+        id = ENG_ana_municipal_guard
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 16
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_ana_rail_workers_pacts }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_ana_christian_social_circles
+        icon = GFX_goal_generic_political_pressure
+        x = 16
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_ana_municipal_guard }
+        completion_reward = { add_ideas = aota_christian_communalism }
+    }
+    focus = {
+        id = ENG_ana_pacifists_and_practical_men
+        icon = GFX_goal_generic_political_reform
+        x = 16
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_ana_christian_social_circles }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_ana_rural_cooperatives
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 16
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_ana_pacifists_and_practical_men }
+        completion_reward = { add_ideas = aota_rural_cooperatives }
+    }
+    focus = {
+        id = ENG_ana_dockside_federations
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 16
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_ana_rural_cooperatives }
+        completion_reward = { add_navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_ana_free_schools
+        icon = GFX_goal_generic_scientific_exchange
+        x = 16
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_ana_dockside_federations }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = ENG_ana_black_banner_debate
+        icon = GFX_goal_support_communism
+        x = 16
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_ana_free_schools }
+        completion_reward = { country_event = { id = aota_eng.1001 days = 1 } }
+    }
+    focus = {
+        id = ENG_ana_regional_congresses
+        icon = GFX_goal_generic_democracy
+        x = 16
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_ana_black_banner_debate }
+        completion_reward = { add_ideas = aota_regional_congresses }
+    }
+    focus = {
+        id = ENG_ana_local_defence_leagues
+        icon = GFX_goal_generic_army_doctrines
+        x = 16
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_ana_regional_congresses }
+        completion_reward = { army_experience = 12 }
+    }
+    focus = {
+        id = ENG_ana_free_ports
+        icon = GFX_goal_generic_trade
+        x = 16
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_ana_local_defence_leagues }
+        completion_reward = { add_trade_opinion_factor = 15 }
+    }
+    focus = {
+        id = ENG_ana_federation_of_communes
+        icon = GFX_goal_generic_alliance
+        x = 16
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_ana_free_ports }
+        completion_reward = { add_stability = 0.04 }
+    }
+    focus = {
+        id = ENG_ana_green_and_pleasant_republic
+        icon = GFX_goal_support_communism
+        x = 16
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_ana_federation_of_communes }
+        completion_reward = { set_politics = { ruling_party = anarchism elections_allowed = no } add_stability = 0.05 add_political_power = 100 }
+    }
+    focus = {
+        id = ENG_ind_midlands_retooling
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 20
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_treasury_emergency }
+        completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+    }
+    focus = {
+        id = ENG_ind_coal_to_power
+        icon = GFX_goal_generic_energy
+        x = 20
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_ind_midlands_retooling }
+        completion_reward = { add_ideas = aota_british_power_grid }
+    }
+    focus = {
+        id = ENG_ind_dockyard_modernisation
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 20
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_ind_coal_to_power }
+        completion_reward = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+    }
+    focus = {
+        id = ENG_ind_civil_aviation_boards
+        icon = GFX_goal_generic_air_production
+        x = 20
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_ind_dockyard_modernisation }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_ind_motorway_committees
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 20
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_ind_civil_aviation_boards }
+        completion_reward = { add_infrastructure = 1 }
+    }
+    focus = {
+        id = ENG_ind_imperial_raw_materials
+        icon = GFX_goal_generic_trade
+        x = 20
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_ind_motorway_committees }
+        completion_reward = { add_ideas = aota_imperial_resource_board }
+    }
+    focus = {
+        id = ENG_ind_shipyard_machinery
+        icon = GFX_goal_generic_construct_naval_dockyard
+        x = 20
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_ind_imperial_raw_materials }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_ind_scientific_grants
+        icon = GFX_goal_generic_scientific_exchange
+        x = 20
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_ind_shipyard_machinery }
+        completion_reward = { add_research_slot = 1 }
+    }
+    focus = {
+        id = ENG_ind_housing_program
+        icon = GFX_goal_generic_consumer_goods
+        x = 20
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_ind_scientific_grants }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_ind_synthetics_in_scotland
+        icon = GFX_goal_generic_oil_refinery
+        x = 20
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_ind_housing_program }
+        completion_reward = { add_building_construction = { type = refinery level = 1 instant_build = yes } }
+    }
+    focus = {
+        id = ENG_ind_commonwealth_standards
+        icon = GFX_goal_generic_alliance
+        x = 20
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_ind_synthetics_in_scotland }
+        completion_reward = { add_ideas = aota_commonwealth_standards }
+    }
+    focus = {
+        id = ENG_ind_radar_chain
+        icon = GFX_goal_generic_air_production
+        x = 20
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_ind_commonwealth_standards }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_ind_machine_tool_exports
+        icon = GFX_goal_generic_trade
+        x = 20
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_ind_radar_chain }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_ind_industrial_peace
+        icon = GFX_goal_generic_political_reform
+        x = 20
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_ind_machine_tool_exports }
+        completion_reward = { add_stability = 0.03 }
+    }
+    focus = {
+        id = ENG_ind_rearmament_commission
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 20
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_ind_industrial_peace }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_ind_arsenal_of_balance
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 20
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_ind_rearmament_commission }
+        completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+    }
+    focus = {
+        id = ENG_mil_home_army_review
+        icon = GFX_goal_generic_army_doctrines
+        x = 24
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_staff_college_review }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_mil_royal_navy_standards
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 24
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_mil_home_army_review }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_mil_raf_expansion
+        icon = GFX_goal_generic_air_production
+        x = 24
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_mil_royal_navy_standards }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_mil_territorial_reform
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 24
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_mil_raf_expansion }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_mil_combined_staff
+        icon = GFX_goal_generic_army_doctrines
+        x = 24
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_mil_territorial_reform }
+        completion_reward = { army_experience = 12 }
+    }
+    focus = {
+        id = ENG_mil_convoy_discipline
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 24
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_mil_combined_staff }
+        completion_reward = { navy_experience = 12 }
+    }
+    focus = {
+        id = ENG_mil_fighter_command
+        icon = GFX_goal_generic_air_production
+        x = 24
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_mil_convoy_discipline }
+        completion_reward = { air_experience = 12 }
+    }
+    focus = {
+        id = ENG_mil_imperial_logistics
+        icon = GFX_goal_generic_construct_infrastructure
+        x = 24
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_mil_fighter_command }
+        completion_reward = { add_ideas = aota_imperial_logistics }
+    }
+    focus = {
+        id = ENG_mil_marine_expansion
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 24
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_mil_imperial_logistics }
+        completion_reward = { navy_experience = 12 }
+    }
+    focus = {
+        id = ENG_mil_armoured_experiments
+        icon = GFX_goal_generic_tank_production
+        x = 24
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_mil_marine_expansion }
+        completion_reward = { army_experience = 12 }
+    }
+    focus = {
+        id = ENG_mil_anti_air_belt
+        icon = GFX_goal_generic_air_production
+        x = 24
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_mil_armoured_experiments }
+        completion_reward = { air_experience = 10 }
+    }
+    focus = {
+        id = ENG_mil_fleet_train
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 24
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_mil_anti_air_belt }
+        completion_reward = { navy_experience = 15 }
+    }
+    focus = {
+        id = ENG_mil_staff_rides
+        icon = GFX_goal_generic_army_doctrines
+        x = 24
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_mil_fleet_train }
+        completion_reward = { army_experience = 15 }
+    }
+    focus = {
+        id = ENG_mil_bomber_doctrine
+        icon = GFX_goal_generic_air_production
+        x = 24
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_mil_staff_rides }
+        completion_reward = { air_experience = 15 }
+    }
+    focus = {
+        id = ENG_mil_expeditionary_readiness
+        icon = GFX_goal_generic_major_war
+        x = 24
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_mil_bomber_doctrine }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_mil_british_war_machine
+        icon = GFX_goal_generic_construct_mil_factory
+        x = 24
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_mil_expeditionary_readiness }
+        completion_reward = { add_war_support = 0.04 }
+    }
+    focus = {
+        id = ENG_for_rhine_mediation
+        icon = GFX_goal_generic_improve_relations
+        x = 28
+        y = 3
+        cost = 7
+        prerequisite = { focus = ENG_recall_the_dominions }
+        completion_reward = { country_event = { id = aota_eng.1002 days = 1 } }
+    }
+    focus = {
+        id = ENG_for_guarantee_low_countries
+        icon = GFX_goal_generic_alliance
+        x = 28
+        y = 4
+        cost = 10
+        prerequisite = { focus = ENG_for_rhine_mediation }
+        completion_reward = { add_political_power = 50 }
+    }
+    focus = {
+        id = ENG_for_northern_sea_watch
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 28
+        y = 5
+        cost = 10
+        prerequisite = { focus = ENG_for_guarantee_low_countries }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_for_suez_commitments
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 28
+        y = 6
+        cost = 10
+        prerequisite = { focus = ENG_for_northern_sea_watch }
+        completion_reward = { remove_ideas = aota_suez_watch add_ideas = aota_suez_watch }
+    }
+    focus = {
+        id = ENG_for_danubian_questions
+        icon = GFX_goal_generic_dangerous_deal
+        x = 28
+        y = 7
+        cost = 10
+        prerequisite = { focus = ENG_for_suez_commitments }
+        completion_reward = { add_opinion_modifier = { target = AUS modifier = aota_concert_of_stability } }
+    }
+    focus = {
+        id = ENG_for_watch_the_americas
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 28
+        y = 8
+        cost = 10
+        prerequisite = { focus = ENG_for_danubian_questions }
+        completion_reward = { add_ideas = aota_american_watch }
+    }
+    focus = {
+        id = ENG_for_india_emergency_plans
+        icon = GFX_goal_generic_major_war
+        x = 28
+        y = 9
+        cost = 10
+        prerequisite = { focus = ENG_for_watch_the_americas }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_for_mediterranean_understanding
+        icon = GFX_goal_generic_improve_relations
+        x = 28
+        y = 10
+        cost = 10
+        prerequisite = { focus = ENG_for_india_emergency_plans }
+        completion_reward = { add_opinion_modifier = { target = TUR modifier = aota_imperial_solidarity } }
+    }
+    focus = {
+        id = ENG_for_anti_japanese_staffing
+        icon = GFX_goal_generic_major_war
+        x = 28
+        y = 11
+        cost = 10
+        prerequisite = { focus = ENG_for_mediterranean_understanding }
+        completion_reward = { army_experience = 10 }
+    }
+    focus = {
+        id = ENG_for_channel_defence_zone
+        icon = GFX_goal_generic_navy_doctrines_tactics
+        x = 28
+        y = 12
+        cost = 10
+        prerequisite = { focus = ENG_for_anti_japanese_staffing }
+        completion_reward = { navy_experience = 10 }
+    }
+    focus = {
+        id = ENG_for_concert_of_stability
+        icon = GFX_goal_generic_alliance
+        x = 28
+        y = 13
+        cost = 10
+        prerequisite = { focus = ENG_for_channel_defence_zone }
+        completion_reward = { create_faction = "Concert of Stability" }
+    }
+    focus = {
+        id = ENG_for_diplomacy_of_distance
+        icon = GFX_goal_generic_political_reform
+        x = 28
+        y = 14
+        cost = 10
+        prerequisite = { focus = ENG_for_concert_of_stability }
+        completion_reward = { add_stability = 0.02 }
+    }
+    focus = {
+        id = ENG_for_imperial_signal_net
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 28
+        y = 15
+        cost = 10
+        prerequisite = { focus = ENG_for_diplomacy_of_distance }
+        completion_reward = { add_ideas = aota_signal_net }
+    }
+    focus = {
+        id = ENG_for_rearm_the_dominions
+        icon = GFX_goal_generic_allies_build_infantry
+        x = 28
+        y = 16
+        cost = 10
+        prerequisite = { focus = ENG_for_imperial_signal_net }
+        completion_reward = { add_war_support = 0.03 }
+    }
+    focus = {
+        id = ENG_for_prepare_the_second_peace
+        icon = GFX_goal_generic_major_war
+        x = 28
+        y = 17
+        cost = 10
+        prerequisite = { focus = ENG_for_rearm_the_dominions }
+        completion_reward = { add_war_support = 0.04 }
+    }
+    focus = {
+        id = ENG_for_english_century_last_chance
+        icon = GFX_goal_generic_alliance
+        x = 28
+        y = 18
+        cost = 10
+        prerequisite = { focus = ENG_for_prepare_the_second_peace }
+        completion_reward = { add_political_power = 100 add_stability = 0.03 }
+    }
+}

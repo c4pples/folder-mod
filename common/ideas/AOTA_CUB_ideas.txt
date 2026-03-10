@@ -1,0 +1,64 @@
+ideas = {
+  country = {
+    aota_cub_american_corporate_influx = {
+      picture = idea_generic_trade
+      allowed = { tag = CUB }
+      modifier = { political_power_factor = 0.05 industrial_capacity_factory = 0.03 consumer_goods_factor = 0.03 }
+    }
+    aota_cub_open_island = {
+      picture = idea_generic_free_trade
+      allowed = { tag = CUB }
+      modifier = { trade_opinion_factor = 25 political_power_factor = 0.03 }
+    }
+    aota_cub_executive_refugees = {
+      picture = idea_generic_construct_civ_factory
+      allowed = { tag = CUB }
+      modifier = { industrial_capacity_factory = 0.05 production_speed_industrial_complex_factor = 0.05 }
+    }
+    aota_cub_rent_a_guard_state = {
+      picture = idea_generic_militarism
+      allowed = { tag = CUB }
+      modifier = { war_support_factor = 0.05 division_organization_factor = 0.03 }
+    }
+    aota_cub_extraterritorial_enclaves = {
+      picture = idea_generic_political_reform
+      allowed = { tag = CUB }
+      modifier = { stability_factor = -0.05 political_power_factor = 0.06 }
+    }
+    aota_cub_franchised_state = {
+      picture = idea_generic_consumer_goods
+      allowed = { tag = CUB }
+      modifier = { consumer_goods_factor = -0.03 political_power_factor = 0.05 }
+    }
+    aota_cub_charter_havana = {
+      picture = idea_generic_construct_civ_factory
+      allowed = { tag = CUB }
+      modifier = { local_building_slots_factor = 0.1 production_speed_industrial_complex_factor = 0.05 }
+    }
+    aota_cub_private_arbitration = {
+      picture = idea_generic_political_reform
+      allowed = { tag = CUB }
+      modifier = { political_power_factor = 0.08 stability_factor = -0.02 }
+    }
+    aota_cub_boardroom_council = {
+      picture = idea_generic_political_pressure
+      allowed = { tag = CUB }
+      modifier = { political_power_factor = 0.1 stability_factor = -0.03 }
+    }
+    aota_cub_payroll_battalions = {
+      picture = idea_generic_army_motorized
+      allowed = { tag = CUB }
+      modifier = { division_attack_factor = 0.05 army_org_factor = 0.03 }
+    }
+    aota_cub_insurance_state = {
+      picture = idea_generic_production
+      allowed = { tag = CUB }
+      modifier = { stability_factor = 0.04 industrial_capacity_factory = 0.04 }
+    }
+    aota_cub_nightmare_of_contracts = {
+      picture = idea_generic_major_war
+      allowed = { tag = CUB }
+      modifier = { political_power_factor = 0.12 industrial_capacity_factory = 0.06 war_support_factor = 0.08 stability_factor = -0.06 }
+    }
+  }
+}

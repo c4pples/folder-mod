@@ -1,0 +1,31 @@
+﻿
+focus_tree = {
+    id = aota_asl_focus
+    country = { factor = 0 modifier = { add = 10 tag = ASL } }
+    default = no
+
+    focus = { id = ASL_the_county_levies icon = GFX_goal_generic_allies_build_infantry x = 5 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_ideas = aota_asl_county_levies army_experience = 10 } }
+    focus = { id = ASL_cotton_and_corn_barter icon = GFX_goal_generic_trade x = 3 y = 1 cost = 5 prerequisite = { focus = ASL_the_county_levies } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    focus = { id = ASL_land_and_church icon = GFX_goal_generic_national_unity x = 5 y = 1 cost = 5 prerequisite = { focus = ASL_the_county_levies } completion_reward = { add_stability = 0.04 } }
+    focus = { id = ASL_sheriffs_war_council icon = GFX_goal_generic_political_pressure x = 7 y = 1 cost = 5 prerequisite = { focus = ASL_the_county_levies } completion_reward = { add_political_power = 50 } }
+
+    focus = { id = ASL_rural_fortress_lines icon = GFX_goal_generic_defence x = 3 y = 2 cost = 7 prerequisite = { focus = ASL_cotton_and_corn_barter } completion_reward = { add_war_support = 0.04 } }
+    focus = { id = ASL_distributist_compromise icon = GFX_goal_support_neutrality x = 5 y = 2 cost = 7 prerequisite = { focus = ASL_land_and_church } completion_reward = { add_ideas = aota_asl_distributist_compromise } }
+    focus = { id = ASL_the_black_march icon = GFX_goal_generic_major_war x = 7 y = 2 cost = 7 prerequisite = { focus = ASL_sheriffs_war_council } completion_reward = { add_war_support = 0.08 } }
+
+    focus = { id = ASL_feed_the_armies icon = GFX_goal_generic_construct_civ_factory x = 4 y = 3 cost = 7 prerequisite = { focus = ASL_rural_fortress_lines focus = ASL_distributist_compromise } completion_reward = { add_stability = 0.03 } }
+    focus = { id = ASL_southern_redemption icon = GFX_goal_generic_demand_territory_or_war x = 6 y = 3 cost = 7 prerequisite = { focus = ASL_distributist_compromise focus = ASL_the_black_march } available = { date > 1938.1.1 } completion_reward = { add_political_power = 60 add_war_support = 0.08 } }
+}

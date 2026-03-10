@@ -1,0 +1,23 @@
+ai_strategy = {
+    id = AOTA_GER_rhine_pressure
+    allowed = { tag = GER }
+    abort_when_not_enabled = yes
+    enable = { has_war_support > 0.35 }
+    strategy = { type = prepare_for_war id = FRA value = 75 }
+}
+
+ai_strategy = {
+    id = AOTA_FRA_border_vigilance
+    allowed = { tag = FRA }
+    abort_when_not_enabled = yes
+    enable = { has_idea = aota_french_revanchism }
+    strategy = { type = prepare_for_war id = GER value = 90 }
+}
+
+ai_strategy = {
+    id = AOTA_USA_hold_federal_core
+    allowed = { tag = USA }
+    abort_when_not_enabled = yes
+    enable = { has_country_flag = AOTA_USA_powder_keg_flag }
+    strategy = { type = area_defense id = 361 value = 200 }
+}

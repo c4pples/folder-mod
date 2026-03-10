@@ -1,0 +1,2 @@
+# AOTA v0.15 modifier_definitions scaffold
+# Reserve for custom UI-exposed modifier definitions where needed.

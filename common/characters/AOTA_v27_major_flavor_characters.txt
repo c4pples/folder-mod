@@ -1,0 +1,81 @@
+characters = {
+  AOTA_GER_theodor_wolff = {
+    name = AOTA_GER_theodor_wolff_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_7 } }
+    advisor = { slot = political_advisor idea_token = AOTA_GER_theodor_wolff_advisor allowed = { original_tag = GER } traits = { democratic_reformer } }
+  }
+  AOTA_GER_franz_seldte = {
+    name = AOTA_GER_franz_seldte_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = high_command idea_token = AOTA_GER_franz_seldte_advisor allowed = { original_tag = GER } traits = { army_offence_1 } }
+  }
+  AOTA_GER_helene_stocker = {
+    name = AOTA_GER_helene_stocker_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_5 } }
+    advisor = { slot = political_advisor idea_token = AOTA_GER_helene_stocker_advisor allowed = { original_tag = GER } traits = { compassionate_gentleman } }
+  }
+
+  AOTA_FRA_edouard_daladier = {
+    name = AOTA_FRA_edouard_daladier_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_8 } }
+    advisor = { slot = political_advisor idea_token = AOTA_FRA_edouard_daladier_advisor allowed = { original_tag = FRA } traits = { democratic_reformer } }
+  }
+  AOTA_FRA_jacques_doriot = {
+    name = AOTA_FRA_jacques_doriot_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_1 } }
+    advisor = { slot = political_advisor idea_token = AOTA_FRA_jacques_doriot_advisor allowed = { original_tag = FRA } traits = { war_industrialist } }
+  }
+  AOTA_FRA_emmanuel_mounier = {
+    name = AOTA_FRA_emmanuel_mounier_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_6 } }
+    advisor = { slot = political_advisor idea_token = AOTA_FRA_emmanuel_mounier_advisor allowed = { original_tag = FRA } traits = { compassionate_gentleman } }
+  }
+
+  AOTA_AUS_richard_coudenhove = {
+    name = AOTA_AUS_richard_coudenhove_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_5 } }
+    advisor = { slot = political_advisor idea_token = AOTA_AUS_richard_coudenhove_advisor allowed = { original_tag = AUS } traits = { democratic_reformer } }
+  }
+  AOTA_AUS_stjepan_sarkotic = {
+    name = AOTA_AUS_stjepan_sarkotic_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = high_command idea_token = AOTA_AUS_stjepan_sarkotic_advisor allowed = { original_tag = AUS } traits = { army_defence_1 } }
+  }
+  AOTA_AUS_hildegard_burjan = {
+    name = AOTA_AUS_hildegard_burjan_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_AUS_hildegard_burjan_advisor allowed = { original_tag = AUS } traits = { compassionate_gentleman } }
+  }
+
+  AOTA_USA_fiorello_laguardia = {
+    name = AOTA_USA_fiorello_laguardia_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_USA_fiorello_laguardia_advisor allowed = { original_tag = USA } traits = { democratic_reformer } }
+  }
+  AOTA_USA_smedley_butler = {
+    name = AOTA_USA_smedley_butler_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_2 } }
+    advisor = { slot = high_command idea_token = AOTA_USA_smedley_butler_advisor allowed = { original_tag = USA } traits = { army_defence_1 } }
+  }
+  AOTA_USA_charles_coughlin = {
+    name = AOTA_USA_charles_coughlin_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_3 } }
+    advisor = { slot = political_advisor idea_token = AOTA_USA_charles_coughlin_advisor allowed = { original_tag = USA } traits = { war_industrialist } }
+  }
+
+  AOTA_ITA_carlo_rosselli = {
+    name = AOTA_ITA_carlo_rosselli_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_7 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ITA_carlo_rosselli_advisor allowed = { original_tag = ITA } traits = { democratic_reformer } }
+  }
+  AOTA_ITA_curzio_malaparte = {
+    name = AOTA_ITA_curzio_malaparte_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_1 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ITA_curzio_malaparte_advisor allowed = { original_tag = ITA } traits = { war_industrialist } }
+  }
+  AOTA_ITA_italo_balbo = {
+    name = AOTA_ITA_italo_balbo_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = air_chief idea_token = AOTA_ITA_italo_balbo_advisor allowed = { original_tag = ITA } traits = { air_superiority_1 } }
+  }
+}

@@ -1,0 +1,425 @@
+
+ideas = {
+    country = {
+
+        aota_unfinished_peace = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.03
+                justify_war_goal_time = -0.05
+            }
+        }
+
+        aota_veteran_disillusionment = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.03
+            }
+        }
+
+        aota_danubian_compromise = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.06
+                compliance_gain = -0.05
+            }
+        }
+
+        aota_british_exhaustion = {
+            picture = idea_generic_construct_civ_factory
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = 0.03
+                stability_factor = -0.03
+            }
+        }
+
+        aota_italian_mutilated_pride = {
+            picture = idea_generic_war_propaganda
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.05
+                stability_factor = -0.04
+            }
+        }
+
+        aota_russian_fragility = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.08
+                surrender_limit = -0.05
+            }
+        }
+
+        aota_french_revanchism = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.06
+                justify_war_goal_time = -0.05
+            }
+        }
+
+        aota_german_ascendancy = {
+            picture = idea_generic_construct_civ_factory
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.05
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        aota_christian_anarchist_movement = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.04
+                conscription_factor = -0.05
+                weekly_manpower = 250
+            }
+        }
+
+        aota_pagan_revival = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.06
+                division_attack_factor = 0.03
+            }
+        }
+
+        aota_anarcho_capitalist_networks = {
+            picture = idea_generic_trade
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_factor = -0.03
+                production_speed_industrial_complex_factor = 0.05
+                trade_opinion_factor = 0.15
+            }
+        }
+
+        aota_american_powder_keg = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.15
+                war_support_factor = 0.08
+                political_power_factor = -0.05
+            }
+        }
+
+        aota_minor_exposed_frontier = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.03
+                war_support_factor = 0.03
+            }
+        }
+
+        aota_armed_neutrality = {
+            picture = idea_generic_allies_build_infantry
+            allowed = { always = yes }
+            modifier = {
+                army_defence_factor = 0.05
+                mobilization_speed = 0.05
+            }
+        }
+
+        aota_danubian_claimant = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.05
+                justify_war_goal_time = -0.05
+            }
+        }
+
+        aota_continental_broker = {
+            picture = idea_generic_improve_relations
+            allowed = { always = yes }
+            modifier = {
+                improve_relation_modifier = 0.2
+                opinion_gain_monthly = 0.1
+            }
+        }
+    }
+}
+
+
+ideas = {
+    country = {
+        aota_rhine_powder_keg = {
+            picture = idea_generic_defense
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.05
+                justify_war_goal_time = -0.10
+            }
+        }
+        aota_danubian_overstretch = {
+            picture = idea_generic_minister
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.08
+                political_power_factor = -0.05
+                division_defence_core_factor = 0.05
+            }
+        }
+        aota_minor_messianic_path = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.12
+                war_support_factor = 0.12
+                weekly_manpower = 500
+                division_attack_on_core_factor = 0.10
+            }
+        }
+        aota_belgian_burgundian_gamble = {
+            picture = idea_generic_propaganda
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.15
+                factory_output = 0.10
+                division_attack_factor = 0.08
+                justify_war_goal_time = -0.25
+            }
+        }
+        aota_polish_intermarium_dream = {
+            picture = idea_generic_allies_build_infantry
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.10
+                weekly_manpower = 800
+                max_planning_factor = 0.10
+                division_recovery_rate = 0.08
+            }
+        }
+        aota_serbian_black_march = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.14
+                war_support_factor = 0.15
+                land_night_attack = 0.10
+                army_org_factor = 0.05
+            }
+        }
+        aota_spanish_cauldron = {
+            picture = idea_generic_civil_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.18
+                factory_output = 0.08
+                division_attack_on_core_factor = 0.10
+                resistance_target = 0.05
+            }
+        }
+        aota_american_shatterstate = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.20
+                war_support_factor = 0.20
+                surrender_limit = 0.10
+                weekly_manpower = 2000
+            }
+        }
+    
+        aota_armistice_reckoning = {
+            picture = idea_generic_political_pressure
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.06
+                political_power_factor = 0.05
+                war_support_factor = 0.04
+            }
+        }
+        aota_french_fractured_republic = {
+            picture = idea_generic_civil_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.07
+                consumer_goods_factor = 0.03
+                war_support_factor = 0.05
+            }
+        }
+        aota_danubian_nationalities_crisis = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.10
+                political_power_factor = -0.04
+                division_defence_core_factor = 0.05
+            }
+        }
+        aota_federal_bargain = {
+            picture = idea_generic_improve_relations
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                compliance_gain = 0.03
+                political_power_gain = 0.03
+            }
+        }
+        aota_republican_rearmament = {
+            picture = idea_generic_prepare_for_war
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.06
+                production_speed_arms_factory_factor = 0.08
+            }
+        }
+        aota_minor_miracle = {
+            picture = idea_generic_propaganda
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.08
+                factory_output = 0.08
+                weekly_manpower = 300
+            }
+        }
+        aota_corporate_mercenaries = {
+            picture = idea_generic_trade
+            allowed = { always = yes }
+            modifier = {
+                division_attack_factor = 0.06
+                production_factory_efficiency_gain_factor = 0.05
+                stability_factor = -0.05
+            }
+        }
+        aota_pacific_autonomy = {
+            picture = idea_generic_construct_civ_factory
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.04
+                consumer_goods_factor = -0.03
+                trade_opinion_factor = 0.10
+            }
+        }
+        aota_workers_militias = {
+            picture = idea_generic_civil_war
+            allowed = { always = yes }
+            modifier = {
+                recruitable_population_factor = 0.03
+                division_defence_factor = 0.05
+                stability_factor = -0.04
+            }
+        }
+        aota_southern_revanchism = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.08
+                army_org_factor = 0.05
+                consumer_goods_factor = 0.02
+            }
+        }
+        aota_christian_commonwealth = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.06
+                weekly_manpower = 250
+                conscription_factor = -0.03
+            }
+        }
+        aota_constitutional_remnant = {
+            picture = idea_generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.04
+                political_power_gain = 0.05
+                army_defence_factor = 0.04
+            }
+        }
+
+    }
+}
+
+ideas = {
+    country = {
+        aota_anarchist_agitation = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.04
+                weekly_manpower = 300
+                division_recovery_rate_factor = -0.03
+            }
+        }
+        aota_commune_momentum = {
+            picture = idea_generic_major_war
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.04
+                production_factory_efficiency_gain_factor = 0.03
+                consumer_goods_factor = 0.02
+            }
+        }
+        aota_red_black_schism = {
+            picture = idea_generic_civil_war
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.06
+                political_power_factor = -0.05
+            }
+        }
+        aota_armistice_legitimacy_spirit = {
+            picture = idea_generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = -0.02
+            }
+        }
+    }
+
+aota_balkan_powderkeg = {
+    picture = idea_generic_major_war
+    allowed = { always = yes }
+    modifier = {
+        stability_factor = -0.10
+        war_support_factor = 0.06
+        justify_war_goal_time = -0.10
+    }
+}
+aota_spanish_neutral_brittleness = {
+    picture = idea_generic_civil_war
+    allowed = { always = yes }
+    modifier = {
+        stability_factor = -0.08
+        political_power_factor = -0.03
+        consumer_goods_factor = 0.02
+
+        aota_boardroom_realm = {
+            picture = generic_economic_reform
+            allowed = { original_tag = ENG }
+            modifier = {
+                consumer_goods_factor = -0.03
+                factory_output = 0.06
+                trade_opinion_factor = 0.10
+                political_power_gain = 0.03
+            }
+        }
+        aota_atlantic_market_league = {
+            picture = generic_trade_law
+            allowed = { original_tag = ENG }
+            modifier = {
+                trade_opinion_factor = 0.15
+                production_speed_industrial_complex_factor = 0.05
+                dockyard_output = 0.05
+                stability_factor = 0.03
+            }
+        }
+    }
+}
+
+}

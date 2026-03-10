@@ -1,0 +1,2 @@
+# AOTA v0.15 mtth scaffold
+# Reserve for shared mean-time-to-happen tuning used by crisis event chains.

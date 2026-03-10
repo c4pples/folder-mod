@@ -1,0 +1,122 @@
+aota_controls_capital_of_ger = { GER = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_fra = { FRA = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_ita = { ITA = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_eng = { ENG = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_pol = { POL = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_bel = { BEL = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_hol = { HOL = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_cze = { CZE = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_aut = { AUS = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_den = { DEN = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_spa = { SPR = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_por = { POR = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_yug = { YUG = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_gre = { GRE = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_tur = { TUR = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+aota_controls_capital_of_egy = { EGY = { capital_scope = { is_owned_by = ROOT is_controlled_by = ROOT } } }
+
+aota_ger_reichsordnung_territorial_req = {
+	tag = GER
+	has_government = fascism
+	num_of_owned_states > 140
+	aota_controls_capital_of_fra = yes
+	aota_controls_capital_of_pol = yes
+	aota_controls_capital_of_bel = yes
+	aota_controls_capital_of_hol = yes
+	aota_controls_capital_of_cze = yes
+	aota_controls_capital_of_aut = yes
+	aota_controls_capital_of_den = yes
+	OR = {
+		aota_controls_capital_of_ita = yes
+		aota_controls_capital_of_eng = yes
+	}
+}
+
+aota_ger_compact_territorial_req = {
+	tag = GER
+	OR = { has_government = democratic has_government = neutrality }
+	num_of_owned_states > 95
+	aota_controls_capital_of_aut = yes
+	aota_controls_capital_of_cze = yes
+	aota_controls_capital_of_pol = yes
+	is_faction_leader = yes
+	num_faction_members > 6
+	any_other_country = {
+		is_in_faction_with = ROOT
+		OR = {
+			tag = FRA
+			tag = ITA
+			tag = ENG
+			tag = POL
+			tag = CZE
+			tag = BEL
+			tag = HOL
+		}
+	}
+}
+
+aota_fra_hegemonie_territorial_req = {
+	tag = FRA
+	OR = { has_government = fascism has_government = communism }
+	num_of_owned_states > 130
+	aota_controls_capital_of_ger = yes
+	aota_controls_capital_of_ita = yes
+	aota_controls_capital_of_bel = yes
+	aota_controls_capital_of_hol = yes
+	aota_controls_capital_of_spa = yes
+	OR = {
+		aota_controls_capital_of_por = yes
+		aota_controls_capital_of_eng = yes
+	}
+}
+
+aota_fra_union_territorial_req = {
+	tag = FRA
+	OR = { has_government = democratic has_government = neutrality has_government = anarchism }
+	num_of_owned_states > 80
+	is_faction_leader = yes
+	num_faction_members > 7
+	FRA = { is_in_faction_with = ROOT }
+	BEL = { is_in_faction_with = ROOT }
+	HOL = { is_in_faction_with = ROOT }
+	OR = {
+		ENG = { is_in_faction_with = ROOT }
+		SPR = { is_in_faction_with = ROOT }
+	}
+}
+
+aota_ita_imperium_territorial_req = {
+	tag = ITA
+	OR = { has_government = fascism has_government = neutrality }
+	num_of_owned_states > 110
+	aota_controls_capital_of_fra = yes
+	aota_controls_capital_of_yug = yes
+	aota_controls_capital_of_gre = yes
+	aota_controls_capital_of_tur = yes
+	OR = {
+		aota_controls_capital_of_egy = yes
+		aota_controls_capital_of_eng = yes
+	}
+}
+
+aota_ita_concordat_territorial_req = {
+	tag = ITA
+	OR = { has_government = democratic has_government = communism }
+	num_of_owned_states > 75
+	is_faction_leader = yes
+	num_faction_members > 6
+	FRA = { is_in_faction_with = ROOT }
+	GRE = { is_in_faction_with = ROOT }
+	YUG = { is_in_faction_with = ROOT }
+	OR = {
+		TUR = { is_in_faction_with = ROOT }
+		SPR = { is_in_faction_with = ROOT }
+	}
+}
+
+aota_formable_stabilization_req = {
+	has_war = no
+	surrender_progress < 0.01
+	stability > 0.62
+	war_support > 0.5
+}

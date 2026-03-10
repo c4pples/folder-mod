@@ -1,0 +1,20 @@
+AOTA_GER_constitutional_plan = {
+    allowed = { original_tag = GER }
+    enable = { has_government = democratic }
+    ai_strategy = { type = alliance value = 50 id = ENG }
+    ai_strategy = { type = befriend value = 40 id = AUS }
+}
+
+AOTA_FRA_socialist_plan = {
+    allowed = { original_tag = FRA }
+    enable = { has_government = communism }
+    ai_strategy = { type = antagonize value = 80 id = GER }
+    ai_strategy = { type = befriend value = 50 id = SOV }
+}
+
+AOTA_FRA_anarchist_plan = {
+    allowed = { original_tag = FRA }
+    enable = { has_government = anarchism }
+    ai_strategy = { type = send_volunteers_desire value = 120 }
+    ai_strategy = { type = befriend value = 60 id = SPR }
+}

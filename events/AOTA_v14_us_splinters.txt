@@ -1,0 +1,48 @@
+﻿
+add_namespace = aota
+
+country_event = {
+    id = aota.820
+    title = aota.820.t
+    desc = aota.820.d
+    picture = GFX_AOTA_news_usa_collapse
+    is_triggered_only = yes
+    option = { name = aota.820.a APF = { add_opinion_modifier = { target = ACC modifier = aota_conditional_recognition } } add_stability = 0.02 }
+    option = { name = aota.820.b add_war_support = 0.04 }
+}
+country_event = {
+    id = aota.821
+    title = aota.821.t
+    desc = aota.821.d
+    picture = GFX_report_event_worker_protests
+    is_triggered_only = yes
+    option = { name = aota.821.a add_stability = 0.04 set_politics = { ruling_party = communism elections_allowed = no } remove_ideas = aota_awu_federation_of_communes }
+    option = { name = aota.821.b add_popularity = { ideology = anarchism popularity = 0.08 } add_war_support = 0.03 remove_ideas = aota_awu_planning_bureau }
+}
+country_event = {
+    id = aota.822
+    title = aota.822.t
+    desc = aota.822.d
+    picture = GFX_report_event_generic_treaty
+    is_triggered_only = yes
+    option = { name = aota.822.a add_political_power = 50 add_stability = 0.02 }
+    option = { name = aota.822.b add_war_support = 0.04 }
+}
+country_event = {
+    id = aota.823
+    title = aota.823.t
+    desc = aota.823.d
+    picture = GFX_AOTA_news_usa_collapse
+    is_triggered_only = yes
+    option = { name = aota.823.a add_stability = 0.05 remove_ideas = aota_ccw_federation }
+    option = { name = aota.823.b add_war_support = 0.05 remove_ideas = aota_ccw_distributist_debate }
+}
+country_event = {
+    id = aota.830
+    title = aota.830.t
+    desc = aota.830.d
+    picture = GFX_report_event_generic_treaty
+    is_triggered_only = yes
+    option = { name = aota.830.a add_stability = 0.03 add_political_power = 30 }
+    option = { name = aota.830.b add_war_support = 0.04 }
+}

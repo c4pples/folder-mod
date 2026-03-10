@@ -1,0 +1,7 @@
+ACC = { color = { 28 63 117 } color_ui = { 28 63 117 } }
+AWU = { color = { 170 34 34 } color_ui = { 170 34 34 } }
+ANA = { color = { 85 70 40 } color_ui = { 85 70 40 } }
+APF = { color = { 42 117 125 } color_ui = { 42 117 125 } }
+ACG = { color = { 86 86 86 } color_ui = { 86 86 86 } }
+ASL = { color = { 37 108 44 } color_ui = { 37 108 44 } }
+CCW = { color = { 122 92 45 } color_ui = { 122 92 45 } }

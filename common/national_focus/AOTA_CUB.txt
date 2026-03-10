@@ -1,0 +1,322 @@
+focus_tree = {
+    id = aota_cuba_focus
+    country = { factor = 0 modifier = { add = 10 tag = CUB } }
+    default = no
+    continuous_focus_position = { x = 50 y = 1200 }
+
+    # === BASELINE TREE (always available) ===
+
+    focus = { id = CUB_crossroads_of_the_caribbean icon = GFX_goal_generic_national_unity x = 10 y = 0 cost = 5 completion_reward = { add_political_power = 80 add_stability = 0.02 } }
+    focus = { id = CUB_guard_the_republic icon = GFX_goal_support_democracy x = 7 y = 1 cost = 5 prerequisite = { focus = CUB_crossroads_of_the_caribbean } completion_reward = { add_stability = 0.03 add_political_power = 35 } }
+    focus = { id = CUB_sugar_and_customhouses icon = GFX_goal_generic_trade x = 10 y = 1 cost = 5 prerequisite = { focus = CUB_crossroads_of_the_caribbean } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    focus = { id = CUB_watch_the_florida_strait icon = GFX_goal_generic_major_war x = 13 y = 1 cost = 5 prerequisite = { focus = CUB_crossroads_of_the_caribbean } completion_reward = { add_war_support = 0.03 } }
+
+    # === SECRET ANCAP BRANCH (gated behind AOTA_CUB_ANCAP_PATH_OPEN flag) ===
+
+    # --- Tier 1: The Door Opens (cost 5 = 35 days) ---
+    focus = {
+        id = CUB_the_open_island
+        icon = GFX_goal_generic_trade
+        x = 18 y = 1
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_crossroads_of_the_caribbean }
+        completion_reward = {
+            add_political_power = 60
+            add_popularity = { ideology = market_radicalism popularity = 0.05 }
+            add_ideas = aota_cub_open_island
+        }
+    }
+
+    # --- Tier 2: Early Arrivals (cost 5 = 35 days) ---
+    focus = {
+        id = CUB_harbor_the_executives
+        icon = GFX_goal_generic_improve_relations
+        x = 16 y = 2
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_open_island }
+        completion_reward = {
+            add_political_power = 60
+            add_popularity = { ideology = market_radicalism popularity = 0.05 }
+            add_ideas = aota_cub_executive_refugees
+        }
+    }
+    focus = {
+        id = CUB_import_the_security_consultants
+        icon = GFX_goal_generic_military_sphere
+        x = 20 y = 2
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_open_island }
+        completion_reward = {
+            army_experience = 15
+            add_war_support = 0.03
+            add_ideas = aota_cub_rent_a_guard_state
+        }
+    }
+
+    # --- Tier 3: Infrastructure of Concession (cost 5 = 35 days) ---
+    focus = {
+        id = CUB_free_port_charters
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 14 y = 3
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_harbor_the_executives }
+        completion_reward = {
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            add_political_power = 40
+        }
+    }
+    focus = {
+        id = CUB_write_the_extraterritorial_clauses
+        icon = GFX_goal_generic_political_pressure
+        x = 18 y = 3
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_harbor_the_executives focus = CUB_import_the_security_consultants }
+        completion_reward = {
+            add_stability = -0.02
+            add_political_power = 70
+            add_popularity = { ideology = market_radicalism popularity = 0.05 }
+            add_ideas = aota_cub_extraterritorial_enclaves
+        }
+    }
+    focus = {
+        id = CUB_sell_the_wireless_spectrum
+        icon = GFX_goal_generic_propaganda
+        x = 22 y = 3
+        cost = 5
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_import_the_security_consultants }
+        completion_reward = { add_political_power = 50 add_stability = -0.01 }
+    }
+
+    # --- Tier 4: Deepening Privatization (cost 7 = 49 days) ---
+    focus = {
+        id = CUB_auction_the_docks
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 13 y = 4
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_free_port_charters }
+        completion_reward = {
+            add_building_construction = { type = dockyard level = 1 instant_build = yes }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+    }
+    focus = {
+        id = CUB_franchise_the_customs_service
+        icon = GFX_goal_generic_trade
+        x = 16 y = 4
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_free_port_charters }
+        completion_reward = {
+            add_political_power = 50
+            add_ideas = aota_cub_franchised_state
+        }
+    }
+    focus = {
+        id = CUB_contract_the_shantytowns
+        icon = GFX_goal_generic_political_pressure
+        x = 19 y = 4
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_write_the_extraterritorial_clauses }
+        completion_reward = { add_stability = -0.03 add_war_support = 0.04 }
+    }
+    focus = {
+        id = CUB_the_malecon_market
+        icon = GFX_goal_generic_consumer_goods
+        x = 22 y = 4
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_sell_the_wireless_spectrum }
+        completion_reward = { add_political_power = 50 add_stability = 0.01 }
+    }
+
+    # --- Tier 5: Charter Cities (cost 7 = 49 days) ---
+    focus = {
+        id = CUB_charter_city_havana
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 13 y = 5
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_auction_the_docks focus = CUB_franchise_the_customs_service }
+        completion_reward = {
+            add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+            add_ideas = aota_cub_charter_havana
+        }
+    }
+    focus = {
+        id = CUB_charter_city_santiago
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 16 y = 5
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_franchise_the_customs_service focus = CUB_contract_the_shantytowns }
+        completion_reward = {
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+        }
+    }
+    focus = {
+        id = CUB_dispute_resolution_for_a_fee
+        icon = GFX_goal_generic_political_reform
+        x = 19 y = 5
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_contract_the_shantytowns focus = CUB_the_malecon_market }
+        completion_reward = {
+            add_political_power = 60
+            add_ideas = aota_cub_private_arbitration
+        }
+    }
+    focus = {
+        id = CUB_tourism_of_excess
+        icon = GFX_goal_generic_trade
+        x = 22 y = 5
+        cost = 7
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_malecon_market }
+        completion_reward = { add_political_power = 40 add_stability = 0.02 }
+    }
+
+    # --- Tier 6: Institutional Capture (cost 10 = 70 days) ---
+    # The boardroom formally displaces the republic; government flips here
+    focus = {
+        id = CUB_boardroom_council
+        icon = GFX_goal_generic_political_pressure
+        x = 14 y = 6
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_charter_city_havana }
+        completion_reward = {
+            set_country_flag = AOTA_CUB_BOARDROOM_COUNCIL
+            add_political_power = 70
+            set_politics = { ruling_party = market_radicalism elections_allowed = no }
+            add_popularity = { ideology = market_radicalism popularity = 0.15 }
+            remove_ideas = aota_cub_open_island
+            add_ideas = aota_cub_boardroom_council
+        }
+    }
+    focus = {
+        id = CUB_the_right_to_exit
+        icon = GFX_goal_generic_propaganda
+        x = 17 y = 6
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_charter_city_santiago focus = CUB_dispute_resolution_for_a_fee }
+        completion_reward = { add_stability = -0.04 add_political_power = 75 }
+    }
+    focus = {
+        id = CUB_payroll_battalions
+        icon = GFX_goal_generic_army_motorized
+        x = 20 y = 6
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_dispute_resolution_for_a_fee }
+        completion_reward = {
+            army_experience = 20
+            add_ideas = aota_cub_payroll_battalions
+        }
+    }
+    focus = {
+        id = CUB_licensed_sovereignty
+        icon = GFX_goal_generic_demand_territory_or_war
+        x = 23 y = 6
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_tourism_of_excess }
+        completion_reward = { add_political_power = 60 add_war_support = 0.04 }
+    }
+
+    # --- Tier 7: Late-Stage Capture (cost 10 = 70 days) ---
+    focus = {
+        id = CUB_insurance_state
+        icon = GFX_goal_generic_production
+        x = 14 y = 7
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_boardroom_council }
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 40
+            remove_ideas = aota_cub_executive_refugees
+            add_ideas = aota_cub_insurance_state
+        }
+    }
+    focus = {
+        id = CUB_monetize_the_shoreline
+        icon = GFX_goal_generic_construct_civ_factory
+        x = 17 y = 7
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_right_to_exit }
+        completion_reward = {
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+            add_political_power = 35
+        }
+    }
+    focus = {
+        id = CUB_bring_the_gulf_to_heel
+        icon = GFX_goal_generic_navy_battleship
+        x = 20 y = 7
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_payroll_battalions }
+        completion_reward = { naval_experience = 15 add_war_support = 0.03 }
+    }
+    focus = {
+        id = CUB_antillean_non_compete_zone
+        icon = GFX_goal_generic_demand_territory_or_war
+        x = 23 y = 7
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_licensed_sovereignty }
+        completion_reward = { add_political_power = 70 add_war_support = 0.05 }
+    }
+
+    # --- Tier 8: Culmination (cost 10 = 70 days) ---
+    focus = {
+        id = CUB_the_shareholder_republic
+        icon = GFX_goal_generic_political_reform
+        x = 15 y = 8
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_insurance_state focus = CUB_monetize_the_shoreline }
+        completion_reward = {
+            set_cosmetic_tag = CUB_SHAREHOLDER_REPUBLIC
+            add_stability = 0.05
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = CUB_a_nightmare_of_contracts
+        icon = GFX_goal_generic_major_war
+        x = 21 y = 8
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_bring_the_gulf_to_heel focus = CUB_antillean_non_compete_zone }
+        completion_reward = {
+            remove_ideas = aota_cub_extraterritorial_enclaves
+            remove_ideas = aota_cub_private_arbitration
+            add_ideas = aota_cub_nightmare_of_contracts
+            add_war_support = 0.08
+            add_stability = -0.02
+        }
+    }
+
+    # --- Tier 9: Capstone (cost 10 = 70 days) ---
+    focus = {
+        id = CUB_the_caribbean_exit_option
+        icon = GFX_goal_generic_war_with_neighbors
+        x = 18 y = 9
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_shareholder_republic focus = CUB_a_nightmare_of_contracts }
+        completion_reward = { add_political_power = 120 add_war_support = 0.08 }
+    }
+}

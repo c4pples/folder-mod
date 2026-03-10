@@ -1,0 +1,2 @@
+# AOTA v0.15 peace conference scaffold
+# Reserve for custom postwar outcomes and scripted settlements.

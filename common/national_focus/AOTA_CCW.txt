@@ -1,0 +1,32 @@
+﻿
+focus_tree = {
+    id = aota_ccw_focus
+    country = { factor = 0 modifier = { add = 10 tag = CCW } }
+    default = no
+
+    focus = { id = CCW_the_common_prayer icon = GFX_goal_generic_national_unity x = 5 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_stability = 0.06 add_ideas = aota_ccw_common_prayer } }
+    focus = { id = CCW_houses_of_hospitality icon = GFX_goal_generic_construct_civ_factory x = 3 y = 1 cost = 5 prerequisite = { focus = CCW_the_common_prayer } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    focus = { id = CCW_gospel_and_commune icon = GFX_goal_support_anarchism x = 5 y = 1 cost = 5 prerequisite = { focus = CCW_the_common_prayer } completion_reward = { add_popularity = { ideology = anarchism popularity = 0.1 } } }
+    focus = { id = CCW_shield_the_small_parishes icon = GFX_goal_generic_defence x = 7 y = 1 cost = 5 prerequisite = { focus = CCW_the_common_prayer } completion_reward = { army_experience = 10 } }
+
+    focus = { id = CCW_distributist_debate icon = GFX_goal_support_neutrality x = 3 y = 2 cost = 7 prerequisite = { focus = CCW_houses_of_hospitality } mutually_exclusive = { focus = CCW_christian_anarchist_federation } completion_reward = { add_ideas = aota_ccw_distributist_debate } }
+    focus = { id = CCW_christian_anarchist_federation icon = GFX_goal_support_anarchism x = 7 y = 2 cost = 7 prerequisite = { focus = CCW_gospel_and_commune } mutually_exclusive = { focus = CCW_distributist_debate } completion_reward = { add_ideas = aota_ccw_federation } }
+    focus = { id = CCW_peoples_processions icon = GFX_goal_generic_propaganda x = 5 y = 2 cost = 7 prerequisite = { focus = CCW_shield_the_small_parishes } completion_reward = { add_political_power = 50 } }
+
+    focus = { id = CCW_bread_before_bullets icon = GFX_goal_generic_construct_civ_factory x = 3 y = 3 cost = 7 prerequisite = { focus = CCW_distributist_debate } completion_reward = { add_stability = 0.04 } }
+    focus = { id = CCW_the_black_and_gold_banner icon = GFX_goal_support_anarchism x = 7 y = 3 cost = 7 prerequisite = { focus = CCW_christian_anarchist_federation } completion_reward = { add_war_support = 0.05 } }
+    focus = { id = CCW_reconcile_or_crusade icon = GFX_goal_generic_major_war x = 5 y = 4 cost = 10 prerequisite = { focus = CCW_peoples_processions focus = CCW_bread_before_bullets focus = CCW_the_black_and_gold_banner } available = { date > 1938.1.1 } completion_reward = { country_event = { id = aota.823 days = 1 } add_political_power = 75 } }
+}

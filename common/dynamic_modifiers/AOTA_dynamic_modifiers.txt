@@ -1,0 +1,41 @@
+aota_armistice_legitimacy = {
+    icon = generic_political_reform
+    enable = { always = yes }
+    remove_trigger = { always = no }
+    political_power_gain = 0.05
+    stability_factor = -0.03
+}
+
+aota_revanchist_fervor = {
+    icon = generic_major_war
+    enable = { always = yes }
+    remove_trigger = { always = no }
+    war_support_factor = 0.08
+    justify_war_goal_time = -0.08
+}
+
+aota_anarchist_dual_power = {
+    icon = generic_political_reform
+    enable = { always = yes }
+    remove_trigger = { always = no }
+    stability_factor = -0.05
+    political_power_gain = -0.03
+    weekly_manpower = 350
+}
+
+aota_corporate_capture = {
+    icon = generic_trade
+    enable = { always = yes }
+    remove_trigger = { always = no }
+    consumer_goods_factor = -0.02
+    trade_opinion_factor = 0.10
+    stability_factor = -0.04
+}
+
+aota_sacred_revival = {
+    icon = generic_morale
+    enable = { always = yes }
+    remove_trigger = { always = no }
+    stability_factor = 0.04
+    war_support_factor = 0.03
+}

@@ -1,0 +1,14 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = { limit = { original_tag = GER } country_event = { id = aota.3000 days = 3 } }
+            every_country = { limit = { original_tag = FRA } country_event = { id = aota.3001 days = 4 } }
+            every_country = { limit = { original_tag = ENG } country_event = { id = aota.3002 days = 5 } country_event = { id = aota.3008 days = 35 } }
+            every_country = { limit = { original_tag = AUS } country_event = { id = aota.3003 days = 6 } }
+            every_country = { limit = { original_tag = SOV } country_event = { id = aota.3004 days = 7 } country_event = { id = aota.3009 days = 38 } }
+            every_country = { limit = { original_tag = TUR } country_event = { id = aota.3005 days = 8 } country_event = { id = aota.3010 days = 40 } }
+            every_country = { limit = { original_tag = USA } country_event = { id = aota.3006 days = 9 } country_event = { id = aota.3011 days = 42 } }
+            every_country = { limit = { original_tag = ITA } country_event = { id = aota.3007 days = 10 } }
+        }
+    }
+}

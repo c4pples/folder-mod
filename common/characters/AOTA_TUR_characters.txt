@@ -1,0 +1,53 @@
+characters = {
+ AOTA_TUR_abdulmecid = {
+  name = AOTA_TUR_abdulmecid_name
+  portraits = { }
+  country_leader = { ideology = neutrality traits = { } desc = AOTA_TUR_abdulmecid_desc }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_fevzi = {
+  name = AOTA_TUR_fevzi_name
+  portraits = { }
+  advisor = { slot = high_command cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_ismet = {
+  name = AOTA_TUR_ismet_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_shakib = {
+  name = AOTA_TUR_shakib_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_sefik = {
+  name = AOTA_TUR_sefik_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_menderes = {
+  name = AOTA_TUR_menderes_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_okyar = {
+  name = AOTA_TUR_okyar_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_karabekir = {
+  name = AOTA_TUR_karabekir_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_hikmet = {
+  name = AOTA_TUR_hikmet_name
+  portraits = { }
+  advisor = { slot = political_advisor cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+ AOTA_TUR_yamut = {
+  name = AOTA_TUR_yamut_name
+  portraits = { }
+  advisor = { slot = high_command cost = 100 traits = { } allowed = { original_tag = TUR } }
+ }
+}

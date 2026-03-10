@@ -1,0 +1,41 @@
+division_template = {
+    name = "Imperial Infantry Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Crownland Security Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 }
+        cavalry = { x = 0 y = 2 }
+    }
+    support = { military_police = { x = 0 y = 0 } }
+}
+division_template = {
+    name = "Danubian Artillery Group"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        artillery_brigade = { x = 0 y = 1 } artillery_brigade = { x = 1 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Imperial Cavalry Brigade"
+    divisions = {
+        cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 }
+        cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+}
+units = {
+    division = { name = "1. Kaiserliche Infanteriedivision" location = 4 division_template = "Imperial Infantry Division" start_experience_factor = 0.20 }
+    division = { name = "2. Kaiserliche Infanteriedivision" location = 4 division_template = "Imperial Infantry Division" start_experience_factor = 0.18 }
+    division = { name = "Prager Sicherungsdivision" location = 70 division_template = "Crownland Security Division" start_experience_factor = 0.10 }
+    division = { name = "Bosnische Sicherungsdivision" location = 104 division_template = "Crownland Security Division" start_experience_factor = 0.08 }
+    division = { name = "Danubische Artilleriegruppe" location = 71 division_template = "Danubian Artillery Group" start_experience_factor = 0.16 }
+    division = { name = "Kaiserliche Kavalleriebrigade" location = 5 division_template = "Imperial Cavalry Brigade" start_experience_factor = 0.14 }
+}

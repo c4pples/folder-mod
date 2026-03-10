@@ -1,0 +1,15 @@
+capital = 78
+oob = "ROM"
+set_research_slots = 3
+set_stability = 0.52
+set_war_support = 0.24
+load_focus_tree = aota_rom_focus
+add_ideas = aota_minor_exposed_frontier
+set_party_name = { ideology = democratic name = ROM_democratic_party long_name = ROM_democratic_party_long }
+set_party_name = { ideology = fascism name = ROM_fascism_party long_name = ROM_fascism_party_long }
+set_party_name = { ideology = neutrality name = ROM_neutrality_party long_name = ROM_neutrality_party_long }
+set_party_name = { ideology = communism name = ROM_communism_party long_name = ROM_communism_party_long }
+set_politics = { ruling_party = neutrality elections_allowed = yes last_election = "1935.10.1" election_frequency = 48 }
+set_popularities = { neutrality = 45 democratic = 22 fascism = 20 communism = 13 }
+create_country_leader = { name = ROM_carol_ii picture = GFX_AOTA_BEL_leader ideology = monarchist_subtype }
+recruit_character = AOTA_ROM_codreanu

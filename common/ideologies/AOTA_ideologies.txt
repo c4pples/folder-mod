@@ -1,0 +1,104 @@
+ideologies = {
+    communism = {
+        types = {
+            orthodox_socialist_subtype = {}
+            council_communist_subtype = {}
+            national_bolshevik_subtype = {}
+        }
+        color = { 205 20 20 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = yes
+            can_puppet = yes
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 1
+        ai_communist = yes
+    }
+    anarchism = {
+        types = {
+            anarcho_syndicalist_subtype = {}
+            communal_anarchist_subtype = {}
+            christian_anarchist_subtype = {}
+            insurrectionary_anarchist_subtype = {}
+        }
+        color = { 35 35 35 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = yes
+            can_puppet = no
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 0.9
+    }
+    democratic = {
+        types = {
+            parliamentary_democrat_subtype = {}
+            social_democrat_subtype = {}
+            republican_reformist_subtype = {}
+        }
+        color = { 0 106 167 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = no
+            can_puppet = no
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 0.75
+        ai_democratic = yes
+    }
+    fascism = {
+        types = {
+            national_revivalist_subtype = {}
+            pagan_revivalist_subtype = {}
+            futurist_subtype = {}
+            integralist_subtype = {}
+        }
+        color = { 85 50 25 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = yes
+            can_puppet = yes
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 0.5
+        ai_fascist = yes
+    }
+    neutrality = {
+        types = {
+            monarchist_subtype = {}
+            distributist_subtype = {}
+            military_directorate_subtype = {}
+            authoritarian_conservative_subtype = {}
+        }
+        color = { 90 90 90 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = no
+            can_puppet = yes
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 0.5
+        ai_neutral = yes
+    }
+    market_radicalism = {
+        types = {
+            anarcho_capitalist_subtype = {}
+            plutocratic_republic_subtype = {}
+        }
+        color = { 173 139 45 }
+        rules = {
+            can_join_factions = yes
+            can_create_factions = yes
+            can_force_government = no
+            can_puppet = yes
+            can_send_volunteers = yes
+        }
+        war_impact_on_world_tension = 0.55
+    }
+}

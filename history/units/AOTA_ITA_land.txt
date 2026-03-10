@@ -1,0 +1,40 @@
+division_template = {
+    name = "Line Infantry Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Alpini Brigade"
+    divisions = {
+        mountaineers = { x = 0 y = 0 } mountaineers = { x = 1 y = 0 }
+        mountaineers = { x = 0 y = 1 } mountaineers = { x = 1 y = 1 }
+    }
+    support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Colonial Security Brigade"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+}
+division_template = {
+    name = "Celere Group"
+    divisions = {
+        cavalry = { x = 0 y = 0 } cavalry = { x = 1 y = 0 }
+        motorized = { x = 0 y = 1 } motorized = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1a Divisione di Fanteria" location = 160 division_template = "Line Infantry Division" start_experience_factor = 0.18 }
+    division = { name = "2a Divisione di Fanteria" location = 160 division_template = "Line Infantry Division" start_experience_factor = 0.16 }
+    division = { name = "Brigata Alpina Torino" location = 157 division_template = "Alpini Brigade" start_experience_factor = 0.20 }
+    division = { name = "Brigata Alpina Trento" location = 157 division_template = "Alpini Brigade" start_experience_factor = 0.20 }
+    division = { name = "Brigata Sicurezza Coloniale" location = 161 division_template = "Colonial Security Brigade" start_experience_factor = 0.08 }
+    division = { name = "1o Gruppo Celere" location = 160 division_template = "Celere Group" start_experience_factor = 0.14 }
+}

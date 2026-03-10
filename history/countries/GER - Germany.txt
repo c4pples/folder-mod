@@ -1,0 +1,78 @@
+﻿capital = 64
+oob = "AOTA_GER_land"
+set_air_oob = "AOTA_GER_air"
+set_naval_oob = "GER_naval"
+set_research_slots = 4
+set_stability = 0.72
+set_war_support = 0.28
+starting_train_buffer = 2
+load_focus_tree = aota_germany_focus
+add_ideas = aota_unfinished_peace
+add_ideas = aota_veteran_disillusionment
+add_ideas = aota_german_ascendancy
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    interwar_antiair = 1
+    tech_trucks = 1
+    fuel_silos = 1
+    fuel_refining = 1
+    basic_train = 1
+}
+if = {
+    limit = { has_dlc_bba = yes }
+    set_technology = {
+        aa_lmg = 1
+        engines_1 = 1
+        engines_2 = 1
+        iw_small_airframe = 1
+        iw_medium_airframe = 1
+        early_bombs = 1
+    }
+}
+create_country_leader = {
+    name = GER_wilhelm_ii
+    picture = GFX_AOTA_GER_wilhelm
+    ideology = monarchist_subtype
+}
+set_party_name = {
+    ideology = democratic
+    name = GER_democratic_party
+    long_name = GER_democratic_party_long
+}
+set_party_name = {
+    ideology = fascism
+    name = GER_fascism_party
+    long_name = GER_fascism_party_long
+}
+set_party_name = {
+    ideology = neutrality
+    name = GER_neutrality_party
+    long_name = GER_neutrality_party_long
+}
+set_party_name = {
+    ideology = communism
+    name = GER_communism_party
+    long_name = GER_communism_party_long
+}
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1935.11.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+set_popularities = {
+    neutrality = 50
+    democratic = 25
+    fascism = 15
+    communism = 10
+}
+
+recruit_character = AOTA_GER_stresemann
+recruit_character = AOTA_GER_ludendorff
+add_ideas = aota_armistice_reckoning
+
+add_ideas = aota_german_colonial_legacy

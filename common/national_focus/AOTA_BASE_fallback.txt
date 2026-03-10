@@ -1,0 +1,82 @@
+focus_tree = {
+    id = aota_base_fallback_focus
+    country = {
+        factor = 0
+        modifier = { add = 200 tag = AFG }
+        modifier = { add = 200 tag = BHU }
+        modifier = { add = 200 tag = NEP }
+        modifier = { add = 200 tag = PER }
+        modifier = { add = 200 tag = IRQ }
+        modifier = { add = 200 tag = SAU }
+        modifier = { add = 200 tag = OMA }
+        modifier = { add = 200 tag = YEM }
+        modifier = { add = 200 tag = SIA }
+        modifier = { add = 200 tag = MON }
+        modifier = { add = 200 tag = TAN }
+        modifier = { add = 200 tag = TIB }
+        modifier = { add = 200 tag = SIK }
+        modifier = { add = 200 tag = XSM }
+        modifier = { add = 200 tag = SHX }
+        modifier = { add = 200 tag = YUN }
+        modifier = { add = 200 tag = GXC }
+        modifier = { add = 200 tag = MEN }
+        modifier = { add = 200 tag = MAN }
+        modifier = { add = 200 tag = PHI }
+        modifier = { add = 200 tag = INS }
+        modifier = { add = 200 tag = ECU }
+        modifier = { add = 200 tag = BOL }
+        modifier = { add = 200 tag = PAR }
+        modifier = { add = 200 tag = URG }
+        modifier = { add = 200 tag = PRU }
+        modifier = { add = 200 tag = COL }
+        modifier = { add = 200 tag = VEN }
+        modifier = { add = 200 tag = CHL }
+        modifier = { add = 200 tag = GUA }
+        modifier = { add = 200 tag = HON }
+        modifier = { add = 200 tag = ELS }
+        modifier = { add = 200 tag = NIC }
+        modifier = { add = 200 tag = COS }
+        modifier = { add = 200 tag = PAN }
+        modifier = { add = 200 tag = CUB }
+        modifier = { add = 200 tag = DOM }
+        modifier = { add = 200 tag = HAI }
+    }
+    default = no
+
+    # 1) Internal political consolidation
+    focus = { id = AOTA_base_after_the_armistice icon = GFX_goal_generic_national_unity x = 20 y = 0 cost = 6 completion_reward = { add_political_power = 60 add_stability = 0.02 } }
+    focus = { id = AOTA_base_local_power_compacts icon = GFX_goal_generic_political_reform x = 16 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_stability = 0.02 } }
+    focus = { id = AOTA_base_emergency_administration icon = GFX_goal_generic_political_pressure x = 20 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_political_power = 50 } }
+    focus = { id = AOTA_base_national_coordination_secretariat icon = GFX_goal_generic_democratic_unity x = 24 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_stability = 0.01 add_war_support = 0.01 } }
+    focus = { id = AOTA_base_civil_order_framework icon = GFX_goal_generic_political_reform x = 20 y = 2 cost = 8 prerequisite = { focus = AOTA_base_local_power_compacts focus = AOTA_base_emergency_administration } completion_reward = { add_stability = 0.03 } }
+
+    # 2) Economic recovery / industrial planning
+    focus = { id = AOTA_base_reopen_supply_routes icon = GFX_goal_generic_construct_civ_factory x = 34 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+    focus = { id = AOTA_base_revenue_stabilization_board icon = GFX_goal_generic_construct_civ_factory x = 34 y = 2 cost = 8 prerequisite = { focus = AOTA_base_reopen_supply_routes } completion_reward = { add_political_power = 45 } }
+    focus = { id = AOTA_base_priority_industry_program icon = GFX_goal_generic_production x = 34 y = 3 cost = 8 prerequisite = { focus = AOTA_base_revenue_stabilization_board } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+    focus = { id = AOTA_base_logistics_and_stockpiles icon = GFX_goal_generic_production2 x = 34 y = 4 cost = 8 prerequisite = { focus = AOTA_base_priority_industry_program } completion_reward = { add_command_power = 15 add_stability = 0.01 } }
+    focus = { id = AOTA_base_rationed_growth_model icon = GFX_goal_generic_consumer_goods x = 34 y = 5 cost = 8 prerequisite = { focus = AOTA_base_logistics_and_stockpiles } completion_reward = { add_stability = 0.02 add_political_power = 35 } }
+
+    # 3) Military reform / readiness
+    focus = { id = AOTA_base_general_staff_review icon = GFX_goal_generic_army_doctrines x = 48 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_army_experience = 10 } }
+    focus = { id = AOTA_base_border_readiness_command icon = GFX_goal_generic_construct_military x = 48 y = 2 cost = 8 prerequisite = { focus = AOTA_base_general_staff_review } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    focus = { id = AOTA_base_reserve_mobilization_plans icon = GFX_goal_generic_major_war x = 48 y = 3 cost = 8 prerequisite = { focus = AOTA_base_border_readiness_command } completion_reward = { add_manpower = 30000 add_war_support = 0.01 } }
+    focus = { id = AOTA_base_doctrine_adaptation icon = GFX_goal_generic_army_doctrines x = 48 y = 4 cost = 8 prerequisite = { focus = AOTA_base_reserve_mobilization_plans } completion_reward = { add_army_experience = 15 } }
+    focus = { id = AOTA_base_joint_service_coordination icon = GFX_goal_generic_army_navy_air_innovation x = 48 y = 5 cost = 8 prerequisite = { focus = AOTA_base_doctrine_adaptation } completion_reward = { add_air_experience = 8 add_navy_experience = 8 } }
+
+    # 4) Diplomacy / alignment / regional posture
+    focus = { id = AOTA_base_reopen_foreign_channels icon = GFX_goal_generic_foreign_policy x = 62 y = 1 cost = 7 prerequisite = { focus = AOTA_base_civil_order_framework } completion_reward = { add_political_power = 40 } }
+    focus = { id = AOTA_base_regional_security_dialogues icon = GFX_goal_generic_alliance x = 62 y = 2 cost = 8 prerequisite = { focus = AOTA_base_reopen_foreign_channels } completion_reward = { add_war_support = 0.02 } }
+    focus = { id = AOTA_base_nonbloc_survival_posture icon = GFX_goal_generic_improve_relations x = 60 y = 3 cost = 8 prerequisite = { focus = AOTA_base_regional_security_dialogues } mutually_exclusive = { focus = AOTA_base_seek_major_patronage } completion_reward = { add_stability = 0.03 } }
+    focus = { id = AOTA_base_seek_major_patronage icon = GFX_goal_generic_position_armies x = 64 y = 3 cost = 8 prerequisite = { focus = AOTA_base_regional_security_dialogues } mutually_exclusive = { focus = AOTA_base_nonbloc_survival_posture } completion_reward = { add_political_power = 60 } }
+
+    # 5) Limited ideological direction / governance posture
+    focus = { id = AOTA_base_civic_legitimacy_campaign icon = GFX_goal_generic_democratic_unity x = 16 y = 3 cost = 8 prerequisite = { focus = AOTA_base_civil_order_framework } mutually_exclusive = { focus = AOTA_base_security_state_mandate } completion_reward = { add_stability = 0.03 } }
+    focus = { id = AOTA_base_security_state_mandate icon = GFX_goal_generic_political_pressure x = 24 y = 3 cost = 8 prerequisite = { focus = AOTA_base_civil_order_framework } mutually_exclusive = { focus = AOTA_base_civic_legitimacy_campaign } completion_reward = { add_war_support = 0.03 } }
+
+    # 6) Late utility content for survival / resilience
+    focus = { id = AOTA_base_contingency_production_cells icon = GFX_goal_generic_construct_mil_factory x = 34 y = 7 cost = 9 prerequisite = { focus = AOTA_base_rationed_growth_model focus = AOTA_base_joint_service_coordination } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    focus = { id = AOTA_base_national_resilience_act icon = GFX_goal_generic_defence x = 48 y = 7 cost = 9 prerequisite = { focus = AOTA_base_joint_service_coordination focus = AOTA_base_nonbloc_survival_posture } completion_reward = { add_stability = 0.03 add_war_support = 0.03 } }
+    focus = { id = AOTA_base_limited_regional_initiatives icon = GFX_goal_generic_demand_territory_or_war x = 62 y = 7 cost = 9 prerequisite = { focus = AOTA_base_seek_major_patronage focus = AOTA_base_joint_service_coordination } completion_reward = { add_war_support = 0.03 add_political_power = 40 } }
+    focus = { id = AOTA_base_state_survival_consensus icon = GFX_goal_generic_national_unity x = 48 y = 8 cost = 10 prerequisite = { focus = AOTA_base_contingency_production_cells } completion_reward = { add_stability = 0.04 add_war_support = 0.03 add_political_power = 60 } }
+}

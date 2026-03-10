@@ -1,0 +1,13 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = { limit = { original_tag = GER } country_event = { id = aota.310 days = 12 } }
+            every_country = { limit = { original_tag = FRA } country_event = { id = aota.320 days = 15 } }
+            every_country = { limit = { original_tag = AUS } country_event = { id = aota.330 days = 18 } }
+            every_country = {
+                limit = { AOTA_is_major_reckoning_power = yes }
+                if = { limit = { NOT = { has_idea = aota_armistice_legitimacy_spirit } } add_ideas = aota_armistice_legitimacy_spirit }
+            }
+        }
+    }
+}

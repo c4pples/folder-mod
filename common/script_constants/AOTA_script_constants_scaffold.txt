@@ -1,0 +1,2 @@
+# AOTA v0.15 script constants scaffold
+# Reserve for shared scripted constant values for crises and U.S. collapse logic.

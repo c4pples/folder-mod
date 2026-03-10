@@ -1,0 +1,31 @@
+defined_text = {
+    name = AOTA_GET_REVOLUTIONARY_BALANCE
+    text = {
+        trigger = { AOTA_anarchism_outcompetes_socialism = yes }
+        localization_key = AOTA_REVOLUTIONARY_BALANCE_ANARCHIST
+    }
+    text = {
+        trigger = { AOTA_socialism_outcompetes_anarchism = yes }
+        localization_key = AOTA_REVOLUTIONARY_BALANCE_SOCIALIST
+    }
+    text = {
+        trigger = { always = yes }
+        localization_key = AOTA_REVOLUTIONARY_BALANCE_CONTESTED
+    }
+}
+
+defined_text = {
+    name = AOTA_GET_USA_BREAKUP_STAGE
+    text = {
+        trigger = { has_country_flag = AOTA_USA_total_fracture }
+        localization_key = AOTA_USA_BREAKUP_STAGE_TOTAL
+    }
+    text = {
+        trigger = { has_country_flag = AOTA_USA_powder_keg_flag }
+        localization_key = AOTA_USA_BREAKUP_STAGE_FOUR
+    }
+    text = {
+        trigger = { always = yes }
+        localization_key = AOTA_USA_BREAKUP_STAGE_LATENT
+    }
+}

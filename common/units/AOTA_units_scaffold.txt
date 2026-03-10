@@ -1,0 +1,2 @@
+# AOTA v0.15 units scaffold
+# Reserve for country- and path-specific unit templates, names, and balance helpers.

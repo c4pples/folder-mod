@@ -1,0 +1,11 @@
+capital = 362
+set_research_slots = 2
+set_stability = 0.47
+set_war_support = 0.18
+create_country_leader = {
+    name = CCW_dorothy_day
+    picture = GFX_Portrait_Leader_Generic
+    ideology = christian_anarchist_subtype
+}
+set_politics = { ruling_party = neutrality elections_allowed = no }
+set_popularities = { neutrality = 72 democratic = 9 communism = 13 fascism = 6 }

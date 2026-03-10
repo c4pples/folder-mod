@@ -1,0 +1,11 @@
+capital = 358
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.28
+create_country_leader = {
+    name = ACG_alfred_sloan
+    picture = GFX_Portrait_Leader_Generic
+    ideology = anarcho_capitalist_subtype
+}
+set_politics = { ruling_party = neutrality elections_allowed = no }
+set_popularities = { neutrality = 58 democratic = 18 fascism = 14 communism = 10 }

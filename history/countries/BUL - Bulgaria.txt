@@ -1,0 +1,15 @@
+capital = 106
+oob = "BUL"
+set_research_slots = 3
+set_stability = 0.49
+set_war_support = 0.27
+load_focus_tree = aota_bul_focus
+add_ideas = aota_minor_exposed_frontier
+set_party_name = { ideology = democratic name = BUL_democratic_party long_name = BUL_democratic_party_long }
+set_party_name = { ideology = fascism name = BUL_fascism_party long_name = BUL_fascism_party_long }
+set_party_name = { ideology = neutrality name = BUL_neutrality_party long_name = BUL_neutrality_party_long }
+set_party_name = { ideology = communism name = BUL_communism_party long_name = BUL_communism_party_long }
+set_politics = { ruling_party = neutrality elections_allowed = yes last_election = "1934.8.1" election_frequency = 48 }
+set_popularities = { neutrality = 48 fascism = 18 democratic = 20 communism = 14 }
+create_country_leader = { name = BUL_boris_iii picture = GFX_AOTA_SER_petar ideology = monarchist_subtype }
+recruit_character = AOTA_BUL_tsankov

@@ -1,0 +1,63 @@
+
+characters = {
+    AOTA_GER_stresemann = {
+        name = AOTA_GER_stresemann
+        portraits = { civilian = { large = GFX_AOTA_GER_wilhelm } }
+        advisor = { slot = political_advisor idea_token = AOTA_GER_stresemann_advisor traits = { silent_workhorse } }
+    }
+    AOTA_GER_ludendorff = {
+        name = AOTA_GER_ludendorff
+        portraits = { civilian = { large = GFX_portrait_AOTA_wilhelm_placeholder } }
+        advisor = { slot = high_command idea_token = AOTA_GER_ludendorff_advisor traits = { army_offence_1 } }
+    }
+    AOTA_FRA_blum = {
+        name = AOTA_FRA_blum
+        portraits = { civilian = { large = GFX_AOTA_FRA_gamelin } }
+        advisor = { slot = political_advisor idea_token = AOTA_FRA_blum_advisor traits = { democratic_reformer } }
+    }
+    AOTA_FRA_petain = {
+        name = AOTA_FRA_petain
+        portraits = { civilian = { large = GFX_portrait_AOTA_petain_placeholder } }
+        advisor = { slot = high_command idea_token = AOTA_FRA_petain_advisor traits = { army_defence_1 } }
+    }
+    AOTA_AUS_otto = {
+        name = AOTA_AUS_otto
+        portraits = { civilian = { large = GFX_AOTA_AUS_karl } }
+        advisor = { slot = political_advisor idea_token = AOTA_AUS_otto_advisor traits = { silent_workhorse } }
+    }
+    AOTA_AUS_conrad = {
+        name = AOTA_AUS_conrad
+        portraits = { civilian = { large = GFX_portrait_AOTA_karl_placeholder } }
+        advisor = { slot = high_command idea_token = AOTA_AUS_conrad_advisor traits = { army_offence_1 } }
+    }
+    AOTA_USA_morgan = {
+        name = AOTA_USA_morgan
+        portraits = { civilian = { large = GFX_AOTA_USA_garner } }
+        advisor = { slot = political_advisor idea_token = AOTA_USA_morgan_advisor traits = { silent_workhorse } }
+    }
+    AOTA_USA_reed = {
+        name = AOTA_USA_reed
+        portraits = { civilian = { large = GFX_AOTA_USA_garner } }
+        advisor = { slot = political_advisor idea_token = AOTA_USA_reed_advisor traits = { backroom_backstabber } }
+    }
+    AOTA_POL_sikorski = {
+        name = AOTA_POL_sikorski
+        portraits = { civilian = { large = GFX_AOTA_POL_rydz } }
+        advisor = { slot = high_command idea_token = AOTA_POL_sikorski_advisor traits = { army_offence_1 } }
+    }
+    AOTA_ROM_codreanu = {
+        name = AOTA_ROM_codreanu
+        portraits = { civilian = { large = GFX_AOTA_BEL_leader } }
+        advisor = { slot = political_advisor idea_token = AOTA_ROM_codreanu_advisor traits = { fascist_demagogue } }
+    }
+    AOTA_HOL_colijn = {
+        name = AOTA_HOL_colijn
+        portraits = { civilian = { large = GFX_AOTA_BEL_leader } }
+        advisor = { slot = political_advisor idea_token = AOTA_HOL_colijn_advisor traits = { silent_workhorse } }
+    }
+    AOTA_BUL_tsankov = {
+        name = AOTA_BUL_tsankov
+        portraits = { civilian = { large = GFX_AOTA_SER_petar } }
+        advisor = { slot = political_advisor idea_token = AOTA_BUL_tsankov_advisor traits = { fascist_demagogue } }
+    }
+}

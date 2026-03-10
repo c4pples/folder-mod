@@ -1,0 +1,120 @@
+﻿ideas = {
+    country = {
+        aota_german_colonial_legacy = {
+            picture = generic_trade
+            allowed = { always = yes }
+            modifier = {
+                trade_opinion_factor = 0.10
+                political_power_gain = 0.03
+                naval_base_speed_factor = 0.05
+            }
+        }
+        aota_imperial_overstretch = {
+            picture = generic_defence
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.04
+                consumer_goods_factor = 0.03
+                monthly_population = -0.02
+            }
+        }
+        aota_fraying_colonial_web = {
+            picture = generic_political_pressure
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.03
+                production_factory_max_efficiency_factor = -0.02
+                political_power_gain = -0.02
+            }
+        }
+        aota_weak_congo_grip = {
+            picture = generic_construct_infrastructure
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.03
+                resource_gain_factor = 0.08
+                resistance_target = 0.05
+            }
+        }
+        aota_precarious_portuguese_empire = {
+            picture = generic_construct_civ_factory
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = -0.02
+                resource_gain_factor = 0.06
+                consumer_goods_factor = 0.02
+            }
+        }
+        aota_ottoman_imperial_shell = {
+            picture = generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.06
+                war_support_factor = -0.02
+                resistance_target = 0.04
+            }
+        }
+        aota_raj_powder_keg = {
+            picture = generic_political_pressure
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.03
+                political_power_gain = -0.01
+            }
+        }
+        aota_japanese_opportunism = {
+            picture = generic_army_doctrines
+            allowed = { always = yes }
+            modifier = {
+                justify_war_goal_time = -0.08
+                planning_speed = 0.05
+                trade_opinion_factor = -0.03
+            }
+        }
+        aota_retreating_hegemon = {
+            picture = generic_isolation
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.02
+                war_support_factor = -0.03
+                trade_opinion_factor = -0.05
+            }
+        }
+        aota_northern_watch = {
+            picture = generic_defence
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.03
+                army_org_factor = 0.03
+                intel_network_gain = 0.1
+            }
+        }
+        aota_asian_treaty_ports = {
+            picture = generic_trade
+            allowed = { always = yes }
+            modifier = {
+                trade_opinion_factor = 0.08
+                consumer_goods_factor = -0.01
+            }
+        }
+        aota_african_garrison_crisis = {
+            picture = generic_allies_build_infantry
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.02
+                training_time_army_factor = 0.05
+                supply_node_range = -0.05
+            }
+        }
+        aota_canal_under_shadow = {
+            picture = generic_naval_buildup
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.02
+                entrenchment_factor = 0.03
+                naval_speed_factor = 0.03
+            }
+        }
+    }
+}

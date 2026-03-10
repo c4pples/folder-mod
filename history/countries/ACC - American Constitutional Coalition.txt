@@ -1,0 +1,11 @@
+capital = 361
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.35
+create_country_leader = {
+    name = ACC_henry_stimson
+    picture = GFX_Portrait_Leader_Generic
+    ideology = parliamentary_democrat_subtype
+}
+set_politics = { ruling_party = democratic elections_allowed = yes last_election = "1936.1.1" election_frequency = 48 }
+set_popularities = { democratic = 62 neutrality = 18 fascism = 12 communism = 8 }

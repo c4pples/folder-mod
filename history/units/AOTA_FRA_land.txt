@@ -1,0 +1,43 @@
+division_template = {
+    name = "Metropolitan Infantry Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 } infantry = { x = 2 y = 1 }
+        artillery_brigade = { x = 1 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Fortified Sector Division"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        infantry = { x = 0 y = 1 } infantry = { x = 1 y = 1 }
+        artillery_brigade = { x = 0 y = 2 }
+    }
+    support = { engineer = { x = 0 y = 0 } anti_tank = { x = 0 y = 1 } }
+}
+division_template = {
+    name = "Colonial Security Brigade"
+    divisions = {
+        infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 }
+        cavalry = { x = 0 y = 1 } cavalry = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } }
+}
+division_template = {
+    name = "Motorised Reserve Group"
+    divisions = {
+        motorized = { x = 0 y = 0 } motorized = { x = 1 y = 0 }
+        motorized = { x = 0 y = 1 } artillery_brigade = { x = 1 y = 1 }
+    }
+    support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } }
+}
+units = {
+    division = { name = "1re Division d'Infanterie" location = 15 division_template = "Metropolitan Infantry Division" start_experience_factor = 0.22 }
+    division = { name = "2e Division d'Infanterie" location = 15 division_template = "Metropolitan Infantry Division" start_experience_factor = 0.20 }
+    division = { name = "3e Division d'Infanterie" location = 16 division_template = "Metropolitan Infantry Division" start_experience_factor = 0.18 }
+    division = { name = "Secteur Fortifié du Rhin" location = 28 division_template = "Fortified Sector Division" start_experience_factor = 0.15 }
+    division = { name = "Secteur Fortifié de Metz" location = 28 division_template = "Fortified Sector Division" start_experience_factor = 0.15 }
+    division = { name = "Brigade de Sécurité Coloniale" location = 17 division_template = "Colonial Security Brigade" start_experience_factor = 0.08 }
+    division = { name = "Réserve Motorisée" location = 15 division_template = "Motorised Reserve Group" start_experience_factor = 0.14 }
+}

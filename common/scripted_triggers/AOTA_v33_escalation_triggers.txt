@@ -1,0 +1,6 @@
+AOTA_after_1936_summer = { date > 1936.6.30 }
+AOTA_after_1937_spring = { date > 1937.3.1 }
+AOTA_after_1937_summer = { date > 1937.6.1 }
+AOTA_after_1938_start = { date > 1938.1.1 }
+AOTA_usa_can_four_way_break = { date > 1937.1.1 }
+AOTA_usa_can_total_shatter = { date > 1937.8.1 }

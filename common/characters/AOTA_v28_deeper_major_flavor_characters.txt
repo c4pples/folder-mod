@@ -1,0 +1,105 @@
+characters = {
+  AOTA_TUR_fevzi_cakmak = {
+    name = AOTA_TUR_fevzi_cakmak_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = high_command idea_token = AOTA_TUR_fevzi_cakmak_advisor allowed = { original_tag = TUR } traits = { army_defence_1 } }
+  }
+  AOTA_TUR_halit_edib = {
+    name = AOTA_TUR_halit_edib_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_TUR_halit_edib_advisor allowed = { original_tag = TUR } traits = { democratic_reformer } }
+  }
+  AOTA_TUR_mahmud_sevketist = {
+    name = AOTA_TUR_mahmud_sevketist_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_1 } }
+    advisor = { slot = political_advisor idea_token = AOTA_TUR_mahmud_sevketist_advisor allowed = { original_tag = TUR } traits = { war_industrialist } }
+  }
+  AOTA_TUR_mehmed_akif = {
+    name = AOTA_TUR_mehmed_akif_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_6 } }
+    advisor = { slot = political_advisor idea_token = AOTA_TUR_mehmed_akif_advisor allowed = { original_tag = TUR } traits = { compassionate_gentleman } }
+  }
+
+  AOTA_SOV_wrangel_deeper = {
+    name = AOTA_SOV_wrangel_deeper_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = high_command idea_token = AOTA_SOV_wrangel_deeper_advisor allowed = { original_tag = SOV } traits = { army_offence_1 } }
+  }
+  AOTA_SOV_kollontai_deeper = {
+    name = AOTA_SOV_kollontai_deeper_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_kollontai_deeper_advisor allowed = { original_tag = SOV } traits = { communist_revolutionary } }
+  }
+  AOTA_SOV_makhno_deeper = {
+    name = AOTA_SOV_makhno_deeper_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_5 } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_makhno_deeper_advisor allowed = { original_tag = SOV } traits = { anarchist_revolutionary } }
+  }
+  AOTA_SOV_ilin = {
+    name = AOTA_SOV_ilin_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_7 } }
+    advisor = { slot = political_advisor idea_token = AOTA_SOV_ilin_advisor allowed = { original_tag = SOV } traits = { silent_workhorse } }
+  }
+
+  AOTA_ENG_clement_attlee = {
+    name = AOTA_ENG_clement_attlee_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_8 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ENG_clement_attlee_advisor allowed = { original_tag = ENG } traits = { democratic_reformer } }
+  }
+  AOTA_ENG_john_maynard_keynes = {
+    name = AOTA_ENG_john_maynard_keynes_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_6 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ENG_john_maynard_keynes_advisor allowed = { original_tag = ENG } traits = { captain_of_industry } }
+  }
+  AOTA_ENG_george_orwell = {
+    name = AOTA_ENG_george_orwell_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_7 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ENG_george_orwell_advisor allowed = { original_tag = ENG } traits = { compassionate_gentleman } }
+  }
+  AOTA_ENG_horatio_nelsonite = {
+    name = AOTA_ENG_horatio_nelsonite_name
+    portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_2 } }
+    advisor = { slot = high_command idea_token = AOTA_ENG_horatio_nelsonite_advisor allowed = { original_tag = ENG } traits = { army_defence_1 } }
+  }
+
+  AOTA_ACC_joseph_kennedy = {
+    name = AOTA_ACC_joseph_kennedy_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_1 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ACC_joseph_kennedy_advisor allowed = { original_tag = ACC } traits = { captain_of_industry } }
+  }
+  AOTA_AWU_john_reed = {
+    name = AOTA_AWU_john_reed_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_AWU_john_reed_advisor allowed = { original_tag = AWU } traits = { communist_revolutionary } }
+  }
+  AOTA_AWU_dorothy_day = {
+    name = AOTA_AWU_dorothy_day_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_3 } }
+    advisor = { slot = political_advisor idea_token = AOTA_AWU_dorothy_day_advisor allowed = { original_tag = AWU } traits = { compassionate_gentleman } }
+  }
+  AOTA_ANA_douglas_macarthur = {
+    name = AOTA_ANA_douglas_macarthur_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_2 } }
+    advisor = { slot = high_command idea_token = AOTA_ANA_douglas_macarthur_advisor allowed = { original_tag = ANA } traits = { army_offence_1 } }
+  }
+  AOTA_APF_hiram_johnson = {
+    name = AOTA_APF_hiram_johnson_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_4 } }
+    advisor = { slot = political_advisor idea_token = AOTA_APF_hiram_johnson_advisor allowed = { original_tag = APF } traits = { democratic_reformer } }
+  }
+  AOTA_ACG_henry_luce = {
+    name = AOTA_ACG_henry_luce_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_1 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ACG_henry_luce_advisor allowed = { original_tag = ACG } traits = { captain_of_industry } }
+  }
+  AOTA_ASL_richard_russell = {
+    name = AOTA_ASL_richard_russell_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_2 } }
+    advisor = { slot = political_advisor idea_token = AOTA_ASL_richard_russell_advisor allowed = { original_tag = ASL } traits = { silent_workhorse } }
+  }
+  AOTA_CCW_ammon_hennacy = {
+    name = AOTA_CCW_ammon_hennacy_name
+    portraits = { civilian = { large = GFX_Portrait_Americas_Generic_3 } }
+    advisor = { slot = political_advisor idea_token = AOTA_CCW_ammon_hennacy_advisor allowed = { original_tag = CCW } traits = { anarchist_revolutionary } }
+  }
+}

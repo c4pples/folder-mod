@@ -1,0 +1,35 @@
+﻿
+focus_tree = {
+    id = aota_apf_focus
+    country = { factor = 0 modifier = { add = 10 tag = APF } }
+    default = no
+
+    focus = { id = APF_keep_the_pacific_open icon = GFX_goal_generic_trade x = 6 y = 0 cost = 5 completion_reward = {
+            # Clean up inherited USA-era spirits
+            hidden_effect = {
+                if = { limit = { has_idea = aota_american_powder_keg } remove_ideas = aota_american_powder_keg }
+                if = { limit = { has_idea = aota_commune_momentum } remove_ideas = aota_commune_momentum }
+                if = { limit = { has_idea = aota_anarchist_agitation } remove_ideas = aota_anarchist_agitation }
+                if = { limit = { has_idea = aota_workers_militias } remove_ideas = aota_workers_militias }
+                if = { limit = { has_idea = aota_christian_anarchist_movement } remove_ideas = aota_christian_anarchist_movement }
+                if = { limit = { has_idea = aota_anarcho_capitalist_networks } remove_ideas = aota_anarcho_capitalist_networks }
+                if = { limit = { has_idea = aota_american_shatterstate } remove_ideas = aota_american_shatterstate }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_1 } remove_ideas = aota_usa_constitutional_breakdown_stage_1 }
+                if = { limit = { has_idea = aota_usa_constitutional_breakdown_stage_2 } remove_ideas = aota_usa_constitutional_breakdown_stage_2 }
+            }
+             add_stability = 0.05 add_ideas = aota_apf_harbor_republic } }
+    focus = { id = APF_sacramento_compromise icon = GFX_goal_support_democracy x = 4 y = 1 cost = 5 prerequisite = { focus = APF_keep_the_pacific_open } completion_reward = { add_political_power = 60 } }
+    focus = { id = APF_western_emergency_fleet icon = GFX_goal_generic_navy_doctrines_tactics x = 6 y = 1 cost = 5 prerequisite = { focus = APF_keep_the_pacific_open } completion_reward = { navy_experience = 20 } }
+    focus = { id = APF_cascadian_industrial_compacts icon = GFX_goal_generic_construct_civ_factory x = 8 y = 1 cost = 5 prerequisite = { focus = APF_keep_the_pacific_open } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+
+    focus = { id = APF_regional_guard_commands icon = GFX_goal_generic_allies_build_infantry x = 4 y = 2 cost = 7 prerequisite = { focus = APF_sacramento_compromise } completion_reward = { army_experience = 10 } }
+    focus = { id = APF_shipping_credits icon = GFX_goal_generic_trade x = 6 y = 2 cost = 7 prerequisite = { focus = APF_western_emergency_fleet } completion_reward = { add_political_power = 50 } }
+    focus = { id = APF_pacific_air_yards icon = GFX_goal_generic_air_fighter2 x = 8 y = 2 cost = 7 prerequisite = { focus = APF_cascadian_industrial_compacts } completion_reward = { air_experience = 15 } }
+
+    focus = { id = APF_the_coastal_compact icon = GFX_goal_generic_national_unity x = 5 y = 3 cost = 7 prerequisite = { focus = APF_regional_guard_commands focus = APF_shipping_credits } completion_reward = { add_stability = 0.05 } }
+    focus = { id = APF_republic_of_the_setting_sun icon = GFX_goal_support_democracy x = 7 y = 3 cost = 7 prerequisite = { focus = APF_shipping_credits focus = APF_pacific_air_yards } completion_reward = { add_ideas = aota_apf_setting_sun } }
+
+    focus = { id = APF_open_channels_to_ottawa icon = GFX_goal_generic_improve_relations x = 4 y = 4 cost = 10 prerequisite = { focus = APF_the_coastal_compact } completion_reward = { add_political_power = 50 country_event = { id = aota.822 days = 1 } } }
+    focus = { id = APF_look_east_again icon = GFX_goal_generic_demand_territory_or_war x = 8 y = 4 cost = 10 prerequisite = { focus = APF_republic_of_the_setting_sun } available = { date > 1938.1.1 } completion_reward = { add_war_support = 0.08 } }
+    focus = { id = APF_return_to_the_union_on_our_terms icon = GFX_goal_generic_political_pressure x = 6 y = 5 cost = 10 prerequisite = { focus = APF_open_channels_to_ottawa focus = APF_look_east_again } available = { date > 1938.3.1 } completion_reward = { add_stability = 0.06 add_political_power = 75 } }
+}

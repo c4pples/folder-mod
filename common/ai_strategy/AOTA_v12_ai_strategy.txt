@@ -1,0 +1,8 @@
+
+ai_strategy = {
+ GER = { type = prepare_for_war id = FRA value = 50 abort_when_not_enabled = no }
+ FRA = { type = befriend id = ENG value = 60 abort_when_not_enabled = no }
+ AUS = { type = protect id = HUN value = 40 abort_when_not_enabled = no }
+ USA = { type = conquer id = ACC value = 20 abort_when_not_enabled = no }
+ SOV = { type = conquer id = POL value = 25 abort_when_not_enabled = no }
+}

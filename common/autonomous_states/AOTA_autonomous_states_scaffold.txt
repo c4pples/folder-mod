@@ -1,0 +1,2 @@
+# AOTA v0.15 autonomous_states scaffold
+# Reserve for future subject/autonomy setups in imperial and collapse content.

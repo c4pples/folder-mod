@@ -1,0 +1,2 @@
+# AOTA v0.15 ai_templates scaffold
+# Reserve for AI division templates by ideology/path.

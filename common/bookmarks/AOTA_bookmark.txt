@@ -1,0 +1,10 @@
+bookmarks = {
+    bookmark = {
+        name = AOTA_BOOKMARK_1936
+        desc = AOTA_BOOKMARK_1936_DESC
+        date = 1936.1.1.12
+        picture = GFX_select_date_1936
+        default_country = GER
+        country = { GER FRA ENG AUS SOV ITA USA POL BEL SPR ROM HOL BUL }
+    }
+}

@@ -1,0 +1,2 @@
+# AOTA v0.15 country_leader scaffold
+# Reserve for custom country leader archetypes/traits used by path leaders.
