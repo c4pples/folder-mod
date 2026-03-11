@@ -4,6 +4,16 @@ set_air_oob = "AOTA_ANA_air"
 set_research_slots = 3
 set_stability = 0.42
 set_war_support = 0.6
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    basic_train = 1
+    tech_trucks = 1
+}
+
 create_country_leader = {
     name = ANA_george_van_horn_moseley
     picture = GFX_Portrait_Leader_Generic

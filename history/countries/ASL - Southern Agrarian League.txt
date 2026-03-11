@@ -4,6 +4,13 @@ set_air_oob = "AOTA_ASL_air"
 set_research_slots = 2
 set_stability = 0.36
 set_war_support = 0.33
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    gw_artillery = 1
+    basic_train = 1
+}
+
 create_country_leader = {
     name = ASL_richard_russell
     picture = GFX_Portrait_Leader_Generic

@@ -4,6 +4,15 @@ set_air_oob = "AOTA_ROM_air"
 set_research_slots = 3
 set_stability = 0.52
 set_war_support = 0.24
+set_technology = {
+    infantry_weapons = 1
+    tech_support = 1
+    tech_engineers = 1
+    gw_artillery = 1
+    basic_train = 1
+    tech_trucks = 1
+}
+
 load_focus_tree = aota_rom_focus
 add_ideas = aota_minor_exposed_frontier
 set_party_name = { ideology = democratic name = ROM_democratic_party long_name = ROM_democratic_party_long }
