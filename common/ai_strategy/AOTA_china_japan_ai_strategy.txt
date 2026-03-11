@@ -33,3 +33,31 @@ ai_strategy = {
     }
     strategy = { type = prepare_for_war id = JAP value = 120 }
 }
+
+ai_strategy = {
+    id = AOTA_JAP_counter_reunified_china
+    allowed = { tag = JAP }
+    abort_when_not_enabled = yes
+    enable = {
+        any_country = {
+            limit = {
+                AOTA_china_unification_actor = yes
+                has_country_flag = AOTA_china_stage_reunified
+            }
+        }
+    }
+    strategy = { type = prepare_for_war id = CHI value = 130 }
+    strategy = { type = prepare_for_war id = PRC value = 130 }
+}
+
+ai_strategy = {
+    id = AOTA_CHINA_seek_legitimacy_before_wars
+    allowed = { AOTA_china_unification_actor = yes }
+    abort_when_not_enabled = yes
+    enable = {
+        has_country_flag = AOTA_china_unification_initialized
+        NOT = { AOTA_china_legitimacy_at_least_40 = yes }
+    }
+    strategy = { type = alliance id = PRC value = 30 }
+    strategy = { type = alliance id = CHI value = 30 }
+}

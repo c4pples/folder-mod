@@ -21,6 +21,37 @@ on_actions = {
                 set_country_flag = AOTA_china_backlash_pulse_cooldown
                 country_event = { id = aota_china.420 days = 2 }
             }
+
+            every_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_country_flag = AOTA_china_unification_initialized
+                }
+                if = {
+                    limit = { has_war = yes }
+                    add_to_variable = { AOTA_china_legitimacy = 1 }
+                }
+                if = {
+                    limit = {
+                        has_war = no
+                        AOTA_china_has_major_rival = yes
+                    }
+                    add_to_variable = { AOTA_china_legitimacy = -1 }
+                }
+                if = {
+                    limit = { has_idea = AOTA_china_local_accommodation }
+                    add_to_variable = { AOTA_china_legitimacy = -1 }
+                }
+                if = {
+                    limit = { check_variable = { AOTA_china_legitimacy > 100 } }
+                    set_variable = { AOTA_china_legitimacy = 100 }
+                }
+                if = {
+                    limit = { check_variable = { AOTA_china_legitimacy < 0 } }
+                    set_variable = { AOTA_china_legitimacy = 0 }
+                }
+                AOTA_china_refresh_unification_stage = yes
+            }
         }
     }
 }

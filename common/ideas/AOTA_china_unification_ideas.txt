@@ -1,0 +1,44 @@
+ideas = {
+    country = {
+        AOTA_china_claimant_regime = {
+            picture = idea_generic_national_unity
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = -0.06 political_power_gain = -0.03 }
+        }
+        AOTA_china_provisional_authority = {
+            picture = idea_generic_political_reform
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = -0.02 political_power_gain = 0.02 }
+        }
+        AOTA_china_coalition_government = {
+            picture = idea_generic_democratic_unity
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = 0.02 political_power_gain = 0.03 }
+        }
+        AOTA_china_contested_hegemon = {
+            picture = idea_generic_major_war
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { war_support_factor = 0.04 political_power_gain = 0.03 resistance_target = 0.05 }
+        }
+        AOTA_china_reunified_unstable = {
+            picture = idea_generic_resistance
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = -0.04 war_support_factor = 0.03 resistance_target = 0.10 }
+        }
+        AOTA_china_reconstruction_state = {
+            picture = idea_generic_construct_civ_factory
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = 0.06 consumer_goods_factor = -0.03 political_power_gain = 0.03 }
+        }
+        AOTA_china_refragmentation_risk = {
+            picture = idea_generic_civil_war
+            allowed = { AOTA_china_unification_actor = yes }
+            modifier = { stability_factor = -0.08 surrender_limit = 0.08 political_power_gain = -0.04 }
+        }
+        AOTA_japan_reunified_china_watch = {
+            picture = idea_generic_foreign_policy
+            allowed = { tag = JAP }
+            modifier = { operative_slot = 1 army_intel_factor = 0.08 justify_war_goal_time = -0.05 }
+        }
+    }
+}

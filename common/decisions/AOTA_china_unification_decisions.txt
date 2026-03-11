@@ -1,0 +1,230 @@
+AOTA_china_unification_category = {
+    icon = generic_national_unity
+    allowed = { AOTA_china_unification_actor = yes }
+    visible = { AOTA_china_unification_actor = yes }
+
+    AOTA_china_initialize_legitimacy_framework = {
+        icon = generic_political_reform
+        cost = 25
+        days_remove = 7
+        fire_only_once = yes
+        available = { NOT = { has_country_flag = AOTA_china_unification_initialized } }
+        complete_effect = {
+            set_country_flag = AOTA_china_unification_initialized
+            if = { limit = { tag = CHI } set_variable = { AOTA_china_legitimacy = 28 } }
+            if = { limit = { tag = PRC } set_variable = { AOTA_china_legitimacy = 24 } }
+            if = { limit = { OR = { tag = GXC tag = YUN tag = SHX tag = XSM tag = SIK tag = MAN } } set_variable = { AOTA_china_legitimacy = 14 } }
+            AOTA_china_refresh_unification_stage = yes
+            country_event = { id = aota_china_unification.1 days = 1 }
+        }
+    }
+
+    AOTA_china_convene_national_congress = {
+        icon = generic_democratic_unity
+        cost = 60
+        days_remove = 60
+        available = {
+            has_country_flag = AOTA_china_unification_initialized
+            has_political_power > 100
+            OR = {
+                has_war = no
+                has_country_flag = AOTA_china_resistance_line
+            }
+        }
+        complete_effect = {
+            add_political_power = -45
+            AOTA_china_gain_legitimacy_medium = yes
+            if = {
+                limit = { AOTA_china_has_major_rival = yes }
+                country_event = { id = aota_china_unification.20 days = 1 }
+            }
+            if = {
+                limit = { AOTA_china_has_major_rival = no }
+                add_stability = 0.02
+            }
+        }
+    }
+
+    AOTA_china_negotiate_regional_submission = {
+        icon = generic_improve_relations
+        cost = 55
+        days_remove = 45
+        available = {
+            has_country_flag = AOTA_china_unification_initialized
+            AOTA_china_legitimacy_at_least_20 = yes
+            any_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    NOT = { tag = ROOT }
+                    is_subject = no
+                }
+            }
+        }
+        complete_effect = {
+            add_political_power = -30
+            random_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    NOT = { tag = ROOT }
+                    is_subject = no
+                }
+                country_event = { id = aota_china_unification.30 days = 1 }
+            }
+        }
+    }
+
+    AOTA_china_demand_submission_by_force = {
+        icon = generic_demand_territory_or_war
+        cost = 65
+        days_remove = 45
+        available = {
+            has_country_flag = AOTA_china_unification_initialized
+            AOTA_china_legitimacy_at_least_40 = yes
+            has_war = no
+            any_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    NOT = { tag = ROOT }
+                    is_subject = no
+                }
+            }
+        }
+        complete_effect = {
+            add_war_support = 0.02
+            random_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    NOT = { tag = ROOT }
+                    is_subject = no
+                }
+                country_event = { id = aota_china_unification.40 days = 1 }
+            }
+        }
+    }
+
+    AOTA_china_proclaim_national_reunification = {
+        icon = generic_national_unity
+        cost = 100
+        days_remove = 60
+        available = {
+            has_country_flag = AOTA_china_unification_initialized
+            AOTA_china_legitimacy_at_least_80 = yes
+            AOTA_china_has_major_rival = no
+            num_of_controlled_states > 35
+        }
+        complete_effect = {
+            add_political_power = -60
+            add_stability = 0.05
+            add_war_support = 0.03
+            country_event = { id = aota_china_unification.50 days = 1 }
+            if = { limit = { JAP = { exists = yes } } JAP = { country_event = { id = aota_china_unification.200 days = 1 } } }
+        }
+    }
+
+    AOTA_china_launch_reconstruction_compacts = {
+        icon = generic_construct_civ_factory
+        cost = 60
+        days_remove = 50
+        available = {
+            has_country_flag = AOTA_china_stage_reunified
+            has_country_flag = AOTA_china_unification_initialized
+            NOT = { has_idea = AOTA_china_reconstruction_state }
+        }
+        complete_effect = {
+            add_ideas = AOTA_china_reconstruction_state
+            remove_ideas = AOTA_china_reunified_unstable
+            add_stability = 0.04
+            add_political_power = -30
+            country_event = { id = aota_china_unification.60 days = 1 }
+        }
+    }
+}
+
+AOTA_japan_china_unification_response_category = {
+    icon = generic_foreign_policy
+    allowed = { tag = JAP }
+    visible = { tag = JAP }
+
+    AOTA_japan_support_fragmentation_networks = {
+        icon = generic_intelligence_exchange
+        cost = 55
+        days_remove = 45
+        available = {
+            OR = {
+                has_country_flag = AOTA_japan_china_unification_response_unlocked
+                AOTA_japan_pressure_focus_online = yes
+            }
+            any_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_country_flag = AOTA_china_stage_contested
+                }
+            }
+        }
+        complete_effect = {
+            add_political_power = -25
+            every_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_country_flag = AOTA_china_stage_contested
+                }
+                add_to_variable = { AOTA_china_legitimacy = -5 }
+                country_event = { id = aota_china_unification.210 days = 1 }
+                AOTA_china_refresh_unification_stage = yes
+            }
+        }
+    }
+
+    AOTA_japan_offer_recognition_to_collaborationists = {
+        icon = generic_improve_relations
+        cost = 50
+        days_remove = 45
+        available = {
+            OR = {
+                has_country_flag = AOTA_japan_china_unification_response_unlocked
+                AOTA_japan_pressure_focus_online = yes
+            }
+            any_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_idea = AOTA_china_local_accommodation
+                }
+            }
+        }
+        complete_effect = {
+            add_political_power = -20
+            random_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_idea = AOTA_china_local_accommodation
+                }
+                add_to_variable = { AOTA_china_legitimacy = 8 }
+                AOTA_china_refresh_unification_stage = yes
+                country_event = { id = aota_china_unification.220 days = 1 }
+            }
+        }
+    }
+
+    AOTA_japan_prepare_for_reunified_china = {
+        icon = generic_major_war
+        cost = 65
+        days_remove = 60
+        available = {
+            OR = {
+                has_country_flag = AOTA_japan_china_unification_response_unlocked
+                AOTA_japan_pressure_focus_online = yes
+            }
+            any_country = {
+                limit = {
+                    AOTA_china_unification_actor = yes
+                    has_country_flag = AOTA_china_stage_reunified
+                }
+            }
+            NOT = { has_idea = AOTA_japan_reunified_china_watch }
+        }
+        complete_effect = {
+            add_ideas = AOTA_japan_reunified_china_watch
+            add_war_support = 0.02
+        }
+    }
+}
