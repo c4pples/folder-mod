@@ -1352,7 +1352,7 @@
         y = 13
         cost = 10
         prerequisite = { focus = ENG_for_channel_defence_zone }
-        completion_reward = { create_faction = "Concert of Stability" }
+        completion_reward = { create_faction = AOTA_CONCERT_OF_STABILITY }
     }
     focus = {
         id = ENG_for_diplomacy_of_distance

@@ -1,0 +1,41 @@
+﻿l_english:
+ AOTA_MITTELEUROPA_PACT:0 "Mitteleuropa Pact"
+ AOTA_EASTERN_ACCORD:0 "Eastern Accord"
+
+ AOTA_faction_evolution_category:0 "Faction Evolution"
+ AOTA_faction_evolution_category_desc:0 "These initiatives convert loose alignments into durable geopolitical blocs through invitation waves, elite bargaining, and crisis diplomacy."
+
+ AOTA_invite_aus_to_continental_accord:0 "Invite Austria to the Continental Accord"
+ AOTA_invite_aus_to_continental_accord_desc:0 "Bring Vienna into Berlin's conference-led security framework before the Danube crisis redraws Central Europe."
+ AOTA_invite_hun_to_danubian_compact:0 "Invite Hungary to the Danubian Compact"
+ AOTA_invite_hun_to_danubian_compact_desc:0 "Integrate Budapest into the reformed imperial security architecture."
+ AOTA_invite_rom_to_danubian_compact:0 "Invite Romania to the Danubian Compact"
+ AOTA_invite_rom_to_danubian_compact_desc:0 "Offer Bucharest partnership in a Danubian balancing system rather than isolation."
+ AOTA_invite_bel_to_republican_security_pact:0 "Invite Belgium to the Republican Security Pact"
+ AOTA_invite_bel_to_republican_security_pact_desc:0 "Anchor Belgian security planning within a republican anti-collapse coalition."
+ AOTA_invite_spr_to_republican_security_pact:0 "Invite Spain to the Republican Security Pact"
+ AOTA_invite_spr_to_republican_security_pact_desc:0 "Extend republican strategic coordination to the western Mediterranean."
+ AOTA_invite_irq_to_eastern_accord:0 "Invite Iraq to the Eastern Accord"
+ AOTA_invite_irq_to_eastern_accord_desc:0 "Formalize Baghdad's role in the Ottoman-led regional balancing framework."
+ AOTA_invite_egy_to_eastern_accord:0 "Invite Egypt to the Eastern Accord"
+ AOTA_invite_egy_to_eastern_accord_desc:0 "Expand the Accord into a broader eastern conference system with Egyptian participation."
+
+ aota_faction.1.t:0 "Invitation to the Continental Accord"
+ aota_faction.1.d:0 "[FROM.GetNameDef] proposes formal entry into the Continental Accord, framing it as a managed security order for a fractured Central Europe."
+ aota_faction.1.a:0 "Join the Accord."
+ aota_faction.1.b:0 "Remain outside for now."
+
+ aota_faction.2.t:0 "Invitation to the Danubian Compact"
+ aota_faction.2.d:0 "[FROM.GetNameDef] has invited us into the Danubian Compact, arguing that regional instability now demands structured military coordination."
+ aota_faction.2.a:0 "Accept the Compact."
+ aota_faction.2.b:0 "We cannot commit yet."
+
+ aota_faction.3.t:0 "Invitation to the Republican Security Pact"
+ aota_faction.3.d:0 "[FROM.GetNameDef] seeks to institutionalize a republican crisis-response coalition against continental escalation and regime collapse."
+ aota_faction.3.a:0 "Sign the Pact."
+ aota_faction.3.b:0 "Decline and preserve flexibility."
+
+ aota_faction.4.t:0 "Invitation to the Eastern Accord"
+ aota_faction.4.d:0 "[FROM.GetNameDef] invites us into the Eastern Accord, presenting it as a conference system for imperial security, frontier management, and anti-collapse coordination."
+ aota_faction.4.a:0 "Enter the Accord."
+ aota_faction.4.b:0 "Keep relations informal."
