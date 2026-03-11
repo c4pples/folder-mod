@@ -1,12 +1,12 @@
 # Ashes of the Armistice
 
-*The Great War ended, but peace never truly began.*
+*The Great War ended in a Central Powers non-defeat, but peace never truly began.*
 
 **Ashes of the Armistice (AOTA)** is a Hearts of Iron IV alternate-history mod set in a world defined by a drawn armistice, exhausted empires, and political systems pushed past their design limits. Across Europe, the Americas, and beyond, governments are no longer asking how to return to normal — they are asking what kind of order can survive the century that follows.
 
 ## Overview
 
-AOTA is built around one central premise: the postwar settlement is unstable, temporary, and broadly mistrusted. The war ended in mutual exhaustion rather than decisive victory, leaving every major state with unresolved grievances, brittle institutions, and competing visions of legitimacy.
+AOTA is built around one central premise: the postwar settlement is unstable, temporary, and broadly mistrusted. The war ended in a Central Powers-shaped negotiated armistice rather than decisive civilizational victory, leaving every major state with unresolved grievances, brittle institutions, and competing visions of legitimacy.
 
 This produces a world where constitutional governments, military directorates, monarchies, socialist coalitions, anarchist movements, and market-radical regimes all contend to define the "second peace" on their own terms.
 
@@ -18,6 +18,10 @@ By game start, the international order still exists on paper — treaties, confe
 - **France** is pulled between republican continuity, social upheaval, and revolutionary currents.
 - **Britain** still commands an empire, but with visible overstretch and deep imperial strain.
 - **Austria-Hungary** survives, yet its internal compromise is increasingly unstable.
+- **Serbia** functions as a constrained Danubian client state rather than a fully free regional pole.
+- **Hungarian and Yugoslav projects** remain politically active but lack fully sovereign settlement closure at game start.
+- **Ukraine** is an active eastern borderland actor, independent under the Kyiv Provisional Sovereignty settlement but constantly contested and not a starting puppet of Berlin or Moscow.
+- **Poland** exists through the Warsaw Guarantees compromise: independent, but treaty-constrained inside an unresolved corridor order.
 - **Russia** remains politically unfinished, with reunification as an open strategic project.
 - **The Ottoman Empire** endures as an imperial shell under severe provincial and structural stress.
 - **The United States** begins in deadlock and can fracture into multiple successor regimes.
@@ -40,6 +44,16 @@ AOTA's U.S. content centers on collapse and succession politics: constitutional 
 
 ### The New Late-Game Blocs
 Current content also introduces a hard-edged global bloc struggle between coercive "order" and reconstruction-oriented alternatives, including the **Night Pact** and the **Charter of Restoration** framework.
+
+
+## Historical Canon References
+
+For the full pre-game historical spine used by current and future content passes, see:
+
+- `version_history/lore/canon_game_start_lore_bible.md`
+- `version_history/lore/pre_game_historical_framework.md`
+
+These documents define the point of divergence, treaty chain, border logic, and revanchist pressures that underpin the 1936 start.
 
 ## Gameplay Identity
 

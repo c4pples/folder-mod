@@ -122,6 +122,10 @@
  UKR_peasant_militias:0 "Peasant Militias"
  UKR_harvest_and_rifles:0 "Harvest and Rifles"
  UKR_impossible_republic:0 "The Impossible Republic"
+
+ UKR_reject_foreign_protectorates:0 "Reject Foreign Protectorates"
+ UKR_borderland_sovereignty_commission:0 "Borderland Sovereignty Commission"
+ UKR_independence_or_ruin:0 "Independence or Ruin"
  GER_hans_delbruck_aota:0 "Hans Delbrück"
  GER_arthur_moeller_aota:0 "Arthur Moeller van den Bruck"
  GER_gustav_landauer_aota:0 "Gustav Landauer"
