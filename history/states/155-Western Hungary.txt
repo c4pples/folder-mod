@@ -12,7 +12,7 @@
 
 	history = {
 
-		owner = HUN
+		owner = AUS
 		add_core_of = HUN
 
 		victory_points = {

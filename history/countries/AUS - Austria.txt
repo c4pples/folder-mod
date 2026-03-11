@@ -73,3 +73,5 @@ set_popularities = {
 recruit_character = AOTA_AUS_otto
 recruit_character = AOTA_AUS_conrad
 add_ideas = aota_danubian_nationalities_crisis
+
+set_autonomy = { target = SER autonomy_state = autonomy_puppet }

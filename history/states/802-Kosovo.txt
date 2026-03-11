@@ -12,7 +12,7 @@
 		victory_points = {
 			9849 2 
 		}
-		owner = YUG
+		owner = SER
 		buildings = {
 			infrastructure = 1
 

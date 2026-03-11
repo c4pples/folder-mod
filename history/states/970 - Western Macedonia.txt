@@ -7,7 +7,7 @@
 	}
 
 	history = {
-		owner = YUG
+		owner = SER
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

@@ -7,7 +7,7 @@
 
 	history = {
 
-		owner = HUN
+		owner = AUS
 		add_core_of = HUN
 
 		buildings = {

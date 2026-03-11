@@ -15,6 +15,7 @@ set_technology = {
 load_focus_tree = aota_serbia_focus
 add_ideas = aota_unfinished_peace
 add_ideas = aota_minor_exposed_frontier
+add_ideas = aota_serbian_client_administration
 create_country_leader = {
     name = SER_peter_ii
     picture = GFX_Portrait_Europe_Generic_new_7

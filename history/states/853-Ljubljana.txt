@@ -8,7 +8,7 @@
 	
 	history =
 	{
-		owner = YUG
+		owner = AUS
 		buildings = {
 			infrastructure = 3
 		}

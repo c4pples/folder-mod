@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
   country = {
     aota_ire_civic_republic_networks = {
       picture = generic_political_pressure
@@ -40,6 +40,15 @@ ideas = {
         resource_gain_factor = 0.08
         consumer_goods_factor = 0.02
         stability_factor = -0.03
+      }
+    }
+    aota_serbian_client_administration = {
+      picture = generic_political_pressure
+      allowed = { original_tag = SER }
+      modifier = {
+        political_power_gain = -0.02
+        stability_factor = -0.03
+        autonomy_gain = -0.08
       }
     }
   }
