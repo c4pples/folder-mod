@@ -163,3 +163,25 @@
 
 - Audited set (41): `ACC, ACG, ALG, ANA, APF, ASL, AST, AUS, AWU, BEL, BUL, CAN, CCW, COG, EGY, ENG, FIN, FRA, GER, GRE, HOL, HUN, INS, IRE, ITA, JAP, LIT, MAL, NZL, POL, POR, RAJ, ROM, SAF, SER, SOV, SPR, TUR, UKR, USA, YUG`.
 - Stateless subset (12): `ACC, ACG, ALG, ANA, APF, ASL, AWU, CCW, COG, EGY, SER, UKR`.
+
+
+## G. Additional inconsistency pass (per feedback: no Polish corridor if Germany did not lose WW1)
+
+### Confirmed corridor-related inconsistency
+- The start setup still gives Poland key corridor/coastal border states:
+  - `85-Danzig.txt` has `owner = POL`.
+  - `807-Gdynia.txt` has `owner = POL`.
+- Germany retains East Prussia (`763-Konigsberg.txt` owner `GER`) and mainland Pomeranian/Prussian states (`62/63` owner `GER`), so the Polish-held coastal strip pattern is still present.
+- Given your stated canon constraint (“Germany did not lose WW1”), this border outcome is likely inconsistent and should be treated as a high-priority map/lore mismatch.
+
+### Other likely lore/map inconsistencies visible in the same audit
+1. **SER exists as a fully set-up country but has no starting territory** while Yugoslav/Austrian ownership covers its core area (states `107/108/803/802/764/45`).
+2. **UKR exists as a fully set-up country but has no starting territory** despite broad Ukrainian cores concentrated under `SOV` (plus `AUS/POL/ROM` in western fringe states).
+3. **EGY is content-complete but all Egyptian core states are owned by ENG** (`446/447/452/456/457/552/907`).
+4. **ALG is content-complete but all Algerian core states are owned by FRA** (`459/460/513/514`).
+5. **COG ownership is DLC-conditional** (`owner = BEL` plus `IF has_dlc = "Gotterdammerung" transfer_state_to = COG`), creating divergent starts not obviously communicated in scenario framing.
+
+### Priority recommendation order for cleanup
+1. **German-Polish border pass** (corridor + Danzig/Gdynia logic) to align with WW1-victor canon.
+2. **Resolve stateless-but-playable tags** (SER/UKR first; then EGY/ALG depending intended colonial model).
+3. **Decide whether COG should be DLC-variant or canonical fixed at gamestart.**
