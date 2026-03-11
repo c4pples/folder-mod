@@ -88,7 +88,7 @@ AOTA_branch_decisions_aus = {
     visible = { original_tag = AUS }
     AOTA_proclaim_danubian_compact = {
         icon = generic_improve_relations
-        available = { has_completed_focus = AUS_federal_reconciliation }
+        available = { has_completed_focus = AUS_identity_continuity_protocol }
         cost = 50
         complete_effect = { add_stability = 0.04 create_faction = AOTA_DANUBIAN_COMPACT set_country_flag = AOTA_LEADS_DANUBIAN_COMPACT set_cosmetic_tag = AUS_danubian_federation }
     }
