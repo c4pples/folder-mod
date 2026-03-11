@@ -1399,4 +1399,26 @@
         prerequisite = { focus = ENG_for_prepare_the_second_peace }
         completion_reward = { add_political_power = 100 add_stability = 0.03 }
     }
+
+
+    # Hope macro-arc extension: Commonwealth Reconstruction
+    focus = { id = ENG_ref_truth_and_reconstruction_congress icon = GFX_goal_generic_democracy x = 2 y = 19 cost = 10 prerequisite = { focus = ENG_ref_parliamentary_union } completion_reward = { set_country_flag = AOTA_ENG_HOPE_PATH set_cosmetic_tag = ENG_commonwealth_reconstruction_authority recruit_character = AOTA_ENG_ellen_wilkinson country_event = { id = aota.5003 days = 1 } } ai_will_do = { factor = 1.3 modifier = { factor = 1.4 has_government = democratic } } }
+    focus = { id = ENG_ref_reparative_budgeting icon = GFX_goal_generic_consumer_goods x = 0 y = 20 cost = 10 prerequisite = { focus = ENG_ref_truth_and_reconstruction_congress } completion_reward = { add_ideas = aota_eng_hard_peace_dividend add_stability = 0.03 add_political_power = 50 } }
+    focus = { id = ENG_ref_citizens_relief_mission icon = GFX_goal_generic_construct_civ_factory x = 2 y = 20 cost = 10 prerequisite = { focus = ENG_ref_truth_and_reconstruction_congress } completion_reward = { add_political_power = 40 add_manpower = 25000 } }
+    focus = { id = ENG_ref_plural_oceanic_charter icon = GFX_goal_generic_improve_relations x = 4 y = 20 cost = 10 prerequisite = { focus = ENG_ref_truth_and_reconstruction_congress } completion_reward = { add_stability = 0.02 add_opinion_modifier = { target = FRA modifier = aota_trade_friendliness } } }
+    focus = { id = ENG_ref_solidarity_convoys icon = GFX_goal_generic_navy_doctrines_tactics x = 1 y = 21 cost = 10 prerequisite = { focus = ENG_ref_reparative_budgeting focus = ENG_ref_citizens_relief_mission } completion_reward = { add_ideas = aota_eng_solidarity_convoys navy_experience = 15 } }
+    focus = { id = ENG_ref_the_charter_of_restoration icon = GFX_goal_generic_alliance x = 3 y = 21 cost = 10 prerequisite = { focus = ENG_ref_plural_oceanic_charter focus = ENG_ref_citizens_relief_mission } completion_reward = { if = { limit = { NOT = { has_faction = yes } } create_faction = AOTA_CHARTER_OF_RESTORATION } add_political_power = 80 } }
+    focus = { id = ENG_ref_last_best_argument icon = GFX_goal_generic_national_unity x = 2 y = 22 cost = 10 prerequisite = { focus = ENG_ref_solidarity_convoys focus = ENG_ref_the_charter_of_restoration } completion_reward = { add_ideas = aota_hope_international_bastion add_stability = 0.04 add_war_support = 0.03 } }
+
+
+    focus = { id = ENG_ref_relief_over_revenge icon = GFX_goal_generic_political_reform x = 0 y = 23 cost = 10 prerequisite = { focus = ENG_ref_last_best_argument } completion_reward = { add_stability = 0.03 add_political_power = 40 add_ideas = aota_eng_reconstruction_levies } }
+    focus = { id = ENG_ref_commonwealth_labor_guarantees icon = GFX_goal_generic_consumer_goods x = 2 y = 23 cost = 10 prerequisite = { focus = ENG_ref_last_best_argument } completion_reward = { add_ideas = aota_eng_restoration_compact add_stability = 0.02 } }
+    focus = { id = ENG_ref_reconstruction_credit_union icon = GFX_goal_generic_trade x = 4 y = 23 cost = 10 prerequisite = { focus = ENG_ref_last_best_argument } completion_reward = { add_political_power = 60 } }
+    focus = { id = ENG_ref_minority_rights_protocols icon = GFX_goal_generic_democracy x = 0 y = 24 cost = 10 prerequisite = { focus = ENG_ref_relief_over_revenge } completion_reward = { add_stability = 0.03 } }
+    focus = { id = ENG_ref_commonwealth_anti_oligarchy_act icon = GFX_goal_generic_political_pressure x = 2 y = 24 cost = 10 prerequisite = { focus = ENG_ref_commonwealth_labor_guarantees } completion_reward = { add_political_power = 50 country_event = { id = aota.5008 days = 1 } } }
+    focus = { id = ENG_ref_fleet_of_mercy icon = GFX_goal_generic_navy_doctrines_tactics x = 4 y = 24 cost = 10 prerequisite = { focus = ENG_ref_reconstruction_credit_union } completion_reward = { navy_experience = 20 add_ideas = aota_eng_solidarity_convoys } }
+    focus = { id = ENG_ref_defensive_internationalism icon = GFX_goal_generic_alliance x = 1 y = 25 cost = 10 prerequisite = { focus = ENG_ref_minority_rights_protocols focus = ENG_ref_commonwealth_anti_oligarchy_act } completion_reward = { add_political_power = 65 add_war_support = 0.02 } }
+    focus = { id = ENG_ref_sanction_the_night_pact icon = GFX_goal_generic_demand_territory x = 3 y = 25 cost = 10 prerequisite = { focus = ENG_ref_commonwealth_anti_oligarchy_act focus = ENG_ref_fleet_of_mercy } completion_reward = { add_named_threat = { threat = 2 name = aota_5010_threat } add_political_power = 50 } }
+    focus = { id = ENG_ref_a_harder_better_world icon = GFX_goal_generic_national_unity x = 2 y = 26 cost = 10 prerequisite = { focus = ENG_ref_defensive_internationalism focus = ENG_ref_sanction_the_night_pact } completion_reward = { country_event = { id = aota.5009 days = 1 } add_stability = 0.04 } }
+
 }

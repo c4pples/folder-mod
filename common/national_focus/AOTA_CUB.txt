@@ -319,4 +319,91 @@ focus_tree = {
         prerequisite = { focus = CUB_the_shareholder_republic focus = CUB_a_nightmare_of_contracts }
         completion_reward = { add_political_power = 120 add_war_support = 0.08 }
     }
+
+
+    # Hidden secondary villain deepening: Ledger State
+    focus = {
+        id = CUB_midnight_compliance_ledger
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 18 y = 10
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_the_caribbean_exit_option }
+        completion_reward = {
+            set_cosmetic_tag = CUB_ledger_republic
+            country_event = { id = aota.5004 days = 1 }
+            recruit_character = AOTA_CUB_julio_lobo
+            add_political_power = 70
+        }
+    }
+    focus = {
+        id = CUB_repossess_the_hemisphere
+        icon = GFX_goal_generic_war_with_neighbors
+        x = 18 y = 11
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_midnight_compliance_ledger }
+        completion_reward = {
+            set_country_flag = AOTA_SOFT_VILLAIN_MEMBER
+            add_war_support = 0.05
+            add_named_threat = { threat = 2 name = aota_5001_threat }
+        }
+    }
+
+
+    focus = {
+        id = CUB_quantify_the_citizen
+        icon = GFX_goal_generic_political_pressure
+        x = 16 y = 12
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_repossess_the_hemisphere }
+        completion_reward = { add_political_power = 55 }
+    }
+    focus = {
+        id = CUB_blackwater_customs_service
+        icon = GFX_goal_generic_military_sphere
+        x = 18 y = 12
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_repossess_the_hemisphere }
+        completion_reward = { add_war_support = 0.03 add_ideas = aota_cub_debt_discipline }
+    }
+    focus = {
+        id = CUB_seize_the_insurance_chokepoints
+        icon = GFX_goal_generic_trade
+        x = 20 y = 12
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_repossess_the_hemisphere }
+        completion_reward = { add_political_power = 60 }
+    }
+    focus = {
+        id = CUB_contractual_blockade_doctrine
+        icon = GFX_goal_generic_war_with_neighbors
+        x = 17 y = 13
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_quantify_the_citizen focus = CUB_blackwater_customs_service }
+        completion_reward = { naval_experience = 15 add_command_power = 10 }
+    }
+    focus = {
+        id = CUB_debtors_registry_of_the_antilles
+        icon = GFX_goal_generic_intelligence_exchange
+        x = 19 y = 13
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_blackwater_customs_service focus = CUB_seize_the_insurance_chokepoints }
+        completion_reward = { country_event = { id = aota.5011 days = 1 } add_political_power = 40 }
+    }
+    focus = {
+        id = CUB_the_auctioned_sea
+        icon = GFX_goal_generic_national_unity
+        x = 18 y = 14
+        cost = 10
+        allow_branch = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
+        prerequisite = { focus = CUB_contractual_blockade_doctrine focus = CUB_debtors_registry_of_the_antilles }
+        completion_reward = { add_stability = -0.02 add_war_support = 0.05 add_ideas = aota_cub_auctioned_sea add_named_threat = { threat = 2 name = aota_5011_threat } }
+    }
+
 }

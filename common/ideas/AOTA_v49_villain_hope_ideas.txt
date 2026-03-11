@@ -1,0 +1,79 @@
+ideas = {
+  country = {
+    aota_ger_permanent_exception = {
+      picture = idea_generic_political_pressure
+      allowed = { original_tag = GER }
+      modifier = { stability_factor = 0.04 war_support_factor = 0.06 political_power_factor = 0.05 }
+    }
+    aota_ger_tributary_industry = {
+      picture = idea_generic_construct_mil_factory
+      allowed = { original_tag = GER }
+      modifier = { production_speed_arms_factory_factor = 0.08 consumer_goods_factor = 0.03 }
+    }
+    aota_ger_night_order = {
+      picture = idea_generic_major_war
+      allowed = { original_tag = GER }
+      modifier = { justify_war_goal_time = -0.1 division_attack_factor = 0.05 stability_factor = -0.03 }
+    }
+
+    aota_cub_ledger_state = {
+      picture = idea_generic_production
+      allowed = { original_tag = CUB }
+      modifier = { political_power_factor = 0.1 industrial_capacity_factory = 0.05 stability_factor = -0.04 }
+    }
+    aota_cub_debt_discipline = {
+      picture = idea_generic_militarism
+      allowed = { original_tag = CUB }
+      modifier = { war_support_factor = 0.05 recruitable_population_factor = 0.015 stability_factor = -0.03 }
+    }
+
+    aota_eng_restoration_compact = {
+      picture = idea_generic_democracy
+      allowed = { original_tag = ENG }
+      modifier = { stability_factor = 0.05 political_power_factor = 0.06 }
+    }
+    aota_eng_solidarity_convoys = {
+      picture = idea_generic_navy_doctrines_tactics
+      allowed = { original_tag = ENG }
+      modifier = { convoy_production_factor = 0.1 trade_opinion_factor = 0.1 }
+    }
+    aota_eng_hard_peace_dividend = {
+      picture = idea_generic_consumer_goods
+      allowed = { original_tag = ENG }
+      modifier = { consumer_goods_factor = -0.03 factory_output = -0.03 stability_factor = 0.03 }
+    }
+
+    aota_soft_villain_finance = {
+      picture = idea_generic_trade
+      modifier = { political_power_factor = 0.05 consumer_goods_factor = 0.02 }
+    }
+    aota_soft_villain_security_exchange = {
+      picture = idea_generic_intelligence_exchange
+      modifier = { army_org_factor = 0.04 war_support_factor = 0.03 }
+    }
+    aota_soft_villain_targeted_sanctions = {
+      picture = idea_generic_political_pressure
+      modifier = { stability_factor = -0.05 political_power_gain = -0.03 }
+    }
+    aota_hope_international_bastion = {
+      picture = idea_generic_alliance
+      modifier = { stability_factor = 0.03 war_support_factor = 0.03 }
+    }
+
+    aota_ger_reichskommissariat_machine = {
+      picture = idea_generic_political_pressure
+      allowed = { original_tag = GER }
+      modifier = { political_power_factor = 0.06 resistance_target = 0.02 }
+    }
+    aota_eng_reconstruction_levies = {
+      picture = idea_generic_consumer_goods
+      allowed = { original_tag = ENG }
+      modifier = { consumer_goods_factor = 0.02 stability_factor = 0.05 }
+    }
+    aota_cub_auctioned_sea = {
+      picture = idea_generic_trade
+      allowed = { original_tag = CUB }
+      modifier = { trade_opinion_factor = 0.15 naval_speed_factor = 0.04 stability_factor = -0.03 }
+    }
+  }
+}

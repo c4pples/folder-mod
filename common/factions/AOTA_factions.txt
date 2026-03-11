@@ -15,4 +15,12 @@ factions = {
         name = AOTA_LEAGUE_OF_FREE_MARKETS
         icon = GFX_goal_generic_trade
     }
+    AOTA_NIGHT_PACT = {
+        name = AOTA_NIGHT_PACT
+        icon = GFX_goal_generic_major_war
+    }
+    AOTA_CHARTER_OF_RESTORATION = {
+        name = AOTA_CHARTER_OF_RESTORATION
+        icon = GFX_goal_generic_democracy
+    }
 }

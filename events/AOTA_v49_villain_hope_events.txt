@@ -1,0 +1,160 @@
+add_namespace = aota
+
+country_event = {
+  id = aota.5000
+  title = aota_5000_t
+  desc = aota_5000_d
+  picture = GFX_report_event_german_troops
+  is_triggered_only = yes
+  option = {
+    name = aota_5000_o1
+    add_stability = -0.01
+    set_country_flag = AOTA_SOFT_VILLAIN_ENGINE_ON
+  }
+}
+
+country_event = {
+  id = aota.5001
+  title = aota_5001_t
+  desc = aota_5001_d
+  picture = GFX_report_event_generic_politics
+  is_triggered_only = yes
+  option = {
+    name = aota_5001_o1
+    add_named_threat = { threat = 4 name = aota_5001_threat }
+    if = {
+      limit = { NOT = { has_faction = yes } }
+      create_faction = AOTA_NIGHT_PACT
+    }
+    set_country_flag = AOTA_SOFT_VILLAIN_MEMBER
+  }
+}
+
+country_event = {
+  id = aota.5002
+  title = aota_5002_t
+  desc = aota_5002_d
+  picture = GFX_report_event_generic_diplomacy
+  is_triggered_only = yes
+  option = {
+    name = aota_5002_o1
+    ai_chance = { factor = 70 }
+    set_country_flag = AOTA_SOFT_VILLAIN_MEMBER
+    if = {
+      limit = { GER = { has_faction = yes } }
+      GER = { add_to_faction = ROOT }
+    }
+    add_opinion_modifier = { target = GER modifier = aota_trade_friendliness }
+  }
+  option = {
+    name = aota_5002_o2
+    ai_chance = { factor = 30 }
+    add_stability = 0.01
+  }
+}
+
+country_event = {
+  id = aota.5003
+  title = aota_5003_t
+  desc = aota_5003_d
+  picture = GFX_report_event_generic_political_reform
+  is_triggered_only = yes
+  option = {
+    name = aota_5003_o1
+    add_ideas = aota_eng_restoration_compact
+    set_country_flag = AOTA_ENG_HOPE_PATH
+    clr_country_flag = AOTA_HOPE_TARGETED
+  }
+}
+
+country_event = {
+  id = aota.5004
+  title = aota_5004_t
+  desc = aota_5004_d
+  picture = GFX_report_event_generic_trade
+  is_triggered_only = yes
+  option = {
+    name = aota_5004_o1
+    set_country_flag = AOTA_CUB_LEDGER_PATH
+    add_ideas = aota_cub_ledger_state
+  }
+}
+
+news_event = {
+  id = aota.5005
+  title = aota_5005_t
+  desc = aota_5005_d
+  picture = GFX_report_event_generic_major_war
+  major = yes
+  is_triggered_only = yes
+  option = { name = aota_5005_o1 }
+}
+
+country_event = {
+  id = aota.5006
+  title = aota_5006_t
+  desc = aota_5006_d
+  picture = GFX_report_event_generic_political_reform
+  is_triggered_only = yes
+  option = {
+    name = aota_5006_o1
+    add_stability = -0.01
+    every_other_country = {
+      limit = {
+        is_major = yes
+        NOT = { has_country_flag = AOTA_SOFT_VILLAIN_MEMBER }
+      }
+      add_opinion_modifier = { target = GER modifier = aota_postwar_resentment }
+    }
+  }
+}
+
+country_event = {
+  id = aota.5007
+  title = aota_5007_t
+  desc = aota_5007_d
+  picture = GFX_report_event_generic_major_war
+  is_triggered_only = yes
+  option = {
+    name = aota_5007_o1
+    add_named_threat = { threat = 5 name = aota_5001_threat }
+  }
+}
+
+country_event = {
+  id = aota.5008
+  title = aota_5008_t
+  desc = aota_5008_d
+  picture = GFX_report_event_generic_democratic
+  is_triggered_only = yes
+  option = {
+    name = aota_5008_o1
+    add_stability = 0.02
+    add_political_power = -20
+  }
+}
+
+country_event = {
+  id = aota.5009
+  title = aota_5009_t
+  desc = aota_5009_d
+  picture = GFX_report_event_generic_political_reform
+  is_triggered_only = yes
+  option = {
+    name = aota_5009_o1
+    add_ideas = aota_hope_international_bastion
+  }
+}
+
+country_event = {
+  id = aota.5011
+  title = aota_5011_t
+  desc = aota_5011_d
+  picture = GFX_report_event_generic_trade
+  is_triggered_only = yes
+  option = {
+    name = aota_5011_o1
+    add_stability = -0.02
+    set_country_flag = AOTA_CUB_LEDGER_EXPORT_PHASE
+  }
+}

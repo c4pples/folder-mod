@@ -216,4 +216,26 @@ focus_tree = {
     # Final legacy capstone
     focus = { id = GER_the_legacy_of_armistice_overcome icon = GFX_goal_generic_national_unity x = 12 y = 18 cost = 10 prerequisite = { focus = GER_democratic_containment_architecture focus = GER_total_hegemonic_directive focus = GER_peoples_continental_command focus = GER_federated_communal_defense focus = GER_global_settlement_diplomacy focus = GER_shadow_statecraft_directive } available = { date > 1939.1.1 } completion_reward = { remove_ideas = aota_armistice_reckoning add_stability = 0.06 add_political_power = 120 } }
 
+
+
+    # Villain macro-arc extension: Continental Directorate
+    focus = { id = GER_exception_decree_state icon = GFX_goal_generic_political_pressure x = 34 y = 14 cost = 10 prerequisite = { focus = GER_total_hegemonic_directive } completion_reward = { set_country_flag = AOTA_GER_PRIMARY_VILLAIN set_cosmetic_tag = GER_continental_directorate add_ideas = aota_ger_permanent_exception recruit_character = AOTA_GER_reinhard_gehlen country_event = { id = aota.5000 days = 1 } } ai_will_do = { factor = 1.5 modifier = { factor = 1.5 has_government = fascism } } }
+    focus = { id = GER_security_directorate_cabinet icon = GFX_goal_generic_intelligence_exchange x = 34 y = 15 cost = 10 prerequisite = { focus = GER_exception_decree_state } completion_reward = { add_political_power = 80 add_command_power = 20 } }
+    focus = { id = GER_tributary_industrial_zones icon = GFX_goal_generic_construct_mil_factory x = 32 y = 16 cost = 10 prerequisite = { focus = GER_security_directorate_cabinet } completion_reward = { add_ideas = aota_ger_tributary_industry add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+    focus = { id = GER_frontier_loyalty_commands icon = GFX_goal_generic_major_war x = 36 y = 16 cost = 10 prerequisite = { focus = GER_security_directorate_cabinet } completion_reward = { add_war_support = 0.04 army_experience = 15 } }
+    focus = { id = GER_black_dossier_diplomacy icon = GFX_goal_generic_foreign_support x = 32 y = 17 cost = 10 prerequisite = { focus = GER_tributary_industrial_zones } completion_reward = { add_political_power = 60 add_named_threat = { threat = 3 name = GER_total_hegemonic_directive } } }
+    focus = { id = GER_night_pact_architecture icon = GFX_goal_generic_alliance x = 36 y = 17 cost = 10 prerequisite = { focus = GER_frontier_loyalty_commands } completion_reward = { country_event = { id = aota.5001 days = 1 } news_event = { id = aota.5005 days = 1 } } }
+    focus = { id = GER_continental_night_order icon = GFX_goal_generic_national_unity x = 34 y = 18 cost = 10 prerequisite = { focus = GER_black_dossier_diplomacy focus = GER_night_pact_architecture } completion_reward = { add_ideas = aota_ger_night_order add_stability = 0.03 add_war_support = 0.05 } }
+
+
+    focus = { id = GER_reichskommissariat_compacts icon = GFX_goal_generic_political_pressure x = 31 y = 19 cost = 10 prerequisite = { focus = GER_continental_night_order } completion_reward = { add_political_power = 50 add_ideas = aota_ger_reichskommissariat_machine country_event = { id = aota.5006 days = 1 } } }
+    focus = { id = GER_concessionary_police_zones icon = GFX_goal_generic_intelligence_exchange x = 34 y = 19 cost = 10 prerequisite = { focus = GER_continental_night_order } completion_reward = { add_command_power = 20 add_war_support = 0.02 } }
+    focus = { id = GER_occupation_clearinghouse icon = GFX_goal_generic_trade x = 37 y = 19 cost = 10 prerequisite = { focus = GER_continental_night_order } completion_reward = { add_political_power = 50 } }
+    focus = { id = GER_market_of_hostages icon = GFX_goal_generic_foreign_support x = 31 y = 20 cost = 10 prerequisite = { focus = GER_reichskommissariat_compacts } completion_reward = { add_named_threat = { threat = 3 name = aota_5001_threat } add_political_power = 40 } }
+    focus = { id = GER_managed_famine_exports icon = GFX_goal_generic_construct_mil_factory x = 34 y = 20 cost = 10 prerequisite = { focus = GER_concessionary_police_zones focus = GER_occupation_clearinghouse } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } add_ideas = aota_ger_tributary_industry } }
+    focus = { id = GER_armored_customs_union icon = GFX_goal_generic_war_with_neighbors x = 37 y = 20 cost = 10 prerequisite = { focus = GER_occupation_clearinghouse } completion_reward = { add_war_support = 0.03 add_command_power = 15 } }
+    focus = { id = GER_the_night_pact_secretariat icon = GFX_goal_generic_alliance x = 32 y = 21 cost = 10 prerequisite = { focus = GER_market_of_hostages } completion_reward = { add_political_power = 60 add_stability = 0.01 } }
+    focus = { id = GER_black_sea_to_baltic_grid icon = GFX_goal_generic_construct_infrastructure x = 36 y = 21 cost = 10 prerequisite = { focus = GER_managed_famine_exports focus = GER_armored_customs_union } completion_reward = { add_stability = 0.02 add_political_power = 40 } }
+    focus = { id = GER_the_second_armistice icon = GFX_goal_generic_national_unity x = 34 y = 22 cost = 10 prerequisite = { focus = GER_the_night_pact_secretariat focus = GER_black_sea_to_baltic_grid } completion_reward = { country_event = { id = aota.5007 days = 1 } add_war_support = 0.05 } }
+
 }
