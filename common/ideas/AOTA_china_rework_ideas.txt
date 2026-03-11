@@ -26,5 +26,13 @@ ideas = {
 
         AOTA_warlord_local_survival_compact_idea = { picture = idea_generic_national_unity allowed = { OR = { original_tag = GXC original_tag = YUN original_tag = SHX original_tag = XSM original_tag = SIK original_tag = MEN original_tag = MAN } } modifier = { stability_factor = 0.04 division_defence_factor = 0.03 } }
         AOTA_warlord_brokered_accommodation = { picture = idea_generic_foreign_policy allowed = { OR = { original_tag = GXC original_tag = YUN original_tag = SHX original_tag = XSM original_tag = SIK original_tag = MEN original_tag = MAN } } modifier = { trade_opinion_factor = 0.12 political_power_gain = 0.02 war_support_factor = -0.03 } }
+
+        AOTA_GXC_unification_program = { picture = idea_generic_major_war allowed = { original_tag = GXC } modifier = { division_attack_factor = 0.04 planning_speed = 0.05 } }
+        AOTA_YUN_unification_program = { picture = idea_generic_major_war allowed = { original_tag = YUN } modifier = { division_defence_factor = 0.04 army_speed_factor = 0.03 } }
+        AOTA_SHX_unification_program = { picture = idea_generic_major_war allowed = { original_tag = SHX } modifier = { army_org_factor = 0.05 supply_consumption_factor = -0.04 } }
+        AOTA_XSM_unification_program = { picture = idea_generic_major_war allowed = { original_tag = XSM } modifier = { cavalry_attack_factor = 0.10 division_attrition_factor = -0.05 } }
+        AOTA_SIK_unification_program = { picture = idea_generic_major_war allowed = { original_tag = SIK } modifier = { stability_factor = 0.03 local_resources_factor = 0.05 } }
+        AOTA_MEN_unification_program = { picture = idea_generic_major_war allowed = { original_tag = MEN } modifier = { cavalry_defence_factor = 0.10 army_speed_factor = 0.02 } }
+        AOTA_MAN_unification_program = { picture = idea_generic_major_war allowed = { original_tag = MAN } modifier = { production_factory_max_efficiency_factor = 0.05 factory_output = 0.04 } }
     }
 }

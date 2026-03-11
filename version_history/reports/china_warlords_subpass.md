@@ -1,93 +1,89 @@
 # China Warlords-Only Sub-Pass Report
 
 ## A. Executive summary
-This sub-pass introduces a dedicated warlord gameplay layer for China's non-central actors (GXC, YUN, SHX, XSM, SIK, MEN, MAN) through a new shared-but-differentiated focus tree, expanded statecraft decisions, actor-specific identity spirits, and new narrative events.
+This revision upgrades the earlier sub-pass into a **large, tag-distinct warlord layer**. The seven non-central Chinese actors (GXC, YUN, SHX, XSM, SIK, MEN, MAN) now share a broad systemic chassis but each receives unique late-branch content, unification framing, and autonomy outcomes with distinct cosmetic identities and color profiles.
 
-The design goal was additive integration: no existing China rework content was removed, and the old generic fallback content remains for other minors. Chinese regional actors now receive distinct identity scaffolding, branching midgame politics, and late-game relevance centered on autonomy, unification bids, or accommodation under pressure.
+The pass remains additive: no existing core China rework content was removed, but warlord tags now route into their dedicated tree and no longer depend on generic fallback pacing.
 
 ## B. Warlord / regional actor diagnosis
-### Prior diagnosis
-- Warlord tags were routed into the universal fallback tree with limited regional specificity.
-- Political identity, social base, and institutional logic were under-expressed.
-- Progression lacked China-specific turning points and unification bargaining.
+### Prior weakness
+- Shared content existed but did not yet provide enough **tag-unique endpoint identity**.
+- Warlord outcomes felt too close in presentation even when mechanics diverged.
 
-### Applied diagnosis-driven changes
-- Created a dedicated warlord focus tree with early institutional setup, mutually exclusive political strategy, and late-game synthesis.
-- Added tag-specific identity spirits to prevent interchangeability.
-- Added regional decision loop for assemblies, patronage reshuffles, logistics crises, border incidents, and unification backchannels.
-- Added event prose to convey councils, command politics, and negotiated sovereignty.
+### What was changed in this revision
+- Expanded the warlord tree into a larger structure with:
+  - shared statecraft progression,
+  - three strategic macro-paths,
+  - and **seven tag-exclusive unification lines + seven tag-exclusive anti-unifier/autonomy lines**.
+- Added **cosmetic regime outcomes** for each tag-path pair with custom names and map colors.
+- Added unique event beats for each tag-exclusive unification proclamation.
 
 ## C. Country-by-country summary
-### Guangxi (GXC)
-- Identity: Southern federal military-commercial machine.
-- Signature spirit: **Southern Federal Machine**.
-- Best-fit paths: negotiated autonomy, regional unification conference, anti-bandit governance.
+### GXC (Guangxi)
+- Unifier project: **Federal Republic of Liangguang**.
+- Autonomy project: **Liangguang Autonomy Front**.
+- Identity core: southern commercial-federal military brokerage.
 
-### Yunnan (YUN)
-- Identity: Mountain arsenal politics with difficult terrain logistics.
-- Signature spirit: **Mountain Arsenal Compacts**.
-- Best-fit paths: militarized autonomy or selective unification through command integration.
+### YUN (Yunnan)
+- Unifier project: **Southwest National Salvation Government**.
+- Autonomy project: **Mountain Neutrality Zone**.
+- Identity core: highland command politics and road/corridor leverage.
 
-### Shanxi (SHX)
-- Identity: Railway garrison state with disciplined interior defense.
-- Signature spirit: **Railway Garrison State**.
-- Best-fit paths: reconstruction commissions + political guard formations.
+### SHX (Shanxi)
+- Unifier project: **North China Discipline Regime**.
+- Autonomy project: **Shanxi Defensive Federation**.
+- Identity core: rail-industrial militarization and administrative discipline.
 
-### Xibei San Ma (XSM)
-- Identity: Frontier commanderies and mobile patronage army.
-- Signature spirit: **Frontier Commanderies**.
-- Best-fit paths: militia screening + anti-bandit zones + mandate path.
+### XSM (Xibei San Ma)
+- Unifier project: **Northwest Pacification Regime**.
+- Autonomy project: **Northwest Faith and Order Compact**.
+- Identity core: mobile frontier commanderies and corridor warfare.
 
-### Sinkiang (SIK)
-- Identity: Corridor governorate balancing frontier governance and external commerce.
-- Signature spirit: **Governorate of Corridors**.
-- Best-fit paths: accommodation channel + bargained security protocols.
+### SIK (Sinkiang)
+- Unifier project: **Western Provincial Compact**.
+- Autonomy project: **Oasis Autonomy Statute**.
+- Identity core: corridor governance, treaty pragmatism, and caravan-statecraft.
 
-### Mengkukuo (MEN)
-- Identity: Banner hierarchy and frontier administration under pressure.
-- Signature spirit: **Steppe Banner Administration**.
-- Best-fit paths: local survival compact or foreign accommodation, depending on strategic pressure.
+### MEN (Mengkukuo)
+- Unifier project: **Inner Mongol Autonomous Command**.
+- Autonomy project: **Steppe Neutral Zone Authority**.
+- Identity core: banner institutional command under frontier pressure.
 
-### Manchukuo (MAN)
-- Identity: Concessionary technocratic statecraft under asymmetric patronage.
-- Signature spirit: **Concessionary Statecraft**.
-- Best-fit paths: concession economy protection + regulated collaboration framework.
+### MAN (Manchukuo)
+- Unifier project: **Northeast Reorganization Authority**.
+- Autonomy project: **Northeast Autonomous Directorate**.
+- Identity core: technocratic-concessionary governance with security layering.
 
 ## D. Pacing and content spread improvements
-- **Early game:** foundations, councils, patronage, grain/revenue institutions.
-- **Midgame:** military-logistical development + strategy choice (survival/autonomy vs unifier vs accommodation).
-- **Late game:** anti-bandit emergency zones, political guards, regulated collaboration, and a shared capstone asserting regional agency.
-- Decision category provides repeatable interaction so actors do not go dormant between focuses.
+- **Early game:** foundational legitimacy, patronage, grain/revenue, councils.
+- **Midgame:** strategic split among survival, unification conference, or accommodation.
+- **Late game:** long-tail tag-exclusive content with two unique destination models per actor.
+- Result: each warlord remains active and narratively distinct into late campaign phases.
 
 ## E. Character / institution additions
-While no direct new portrait characters were added in this pass, institutional depth was expanded through:
+No portrait pack changes in this revision; institutional depth was expanded through:
 - provincial councils,
-- revenue and grain bureaus,
-- local officer academies,
-- frontier security bureaus,
-- county reconstruction commissions,
-- transport syndicate concessions,
-- patronage reshuffle mechanics.
-
-These represent the governing apparatus and factional machinery behind warlord regimes.
+- military academies and command bureaus,
+- frontier and transport security structures,
+- reconstruction commissions,
+- corridor treaty or concession governance structures,
+- tag-specific command architectures.
 
 ## F. Unification / diplomacy logic changes
-The tree now explicitly supports divergent projects:
-- **Back a unifier / bargain with one:** unification backchannel decision.
-- **Become a unifier:** regional unification conference -> mandate -> command integration.
-- **Resist unification:** local survival compact -> autonomy statute.
-- **Collaborate selectively:** foreign accommodation channel -> concession/security protocol line.
-- **Maintain strategic ambivalence:** capstone allows political continuity without immediate full annexation logic.
+- Each tag can now reach a unique **reunification-branded regime** with bespoke focus progression and supporting event.
+- Each tag can alternatively crystallize into a unique **autonomy/neutrality regime**.
+- Accommodation and anti-unifier outcomes are no longer generic in title/presentation.
 
 ## G. Technical notes
-- Added new focus file for China warlord tags and removed those tags from generic fallback selection list.
-- Added new ideas and localization keys for identities and statecraft outcomes.
-- Added warlord decision category and event IDs (300-303, 310-312) in the existing China event namespace.
-- Kept all changes additive and integrated with current China rework files.
+- Expanded `common/national_focus/AOTA_CHI_warlords.txt` to a large mixed tree with tag-gated branches.
+- Added additional warlord ideas for tag-specific unification programs.
+- Added new warlord proclamation events (`aota_china.320–326`).
+- Added new cosmetic tags with color definitions in `common/cosmetic_tags/AOTA_cosmetic_tags.txt`.
+- Added localization for all new focuses, ideas, cosmetics, and events.
 
 ## H. Manual playtest recommendations
-1. Start as each of GXC/YUN/SHX/XSM/SIK/MEN/MAN and verify exclusive strategic branch behavior.
-2. Confirm each tag receives the correct identity spirit at `Doctrine of Regional Legitimacy` completion.
-3. Test interaction with existing CHI/PRC rework (especially opinion modifiers and diplomacy timing).
-4. AI observation run: ensure warlords complete at least one full strategic branch and use statecraft decisions periodically.
-5. Stress test at war outbreak timing to confirm anti-bandit and command integration rewards remain balanced.
+1. Run a start-date focus-tree check for all seven tags and confirm branch availability is tag-correct.
+2. Confirm each tag can complete both a unifier endpoint and an autonomy endpoint.
+3. Verify cosmetic tag name/color switch triggers correctly on endpoint focuses.
+4. Verify AI chooses at least one tag-exclusive late branch in observer runs.
+5. Confirm no missing localization for all new keys (focuses/ideas/events/cosmetics).
