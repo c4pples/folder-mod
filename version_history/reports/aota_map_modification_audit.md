@@ -165,3 +165,119 @@ Implications:
 - File-system pass across repository tree for direct map assets and target directories.
 - Pattern scan across events/focus/decisions/scripted_effects/scripted_triggers/on_actions for territorial effects.
 - State-history keyword census for ownership/core/claim/controller/DMZ/impassable/transfer usage.
+
+
+## G. Concrete validation checklist (focus: Risk #1 `replace_path = "history/states"`)
+
+Use this as an actionable QA sequence to validate that full state-history replacement is coherent and safe.
+
+### G1) File coverage and naming integrity
+
+- [ ] Confirm `history/states/` exists and is populated with expected scale.
+  - Command: `find history/states -maxdepth 1 -type f | wc -l`
+- [ ] Ensure each file has a numeric state ID prefix and no obvious naming anomalies.
+  - Command: `find history/states -maxdepth 1 -type f -printf '%f\n' | rg -n -v '^[0-9]+.*\.txt$'`
+- [ ] Detect duplicate numeric IDs in filenames (possible overwrite/ambiguity risk).
+  - Command: `find history/states -maxdepth 1 -type f -printf '%f\n' | sed -E 's/^([0-9]+).*/\1/' | sort | uniq -d`
+
+### G2) Internal state-file schema sanity
+
+- [ ] Every state file should contain key blocks/fields (`state = {`, `id =`, `history =`, `provinces =`).
+  - Command: `python - <<'PY'
+import os,re
+missing=[]
+for fn in os.listdir('history/states'):
+    fp=os.path.join('history/states',fn)
+    if not os.path.isfile(fp):
+        continue
+    t=open(fp,encoding='utf-8-sig',errors='ignore').read()
+    req=[r'\bstate\s*=\s*\{',r'\bid\s*=\s*\d+',r'\bhistory\s*=\s*\{',r'\bprovinces\s*=\s*\{']
+    bad=[r for r in req if not re.search(r,t)]
+    if bad: missing.append((fn,bad))
+print('files_missing_required_blocks=',len(missing))
+for m in missing[:50]: print(m)
+PY`
+- [ ] Verify state IDs inside files match filename prefixes.
+  - Command: `python - <<'PY'
+import os,re
+m=[]
+for fn in os.listdir('history/states'):
+    fp=os.path.join('history/states',fn)
+    if not os.path.isfile(fp):
+        continue
+    mfn=re.match(r'(\d+)',fn)
+    if not mfn: continue
+    t=open(fp,encoding='utf-8-sig',errors='ignore').read()
+    mid=re.search(r'\bid\s*=\s*(\d+)',t)
+    if not mid or mid.group(1)!=mfn.group(1):
+        m.append((fn, mid.group(1) if mid else None))
+print('id_mismatches=',len(m))
+for x in m[:50]: print(x)
+PY`
+
+### G3) Territorial data consistency checks
+
+- [ ] Flag state files missing a baseline owner assignment in history.
+  - Command: `python - <<'PY'
+import os,re
+miss=[]
+for fn in os.listdir('history/states'):
+    fp=os.path.join('history/states',fn)
+    if not os.path.isfile(fp): continue
+    t=open(fp,encoding='utf-8-sig',errors='ignore').read()
+    if 'history' in t and not re.search(r'\bhistory\s*=\s*\{[\s\S]*?\bowner\s*=\s*\w+',t):
+        miss.append(fn)
+print('missing_owner=',len(miss))
+for x in miss[:50]: print(x)
+PY`
+- [ ] Review states using `transfer_state_to` / `remove_core_of` for date/condition correctness.
+  - Command: `rg -n '\b(transfer_state_to|remove_core_of)\b' history/states`
+- [ ] Review any `set_demilitarized_zone` and `impassable = yes` states for intended design.
+  - Command: `rg -n '\b(set_demilitarized_zone|impassable\s*=\s*yes)\b' history/states`
+
+### G4) Script-to-state reference integrity
+
+- [ ] Extract all numeric state IDs referenced in scripted transfers/events and verify corresponding state files exist.
+  - Command: `python - <<'PY'
+import re,glob,os
+files=glob.glob('events/*.txt')+glob.glob('common/**/*.txt',recursive=True)
+ids=set()
+for fp in files:
+    t=open(fp,encoding='utf-8-sig',errors='ignore').read()
+    for m in re.finditer(r'(^|\s)(\d+)\s*=\s*\{[^}]*\b(transfer_state|add_core_of|add_claim_by)\b',t,re.M):
+        ids.add(int(m.group(2)))
+missing=[]
+for sid in sorted(ids):
+    pref=f'{sid}-'
+    ok=any(os.path.isfile(os.path.join('history/states',f)) and f.startswith(pref) for f in os.listdir('history/states'))
+    if not ok: missing.append(sid)
+print('script_referenced_state_ids=',len(ids))
+print('missing_state_files_for_script_ids=',len(missing))
+print('missing_ids_sample=',missing[:100])
+PY`
+- [ ] Confirm all scripted country tags used in map-changing effects are defined in `common/country_tags/`.
+  - Command: `rg -n '\b(release|transfer_state|add_core_of|set_capital|set_autonomy|annex_country)\b' events common/scripted_effects | head -n 200`
+
+### G5) Replace-path compatibility and conflict checks
+
+- [ ] Confirm replace-path declarations are identical in both mod descriptors.
+  - Command: `diff -u descriptor.mod AOTA.mod`
+- [ ] Check for other map-critical replace paths that could amplify conflicts.
+  - Command: `rg -n 'replace_path' descriptor.mod AOTA.mod`
+
+### G6) Runtime/parse validation (manual in-game)
+
+- [ ] Launch with AOTA only, verify no startup parser/map errors.
+  - Check: `error.log` contains no state-history parse failures.
+- [ ] Observe first 30 in-game days for scripted territorial chains (US split, China/Congo transitions) and verify no orphan states/tags.
+- [ ] Trigger known map-changing events/focuses and confirm ownership/core changes apply to existing valid states.
+
+### G7) Release gate recommendation
+
+Treat build as **map-safe** only if all are true:
+
+1. No missing/duplicate/mismatched state IDs.
+2. No required-block omissions in state files.
+3. No unresolved scripted references to non-existent states/tags.
+4. No parser errors tied to `history/states` under AOTA-only load.
+5. No unintended territorial regressions in first-month scripted flows.
