@@ -290,7 +290,7 @@
         y = 3
         cost = 7
         prerequisite = { focus = ENG_guard_the_old_empire }
-        completion_reward = { add_navy_experience = 15 }
+        completion_reward = { navy_experience = 15 }
     }
     focus = {
         id = ENG_imp_crown_colony_discipline
@@ -443,7 +443,7 @@
         y = 20
         cost = 10
         prerequisite = { focus = ENG_imp_imperial_emergency_powers }
-        completion_reward = { add_navy_experience = 20 }
+        completion_reward = { navy_experience = 20 }
     }
     focus = {
         id = ENG_imp_bind_the_dominions
@@ -515,7 +515,7 @@
         y = 8
         cost = 10
         prerequisite = { focus = ENG_soc_municipal_workshops }
-        completion_reward = { add_navy_experience = 10 }
+        completion_reward = { navy_experience = 10 }
     }
     focus = {
         id = ENG_soc_union_of_services
@@ -587,7 +587,7 @@
         y = 16
         cost = 10
         prerequisite = { focus = ENG_soc_council_guard }
-        completion_reward = { add_navy_experience = 15 }
+        completion_reward = { navy_experience = 15 }
     }
     focus = {
         id = ENG_soc_continental_solidarity
@@ -704,7 +704,7 @@
         y = 9
         cost = 10
         prerequisite = { focus = ENG_mkt_offshore_finance }
-        completion_reward = { add_navy_experience = 10 }
+        completion_reward = { navy_experience = 10 }
     }
     focus = {
         id = ENG_mkt_private_aerodromes
@@ -902,7 +902,7 @@
         y = 11
         cost = 10
         prerequisite = { focus = ENG_ana_rural_cooperatives }
-        completion_reward = { add_navy_experience = 10 }
+        completion_reward = { navy_experience = 10 }
     }
     focus = {
         id = ENG_ana_free_schools

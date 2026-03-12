@@ -14,7 +14,7 @@ focus_tree = {
 
     focus = { id = AOTA_warlord_foundations_of_rule icon = GFX_goal_generic_national_unity x = 30 y = 0 cost = 6 completion_reward = { add_political_power = 70 country_event = { id = aota_china.300 days = 1 } } }
     focus = { id = AOTA_warlord_provincial_council_sessions icon = GFX_goal_generic_political_reform x = 26 y = 1 cost = 7 prerequisite = { focus = AOTA_warlord_foundations_of_rule } completion_reward = { add_stability = 0.02 add_political_power = 25 } }
-    focus = { id = AOTA_warlord_army_patronage_networks icon = GFX_goal_generic_army_doctrines x = 30 y = 1 cost = 7 prerequisite = { focus = AOTA_warlord_foundations_of_rule } completion_reward = { add_army_experience = 12 add_command_power = 10 } }
+    focus = { id = AOTA_warlord_army_patronage_networks icon = GFX_goal_generic_army_doctrines x = 30 y = 1 cost = 7 prerequisite = { focus = AOTA_warlord_foundations_of_rule } completion_reward = { army_experience = 12 add_command_power = 10 } }
     focus = { id = AOTA_warlord_revenue_and_grain_bureau icon = GFX_goal_generic_construct_civ_factory x = 34 y = 1 cost = 7 prerequisite = { focus = AOTA_warlord_foundations_of_rule } completion_reward = { add_political_power = 35 } }
 
     focus = { id = AOTA_warlord_regional_identity_doctrine icon = GFX_goal_generic_propaganda x = 30 y = 2 cost = 8 prerequisite = { focus = AOTA_warlord_provincial_council_sessions focus = AOTA_warlord_army_patronage_networks } completion_reward = {
@@ -28,7 +28,7 @@ focus_tree = {
     } }
 
     focus = { id = AOTA_warlord_militia_screening_drives icon = GFX_goal_generic_allies_build_infantry x = 22 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { add_war_support = 0.02 add_manpower = 25000 } }
-    focus = { id = AOTA_warlord_local_officer_academies icon = GFX_goal_generic_army_doctrines x = 26 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { add_army_experience = 15 } }
+    focus = { id = AOTA_warlord_local_officer_academies icon = GFX_goal_generic_army_doctrines x = 26 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { army_experience = 15 } }
     focus = { id = AOTA_warlord_arsenal_patronage_contracts icon = GFX_goal_generic_construct_mil_factory x = 30 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
     focus = { id = AOTA_warlord_transport_syndicate_concessions icon = GFX_goal_generic_construct_civ_factory x = 34 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
     focus = { id = AOTA_warlord_frontier_security_bureaus icon = GFX_goal_generic_defence x = 38 y = 3 cost = 8 prerequisite = { focus = AOTA_warlord_regional_identity_doctrine } completion_reward = { add_stability = 0.02 add_war_support = 0.01 } }
@@ -40,27 +40,27 @@ focus_tree = {
     focus = { id = AOTA_warlord_negotiated_autonomy_statute icon = GFX_goal_generic_democratic_unity x = 18 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_local_survival_compact } completion_reward = { add_stability = 0.03 add_political_power = 45 } }
     focus = { id = AOTA_warlord_county_reconstruction_commissions icon = GFX_goal_generic_construct_civ_factory x = 22 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_local_survival_compact } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
     focus = { id = AOTA_warlord_declare_regional_mandate icon = GFX_goal_generic_major_war x = 28 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_regional_unification_conference } completion_reward = { add_command_power = 20 add_war_support = 0.03 } }
-    focus = { id = AOTA_warlord_integrate_neighboring_commands icon = GFX_goal_generic_demand_territory_or_war x = 32 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_regional_unification_conference } completion_reward = { add_army_experience = 18 add_manpower = 30000 } }
+    focus = { id = AOTA_warlord_integrate_neighboring_commands icon = GFX_goal_generic_demand_territory_or_war x = 32 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_regional_unification_conference } completion_reward = { army_experience = 18 add_manpower = 30000 } }
     focus = { id = AOTA_warlord_protect_concession_economy icon = GFX_goal_generic_trade x = 38 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_foreign_accommodation_channel } completion_reward = { add_stability = 0.02 add_political_power = 45 } }
     focus = { id = AOTA_warlord_bargained_security_protocols icon = GFX_goal_generic_intelligence_exchange x = 42 y = 5 cost = 9 prerequisite = { focus = AOTA_warlord_foreign_accommodation_channel } completion_reward = { add_war_support = -0.01 add_stability = 0.03 } }
 
     # Guangxi bloc
-    focus = { id = AOTA_GXC_liangguang_staff_college icon = GFX_goal_generic_army_doctrines x = 4 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = GXC } completion_reward = { add_army_experience = 20 } }
+    focus = { id = AOTA_GXC_liangguang_staff_college icon = GFX_goal_generic_army_doctrines x = 4 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = GXC } completion_reward = { army_experience = 20 } }
     focus = { id = AOTA_GXC_pearl_river_merchant_levies icon = GFX_goal_generic_construct_civ_factory x = 6 y = 8 cost = 8 prerequisite = { focus = AOTA_GXC_liangguang_staff_college } available = { tag = GXC } completion_reward = { add_political_power = 50 add_stability = 0.01 } }
     focus = { id = AOTA_GXC_canton_federal_republic icon = GFX_goal_generic_national_unity x = 8 y = 9 cost = 10 prerequisite = { focus = AOTA_GXC_pearl_river_merchant_levies } available = { tag = GXC } completion_reward = { set_cosmetic_tag = GXC_federal_republic_of_liangguang add_ideas = AOTA_GXC_unification_program add_war_support = 0.04 country_event = { id = aota_china.320 days = 1 } } }
 
     # Yunnan bloc
-    focus = { id = AOTA_YUN_highland_command_reform icon = GFX_goal_generic_defence x = 12 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = YUN } completion_reward = { add_army_experience = 16 add_command_power = 10 } }
+    focus = { id = AOTA_YUN_highland_command_reform icon = GFX_goal_generic_defence x = 12 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = YUN } completion_reward = { army_experience = 16 add_command_power = 10 } }
     focus = { id = AOTA_YUN_burma_road_supervision icon = GFX_goal_generic_foreign_policy x = 14 y = 8 cost = 8 prerequisite = { focus = AOTA_YUN_highland_command_reform } available = { tag = YUN } completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
     focus = { id = AOTA_YUN_southwest_national_salvation_government icon = GFX_goal_generic_national_unity x = 16 y = 9 cost = 10 prerequisite = { focus = AOTA_YUN_burma_road_supervision } available = { tag = YUN } completion_reward = { set_cosmetic_tag = YUN_southwest_salvation_government add_ideas = AOTA_YUN_unification_program add_war_support = 0.04 country_event = { id = aota_china.321 days = 1 } } }
 
     # Shanxi bloc
-    focus = { id = AOTA_SHX_taiyuan_general_staff icon = GFX_goal_generic_army_doctrines x = 20 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = SHX } completion_reward = { add_army_experience = 18 } }
+    focus = { id = AOTA_SHX_taiyuan_general_staff icon = GFX_goal_generic_army_doctrines x = 20 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = SHX } completion_reward = { army_experience = 18 } }
     focus = { id = AOTA_SHX_coal_steel_mobilization icon = GFX_goal_generic_construct_mil_factory x = 22 y = 8 cost = 8 prerequisite = { focus = AOTA_SHX_taiyuan_general_staff } available = { tag = SHX } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
     focus = { id = AOTA_SHX_north_china_discipline_regime icon = GFX_goal_generic_national_unity x = 24 y = 9 cost = 10 prerequisite = { focus = AOTA_SHX_coal_steel_mobilization } available = { tag = SHX } completion_reward = { set_cosmetic_tag = SHX_north_china_discipline_regime add_ideas = AOTA_SHX_unification_program add_war_support = 0.04 country_event = { id = aota_china.322 days = 1 } } }
 
     # Xibei San Ma bloc
-    focus = { id = AOTA_XSM_ma_family_war_council icon = GFX_goal_generic_special_forces x = 28 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = XSM } completion_reward = { add_army_experience = 14 add_manpower = 30000 } }
+    focus = { id = AOTA_XSM_ma_family_war_council icon = GFX_goal_generic_special_forces x = 28 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_declare_regional_mandate } available = { tag = XSM } completion_reward = { army_experience = 14 add_manpower = 30000 } }
     focus = { id = AOTA_XSM_hexi_corridor_garrisons icon = GFX_goal_generic_defence x = 30 y = 8 cost = 8 prerequisite = { focus = AOTA_XSM_ma_family_war_council } available = { tag = XSM } completion_reward = { add_stability = 0.02 add_command_power = 15 } }
     focus = { id = AOTA_XSM_frontier_pacification_mandate icon = GFX_goal_generic_national_unity x = 32 y = 9 cost = 10 prerequisite = { focus = AOTA_XSM_hexi_corridor_garrisons } available = { tag = XSM } completion_reward = { set_cosmetic_tag = XSM_frontier_pacification_regime add_ideas = AOTA_XSM_unification_program add_war_support = 0.04 country_event = { id = aota_china.323 days = 1 } } }
 
@@ -70,7 +70,7 @@ focus_tree = {
     focus = { id = AOTA_SIK_western_provincial_compact icon = GFX_goal_generic_national_unity x = 40 y = 9 cost = 10 prerequisite = { focus = AOTA_SIK_tarim_corridor_treaties } available = { tag = SIK } completion_reward = { set_cosmetic_tag = SIK_western_provincial_compact add_ideas = AOTA_SIK_unification_program add_stability = 0.03 country_event = { id = aota_china.324 days = 1 } } }
 
     # Mengkukuo bloc
-    focus = { id = AOTA_MEN_banner_command_bureau icon = GFX_goal_generic_special_forces x = 44 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_bargained_security_protocols } available = { tag = MEN } completion_reward = { add_army_experience = 12 add_command_power = 12 } }
+    focus = { id = AOTA_MEN_banner_command_bureau icon = GFX_goal_generic_special_forces x = 44 y = 7 cost = 8 prerequisite = { focus = AOTA_warlord_bargained_security_protocols } available = { tag = MEN } completion_reward = { army_experience = 12 add_command_power = 12 } }
     focus = { id = AOTA_MEN_steppe_transport_security icon = GFX_goal_generic_defence x = 46 y = 8 cost = 8 prerequisite = { focus = AOTA_MEN_banner_command_bureau } available = { tag = MEN } completion_reward = { add_stability = 0.02 add_war_support = 0.01 } }
     focus = { id = AOTA_MEN_inner_mongol_autonomous_command icon = GFX_goal_generic_national_unity x = 48 y = 9 cost = 10 prerequisite = { focus = AOTA_MEN_steppe_transport_security } available = { tag = MEN } completion_reward = { set_cosmetic_tag = MEN_inner_mongol_autonomous_command add_ideas = AOTA_MEN_unification_program add_political_power = 55 country_event = { id = aota_china.325 days = 1 } } }
 

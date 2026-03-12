@@ -52,10 +52,10 @@ characters = {
     portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_8 } }
     advisor = { slot = political_advisor idea_token = AOTA_SOV_viktor_chernov_advisor allowed = { original_tag = SOV } traits = { democratic_reformer } }
   }
-  AOTA_SOV_tukhachevsky = {
+  AOTA_SOV_tukhachevsky_worldbuild = {
     name = AOTA_SOV_tukhachevsky_name
     portraits = { civilian = { large = GFX_Portrait_Europe_Generic_new_5 } }
-    advisor = { slot = high_command idea_token = AOTA_SOV_tukhachevsky_advisor allowed = { original_tag = SOV } traits = { army_offence_1 } }
+    advisor = { slot = high_command idea_token = AOTA_SOV_tukhachevsky_worldbuild_advisor allowed = { original_tag = SOV } traits = { army_offence_1 } }
   }
   AOTA_SOV_alexandra_kollontai = {
     name = AOTA_SOV_alexandra_kollontai_name

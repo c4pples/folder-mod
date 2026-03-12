@@ -28,7 +28,7 @@ ideas = {
       picture = generic_construct_infrastructure
       allowed = { original_tag = SOV }
       modifier = {
-        build_speed_infrastructure_factor = 0.08
+        production_speed_infrastructure_factor = 0.08
         supply_node_range = 0.05
       }
     }

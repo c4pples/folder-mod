@@ -13,7 +13,7 @@ ideas = {
     aota_ger_night_order = {
       picture = idea_generic_major_war
       allowed = { original_tag = GER }
-      modifier = { justify_war_goal_time = -0.1 division_attack_factor = 0.05 stability_factor = -0.03 }
+      modifier = { justify_war_goal_time = -0.1 army_attack_factor = 0.05 stability_factor = -0.03 }
     }
 
     aota_cub_ledger_state = {
@@ -35,12 +35,12 @@ ideas = {
     aota_eng_solidarity_convoys = {
       picture = idea_generic_navy_doctrines_tactics
       allowed = { original_tag = ENG }
-      modifier = { convoy_production_factor = 0.1 trade_opinion_factor = 0.1 }
+      modifier = { production_speed_dockyard_factor = 0.1 trade_opinion_factor = 0.1 }
     }
     aota_eng_hard_peace_dividend = {
       picture = idea_generic_consumer_goods
       allowed = { original_tag = ENG }
-      modifier = { consumer_goods_factor = -0.03 factory_output = -0.03 stability_factor = 0.03 }
+      modifier = { consumer_goods_factor = -0.03 industrial_capacity_factory = -0.03 stability_factor = 0.03 }
     }
 
     aota_soft_villain_finance = {

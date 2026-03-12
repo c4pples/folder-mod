@@ -5,17 +5,17 @@ ideas = {
     aota_french_social_breakdown_stage_1 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.01 political_power_factor = -0.03 } }
     aota_french_social_breakdown_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 political_power_factor = -0.05 war_support_factor = 0.02 } }
     aota_danubian_strain_stage_1 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.01 consumer_goods_factor = 0.02 } }
-    aota_danubian_strain_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 consumer_goods_factor = 0.04 division_defence_factor = -0.02 } }
+    aota_danubian_strain_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 consumer_goods_factor = 0.04 army_defence_factor = -0.02 } }
     aota_british_imperial_fatigue_stage_1 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.01 political_power_factor = -0.02 } }
     aota_british_imperial_fatigue_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.02 political_power_factor = -0.04 war_support_factor = 0.02 } }
     aota_russian_reunification_pressure_stage_1 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { war_support_factor = 0.02 stability_factor = -0.01 } }
-    aota_russian_reunification_pressure_stage_2 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { war_support_factor = 0.04 stability_factor = -0.03 justification_against_us = 0.15 } }
+    aota_russian_reunification_pressure_stage_2 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { war_support_factor = 0.04 stability_factor = -0.03 justify_war_goal_time = 0.15 } }
     aota_ottoman_provincial_pressure_stage_1 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.01 political_power_factor = -0.02 } }
-    aota_ottoman_provincial_pressure_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 political_power_factor = -0.04 division_attack_factor = -0.02 } }
+    aota_ottoman_provincial_pressure_stage_2 = { picture = idea_generic_political_reform allowed = { always = yes } modifier = { stability_factor = -0.03 political_power_factor = -0.04 army_attack_factor = -0.02 } }
     aota_usa_constitutional_breakdown_stage_1 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { stability_factor = -0.01 war_support_factor = 0.01 political_power_factor = -0.02 } }
     aota_usa_constitutional_breakdown_stage_2 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { stability_factor = -0.04 war_support_factor = 0.03 political_power_factor = -0.05 } }
     aota_italian_overheat_stage_1 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { stability_factor = -0.01 war_support_factor = 0.02 } }
-    aota_italian_overheat_stage_2 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { stability_factor = -0.03 war_support_factor = 0.04 division_attack_factor = 0.02 } }
+    aota_italian_overheat_stage_2 = { picture = idea_generic_major_war allowed = { always = yes } modifier = { stability_factor = -0.03 war_support_factor = 0.04 army_attack_factor = 0.02 } }
     aota_minor_breathing_room = { picture = idea_generic_political_reform allowed = { always = yes } removal_cost = -1 modifier = { stability_factor = 0.03 political_power_gain = -0.1 } }
   }
 }

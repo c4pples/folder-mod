@@ -1,30 +1,30 @@
 ideas = {
  country = {
   aota_ottoman_reform_path = { picture = generic_political_reform allowed = { original_tag = TUR } modifier = { stability_factor = 0.05 political_power_factor = 0.05 } }
-  aota_ottoman_military_porte = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { war_support_factor = 0.08 army_org_factor = 0.05 division_attack_factor = 0.03 } }
-  aota_ottoman_constitutional_settlement = { picture = generic_political_reform allowed = { original_tag = TUR } modifier = { stability_factor = 0.06 democracy_drift = 0.05 consumer_goods_factor = -0.03 } }
+  aota_ottoman_military_porte = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { war_support_factor = 0.08 army_org_factor = 0.05 army_attack_factor = 0.03 } }
+  aota_ottoman_constitutional_settlement = { picture = generic_political_reform allowed = { original_tag = TUR } modifier = { stability_factor = 0.06 democratic_drift = 0.05 consumer_goods_factor = -0.03 } }
   aota_ottoman_sacred_imperium = { picture = generic_propaganda allowed = { original_tag = TUR } modifier = { war_support_factor = 0.10 recruitable_population_factor = 0.02 fascism_drift = 0.05 } }
   aota_ottoman_arab_federal_compromise = { picture = generic_improve_relations allowed = { original_tag = TUR } modifier = { stability_factor = 0.04 resistance_target = -0.05 non_core_manpower = 0.05 } }
-  aota_ottoman_black_standard = { picture = generic_subversive_activity allowed = { original_tag = TUR } modifier = { stability_factor = -0.03 attack_bonus_against_major_factor = 0.03 anarchism_drift = 0.05 } }
+  aota_ottoman_black_standard = { picture = generic_subversive_activity allowed = { original_tag = TUR } modifier = { stability_factor = -0.03 army_attack_factor = 0.03 anarchism_drift = 0.05 } }
   aota_ottoman_arab_unrest = { picture = generic_resistance allowed = { original_tag = TUR } modifier = { stability_factor = -0.05 surrender_limit = -0.05 } }
   aota_ottoman_provincial_negotiations = { picture = generic_political_reform allowed = { original_tag = TUR } modifier = { political_power_gain = 0.2 resistance_target = -0.03 } }
-  aota_ottoman_german_missions = { picture = generic_trade allowed = { original_tag = TUR } modifier = { military_factory_construction_speed_factor = 0.1 production_factory_efficiency_gain_factor = 0.05 } }
+  aota_ottoman_german_missions = { picture = generic_trade allowed = { original_tag = TUR } modifier = { production_speed_arms_factory_factor = 0.1 production_factory_efficiency_gain_factor = 0.05 } }
   aota_ottoman_debt_restructuring = { picture = generic_consumer_goods allowed = { original_tag = TUR } modifier = { consumer_goods_factor = -0.05 stability_factor = 0.02 } }
-  aota_ottoman_railways_of_empire = { picture = generic_construct_infrastructure allowed = { original_tag = TUR } modifier = { supply_node_range = 0.1 build_speed_infrastructure_factor = 0.1 } }
-  aota_ottoman_desert_armies = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { division_attrition_factor = -0.08 army_org_factor = 0.03 } }
-  aota_ottoman_eastern_mediterranean_fleet = { picture = generic_navy_doctrines allowed = { original_tag = TUR } modifier = { naval_speed_factor = 0.05 naval_org_factor = 0.05 } }
+  aota_ottoman_railways_of_empire = { picture = generic_construct_infrastructure allowed = { original_tag = TUR } modifier = { supply_node_range = 0.1 production_speed_infrastructure_factor = 0.1 } }
+  aota_ottoman_desert_armies = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { army_attrition_factor = -0.08 army_org_factor = 0.03 } }
+  aota_ottoman_eastern_mediterranean_fleet = { picture = generic_navy_doctrines allowed = { original_tag = TUR } modifier = { naval_speed_factor = 0.05 navy_org_factor = 0.05 } }
   aota_ottoman_internal_security_apparatus = { picture = generic_police allowed = { original_tag = TUR } modifier = { resistance_target = -0.08 stability_factor = 0.03 } }
-  aota_ottoman_arsenals_of_anatolia = { picture = generic_production allowed = { original_tag = TUR } modifier = { production_factory_max_efficiency_factor = 0.05 factory_output = 0.05 } }
+  aota_ottoman_arsenals_of_anatolia = { picture = generic_production allowed = { original_tag = TUR } modifier = { production_factory_max_efficiency_factor = 0.05 industrial_capacity_factory = 0.05 } }
   aota_ottoman_house_of_osman_redeemed = { picture = generic_national_unity allowed = { original_tag = TUR } modifier = { stability_factor = 0.08 war_support_factor = 0.05 } }
   aota_ottoman_civic_reconstruction = { picture = generic_construct_civ_factory allowed = { original_tag = TUR } modifier = { industrial_capacity_factory = 0.05 } }
-  aota_ottoman_black_sea_initiative = { picture = generic_trade allowed = { original_tag = TUR } modifier = { dockyard_output = 0.05 convoy_raiding_efficiency_factor = 0.05 } }
+  aota_ottoman_black_sea_initiative = { picture = generic_trade allowed = { original_tag = TUR } modifier = { industrial_capacity_dockyard = 0.05 convoy_raiding_efficiency_factor = 0.05 } }
   aota_ottoman_ulema_concordat = { picture = generic_propaganda allowed = { original_tag = TUR } modifier = { stability_factor = 0.04 war_support_factor = 0.03 } }
   aota_ottoman_workers_councils = { picture = generic_support_communism allowed = { original_tag = TUR } modifier = { communism_drift = 0.05 production_factory_efficiency_gain_factor = 0.03 } }
   aota_ottoman_free_communes = { picture = generic_support_anarchism allowed = { original_tag = TUR } modifier = { anarchism_drift = 0.06 recruitable_population_factor = 0.01 } }
   aota_ottoman_book_of_ashes = { picture = generic_propaganda allowed = { original_tag = TUR } modifier = { fascism_drift = 0.08 political_power_gain = 0.15 stability_factor = -0.02 } }
   aota_ottoman_night_of_the_minarets = { picture = generic_police allowed = { original_tag = TUR } modifier = { stability_factor = 0.06 resistance_target = -0.10 surrender_limit = -0.03 } }
-  aota_ottoman_crescent_legions = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { division_attack_factor = 0.06 recruitable_population_factor = 0.03 training_time_army_factor = -0.08 } }
-  aota_ottoman_tithe_of_steel = { picture = generic_production allowed = { original_tag = TUR } modifier = { factory_output = 0.06 military_factory_construction_speed_factor = 0.1 consumer_goods_factor = 0.04 } }
+  aota_ottoman_crescent_legions = { picture = generic_army_reform allowed = { original_tag = TUR } modifier = { army_attack_factor = 0.06 recruitable_population_factor = 0.03 training_time_army_factor = -0.08 } }
+  aota_ottoman_tithe_of_steel = { picture = generic_production allowed = { original_tag = TUR } modifier = { industrial_capacity_factory = 0.06 production_speed_arms_factory_factor = 0.1 consumer_goods_factor = 0.04 } }
   aota_ottoman_registry_of_traitors = { picture = generic_political_reform allowed = { original_tag = TUR } modifier = { political_power_gain = 0.2 stability_factor = -0.04 compliance_gain = -0.05 } }
   aota_ottoman_iron_crescent_regime = { picture = generic_national_unity allowed = { original_tag = TUR } modifier = { war_support_factor = 0.12 justify_war_goal_time = -0.15 stability_factor = 0.04 } }
  }

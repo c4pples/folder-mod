@@ -33,7 +33,7 @@ AOTA_country_presence_statecraft_category = {
         available = { has_war = no }
         complete_effect = {
             add_war_support = 0.03
-            add_army_experience = 5
+            army_experience = 5
         }
     }
 }

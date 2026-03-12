@@ -24,7 +24,7 @@ AOTA_china_fragmentation_category = {
         cost = 55
         days_remove = 60
         available = { has_political_power > 89 }
-        complete_effect = { add_army_experience = 8 add_political_power = -30 }
+        complete_effect = { army_experience = 8 add_political_power = -30 }
     }
 }
 

@@ -51,11 +51,11 @@ focus_tree = {
     focus = { id = AOTA_base_rationed_growth_model icon = GFX_goal_generic_consumer_goods x = 34 y = 5 cost = 8 prerequisite = { focus = AOTA_base_logistics_and_stockpiles } completion_reward = { add_stability = 0.02 add_political_power = 35 } }
 
     # 3) Military reform / readiness
-    focus = { id = AOTA_base_general_staff_review icon = GFX_goal_generic_army_doctrines x = 48 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { add_army_experience = 10 } }
+    focus = { id = AOTA_base_general_staff_review icon = GFX_goal_generic_army_doctrines x = 48 y = 1 cost = 7 prerequisite = { focus = AOTA_base_after_the_armistice } completion_reward = { army_experience = 10 } }
     focus = { id = AOTA_base_border_readiness_command icon = GFX_goal_generic_construct_military x = 48 y = 2 cost = 8 prerequisite = { focus = AOTA_base_general_staff_review } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
     focus = { id = AOTA_base_reserve_mobilization_plans icon = GFX_goal_generic_major_war x = 48 y = 3 cost = 8 prerequisite = { focus = AOTA_base_border_readiness_command } completion_reward = { add_manpower = 30000 add_war_support = 0.01 } }
-    focus = { id = AOTA_base_doctrine_adaptation icon = GFX_goal_generic_army_doctrines x = 48 y = 4 cost = 8 prerequisite = { focus = AOTA_base_reserve_mobilization_plans } completion_reward = { add_army_experience = 15 } }
-    focus = { id = AOTA_base_joint_service_coordination icon = GFX_goal_generic_army_navy_air_innovation x = 48 y = 5 cost = 8 prerequisite = { focus = AOTA_base_doctrine_adaptation } completion_reward = { add_air_experience = 8 add_navy_experience = 8 } }
+    focus = { id = AOTA_base_doctrine_adaptation icon = GFX_goal_generic_army_doctrines x = 48 y = 4 cost = 8 prerequisite = { focus = AOTA_base_reserve_mobilization_plans } completion_reward = { army_experience = 15 } }
+    focus = { id = AOTA_base_joint_service_coordination icon = GFX_goal_generic_army_navy_air_innovation x = 48 y = 5 cost = 8 prerequisite = { focus = AOTA_base_doctrine_adaptation } completion_reward = { air_experience = 8 navy_experience = 8 } }
 
     # 4) Diplomacy / alignment / regional posture
     focus = { id = AOTA_base_reopen_foreign_channels icon = GFX_goal_generic_foreign_policy x = 62 y = 1 cost = 7 prerequisite = { focus = AOTA_base_civil_order_framework } completion_reward = { add_political_power = 40 } }

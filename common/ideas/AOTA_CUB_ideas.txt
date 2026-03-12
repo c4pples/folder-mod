@@ -18,7 +18,7 @@ ideas = {
     aota_cub_rent_a_guard_state = {
       picture = idea_generic_militarism
       allowed = { tag = CUB }
-      modifier = { war_support_factor = 0.05 division_organization_factor = 0.03 }
+      modifier = { war_support_factor = 0.05 army_org_factor = 0.03 }
     }
     aota_cub_extraterritorial_enclaves = {
       picture = idea_generic_political_reform
@@ -48,7 +48,7 @@ ideas = {
     aota_cub_payroll_battalions = {
       picture = idea_generic_army_motorized
       allowed = { tag = CUB }
-      modifier = { division_attack_factor = 0.05 army_org_factor = 0.03 }
+      modifier = { army_attack_factor = 0.05 army_org_factor = 0.03 }
     }
     aota_cub_insurance_state = {
       picture = idea_generic_production
