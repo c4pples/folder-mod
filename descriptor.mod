@@ -1,7 +1,8 @@
 version="0.36"
 tags={
-    "Alternative History"
+	"Alternative History"
 }
 name="AOTA"
 supported_version="1.17.*"
 replace_path = "history/states"
+picture="thumbnail.png"
