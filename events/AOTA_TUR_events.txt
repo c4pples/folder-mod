@@ -1,31 +1,296 @@
 add_namespace = aota
-country_event = { id = aota.2100 title = aota.2100.t desc = aota.2100.d picture = GFX_report_event_generic_treaty is_triggered_only = yes option = { name = aota.2100.a add_political_power = 60 add_timed_idea = { idea = aota_ottoman_provincial_negotiations days = 720 } } option = { name = aota.2100.b add_war_support = 0.03 add_timed_idea = { idea = aota_ottoman_arab_unrest days = 720 } } }
-country_event = { id = aota.2101 title = aota.2101.t desc = aota.2101.d picture = GFX_report_event_worker_protests is_triggered_only = yes option = { name = aota.2101.a add_stability = -0.03 } option = { name = aota.2101.b add_political_power = -25 add_stability = 0.01 } }
-country_event = { id = aota.2102 title = aota.2102.t desc = aota.2102.d picture = GFX_report_event_generic_political_reform is_triggered_only = yes option = { name = aota.2102.a set_politics = { ruling_party = democratic elections_allowed = yes } set_cosmetic_tag = OTT_constitutional_empire add_ideas = aota_ottoman_constitutional_settlement } option = { name = aota.2102.b add_stability = -0.02 } }
-country_event = { id = aota.2103 title = aota.2103.t desc = aota.2103.d picture = GFX_report_event_military_parade is_triggered_only = yes option = { name = aota.2103.a set_politics = { ruling_party = neutrality elections_allowed = no } set_cosmetic_tag = OTT_military_porte add_ideas = aota_ottoman_military_porte } }
-country_event = { id = aota.2104 title = aota.2104.t desc = aota.2104.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = aota.2104.a set_politics = { ruling_party = fascism elections_allowed = no } set_cosmetic_tag = OTT_sacred_imperium add_ideas = aota_ottoman_sacred_imperium } }
-country_event = { id = aota.2105 title = aota.2105.t desc = aota.2105.d picture = GFX_report_event_generic_alliance is_triggered_only = yes option = { name = aota.2105.a set_cosmetic_tag = OTT_arab_federation add_ideas = aota_ottoman_arab_federal_compromise } }
-country_event = { id = aota.2106 title = aota.2106.t desc = aota.2106.d picture = GFX_report_event_worker_protests is_triggered_only = yes option = { name = aota.2106.a set_politics = { ruling_party = anarchism elections_allowed = no } add_ideas = aota_ottoman_black_standard } option = { name = aota.2106.b set_politics = { ruling_party = communism elections_allowed = no } add_ideas = aota_ottoman_workers_councils } }
-country_event = { id = aota.2107 title = aota.2107.t desc = aota.2107.d picture = GFX_report_event_generic_industry is_triggered_only = yes option = { name = aota.2107.a add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-country_event = { id = aota.2108 title = aota.2108.t desc = aota.2108.d picture = GFX_report_event_generic_construct_infrastructure is_triggered_only = yes option = { name = aota.2108.a add_ideas = aota_ottoman_railways_of_empire } }
-country_event = { id = aota.2109 title = aota.2109.t desc = aota.2109.d picture = GFX_report_event_generic_industry is_triggered_only = yes option = { name = aota.2109.a add_political_power = 40 add_stability = 0.02 } }
-country_event = { id = aota.2110 title = aota.2110.t desc = aota.2110.d picture = GFX_report_event_generic_army_prepare is_triggered_only = yes option = { name = aota.2110.a army_experience = 15 add_war_support = 0.03 } }
-country_event = { id = aota.2111 title = aota.2111.t desc = aota.2111.d picture = GFX_report_event_worker_protests is_triggered_only = yes option = { name = aota.2111.a add_stability = -0.02 add_war_support = 0.02 } option = { name = aota.2111.b add_political_power = -35 } }
-country_event = { id = aota.2112 title = aota.2112.t desc = aota.2112.d picture = GFX_report_event_generic_conference is_triggered_only = yes option = { name = aota.2112.a add_political_power = 75 create_faction = AOTA_EASTERN_ACCORD set_country_flag = AOTA_LEADS_EASTERN_ACCORD } }
-country_event = { id = aota.2113 title = aota.2113.t desc = aota.2113.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes option = { name = aota.2113.a GER = { add_opinion_modifier = { target = ROOT modifier = aota_imperial_solidarity } } } }
-country_event = { id = aota.2114 title = aota.2114.t desc = aota.2114.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = aota.2114.a add_named_threat = { threat = 2 name = aota.2114.t } } }
-country_event = { id = aota.2115 title = aota.2115.t desc = aota.2115.d picture = GFX_report_event_generic_treaty is_triggered_only = yes option = { name = aota.2115.a add_stability = 0.03 add_ideas = aota_ottoman_house_of_osman_redeemed } }
-
-country_event = { id = aota.2116 title = aota.2116.t desc = aota.2116.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = aota.2116.a add_political_power = 50 add_popularity = { ideology = fascism popularity = 0.06 } } }
-country_event = { id = aota.2117 title = aota.2117.t desc = aota.2117.d picture = GFX_report_event_worker_protests is_triggered_only = yes option = { name = aota.2117.a add_stability = 0.03 add_war_support = 0.02 } option = { name = aota.2117.b add_political_power = -40 add_stability = -0.04 } }
-country_event = { id = aota.2118 title = aota.2118.t desc = aota.2118.d picture = GFX_report_event_generic_industry is_triggered_only = yes option = { name = aota.2118.a add_building_construction = { type = arms_factory level = 2 instant_build = yes } add_stability = -0.02 } }
-country_event = { id = aota.2119 title = aota.2119.t desc = aota.2119.d picture = GFX_report_event_worker_protests is_triggered_only = yes option = { name = aota.2119.a add_political_power = 45 add_stability = -0.02 } option = { name = aota.2119.b add_war_support = 0.03 add_stability = -0.03 } }
-country_event = { id = aota.2120 title = aota.2120.t desc = aota.2120.d picture = GFX_report_event_tanks_with_infantry is_triggered_only = yes option = { name = aota.2120.a ENG = { country_event = { id = aota.2123 days = 1 } } FRA = { country_event = { id = aota.2124 days = 1 } } GER = { country_event = { id = aota.2125 days = 1 } } SOV = { country_event = { id = aota.2126 days = 1 } } } }
-country_event = { id = aota.2121 title = aota.2121.t desc = aota.2121.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = aota.2121.a add_political_power = 80 add_war_support = 0.05 add_ideas = aota_ottoman_iron_crescent_regime } }
-country_event = { id = aota.2122 title = aota.2122.t desc = aota.2122.d picture = GFX_report_event_generic_major_war is_triggered_only = yes option = { name = aota.2122.a add_named_threat = { threat = 8 name = aota.2122.t } ENG = { add_opinion_modifier = { target = ROOT modifier = aota_ottoman_war_alarm } } FRA = { add_opinion_modifier = { target = ROOT modifier = aota_ottoman_war_alarm } } } }
-country_event = { id = aota.2123 title = aota.2123.t desc = aota.2123.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes option = { name = aota.2123.a add_political_power = 35 } }
-country_event = { id = aota.2124 title = aota.2124.t desc = aota.2124.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes option = { name = aota.2124.a add_political_power = 35 add_war_support = 0.03 } }
-country_event = { id = aota.2125 title = aota.2125.t desc = aota.2125.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes option = { name = aota.2125.a add_political_power = 35 } }
-country_event = { id = aota.2126 title = aota.2126.t desc = aota.2126.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes option = { name = aota.2126.a add_political_power = 35 add_war_support = 0.02 } }
-country_event = { id = aota.2128 title = aota.2128.t desc = aota.2128.d picture = GFX_report_event_generic_propaganda is_triggered_only = yes option = { name = aota.2128.a add_stability = -0.01 } }
-
+country_event = {
+  id = aota.2100 title = aota.2100.t desc = aota.2100.d picture = GFX_report_event_generic_treaty is_triggered_only =
+  yes
+  option = {
+    name = aota.2100.a add_political_power = 60
+    add_timed_idea = {
+      idea = aota_ottoman_provincial_negotiations days = 720
+    }
+  }
+  option = {
+    name = aota.2100.b add_war_support = 0.03
+    add_timed_idea = {
+      idea = aota_ottoman_arab_unrest days = 720
+    }
+  }
+}
+country_event = {
+  id = aota.2101 title = aota.2101.t desc = aota.2101.d picture = GFX_report_event_worker_protests is_triggered_only =
+  yes
+  option = {
+    name = aota.2101.a add_stability = -0.03
+  }
+  option = {
+    name = aota.2101.b add_political_power = -25 add_stability = 0.01
+  }
+}
+country_event = {
+  id = aota.2102 title = aota.2102.t desc = aota.2102.d picture = GFX_report_event_generic_political_reform
+  is_triggered_only = yes
+  option = {
+    name = aota.2102.a
+    set_politics = {
+      ruling_party = democratic elections_allowed = yes
+    }
+    set_cosmetic_tag = OTT_constitutional_empire add_ideas = aota_ottoman_constitutional_settlement
+  }
+  option = {
+    name = aota.2102.b add_stability = -0.02
+  }
+}
+country_event = {
+  id = aota.2103 title = aota.2103.t desc = aota.2103.d picture = GFX_report_event_military_parade is_triggered_only =
+  yes
+  option = {
+    name = aota.2103.a
+    set_politics = {
+      ruling_party = neutrality elections_allowed = no
+    }
+    set_cosmetic_tag = OTT_military_porte add_ideas = aota_ottoman_military_porte
+  }
+}
+country_event = {
+  id = aota.2104 title = aota.2104.t desc = aota.2104.d picture = GFX_report_event_generic_propaganda is_triggered_only =
+  yes
+  option = {
+    name = aota.2104.a
+    set_politics = {
+      ruling_party = fascism elections_allowed = no
+    }
+    set_cosmetic_tag = OTT_sacred_imperium add_ideas = aota_ottoman_sacred_imperium
+  }
+}
+country_event = {
+  id = aota.2105 title = aota.2105.t desc = aota.2105.d picture = GFX_report_event_generic_alliance is_triggered_only =
+  yes
+  option = {
+    name = aota.2105.a set_cosmetic_tag = OTT_arab_federation add_ideas = aota_ottoman_arab_federal_compromise
+  }
+}
+country_event = {
+  id = aota.2106 title = aota.2106.t desc = aota.2106.d picture = GFX_report_event_worker_protests is_triggered_only =
+  yes
+  option = {
+    name = aota.2106.a
+    set_politics = {
+      ruling_party = anarchism elections_allowed = no
+    }
+    add_ideas = aota_ottoman_black_standard
+  }
+  option = {
+    name = aota.2106.b
+    set_politics = {
+      ruling_party = communism elections_allowed = no
+    }
+    add_ideas = aota_ottoman_workers_councils
+  }
+}
+country_event = {
+  id = aota.2107 title = aota.2107.t desc = aota.2107.d picture = GFX_report_event_generic_industry is_triggered_only =
+  yes
+  option = {
+    name = aota.2107.a
+    add_building_construction = {
+      type = industrial_complex level = 1 instant_build = yes
+    }
+  }
+}
+country_event = {
+  id = aota.2108 title = aota.2108.t desc = aota.2108.d picture = GFX_report_event_generic_construct_infrastructure
+  is_triggered_only = yes
+  option = {
+    name = aota.2108.a add_ideas = aota_ottoman_railways_of_empire
+  }
+}
+country_event = {
+  id = aota.2109 title = aota.2109.t desc = aota.2109.d picture = GFX_report_event_generic_industry is_triggered_only =
+  yes
+  option = {
+    name = aota.2109.a add_political_power = 40 add_stability = 0.02
+  }
+}
+country_event = {
+  id = aota.2110 title = aota.2110.t desc = aota.2110.d picture = GFX_report_event_generic_army_prepare
+  is_triggered_only = yes
+  option = {
+    name = aota.2110.a army_experience = 15 add_war_support = 0.03
+  }
+}
+country_event = {
+  id = aota.2111 title = aota.2111.t desc = aota.2111.d picture = GFX_report_event_worker_protests is_triggered_only =
+  yes
+  option = {
+    name = aota.2111.a add_stability = -0.02 add_war_support = 0.02
+  }
+  option = {
+    name = aota.2111.b add_political_power = -35
+  }
+}
+country_event = {
+  id = aota.2112 title = aota.2112.t desc = aota.2112.d picture = GFX_report_event_generic_conference is_triggered_only =
+  yes
+  option = {
+    name = aota.2112.a add_political_power = 75 create_faction = AOTA_EASTERN_ACCORD set_country_flag =
+    AOTA_LEADS_EASTERN_ACCORD
+  }
+}
+country_event = {
+  id = aota.2113 title = aota.2113.t desc = aota.2113.d picture = GFX_report_event_generic_diplomacy is_triggered_only =
+  yes
+  option = {
+    name = aota.2113.a
+    GER = {
+      add_opinion_modifier = {
+        target = ROOT modifier = aota_imperial_solidarity
+      }
+    }
+  }
+}
+country_event = {
+  id = aota.2114 title = aota.2114.t desc = aota.2114.d picture = GFX_report_event_generic_propaganda is_triggered_only =
+  yes
+  option = {
+    name = aota.2114.a
+    add_named_threat = {
+      threat = 2 name = aota.2114.t
+    }
+  }
+}
+country_event = {
+  id = aota.2115 title = aota.2115.t desc = aota.2115.d picture = GFX_report_event_generic_treaty is_triggered_only =
+  yes
+  option = {
+    name = aota.2115.a add_stability = 0.03 add_ideas = aota_ottoman_house_of_osman_redeemed
+  }
+}
+country_event = {
+  id = aota.2116 title = aota.2116.t desc = aota.2116.d picture = GFX_report_event_generic_propaganda is_triggered_only =
+  yes
+  option = {
+    name = aota.2116.a add_political_power = 50
+    add_popularity = {
+      ideology = fascism popularity = 0.06
+    }
+  }
+}
+country_event = {
+  id = aota.2117 title = aota.2117.t desc = aota.2117.d picture = GFX_report_event_worker_protests is_triggered_only =
+  yes
+  option = {
+    name = aota.2117.a add_stability = 0.03 add_war_support = 0.02
+  }
+  option = {
+    name = aota.2117.b add_political_power = -40 add_stability = -0.04
+  }
+}
+country_event = {
+  id = aota.2118 title = aota.2118.t desc = aota.2118.d picture = GFX_report_event_generic_industry is_triggered_only =
+  yes
+  option = {
+    name = aota.2118.a
+    add_building_construction = {
+      type = arms_factory level = 2 instant_build = yes
+    }
+    add_stability = -0.02
+  }
+}
+country_event = {
+  id = aota.2119 title = aota.2119.t desc = aota.2119.d picture = GFX_report_event_worker_protests is_triggered_only =
+  yes
+  option = {
+    name = aota.2119.a add_political_power = 45 add_stability = -0.02
+  }
+  option = {
+    name = aota.2119.b add_war_support = 0.03 add_stability = -0.03
+  }
+}
+country_event = {
+  id = aota.2120 title = aota.2120.t desc = aota.2120.d picture = GFX_report_event_tanks_with_infantry is_triggered_only =
+  yes
+  option = {
+    name = aota.2120.a
+    ENG = {
+      country_event = {
+        id = aota.2123 days = 1
+      }
+    }
+    FRA = {
+      country_event = {
+        id = aota.2124 days = 1
+      }
+    }
+    GER = {
+      country_event = {
+        id = aota.2125 days = 1
+      }
+    }
+    SOV = {
+      country_event = {
+        id = aota.2126 days = 1
+      }
+    }
+  }
+}
+country_event = {
+  id = aota.2121 title = aota.2121.t desc = aota.2121.d picture = GFX_report_event_generic_propaganda is_triggered_only =
+  yes
+  option = {
+    name = aota.2121.a add_political_power = 80 add_war_support = 0.05 add_ideas = aota_ottoman_iron_crescent_regime
+  }
+}
+country_event = {
+  id = aota.2122 title = aota.2122.t desc = aota.2122.d picture = GFX_report_event_generic_major_war is_triggered_only =
+  yes
+  option = {
+    name = aota.2122.a
+    add_named_threat = {
+      threat = 8 name = aota.2122.t
+    }
+    ENG = {
+      add_opinion_modifier = {
+        target = ROOT modifier = aota_ottoman_war_alarm
+      }
+    }
+    FRA = {
+      add_opinion_modifier = {
+        target = ROOT modifier = aota_ottoman_war_alarm
+      }
+    }
+  }
+}
+country_event = {
+  id = aota.2123 title = aota.2123.t desc = aota.2123.d picture = GFX_report_event_generic_diplomacy is_triggered_only =
+  yes
+  option = {
+    name = aota.2123.a add_political_power = 35
+  }
+}
+country_event = {
+  id = aota.2124 title = aota.2124.t desc = aota.2124.d picture = GFX_report_event_generic_diplomacy is_triggered_only =
+  yes
+  option = {
+    name = aota.2124.a add_political_power = 35 add_war_support = 0.03
+  }
+}
+country_event = {
+  id = aota.2125 title = aota.2125.t desc = aota.2125.d picture = GFX_report_event_generic_diplomacy is_triggered_only =
+  yes
+  option = {
+    name = aota.2125.a add_political_power = 35
+  }
+}
+country_event = {
+  id = aota.2126 title = aota.2126.t desc = aota.2126.d picture = GFX_report_event_generic_diplomacy is_triggered_only =
+  yes
+  option = {
+    name = aota.2126.a add_political_power = 35 add_war_support = 0.02
+  }
+}
+country_event = {
+  id = aota.2128 title = aota.2128.t desc = aota.2128.d picture = GFX_report_event_generic_propaganda is_triggered_only =
+  yes
+  option = {
+    name = aota.2128.a add_stability = -0.01
+  }
+}

@@ -1,38 +1,351 @@
-﻿focus_tree = {
-    id = aota_egy_focus
-    country = { factor = 0 modifier = { add = 25 tag = EGY } }
-    default = no
-
-    focus = { id = EGY_colonial_crossroads icon = GFX_goal_generic_political_reform x = 10 y = 0 cost = 5 completion_reward = { add_political_power = 75 add_stability = -0.02 } }
-
-    # Political
-    focus = { id = EGY_strengthen_the_khedival_state icon = GFX_goal_support_neutrality x = 4 y = 1 cost = 5 prerequisite = { focus = EGY_colonial_crossroads } mutually_exclusive = { focus = EGY_petition_for_self_rule focus = EGY_organise_the_workers focus = EGY_raise_the_black_banner } available = { NOT = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } } completion_reward = { set_country_flag = EGY_ideology_path_loyalist  add_popularity = { ideology = neutrality popularity = 0.06 } add_stability = 0.03 } }
-    focus = { id = EGY_petition_for_self_rule icon = GFX_goal_generic_demand_territory x = 7 y = 1 cost = 5 prerequisite = { focus = EGY_colonial_crossroads } mutually_exclusive = { focus = EGY_strengthen_the_khedival_state focus = EGY_organise_the_workers focus = EGY_raise_the_black_banner } available = { NOT = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } } completion_reward = { set_country_flag = EGY_ideology_path_self_rule  add_autonomy_ratio = { value = 0.10 } add_political_power = 50 } }
-    focus = { id = EGY_organise_the_workers icon = GFX_goal_support_communism x = 10 y = 1 cost = 5 prerequisite = { focus = EGY_colonial_crossroads } mutually_exclusive = { focus = EGY_strengthen_the_khedival_state focus = EGY_petition_for_self_rule focus = EGY_raise_the_black_banner } available = { NOT = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } } completion_reward = { set_country_flag = EGY_ideology_path_workers  add_popularity = { ideology = communism popularity = 0.05 } add_stability = -0.01 } }
-    focus = { id = EGY_raise_the_black_banner icon = GFX_goal_support_anarchism x = 13 y = 1 cost = 5 prerequisite = { focus = EGY_colonial_crossroads } mutually_exclusive = { focus = EGY_strengthen_the_khedival_state focus = EGY_petition_for_self_rule focus = EGY_organise_the_workers } available = { NOT = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } } completion_reward = { set_country_flag = EGY_ideology_path_anarchist  add_popularity = { ideology = anarchism popularity = 0.05 } add_war_support = 0.02 } }
-    focus = { id = EGY_crown_and_council icon = GFX_goal_generic_allies_build_infantry x = 4 y = 2 cost = 7 prerequisite = { focus = EGY_strengthen_the_khedival_state } bypass = { OR = { has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } completion_reward = { add_stability = 0.05 create_country_leader = { name = "Egypt Loyalist Cabinet" desc = "POLITICS_EGY_LOYALIST_DESC" picture = "" expire = "1965.1.1" ideology = neutrality traits = { } } } }
-    focus = { id = EGY_home_rule_compromise icon = GFX_goal_generic_national_unity x = 7 y = 2 cost = 7 prerequisite = { focus = EGY_petition_for_self_rule } bypass = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist } } completion_reward = { add_stability = 0.04 add_political_power = 75 } }
-    focus = { id = EGY_workers_congress icon = GFX_goal_generic_political_pressure x = 10 y = 2 cost = 7 prerequisite = { focus = EGY_organise_the_workers } bypass = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_anarchist } } completion_reward = { add_stability = -0.02 add_war_support = 0.04 } }
-    focus = { id = EGY_communal_federation icon = GFX_goal_generic_political_pressure x = 13 y = 2 cost = 7 prerequisite = { focus = EGY_raise_the_black_banner } bypass = { OR = { has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers } } completion_reward = { add_stability = -0.01 add_war_support = 0.05 } }
-    focus = { id = EGY_the_nile_republic icon = GFX_goal_generic_major_war x = 8 y = 3 cost = 10 prerequisite = { focus = EGY_crown_and_council focus = EGY_home_rule_compromise focus = EGY_workers_congress focus = EGY_communal_federation } available = { date > 1937.6.1 } completion_reward = { add_political_power = 120 add_stability = 0.05 } }
-
-    # Industry
-    focus = { id = EGY_survey_the_colony icon = GFX_goal_generic_construct_civ_factory x = 21 y = 0 cost = 5 completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-    focus = { id = EGY_expand_cotton_and_canal_revenue icon = GFX_goal_generic_construct_civ_factory x = 19 y = 1 cost = 5 prerequisite = { focus = EGY_survey_the_colony } completion_reward = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } add_stability = 0.02 } }
-    focus = { id = EGY_port_and_rail_programme icon = GFX_goal_generic_construct_infrastructure x = 22 y = 1 cost = 5 prerequisite = { focus = EGY_survey_the_colony } completion_reward = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } add_command_power = 10 } }
-    focus = { id = EGY_colonial_workshops icon = GFX_goal_generic_construct_mil_factory x = 25 y = 1 cost = 5 prerequisite = { focus = EGY_survey_the_colony } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-    focus = { id = EGY_technical_schools icon = GFX_goal_generic_scientific_exchange x = 19 y = 2 cost = 7 prerequisite = { focus = EGY_expand_cotton_and_canal_revenue } completion_reward = { add_research_slot = 1 } }
-    focus = { id = EGY_development_board icon = GFX_goal_generic_production x = 22 y = 2 cost = 7 prerequisite = { focus = EGY_port_and_rail_programme } completion_reward = { add_political_power = 50 add_stability = 0.02 } }
-    focus = { id = EGY_arsenal_scheme icon = GFX_goal_generic_construct_mil_factory x = 25 y = 2 cost = 7 prerequisite = { focus = EGY_colonial_workshops } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } add_war_support = 0.03 } }
-    focus = { id = EGY_self_sustaining_economy icon = GFX_goal_generic_consumer_goods x = 22 y = 3 cost = 10 prerequisite = { focus = EGY_technical_schools focus = EGY_development_board focus = EGY_arsenal_scheme } available = { date > 1937.6.1 } completion_reward = { add_stability = 0.05 add_political_power = 75 } }
-
-    # Military
-    focus = { id = EGY_secure_the_frontier icon = GFX_goal_generic_allies_build_infantry x = 34 y = 0 cost = 5 completion_reward = { army_experience = 10 add_war_support = 0.02 } }
-    focus = { id = EGY_expand_the_canal_defence_force icon = GFX_goal_generic_allies_build_infantry x = 32 y = 1 cost = 5 prerequisite = { focus = EGY_secure_the_frontier } completion_reward = { army_experience = 10 } }
-    focus = { id = EGY_officer_training_mission icon = GFX_goal_generic_army_doctrines x = 35 y = 1 cost = 5 prerequisite = { focus = EGY_secure_the_frontier } completion_reward = { army_experience = 15 } }
-    focus = { id = EGY_coastal_and_internal_security icon = GFX_goal_generic_defence x = 38 y = 1 cost = 5 prerequisite = { focus = EGY_secure_the_frontier } completion_reward = { add_war_support = 0.03 } }
-    focus = { id = EGY_arms_for_the_local_guard icon = GFX_goal_generic_construct_mil_factory x = 32 y = 2 cost = 7 prerequisite = { focus = EGY_expand_the_canal_defence_force } completion_reward = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-    focus = { id = EGY_colonial_staff_college icon = GFX_goal_generic_army_doctrines x = 35 y = 2 cost = 7 prerequisite = { focus = EGY_officer_training_mission } completion_reward = { army_experience = 20 } }
-    focus = { id = EGY_mobilise_the_ports icon = GFX_goal_generic_occupy_states_ongoing_war x = 38 y = 2 cost = 7 prerequisite = { focus = EGY_coastal_and_internal_security } completion_reward = { add_war_support = 0.05 add_stability = -0.01 } }
-    focus = { id = EGY_colonial_high_command icon = GFX_goal_generic_major_war x = 35 y = 3 cost = 10 prerequisite = { focus = EGY_arms_for_the_local_guard focus = EGY_colonial_staff_college focus = EGY_mobilise_the_ports } available = { date > 1937.6.1 } completion_reward = { army_experience = 25 add_command_power = 25 } }
+focus_tree = {
+  id = aota_egy_focus
+  country = {
+    factor = 0
+    modifier = {
+      add = 25 tag = EGY
+    }
+  }
+  default = no
+  focus = {
+    id = EGY_colonial_crossroads icon = GFX_goal_generic_political_reform x = 10 y = 0 cost = 5
+    completion_reward = {
+      add_political_power = 75 add_stability = -0.02
+    }
+  }
+  # Political
+  focus = {
+    id = EGY_strengthen_the_khedival_state icon = GFX_goal_support_neutrality x = 4 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_colonial_crossroads
+    }
+    mutually_exclusive = {
+      focus = EGY_petition_for_self_rule focus = EGY_organise_the_workers focus = EGY_raise_the_black_banner
+    }
+    available = {
+      NOT = {
+        OR = {
+          has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+          EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist
+        }
+      }
+    }
+    completion_reward = {
+      set_country_flag = EGY_ideology_path_loyalist
+      add_popularity = {
+        ideology = neutrality popularity = 0.06
+      }
+      add_stability = 0.03
+    }
+  }
+  focus = {
+    id = EGY_petition_for_self_rule icon = GFX_goal_generic_demand_territory x = 7 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_colonial_crossroads
+    }
+    mutually_exclusive = {
+      focus = EGY_strengthen_the_khedival_state focus = EGY_organise_the_workers focus = EGY_raise_the_black_banner
+    }
+    available = {
+      NOT = {
+        OR = {
+          has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+          EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist
+        }
+      }
+    }
+    completion_reward = {
+      set_country_flag = EGY_ideology_path_self_rule
+      add_autonomy_ratio = {
+        value = 0.10
+      }
+      add_political_power = 50
+    }
+  }
+  focus = {
+    id = EGY_organise_the_workers icon = GFX_goal_support_communism x = 10 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_colonial_crossroads
+    }
+    mutually_exclusive = {
+      focus = EGY_strengthen_the_khedival_state focus = EGY_petition_for_self_rule focus = EGY_raise_the_black_banner
+    }
+    available = {
+      NOT = {
+        OR = {
+          has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+          EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist
+        }
+      }
+    }
+    completion_reward = {
+      set_country_flag = EGY_ideology_path_workers
+      add_popularity = {
+        ideology = communism popularity = 0.05
+      }
+      add_stability = -0.01
+    }
+  }
+  focus = {
+    id = EGY_raise_the_black_banner icon = GFX_goal_support_anarchism x = 13 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_colonial_crossroads
+    }
+    mutually_exclusive = {
+      focus = EGY_strengthen_the_khedival_state focus = EGY_petition_for_self_rule focus = EGY_organise_the_workers
+    }
+    available = {
+      NOT = {
+        OR = {
+          has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+          EGY_ideology_path_workers has_country_flag = EGY_ideology_path_anarchist
+        }
+      }
+    }
+    completion_reward = {
+      set_country_flag = EGY_ideology_path_anarchist
+      add_popularity = {
+        ideology = anarchism popularity = 0.05
+      }
+      add_war_support = 0.02
+    }
+  }
+  focus = {
+    id = EGY_crown_and_council icon = GFX_goal_generic_allies_build_infantry x = 4 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_strengthen_the_khedival_state
+    }
+    bypass = {
+      OR = {
+        has_country_flag = EGY_ideology_path_self_rule has_country_flag = EGY_ideology_path_workers has_country_flag =
+        EGY_ideology_path_anarchist
+      }
+    }
+    completion_reward = {
+      add_stability = 0.05
+      create_country_leader = {
+        name = "Egypt Loyalist Cabinet" desc = "POLITICS_EGY_LOYALIST_DESC" picture = "" expire = "1965.1.1" ideology = neutrality
+        traits = {
+        }
+      }
+    }
+  }
+  focus = {
+    id = EGY_home_rule_compromise icon = GFX_goal_generic_national_unity x = 7 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_petition_for_self_rule
+    }
+    bypass = {
+      OR = {
+        has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_workers has_country_flag =
+        EGY_ideology_path_anarchist
+      }
+    }
+    completion_reward = {
+      add_stability = 0.04 add_political_power = 75
+    }
+  }
+  focus = {
+    id = EGY_workers_congress icon = GFX_goal_generic_political_pressure x = 10 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_organise_the_workers
+    }
+    bypass = {
+      OR = {
+        has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+        EGY_ideology_path_anarchist
+      }
+    }
+    completion_reward = {
+      add_stability = -0.02 add_war_support = 0.04
+    }
+  }
+  focus = {
+    id = EGY_communal_federation icon = GFX_goal_generic_political_pressure x = 13 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_raise_the_black_banner
+    }
+    bypass = {
+      OR = {
+        has_country_flag = EGY_ideology_path_loyalist has_country_flag = EGY_ideology_path_self_rule has_country_flag =
+        EGY_ideology_path_workers
+      }
+    }
+    completion_reward = {
+      add_stability = -0.01 add_war_support = 0.05
+    }
+  }
+  focus = {
+    id = EGY_the_nile_republic icon = GFX_goal_generic_major_war x = 8 y = 3 cost = 10
+    prerequisite = {
+      focus = EGY_crown_and_council focus = EGY_home_rule_compromise focus = EGY_workers_congress focus = EGY_communal_federation
+    }
+    available = {
+      date > 1937.6.1
+    }
+    completion_reward = {
+      add_political_power = 120 add_stability = 0.05
+    }
+  }
+  # Industry
+  focus = {
+    id = EGY_survey_the_colony icon = GFX_goal_generic_construct_civ_factory x = 21 y = 0 cost = 5
+    completion_reward = {
+      add_building_construction = {
+        type = industrial_complex level = 1 instant_build = yes
+      }
+    }
+  }
+  focus = {
+    id = EGY_expand_cotton_and_canal_revenue icon = GFX_goal_generic_construct_civ_factory x = 19 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_survey_the_colony
+    }
+    completion_reward = {
+      add_building_construction = {
+        type = industrial_complex level = 1 instant_build = yes
+      }
+      add_stability = 0.02
+    }
+  }
+  focus = {
+    id = EGY_port_and_rail_programme icon = GFX_goal_generic_construct_infrastructure x = 22 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_survey_the_colony
+    }
+    completion_reward = {
+      add_building_construction = {
+        type = infrastructure level = 1 instant_build = yes
+      }
+      add_command_power = 10
+    }
+  }
+  focus = {
+    id = EGY_colonial_workshops icon = GFX_goal_generic_construct_mil_factory x = 25 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_survey_the_colony
+    }
+    completion_reward = {
+      add_building_construction = {
+        type = arms_factory level = 1 instant_build = yes
+      }
+    }
+  }
+  focus = {
+    id = EGY_technical_schools icon = GFX_goal_generic_scientific_exchange x = 19 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_expand_cotton_and_canal_revenue
+    }
+    completion_reward = {
+      add_research_slot = 1
+    }
+  }
+  focus = {
+    id = EGY_development_board icon = GFX_goal_generic_production x = 22 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_port_and_rail_programme
+    }
+    completion_reward = {
+      add_political_power = 50 add_stability = 0.02
+    }
+  }
+  focus = {
+    id = EGY_arsenal_scheme icon = GFX_goal_generic_construct_mil_factory x = 25 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_colonial_workshops
+    }
+    completion_reward = {
+      add_building_construction = {
+        type = arms_factory level = 1 instant_build = yes
+      }
+      add_war_support = 0.03
+    }
+  }
+  focus = {
+    id = EGY_self_sustaining_economy icon = GFX_goal_generic_consumer_goods x = 22 y = 3 cost = 10
+    prerequisite = {
+      focus = EGY_technical_schools focus = EGY_development_board focus = EGY_arsenal_scheme
+    }
+    available = {
+      date > 1937.6.1
+    }
+    completion_reward = {
+      add_stability = 0.05 add_political_power = 75
+    }
+  }
+  # Military
+  focus = {
+    id = EGY_secure_the_frontier icon = GFX_goal_generic_allies_build_infantry x = 34 y = 0 cost = 5
+    completion_reward = {
+      army_experience = 10 add_war_support = 0.02
+    }
+  }
+  focus = {
+    id = EGY_expand_the_canal_defence_force icon = GFX_goal_generic_allies_build_infantry x = 32 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_secure_the_frontier
+    }
+    completion_reward = {
+      army_experience = 10
+    }
+  }
+  focus = {
+    id = EGY_officer_training_mission icon = GFX_goal_generic_army_doctrines x = 35 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_secure_the_frontier
+    }
+    completion_reward = {
+      army_experience = 15
+    }
+  }
+  focus = {
+    id = EGY_coastal_and_internal_security icon = GFX_goal_generic_defence x = 38 y = 1 cost = 5
+    prerequisite = {
+      focus = EGY_secure_the_frontier
+    }
+    completion_reward = {
+      add_war_support = 0.03
+    }
+  }
+  focus = {
+    id = EGY_arms_for_the_local_guard icon = GFX_goal_generic_construct_mil_factory x = 32 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_expand_the_canal_defence_force
+    }
+    completion_reward = {
+      add_building_construction = {
+        type = arms_factory level = 1 instant_build = yes
+      }
+    }
+  }
+  focus = {
+    id = EGY_colonial_staff_college icon = GFX_goal_generic_army_doctrines x = 35 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_officer_training_mission
+    }
+    completion_reward = {
+      army_experience = 20
+    }
+  }
+  focus = {
+    id = EGY_mobilise_the_ports icon = GFX_goal_generic_occupy_states_ongoing_war x = 38 y = 2 cost = 7
+    prerequisite = {
+      focus = EGY_coastal_and_internal_security
+    }
+    completion_reward = {
+      add_war_support = 0.05 add_stability = -0.01
+    }
+  }
+  focus = {
+    id = EGY_colonial_high_command icon = GFX_goal_generic_major_war x = 35 y = 3 cost = 10
+    prerequisite = {
+      focus = EGY_arms_for_the_local_guard focus = EGY_colonial_staff_college focus = EGY_mobilise_the_ports
+    }
+    available = {
+      date > 1937.6.1
+    }
+    completion_reward = {
+      army_experience = 25 add_command_power = 25
+    }
+  }
 }

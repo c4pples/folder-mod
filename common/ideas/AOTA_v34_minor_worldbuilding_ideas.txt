@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
   country = {
     aota_ire_civic_republic_networks = {
       picture = generic_political_pressure

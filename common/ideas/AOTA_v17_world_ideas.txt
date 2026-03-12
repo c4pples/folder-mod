@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
     country = {
         aota_german_colonial_legacy = {
             picture = generic_trade
