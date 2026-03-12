@@ -3,67 +3,25 @@
 ### They give future events/decisions a stable semantic handle.
 
 ### Surviving Ottoman state
-OTT = {
-	original_tag = TUR
-	fallback = TUR
-}
+OTT = TUR
 
 ### Danubian / Habsburg state, regardless of cosmetic presentation
-DNB = {
-	original_tag = AUS
-	fallback = AUS
-}
+DNB = AUS
 
 ### Unified Raj handle
-IND = {
-	original_tag = RAJ
-	fallback = RAJ
-}
+IND = RAJ
 
 ### U.S. splinter aliases
-USC = {
-	original_tag = ACC
-	fallback = ACC
-}
-USR = {
-	original_tag = AWU
-	fallback = AWU
-}
-USN = {
-	original_tag = ANA
-	fallback = ANA
-}
-USP = {
-	original_tag = APF
-	fallback = APF
-}
-USM = {
-	original_tag = ACG
-	fallback = ACG
-}
-USS = {
-	original_tag = ASL
-	fallback = ASL
-}
-USX = {
-	original_tag = CCW
-	fallback = CCW
-}
+USC = ACC
+USR = AWU
+USN = ANA
+USP = APF
+USM = ACG
+USS = ASL
+USX = CCW
 
 ### Colonial / regional convenience aliases
-CNG = {
-	original_tag = COG
-	fallback = COG
-}
-UKX = {
-	original_tag = UKR
-	fallback = UKR
-}
-IRL = {
-	original_tag = IRE
-	fallback = IRE
-}
-FNX = {
-	original_tag = FIN
-	fallback = FIN
-}
+CNG = COG
+UKX = UKR
+IRL = IRE
+FNX = FIN

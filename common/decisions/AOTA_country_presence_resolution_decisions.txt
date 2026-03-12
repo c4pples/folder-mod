@@ -1,11 +1,9 @@
-category = {
-    id = AOTA_country_presence_statecraft_category
+AOTA_country_presence_statecraft_category = {
     icon = generic_diplomacy
     allowed = { has_country_flag = AOTA_presence_keep_expand }
     visible = { has_country_flag = AOTA_presence_keep_expand }
 
-    decision = {
-        id = AOTA_presence_regional_compact
+    AOTA_presence_regional_compact = {
         icon = generic_alliance
         cost = 45
         days_remove = 21
@@ -17,8 +15,7 @@ category = {
         }
     }
 
-    decision = {
-        id = AOTA_presence_internal_security_reform
+    AOTA_presence_internal_security_reform = {
         icon = generic_police
         cost = 50
         days_remove = 28
@@ -29,8 +26,7 @@ category = {
         }
     }
 
-    decision = {
-        id = AOTA_presence_limited_rearmament
+    AOTA_presence_limited_rearmament = {
         icon = generic_rearmament
         cost = 60
         days_remove = 35
@@ -42,14 +38,12 @@ category = {
     }
 }
 
-category = {
-    id = AOTA_country_presence_background_category
+AOTA_country_presence_background_category = {
     icon = generic_neutrality_focus
     allowed = { has_country_flag = AOTA_presence_background_state }
     visible = { has_country_flag = AOTA_presence_background_state }
 
-    decision = {
-        id = AOTA_presence_reaffirm_neutrality
+    AOTA_presence_reaffirm_neutrality = {
         icon = generic_neutrality_focus
         cost = 25
         days_remove = 30
@@ -59,8 +53,7 @@ category = {
         }
     }
 
-    decision = {
-        id = AOTA_presence_border_patrol_protocols
+    AOTA_presence_border_patrol_protocols = {
         icon = generic_defence
         cost = 30
         days_remove = 28

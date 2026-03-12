@@ -1,10 +1,8 @@
 
-categories = {
  aota_major_path_management = {
   icon = generic_decision
   visible = { always = yes }
-  decision = {
-   id = AOTA_GER_manage_rhine
+  AOTA_GER_manage_rhine = {
    icon = generic_prepare_for_war
    available = { tag = GER }
    visible = { tag = GER }
@@ -12,24 +10,21 @@ categories = {
    days_mission_timeout = 30
    complete_effect = { add_political_power = -50 add_stability = 0.03 country_event = { id = aota.1000 days = 1 } }
   }
-  decision = {
-   id = AOTA_FRA_red_black_committees
+  AOTA_FRA_red_black_committees = {
    icon = generic_protest
    available = { tag = FRA }
    visible = { tag = FRA }
    cost = 50
    complete_effect = { add_political_power = -50 add_popularity = { ideology = anarchism popularity = 0.02 } add_popularity = { ideology = communism popularity = 0.02 } }
   }
-  decision = {
-   id = AOTA_AUS_convene_the_crownlands
+  AOTA_AUS_convene_the_crownlands = {
    icon = generic_allies_build_infantry
    available = { tag = AUS }
    visible = { tag = AUS }
    cost = 50
    complete_effect = { add_political_power = -50 add_stability = 0.04 country_event = { id = aota.1002 days = 1 } }
   }
-  decision = {
-   id = AOTA_USA_prepare_contingency_governors
+  AOTA_USA_prepare_contingency_governors = {
    icon = generic_strike_at_democracy
    available = { tag = USA }
    visible = { tag = USA }
@@ -40,26 +35,22 @@ categories = {
  aota_minor_miracle_paths = {
   icon = generic_decision
   visible = { OR = { tag = GRE tag = LIT tag = HUN } }
-  decision = {
-   id = AOTA_GRE_megali_gamble
+  AOTA_GRE_megali_gamble = {
    available = { tag = GRE }
    visible = { tag = GRE }
    cost = 75
    complete_effect = { add_ideas = aota_greek_gamble add_political_power = 25 }
   }
-  decision = {
-   id = AOTA_LIT_last_bastion
+  AOTA_LIT_last_bastion = {
    available = { tag = LIT }
    visible = { tag = LIT }
    cost = 75
    complete_effect = { add_ideas = aota_lithuanian_last_bastion add_stability = 0.03 }
   }
-  decision = {
-   id = AOTA_HUN_revisionist_cells
+  AOTA_HUN_revisionist_cells = {
    available = { tag = HUN }
    visible = { tag = HUN }
    cost = 75
    complete_effect = { add_ideas = aota_hungarian_revisionism add_war_support = 0.04 }
   }
  }
-}

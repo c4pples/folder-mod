@@ -1,11 +1,9 @@
-category = {
-    id = AOTA_revolutionary_rivalry_category
+AOTA_revolutionary_rivalry_category = {
     icon = generic_production
     allowed = { OR = { has_idea = aota_anarchist_agitation has_idea = aota_commune_momentum } }
     visible = { OR = { has_idea = aota_anarchist_agitation has_idea = aota_commune_momentum } }
 
-    decision = {
-        id = AOTA_back_the_communes
+    AOTA_back_the_communes = {
         icon = generic_political_reform
         available = { NOT = { has_government = anarchism } }
         visible = { always = yes }
@@ -18,8 +16,7 @@ category = {
         }
     }
 
-    decision = {
-        id = AOTA_back_the_party
+    AOTA_back_the_party = {
         icon = generic_major_war
         available = { NOT = { has_government = communism } }
         visible = { always = yes }

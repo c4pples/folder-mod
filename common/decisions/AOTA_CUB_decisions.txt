@@ -1,4 +1,3 @@
-categories = {
   AOTA_cuban_secret_path = {
     icon = generic_political_reform
     allowed = { tag = CUB }
@@ -7,8 +6,7 @@ categories = {
       NOT = { has_country_flag = AOTA_CUB_ANCAP_PATH_OPEN }
       NOT = { has_country_flag = AOTA_CUB_REJECTED_BOARDROOM_EXILES }
     }
-    decision = {
-      id = CUB_meet_the_corporate_exiles
+    CUB_meet_the_corporate_exiles = {
       icon = generic_improve_relations
       cost = 35
       days_remove = 35
@@ -31,4 +29,3 @@ categories = {
       complete_effect = { country_event = { id = aota.3600 hours = 6 } }
     }
   }
-}

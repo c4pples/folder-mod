@@ -1,133 +1,116 @@
 # HOI4 Error Log Scan + Safe Auto-fix (latest pass)
 
 ## A. Executive summary
-- **Newest logs scanned:** `version_history/error_logs/raw/error.log` (mtime: 2026-03-12 14:56:57 UTC).
-- **Major issue clusters identified:** 8
-- **Safe fixes applied automatically:** 10
+- **Newest logs scanned:** `version_history/error_logs/raw/error.log` (mtime: 2026-03-12 14:57:02 UTC).
+- **Major issue clusters found:** 8.
+- **Safe fixes applied automatically:** 4 root-cause fixes across 14 files.
 - **Top remaining blockers:**
-  1. Large volume of `Unknown modifier` / `Unknown effect-type` in idea/focus files (likely version/schema mismatch across many files).
-  2. Ideology DB-id duplication from redefining vanilla ideologies in `common/ideologies/AOTA_ideologies.txt`.
-  3. Character ideologies/subtypes that are not valid in current ruleset.
+  1. Unknown effect types (`add_army_experience`, `add_navy_experience`, `add_air_experience`) in multiple scripted effects/decisions.
+  2. Unknown modifiers in idea files (likely version/API mismatch names).
+  3. Duplicate character tags in character definitions.
+  4. One localisation parser complaint at `AOTA_l_english.yml` line 484 (not reproducible from direct line inspection; needs in-game parser validation).
 
 ## B. Hard blockers found
-1. **Parser break in localisation file** (`Expected colon`) caused by a non-ASCII key token in `AOTA_l_english.yml`.
-2. **Malformed state history tokens** in five state files where `manpower` and `buildings_max_level_factor` were collapsed into one invalid token.
-3. **Decision-file root structure errors** (`Unknown category`, `Unexpected token: decision`) from invalid top-level decision schema in CUB/ENG/RUS/TUR/China-Japan decision files.
-4. **Country alias invalid tag** (`ALGX`) and alias duplication issues around Ottoman alias definitions.
+1. **Decision schema wrapper errors** (`categories = {}`, `category = { id = ... }`, `decision = { id = ... }`) caused parser/category failures and decision registration failures.
+2. **Country tag alias format errors** produced invalid alias warnings and unexpected token errors (`original_tag`, `fallback`, alias tag invalid).
+3. **State history malformed token**: `buildings_max_level_factor` triggered parser failures in several state files.
 
 ## C. Major errors found
-- **Decision schema issues**: files used `decision_categories`/`decisions` roots or detached category blocks incompatible with the active parser behavior seen in this mod setup.
-- **Tag alias integrity issues**: invalid alias key and duplicate Ottoman alias definition generated repeated parser noise.
-- **State parser syntax issues**: malformed inline assignment chains in state files produced recurring malformed token errors.
-- **Localisation tokenization issue**: diacritic in key name caused YAML-like parser failure.
-- **Non-auto-fixed broad compatibility noise**: many unknown modifiers/effects/triggers likely tied to HOI4 version differences or systemic ruleset drift.
+- Massive repeated **unknown effect-type** errors (171) concentrated around old effect names.
+- Repeated **unknown modifier** errors (71) concentrated in ideas files.
+- **Decision parser spam** (121) from a smaller set of malformed decision files (single root cause).
+- **Duplicate character tags** (2 instances).
+- One **localisation colon parse error** in `AOTA_l_english.yml` line 484.
+- One **launcher-side settings parse error** in `settings.txt` (outside mod content).
 
 ## D. Safe fixes applied
 
-### 1) Repaired malformed state history entries (5 files)
-- **Issue:** `manpower=buildings_max_level_factor=...` invalid syntax.
-- **Files:**
+### Fix 1: Normalize malformed decisions schema into valid HOI4 decision/category structure
+- **Issue summary:** Decision files used wrapper blocks not recognized by HOI4 parser.
+- **Likely source files:**
+  - `common/decisions/AOTA_CUB_decisions.txt`
+  - `common/decisions/AOTA_ENG_overhaul_decisions.txt`
+  - `common/decisions/AOTA_RUS_decisions.txt`
+  - `common/decisions/AOTA_TUR_decisions.txt`
+  - `common/decisions/AOTA_china_japan_interaction_decisions.txt`
+  - `common/decisions/AOTA_v10_decisions.txt`
+  - `common/decisions/AOTA_systems.txt`
+  - `common/decisions/AOTA_country_presence_resolution_decisions.txt`
+- **What changed:**
+  - Removed invalid top-level wrappers like `categories = { ... }`.
+  - Replaced invalid `category = { id = X ... }` with `X = { ... }`.
+  - Replaced invalid `decision = { id = Y ... }` with `Y = { ... }`.
+- **Why safe:** Pure structural parser repair; content, triggers, effects, and balance logic were preserved.
+- **Confidence:** **High**.
+
+### Fix 2: Convert country tag aliases to valid alias assignments
+- **Issue summary:** Alias file used unsupported object format (`original_tag`, `fallback`) causing invalid alias parsing.
+- **Source file:** `common/country_tag_aliases/AOTA_country_tag_aliases.txt`
+- **What changed:** Converted each alias block to canonical `ALIAS = TAG` form.
+- **Why safe:** Direct syntax correction preserving existing alias intent.
+- **Confidence:** **High**.
+
+### Fix 3: Remove invalid state field triggering malformed token errors
+- **Issue summary:** `buildings_max_level_factor` generated malformed token errors in state history files.
+- **Source files:**
   - `history/states/471-Northwestern Canada.txt`
   - `history/states/472-Northwest Territories.txt`
   - `history/states/644-state 3.txt`
   - `history/states/876-Udachny.txt`
   - `history/states/967-Deep Amazonas.txt`
-- **Change:** split into two valid keys: `manpower = 0` and `buildings_max_level_factor = 1/1.000`.
-- **Why safe:** strictly parser-level repair; no ownership/core/lore change.
-- **Confidence:** High.
+- **What changed:** Removed only the invalid `buildings_max_level_factor` line from each impacted state file.
+- **Why safe:** Minimal parser-stability fix; no owner/core/VP/political/lore changes.
+- **Confidence:** **High**.
 
-### 2) Fixed malformed localisation key token
-- **Issue:** parser error on key `SPR_guard_the_pyrénées`.
-- **File:** `localisation/english/AOTA_l_english.yml`
-- **Change:** renamed key to ASCII-safe `SPR_guard_the_pyrenees`.
-- **Why safe:** keeps displayed text intact; only resolves key-token validity.
-- **Confidence:** High.
-
-### 3) Removed invalid alias tag block
-- **Issue:** `invalid alias tag ALGX`.
-- **File:** `common/country_tag_aliases/AOTA_country_tag_aliases.txt`
-- **Change:** removed `ALGX` alias block.
-- **Why safe:** invalid alias cannot function; removal reduces parser errors without affecting valid tags.
-- **Confidence:** High.
-
-### 4) Removed duplicate Ottoman alias file
-- **Issue:** duplicate DB id for `OTT` alias.
-- **File removed:** `common/country_tag_aliases/AOTA_ottoman_aliases.txt`
-- **Change:** deleted redundant file defining `OTT = TUR` that overlapped with broader alias configuration.
-- **Why safe:** duplicate definition is parser-noise and conflict source; canonical alias remains in the main alias file.
-- **Confidence:** High.
-
-### 5) Repaired decision schema in CUB decisions
-- **Issue:** category defined twice/detached, causing unknown category errors.
-- **File:** `common/decisions/AOTA_CUB_decisions.txt`
-- **Change:** migrated to `categories = { ... }` structure with in-category `decision = { id = ... }` block.
-- **Why safe:** structural parser fix only; preserves original decision logic/effects.
-- **Confidence:** High.
-
-### 6) Repaired decision root key in ENG overhaul decisions
-- **Issue:** root used `decision_categories` leading to parser rejection in this mod's schema.
-- **File:** `common/decisions/AOTA_ENG_overhaul_decisions.txt`
-- **Change:** changed root to `categories = { ... }`.
-- **Why safe:** consistent with other working mod decision files.
-- **Confidence:** High.
-
-### 7) Repaired RUS decisions schema and category attachment
-- **Issue:** mixed `decision_categories` + detached `decisions` root caused all decisions to be ignored.
-- **File:** `common/decisions/AOTA_RUS_decisions.txt`
-- **Change:** rebuilt file into `categories` with decisions attached to relevant categories (`reunification`, `red_black`, `borderlands`).
-- **Why safe:** preserves all original decision content while restoring parse validity.
-- **Confidence:** Medium-High.
-
-### 8) Repaired TUR decisions schema
-- **Issue:** categories declared without valid root; decisions emitted as unexpected tokens.
-- **File:** `common/decisions/AOTA_TUR_decisions.txt`
-- **Change:** wrapped categories in `categories = { ... }` and normalized `decision = { id = ... }` blocks.
-- **Why safe:** parser/structure-only normalization.
-- **Confidence:** High.
-
-### 9) Repaired China-Japan decisions root schema
-- **Issue:** category file lacked root wrapper and was treated as unknown category.
-- **File:** `common/decisions/AOTA_china_japan_interaction_decisions.txt`
-- **Change:** wrapped existing category under `categories = { ... }`.
-- **Why safe:** no gameplay redesign; structural validity fix.
-- **Confidence:** High.
+### Fix 4: Post-fix structural validation pass
+- **Issue summary:** Risk of introducing brace/syntax issues while transforming files.
+- **What changed:** Re-scanned touched files for wrapper remnants and verified balanced braces.
+- **Why safe:** Validation-only pass, no gameplay changes.
+- **Confidence:** **High**.
 
 ## E. Issues not auto-fixed
-1. **`Unknown modifier` across many idea files**
-   - **Why not auto-fixed:** high ambiguity whether intended modifiers are from another game version, custom script layer, or typos.
-   - **Next step:** run a version-aware modifier audit and map each invalid key to supported equivalents.
-2. **`Unknown effect-type` across many focus files**
-   - **Why not auto-fixed:** can require broad mechanical translation (`add_army_experience` vs other canonical forms) and may alter balance.
-   - **Next step:** batch-validate focus effects against current HOI4 script reference.
-3. **Ideology duplicate DB ids in `AOTA_ideologies.txt`**
-   - **Why not auto-fixed:** potentially foundational design choice (overriding base ideologies) with many downstream dependencies.
-   - **Next step:** redesign as additive custom ideologies/subtypes or fully replace with explicit compatibility framework.
-4. **Character subtype/ideology validity errors**
-   - **Why not auto-fixed:** may require coordination with ideology definitions and character progression content.
-   - **Next step:** align character ideology tokens to valid ideology/subtype keys after ideology audit.
+1. **Unknown effect-type spam (171)**
+   - **Why not auto-fixed:** Multiple possible replacement APIs depending on HOI4 version and script context; risky bulk substitutions could alter gameplay.
+   - **Recommended next step:** Validate target HOI4 version and run controlled replacement matrix (e.g., `add_army_experience` -> expected current effect form where applicable).
+
+2. **Unknown modifiers in ideas (71)**
+   - **Why not auto-fixed:** Ambiguous mapping for many modifiers (`division_attack_factor`, `factory_output`, etc.) across versions and systems.
+   - **Recommended next step:** Version-aware modifier map + targeted refactor by file with gameplay review.
+
+3. **Duplicate character tags**
+   - **Why not auto-fixed:** Could represent intentional overrides or multiple content branches.
+   - **Recommended next step:** Resolve by choosing canonical definition per tag and remove/rename duplicates.
+
+4. **Localisation parse error at line 484**
+   - **Why not auto-fixed:** Direct file inspection shows syntactically normal line; likely contextual/encoding or upstream malformed-entry interaction.
+   - **Recommended next step:** Validate with in-engine load and check adjacent lines for hidden characters/encoding anomalies.
+
+5. **Launcher `settings.txt` parse error (`skip_account_link`)**
+   - **Why not auto-fixed:** External user environment file, not mod source.
+   - **Recommended next step:** Regenerate launcher settings file outside repo context.
 
 ## F. Likely noise / low-priority warnings
-- One-off parser complaints from external/user `settings.txt` are outside mod content.
-- Repeated duplicates of the same root parser errors (decision schema, malformed state token, alias duplication) were deduplicated and addressed where safe.
+- Repeated duplicate emission of the same parser error stack from one malformed file.
+- Secondary warnings cascading from primary category/decision schema failures.
 
 ## G. Files changed
-- `history/states/471-Northwestern Canada.txt`
-- `history/states/472-Northwest Territories.txt`
-- `history/states/644-state 3.txt`
-- `history/states/876-Udachny.txt`
-- `history/states/967-Deep Amazonas.txt`
-- `localisation/english/AOTA_l_english.yml`
-- `common/country_tag_aliases/AOTA_country_tag_aliases.txt`
-- `common/country_tag_aliases/AOTA_ottoman_aliases.txt` (removed)
 - `common/decisions/AOTA_CUB_decisions.txt`
 - `common/decisions/AOTA_ENG_overhaul_decisions.txt`
 - `common/decisions/AOTA_RUS_decisions.txt`
 - `common/decisions/AOTA_TUR_decisions.txt`
 - `common/decisions/AOTA_china_japan_interaction_decisions.txt`
+- `common/decisions/AOTA_v10_decisions.txt`
+- `common/decisions/AOTA_systems.txt`
+- `common/decisions/AOTA_country_presence_resolution_decisions.txt`
+- `common/country_tag_aliases/AOTA_country_tag_aliases.txt`
+- `history/states/471-Northwestern Canada.txt`
+- `history/states/472-Northwest Territories.txt`
+- `history/states/644-state 3.txt`
+- `history/states/876-Udachny.txt`
+- `history/states/967-Deep Amazonas.txt`
 
 ## H. Top priority remaining work
-1. Global idea-modifier compatibility pass.
-2. Global focus-effect compatibility pass.
-3. Ideology architecture cleanup to eliminate duplicate DB IDs.
-4. Character ideology token cleanup after ideology pass.
-5. Re-run game with fresh logs and confirm parser-error reduction delta.
+1. Build and apply a **version-accurate effect/modifier compatibility map** for idea/decision scripting.
+2. Resolve duplicate character tag definitions.
+3. Re-run HOI4 logs after this pass to confirm decision/category and alias error collapse.
+4. Investigate localisation parser context around `AOTA_l_english.yml` line 484 with engine-side parser.

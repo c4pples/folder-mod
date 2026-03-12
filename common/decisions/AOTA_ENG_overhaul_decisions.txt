@@ -1,10 +1,8 @@
-categories = {
   aota_britain_imperial_management = {
     icon = generic_alliance
     allowed = { original_tag = ENG }
     visible = { tag = ENG }
-    decision = {
-      id = ENG_hold_commonwealth_conference
+    ENG_hold_commonwealth_conference = {
       icon = generic_alliance
       cost = 50
       days_remove = 30
@@ -12,8 +10,7 @@ categories = {
       available = { political_power > 50 }
       complete_effect = { add_stability = 0.02 }
     }
-    decision = {
-      id = ENG_issue_white_paper
+    ENG_issue_white_paper = {
       icon = generic_political_reform
       cost = 35
       days_remove = 20
@@ -21,8 +18,7 @@ categories = {
       available = { political_power > 35 }
       complete_effect = { add_political_power = -35 add_stability = 0.01 }
     }
-    decision = {
-      id = ENG_raise_territorials
+    ENG_raise_territorials = {
       icon = generic_allies_build_infantry
       cost = 40
       days_remove = 25
@@ -31,4 +27,3 @@ categories = {
       complete_effect = { add_war_support = 0.02 army_experience = 5 }
     }
   }
-}
