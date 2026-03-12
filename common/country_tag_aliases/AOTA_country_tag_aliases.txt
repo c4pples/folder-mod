@@ -3,25 +3,25 @@
 ### They give future events/decisions a stable semantic handle.
 
 ### Surviving Ottoman state
-OTT = TUR
+OTT = { original_tag = TUR }
 
 ### Danubian / Habsburg state, regardless of cosmetic presentation
-DNB = AUS
+DNB = { original_tag = AUS }
 
 ### Unified Raj handle
-IND = RAJ
+IND = { original_tag = RAJ }
 
 ### U.S. splinter aliases
-USC = ACC
-USR = AWU
-USN = ANA
-USP = APF
-USM = ACG
-USS = ASL
-USX = CCW
+USC = { original_tag = ACC }
+USR = { original_tag = AWU }
+USN = { original_tag = ANA }
+USP = { original_tag = APF }
+USM = { original_tag = ACG }
+USS = { original_tag = ASL }
+USX = { original_tag = CCW }
 
 ### Colonial / regional convenience aliases
-CNG = COG
-UKX = UKR
-IRL = IRE
-FNX = FIN
+CNG = { original_tag = COG }
+UKX = { original_tag = UKR }
+IRL = { original_tag = IRE }
+FNX = { original_tag = FIN }

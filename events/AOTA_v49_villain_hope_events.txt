@@ -23,7 +23,7 @@ country_event = {
     name = aota_5001_o1
     add_named_threat = { threat = 4 name = aota_5001_threat }
     if = {
-      limit = { NOT = { has_faction = yes } }
+      limit = { NOT = { is_in_faction = yes } }
       create_faction = AOTA_NIGHT_PACT
     }
     set_country_flag = AOTA_SOFT_VILLAIN_MEMBER
@@ -41,7 +41,7 @@ country_event = {
     ai_chance = { factor = 70 }
     set_country_flag = AOTA_SOFT_VILLAIN_MEMBER
     if = {
-      limit = { GER = { has_faction = yes } }
+      limit = { GER = { is_in_faction = yes } }
       GER = { add_to_faction = ROOT }
     }
     add_opinion_modifier = { target = GER modifier = aota_trade_friendliness }

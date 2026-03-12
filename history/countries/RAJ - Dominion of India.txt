@@ -17,11 +17,11 @@ set_technology = {
     tech_recon = 1
     gw_artillery = 1
     tech_mountaineers = 1
-    tech_camelry = 1
+    tech_cavalry = 1
     basic_train = 1
 }
 if = {
-    limit = { has_dlc_bba = yes }
+    limit = { has_dlc = "By Blood Alone" }
     set_technology = {
         aa_lmg = 1
         engines_1 = 1

@@ -18,7 +18,7 @@ country_event = {
             modifier = { factor = 0.7 has_war = yes }
         }
         FROM = {
-            if = { limit = { has_faction = yes } add_to_faction = ROOT }
+            if = { limit = { is_in_faction = yes } add_to_faction = ROOT }
         }
         add_opinion_modifier = { target = FROM modifier = aota_trade_friendliness }
     }
@@ -47,7 +47,7 @@ country_event = {
             modifier = { factor = 0.5 has_government = communism }
         }
         FROM = {
-            if = { limit = { has_faction = yes } add_to_faction = ROOT }
+            if = { limit = { is_in_faction = yes } add_to_faction = ROOT }
         }
     }
 
@@ -75,7 +75,7 @@ country_event = {
             modifier = { factor = 1.2 has_opinion = { target = FROM value > 30 } }
         }
         FROM = {
-            if = { limit = { has_faction = yes } add_to_faction = ROOT }
+            if = { limit = { is_in_faction = yes } add_to_faction = ROOT }
         }
     }
 
@@ -103,7 +103,7 @@ country_event = {
             modifier = { factor = 0.6 has_government = fascism }
         }
         FROM = {
-            if = { limit = { has_faction = yes } add_to_faction = ROOT }
+            if = { limit = { is_in_faction = yes } add_to_faction = ROOT }
         }
     }
 

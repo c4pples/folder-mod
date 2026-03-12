@@ -29,7 +29,7 @@ set_technology = {
     basic_battery = 1
 }
 if = {
-    limit = { has_dlc_bba = yes }
+    limit = { has_dlc = "By Blood Alone" }
     set_technology = {
         aa_lmg = 1
         engines_1 = 1
