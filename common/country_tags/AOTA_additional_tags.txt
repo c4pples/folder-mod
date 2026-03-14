@@ -1,5 +1,0 @@
-IRE = "countries/IRE - Ireland.txt"
-FIN = "countries/FIN - Finland.txt"
-UKR = "countries/UKR - Ukraine.txt"
-ALG = "countries/ALG - Algeria.txt"
-COG = "countries/COG - Congo.txt"

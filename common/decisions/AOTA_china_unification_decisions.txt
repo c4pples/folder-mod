@@ -23,7 +23,7 @@ AOTA_china_unification_category = {
         visible = { AOTA_china_unification_actor = yes }
         available = {
             has_country_flag = AOTA_china_unification_initialized
-            has_political_power = 100
+            has_political_power > 99
             OR = {
                 has_war = no
                 has_country_flag = AOTA_china_resistance_line
