@@ -1,5 +1,4 @@
 ai_strategy_plan = {
-	name = aota_v12_strategies
 	allowed = { always = yes }
 	enable = { always = yes }
 	abort = { always = no }
