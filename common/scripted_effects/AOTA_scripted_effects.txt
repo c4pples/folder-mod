@@ -47,3 +47,22 @@ AOTA_push_danubian_breakpoint = {
         country_event = { id = aota.300 days = 1 }
     }
 }
+
+aota_red_international = {
+    add_popularity = { ideology = communism popularity = 0.05 }
+    add_popularity = { ideology = anarchism popularity = 0.03 }
+    add_stability = -0.02
+    add_political_power = 30
+}
+
+aota_atlantic_financiers = {
+    add_political_power = 50
+    add_stability = 0.02
+    add_ideas = aota_continental_broker
+}
+
+aota_concert_of_stability = {
+    add_stability = 0.04
+    add_political_power = 40
+    add_war_support = 0.02
+}
