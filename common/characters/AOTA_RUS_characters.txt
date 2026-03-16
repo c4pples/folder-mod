@@ -8,7 +8,7 @@ characters = {
   AOTA_SOV_tukhachevsky = {
     name = AOTA_SOV_tukhachevsky
     portraits = { civilian = { large = GFX_AOTA_SOV_tukhachevsky } }
-    advisor = { slot = chief_of_army idea_token = AOTA_SOV_tukhachevsky_advisor traits = { army_offence_2 } }
+    advisor = { slot = army_chief idea_token = AOTA_SOV_tukhachevsky_advisor traits = { army_offence_2 } }
   }
   AOTA_SOV_wrangel = {
     name = AOTA_SOV_wrangel
