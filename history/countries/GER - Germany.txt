@@ -79,6 +79,7 @@ add_ideas = aota_german_colonial_legacy
 recruit_character = AOTA_GER_hjalmar_schacht
 recruit_character = AOTA_GER_hans_von_seeckt
 recruit_character = AOTA_GER_carl_goerdeler
+recruit_character = AOTA_GER_reinhard_gehlen
 
 
 if = {

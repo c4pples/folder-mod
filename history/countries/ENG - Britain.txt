@@ -77,3 +77,4 @@ add_ideas = aota_eng_imperial_general_staff_committees
 recruit_character = AOTA_ENG_ernest_bevin
 recruit_character = AOTA_ENG_hugh_dowding
 recruit_character = AOTA_ENG_oswald_mosley
+recruit_character = AOTA_ENG_ellen_wilkinson

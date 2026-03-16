@@ -1,0 +1,1 @@
+recruit_character = AOTA_CUB_julio_lobo
